@@ -1,7 +1,7 @@
 ---
 # aai-platform-g4tm
 $schema: bean/1.0.0
-title: Add the gates: labels
+title: "Add the gates: labels"
 status: todo
 type: task
 priority: normal
