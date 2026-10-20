@@ -47,7 +47,8 @@
             "site:requirements",
             "site:redirects",
             "site:qa-validation",
-            "site:programme-board"
+            "site:programme-board",
+            "site:drift"
           ],
           "siteSteps": [],
           "keep": [

@@ -56,6 +56,17 @@ What runs on its own (AUTO-07). **No tokens** (owner, 2026-10-20): the programme
 
 Whose confirmation counts for AUTO-10 (owner, 2026-10-20): the repository's own permissions, so its owner, members and collaborators, while no Technical Integration Lead is named. Setting `technicalIntegrationLead` in [`scripts/programme/config.json`](scripts/programme/config.json) narrows it to that login. Until then anyone with write access can confirm, so a partner with Write on their own workstream repository could confirm their own work there; the [QA report](https://litlfred.github.io/aai-programme/qa/validation/) (`scripts/programme/qa-validation.ts`, rebuilt on every publish) shows who set and who confirmed each, and flags self-confirmation. AUTO-11 (backfill) is not needed: nothing can add to 110 without a token, so items are added there by hand.
 
+## Programme issues and beans
+
+Beans are how the work is done, in whichever repository does it; programme issues are how the programme sees it. They are linked, and kept from drifting, like this (owner, 2026-10-20):
+
+- **The issue is the record of the link.** A programme issue that carries a bean says so in its body, one hidden line per bean: `<!-- bean: litlfred/folio-assistant/folio-assistant-ioa4 -->`. Nothing else holds the link, and nothing in the bean's own repository is written: the bean is linked to, read-only.
+- **Who owns what.** The bean owns the steps and their execution; the issue owns the programme fields (its labels), dates, review and epic. Neither copies the other.
+- **New work.** A bean that delivers part of an epic, changes a date, creates or clears a cross-workstream dependency, or needs a human review or decision gets an issue (the rule above): a person or an agent opens it, under its epic or proposal, with its `ws:`, `stage:` and `type:` labels and its bean line. A step under a bean that already has an issue stays a bean. `scripts/programme/create-items.ts` creates a batch from a one-off spec.
+- **Triage record.** Every open bean is either carried by an issue, under one that is, or triaged: [`docs/beans-analysis.json`](docs/beans-analysis.json) holds the 201 reviewed on 2026-10-20 and [`docs/beans-triage.json`](docs/beans-triage.json) every later decision, `{ "id", "decision": "not-applicable" | "step" | "issue #n", "by", "at" }`.
+- **Drift check.** `scripts/programme/bean-drift.ts` compares each issue with its beans and flags: bean completed or scrapped while the issue is open; issue closed while the bean is open; a link to a bean not found; a bean changed since its issue was last touched; an open feature under a closed epic or proposal; open beans nobody has triaged. It flags; a person acts (DP-06). The report is [`pulled/drift.md`](pulled/drift.md) and the board's [Bean drift](https://litlfred.github.io/aai-programme/programme/drift.html) page.
+- **When it runs.** Daily, in the Pull beans workflow, after the beans snapshot is refreshed. On demand: comment `/check-drift` on any issue (someone with write access); the summary comes back as a reply. Or Actions → Pull beans → Run workflow, or `bun run scripts/programme/bean-drift.ts` locally.
+
 ## Labels
 
 The labels from section 7.3 of the programme requirements. Keep them unchanged.

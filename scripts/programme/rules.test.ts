@@ -113,3 +113,25 @@ describe("board model", () => {
     expect(b.type).toBe("feature");
   });
 });
+
+import { beanLinks, drift } from "./drift-rules.ts";
+describe("bean drift", () => {
+  const bean = (id: string, status: string, extra: Partial<{ parent: string; updated_at: string }> = {}) => [id, { id, repo: "o/r", status, title: id, ...extra }] as const;
+  const issue = (n: number, beans: string[], extra: Partial<{ state: "open" | "closed"; updatedAt: string; parentState: "open" | "closed"; parentNumber: number }> = {}) =>
+    ({ number: n, title: `#${n}`, state: "open" as const, updatedAt: "2026-10-20T00:00:00Z", beans, labels: [], ...extra });
+  test("reads the hidden link lines", () => {
+    expect(beanLinks("x\n<!-- bean: litlfred/folio-assistant/folio-assistant-ioa4 -->\n<!-- bean: a/b/c-1 -->")).toEqual(["folio-assistant-ioa4", "c-1"]);
+  });
+  test("lifecycle: bean done or scrapped while the issue is open; issue closed while the bean is open", () => {
+    const f = drift([issue(1, ["a"]), issue(2, ["b"]), issue(3, ["c"], { state: "closed" })], new Map([bean("a", "completed"), bean("b", "scrapped"), bean("c", "in-progress")]), new Set());
+    expect(f.map((x) => x.kind).sort()).toEqual(["bean-done", "bean-scrapped", "issue-closed"]);
+  });
+  test("broken link, bean changed after the issue, orphaned feature", () => {
+    const f = drift([issue(1, ["gone"]), issue(2, ["b"]), issue(3, [], { parentState: "closed", parentNumber: 9 })], new Map([bean("b", "todo", { updated_at: "2026-10-21T00:00:00Z" })]), new Set());
+    expect(f.map((x) => x.kind).sort()).toEqual(["bean-changed", "broken-link", "orphaned"]);
+  });
+  test("untriaged: open, not carried, not under a carried bean, not reviewed", () => {
+    const beans = new Map([bean("carried", "todo"), bean("step", "todo", { parent: "carried" }), bean("seen", "todo"), bean("new", "todo"), bean("old", "completed")]);
+    expect(drift([issue(1, ["carried"])], beans, new Set(["seen"])).map((x) => x.bean)).toEqual(["new"]);
+  });
+});

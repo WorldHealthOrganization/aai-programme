@@ -182,14 +182,14 @@ const noWs = items.filter((i) => !i.fields.Workstream);
 
 // ── write ─────────────────────────────────────────────────────────
 mkdirSync(OUT, { recursive: true });
-const nav = `[Board](index.html) · ${views.map((v) => `[${v.id.toUpperCase()}](${v.id}.html)`).join(" · ")}`;
+const nav = `[Board](index.html) · [Workstreams](workstreams.html) · [Bean drift](drift.html) · ${views.map((v) => `[${v.id.toUpperCase()}](${v.id}.html)`).join(" · ")}`;
 const stamp = `Built ${TODAY} from the labels of ${items.length} issue(s) in ${config.repositories.join(", ")} by \`scripts/programme/board.ts\`; as current as the last publish. Change a value by changing the issue's label.`;
 for (const v of views) {
   writeFileSync(join(OUT, `${v.id}.md`), `---\ntitle: "${v.id.toUpperCase()} ${v.name}"\n---\n\n${STYLE}\n\n${nav}\n\n# ${v.id.toUpperCase()} ${v.name}\n\n${v.what} (req:aai-views#${v.id.toUpperCase()})\n\n${v.body()}\n\n_${stamp}_\n`);
 }
 writeFileSync(
   join(OUT, "index.md"),
-  `---\ntitle: Programme board\n---\n\n${STYLE}\n\n# Programme board\n\nThe Assured AI programme's views and metrics (section 8), built from the issues' labels, with nothing kept by hand. The same issues show in [project 110](https://github.com/orgs/WorldHealthOrganization/projects/110).\n\n` +
+  `---\ntitle: Programme board\n---\n\n${STYLE}\n\n# Programme board\n\nThe Assured AI programme's views and metrics (section 8), built from the issues' labels, with nothing kept by hand. The same issues show in [project 110](https://github.com/orgs/WorldHealthOrganization/projects/110). [Workstreams, epics and beans](workstreams.html) maps each workstream's epics and proposals to their features and beans; [Bean drift](drift.html) says where an issue and its bean disagree.\n\n` +
     `## Views\n\n${table(["View", "Shows"], views.map((v) => [`[${v.id.toUpperCase()} ${v.name}](${v.id}.html)`, v.what]))}\n\n` +
     `## Metrics\n\n${metrics.map(([id, name, body]) => `### ${id} ${name}\n\n${body}`).join("\n\n")}\n\n` +
     `## Proposals awaiting the PM\n\nEpics proposed by a workstream, for the PM & Architecture Integration to accept, amend or decline (req:aai-linking#LINK-07). They join V1 once accepted.\n\n${proposals.length ? table(["Proposal", "Workstream", "Pipeline stage", "Features"], proposals.map((p) => [link(p.item), f(p.item, "Workstream"), f(p.item, "Pipeline stage"), String(p.features)])) : "_None._"}\n\n` +

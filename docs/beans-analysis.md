@@ -14,7 +14,7 @@ Gaps no bean covers: CQL authoring, serving health skills over MCP, and adapting
 
 ## How they entered the programme
 
-Owner, 20 October 2026: all of it, except anything that touches another repository. So the issues are here, and the beans are unchanged: each issue links its bean, read-only, and no bean was given an `issue:` back-link. The issues are created from [`scripts/programme/bean-intake.json`](../scripts/programme/bean-intake.json) by `scripts/programme/create-items.ts`, safe to rerun; each carries the `bean-intake` label and its field values as labels. The issue text is written for the programme, not copied from the beans (SEC-03).
+Owner, 20 October 2026: all of it, except anything that touches another repository. So the issues are here, and the beans are unchanged: each issue links its bean, read-only, and no bean was given an `issue:` back-link. The issues were created by `scripts/programme/create-items.ts` from a one-off batch spec (in git history at commit 3320822); each carries the `bean-intake` label, its field values as labels, and a hidden `<!-- bean: owner/repo/id -->` line per bean it carries. Those lines are the links: the bean drift check reads them, and nothing else has to be kept in step. The issue text is written for the programme, not copied from the beans (SEC-03).
 
 - **Five epic proposals**, one per workstream with work (LINK-07): labelled `proposal`, not `type:epic`, until the PM accepts them. Listed on the board under "Proposals awaiting the PM".
 - **27 features**, as sub-issues of their proposal.
