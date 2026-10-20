@@ -1,0 +1,15 @@
+{
+  "@context": [
+    "https://litlfred.github.io/aai-programme/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/assured-ai-github-programme-requirements-v041/blocks/prose-s024-12-pilot-build",
+  "kind": "prose",
+  "title": "12. Pilot build",
+  "text": "../sections/s024-12-pilot-build.md",
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/assured-ai-github-programme-requirements-v041/manifest.jsonld",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/assured-ai-github-programme-requirements-v041/manifest.jsonld",
+  "provenance": "ingested"
+}

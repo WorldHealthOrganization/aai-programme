@@ -34,6 +34,7 @@ The board below counts open beans without an issue, so the gaps stay visible.
 It is a cat-harness instance named `aai-programme`, declared in [`aai-programme.json`](aai-programme.json). It holds:
 
 - **`processes/`**: the programme's processes as BPMN, starting with the build sequence. See [`processes/README.md`](processes/README.md).
+- **`library/`**: the programme requirements, ingested from [`uploads/`](uploads/): v0.4.1 as written by the PM & Architecture Integration and the v0.4.2 draft. Each section is a JSON-LD node that beans, processes and issues can cite.
 - **`beans/`**: the work plan, kept on the branch `cat/aai-platform/beans`.
 
 [`index.config.json`](index.config.json) lists the other knowledge graphs whose work plans the board reviews, each pinned to a commit the owner approved and limited to its `beans` directory. Until that list has been tested, `beans-sources.json` and `scripts/pull-beans.ts` still build the board.

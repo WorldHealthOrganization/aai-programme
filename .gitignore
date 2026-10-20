@@ -1,2 +1,5 @@
 .cache/
 .state/
+
+# Ingestion works here before promoting into library/
+ingest-staging/

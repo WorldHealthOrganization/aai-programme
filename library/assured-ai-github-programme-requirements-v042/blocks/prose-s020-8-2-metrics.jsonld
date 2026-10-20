@@ -1,0 +1,15 @@
+{
+  "@context": [
+    "https://litlfred.github.io/aai-programme/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/assured-ai-github-programme-requirements-v042/blocks/prose-s020-8-2-metrics",
+  "kind": "prose",
+  "title": "8.2 Metrics",
+  "text": "../sections/s020-8-2-metrics.md",
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/assured-ai-github-programme-requirements-v042/manifest.jsonld",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/assured-ai-github-programme-requirements-v042/manifest.jsonld",
+  "provenance": "ingested"
+}

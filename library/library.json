@@ -1,0 +1,5 @@
+{
+  "$schema": "concern-groups/v1",
+  "_comment": "aai-programme declares no concern group of its own: a library entry here is a member of the groups cat-harness declares, or sits unfiled at library/<slug>/.",
+  "groups": []
+}

@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/aai-programme/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/assured-ai-github-programme-requirements-v041/sections/s027-15-acceptance-criteria",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "15. Acceptance criteria",
+  "contains": [
+    "library/assured-ai-github-programme-requirements-v041/blocks/prose-s027-15-acceptance-criteria"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/assured-ai-github-programme-requirements-v041/manifest.jsonld",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/assured-ai-github-programme-requirements-v041/manifest.jsonld",
+  "provenance": "ingested"
+}
