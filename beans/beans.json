@@ -1,0 +1,6 @@
+{
+  "name": "aai-platform",
+  "directories": [
+    { "id": "defs", "path": "defs", "graphTypologies": ["bean-defs"], "description": "Work items, one Markdown file each, in the layout the beans CLI reads." }
+  ]
+}
