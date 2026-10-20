@@ -1,0 +1,6 @@
+# GitHub Pages builds this site from main (Settings -> Pages -> main, / (root)).
+title: Assured AI programme
+description: Coordination for the WHO Assured AI programme, staged in litlfred/aai-programme.
+exclude:
+  - scripts/
+  - .state/
