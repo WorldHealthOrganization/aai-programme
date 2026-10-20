@@ -29,6 +29,22 @@ The Platform board of record is the **issues** on the programme and Platform pro
 
 The board below counts open beans without an issue, so the gaps stay visible.
 
+## Labels
+
+The labels from section 7.3 of the programme requirements. Keep them unchanged.
+
+| Label | Meaning |
+|---|---|
+| `rq:R1` to `rq:R7` | Every research question the item contributes to |
+| `route:control`, `route:0`, `route:a`, `route:b` | Which comparison routes the item covers |
+| `thin-slice` | Part of the end-to-end demo slice |
+| `sprint-demo` | To be shown at the next fortnightly sprint review |
+| `blocked`, `at-risk` | Raised by the team on its own items. Add a "Next action" line to the issue body: what will happen, who will do it, and by when |
+| `needs-review` | Ready for WHO review |
+| `validation-exception` | Set by automation only |
+
+The `gates:` labels, one per Gates output, are added once the PM supplies the Gates output list.
+
 ## Beans board
 
 Beans are the agents' work plan: one Markdown file per work item, read by the [`beans`](https://github.com/hmans/beans) CLI.
