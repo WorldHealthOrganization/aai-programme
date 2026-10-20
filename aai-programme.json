@@ -42,6 +42,14 @@
         "library"
       ],
       "description": "The ingested requirements: one entry per version, its sections as JSON-LD nodes, so beans, processes and issues can cite a section."
+    },
+    {
+      "id": "docs",
+      "path": "docs/",
+      "graphTypologies": [
+        "docs"
+      ],
+      "description": "Pages of this instance's site written in the repository, and the requirement nodes under docs/requirements/ (declared from within, docs/docs.json)."
     }
   ],
   "description": "Coordination for the WHO Assured AI programme: the programme requirements, the processes that build and run it, and the combined work plan of the repositories it draws on. Staged in litlfred/aai-programme until the owner syncs it to the WHO organisation.",
