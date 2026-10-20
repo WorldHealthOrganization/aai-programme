@@ -6,8 +6,8 @@
       "state": "ok",
       "branch": "cat/aai-platform/beans",
       "path": "beans/defs",
-      "commit": "b6ca2e1cbbb42faf42689ab38dc38d525d0afb9c",
-      "count": 5
+      "commit": "95db232cce44b3309608a03c8914b2e16555f594",
+      "count": 25
     },
     {
       "repo": "litlfred/folio-assistant",
@@ -105,11 +105,245 @@
   "beans": [
     {
       "repo": "litlfred/aai-platform",
+      "id": "aai-platform-12jf",
+      "title": "Step 8: bulk import",
+      "status": "todo",
+      "type": "task",
+      "priority": "normal",
+      "parent": "aai-platform-7aw2",
+      "blocking": [],
+      "blocked_by": [
+        "aai-platform-55mk"
+      ],
+      "tags": [
+        "programme",
+        "blocked-external"
+      ],
+      "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+      "archived": false,
+      "updated_at": "2026-10-20T17:00:00Z",
+      "url": "https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-12jf--step-8-bulk-import.md"
+    },
+    {
+      "repo": "litlfred/aai-platform",
+      "id": "aai-platform-15r2",
+      "title": "Step 10: build report",
+      "status": "todo",
+      "type": "task",
+      "priority": "normal",
+      "parent": "aai-platform-7aw2",
+      "blocking": [],
+      "blocked_by": [
+        "aai-platform-se78"
+      ],
+      "tags": [
+        "programme"
+      ],
+      "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+      "archived": false,
+      "updated_at": "2026-10-20T17:00:00Z",
+      "url": "https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-15r2--step-10-build-report.md"
+    },
+    {
+      "repo": "litlfred/aai-platform",
+      "id": "aai-platform-296c",
+      "title": "Step 3: repositories, roles and labels",
+      "status": "todo",
+      "type": "task",
+      "priority": "normal",
+      "parent": "aai-platform-7aw2",
+      "blocking": [],
+      "blocked_by": [
+        "aai-platform-64nd"
+      ],
+      "tags": [
+        "programme",
+        "blocked-external"
+      ],
+      "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+      "archived": false,
+      "updated_at": "2026-10-20T17:00:00Z",
+      "url": "https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-296c--step-3-repositories-roles-and-labels.md"
+    },
+    {
+      "repo": "litlfred/aai-platform",
+      "id": "aai-platform-4oyq",
+      "title": "Agree the rule for when a bean becomes an issue",
+      "status": "todo",
+      "type": "task",
+      "priority": "normal",
+      "parent": "aai-platform-7aw2",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "programme"
+      ],
+      "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+      "archived": false,
+      "updated_at": "2026-10-20T17:00:00Z",
+      "url": "https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-4oyq--agree-the-rule-for-when-a-bean-becomes-an-issue.md"
+    },
+    {
+      "repo": "litlfred/aai-platform",
+      "id": "aai-platform-55mk",
+      "title": "Step 7: pilot build and tests PIL-01 to PIL-11",
+      "status": "todo",
+      "type": "task",
+      "priority": "normal",
+      "parent": "aai-platform-7aw2",
+      "blocking": [],
+      "blocked_by": [
+        "aai-platform-ru5n",
+        "aai-platform-ci17",
+        "aai-platform-afe0"
+      ],
+      "tags": [
+        "programme",
+        "blocked-external"
+      ],
+      "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+      "archived": false,
+      "updated_at": "2026-10-20T17:00:00Z",
+      "url": "https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-55mk--step-7-pilot-build-and-tests-pil-01-to-pil-11.md"
+    },
+    {
+      "repo": "litlfred/aai-platform",
+      "id": "aai-platform-64nd",
+      "title": "Step 2: create or reuse the issue types and issue fields",
+      "status": "todo",
+      "type": "task",
+      "priority": "normal",
+      "parent": "aai-platform-7aw2",
+      "blocking": [],
+      "blocked_by": [
+        "aai-platform-wyr6"
+      ],
+      "tags": [
+        "programme",
+        "blocked-external"
+      ],
+      "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+      "archived": false,
+      "updated_at": "2026-10-20T17:00:00Z",
+      "url": "https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-64nd--step-2-create-or-reuse-the-issue-types-and-issue-f.md"
+    },
+    {
+      "repo": "litlfred/aai-platform",
+      "id": "aai-platform-6o0v",
+      "title": "Rename aai-platform to aai-programme",
+      "status": "todo",
+      "type": "task",
+      "priority": "normal",
+      "parent": "aai-platform-7aw2",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "programme"
+      ],
+      "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+      "archived": false,
+      "updated_at": "2026-10-20T17:00:00Z",
+      "url": "https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-6o0v--rename-aai-platform-to-aai-programme.md"
+    },
+    {
+      "repo": "litlfred/aai-platform",
+      "id": "aai-platform-7aw2",
+      "title": "Build the Assured AI programme GitHub set-up (requirements v0.4.2)",
+      "status": "todo",
+      "type": "epic",
+      "priority": "normal",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "programme"
+      ],
+      "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+      "archived": false,
+      "updated_at": "2026-10-20T17:00:00Z",
+      "url": "https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-7aw2--build-the-assured-ai-programme-github-set-up-requi.md"
+    },
+    {
+      "repo": "litlfred/aai-platform",
+      "id": "aai-platform-7ba1",
+      "title": "Turn on issues in this repository",
+      "status": "todo",
+      "type": "task",
+      "priority": "normal",
+      "parent": "aai-platform-7aw2",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "programme"
+      ],
+      "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+      "archived": false,
+      "updated_at": "2026-10-20T17:00:00Z",
+      "url": "https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-7ba1--turn-on-issues-in-this-repository.md"
+    },
+    {
+      "repo": "litlfred/aai-platform",
+      "id": "aai-platform-afe0",
+      "title": "Get the BD decisions from the WHO GitHub owners",
+      "status": "todo",
+      "type": "task",
+      "priority": "normal",
+      "parent": "aai-platform-7aw2",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "programme",
+        "blocked-external"
+      ],
+      "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+      "archived": false,
+      "updated_at": "2026-10-20T17:00:00Z",
+      "url": "https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-afe0--get-the-bd-decisions-from-the-who-github-owners.md"
+    },
+    {
+      "repo": "litlfred/aai-platform",
+      "id": "aai-platform-b3vu",
+      "title": "Get the section 17 open points from the PM",
+      "status": "todo",
+      "type": "task",
+      "priority": "normal",
+      "parent": "aai-platform-7aw2",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "programme",
+        "blocked-external"
+      ],
+      "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+      "archived": false,
+      "updated_at": "2026-10-20T17:00:00Z",
+      "url": "https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-b3vu--get-the-section-17-open-points-from-the-pm.md"
+    },
+    {
+      "repo": "litlfred/aai-platform",
+      "id": "aai-platform-ci17",
+      "title": "Step 6: automation scripts AUTO-01 to AUTO-11",
+      "status": "todo",
+      "type": "task",
+      "priority": "normal",
+      "parent": "aai-platform-7aw2",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "programme"
+      ],
+      "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+      "archived": false,
+      "updated_at": "2026-10-20T17:00:00Z",
+      "url": "https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-ci17--step-6-automation-scripts-auto-01-to-auto-11.md"
+    },
+    {
+      "repo": "litlfred/aai-platform",
       "id": "aai-platform-g4tm",
       "title": "Add the gates: labels",
       "status": "todo",
       "type": "task",
       "priority": "normal",
+      "parent": "aai-platform-7aw2",
       "blocking": [],
       "blocked_by": [],
       "tags": [
@@ -122,11 +356,48 @@
     },
     {
       "repo": "litlfred/aai-platform",
+      "id": "aai-platform-kaoz",
+      "title": "Settle SEC-04 for a public aai-platform",
+      "status": "todo",
+      "type": "task",
+      "priority": "normal",
+      "parent": "aai-platform-7aw2",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "programme"
+      ],
+      "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+      "archived": false,
+      "updated_at": "2026-10-20T17:00:00Z",
+      "url": "https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-kaoz--settle-sec-04-for-a-public-aai-platform.md"
+    },
+    {
+      "repo": "litlfred/aai-platform",
+      "id": "aai-platform-kv50",
+      "title": "Answer dgv21: cross-workstream marking as fields, not labels",
+      "status": "todo",
+      "type": "task",
+      "priority": "normal",
+      "parent": "aai-platform-7aw2",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "programme"
+      ],
+      "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+      "archived": false,
+      "updated_at": "2026-10-20T17:00:00Z",
+      "url": "https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-kv50--answer-dgv21-cross-workstream-marking-as-fields-no.md"
+    },
+    {
+      "repo": "litlfred/aai-platform",
       "id": "aai-platform-l2kn",
       "title": "Name the Platform lead and give them Maintain access",
       "status": "todo",
       "type": "task",
       "priority": "normal",
+      "parent": "aai-platform-7aw2",
       "blocking": [],
       "blocked_by": [],
       "tags": [
@@ -136,6 +407,24 @@
       "archived": false,
       "updated_at": "2026-10-20T16:00:00Z",
       "url": "https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-l2kn--name-the-platform-lead.md"
+    },
+    {
+      "repo": "litlfred/aai-platform",
+      "id": "aai-platform-oqd4",
+      "title": "Make this repository a cat-harness instance",
+      "status": "todo",
+      "type": "task",
+      "priority": "normal",
+      "parent": "aai-platform-7aw2",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "programme"
+      ],
+      "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+      "archived": false,
+      "updated_at": "2026-10-20T17:00:00Z",
+      "url": "https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-oqd4--make-this-repository-a-cat-harness-instance.md"
     },
     {
       "repo": "litlfred/aai-platform",
@@ -161,6 +450,7 @@
       "status": "in-progress",
       "type": "task",
       "priority": "normal",
+      "parent": "aai-platform-7aw2",
       "blocking": [],
       "blocked_by": [],
       "tags": [
@@ -173,11 +463,33 @@
     },
     {
       "repo": "litlfred/aai-platform",
+      "id": "aai-platform-ru5n",
+      "title": "Step 4: programme project and workstream template",
+      "status": "todo",
+      "type": "task",
+      "priority": "normal",
+      "parent": "aai-platform-7aw2",
+      "blocking": [],
+      "blocked_by": [
+        "aai-platform-296c"
+      ],
+      "tags": [
+        "programme",
+        "blocked-external"
+      ],
+      "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+      "archived": false,
+      "updated_at": "2026-10-20T17:00:00Z",
+      "url": "https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-ru5n--step-4-programme-project-and-workstream-template.md"
+    },
+    {
+      "repo": "litlfred/aai-platform",
       "id": "aai-platform-s7wq",
       "title": "Sync the fork to the WHO repository",
       "status": "todo",
       "type": "task",
       "priority": "normal",
+      "parent": "aai-platform-7aw2",
       "blocking": [],
       "blocked_by": [],
       "tags": [
@@ -187,6 +499,87 @@
       "archived": false,
       "updated_at": "2026-10-20T16:00:00Z",
       "url": "https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-s7wq--sync-the-fork-to-the-who-repository.md"
+    },
+    {
+      "repo": "litlfred/aai-platform",
+      "id": "aai-platform-se78",
+      "title": "Step 9: charts M1 to M5 and acceptance criteria",
+      "status": "todo",
+      "type": "task",
+      "priority": "normal",
+      "parent": "aai-platform-7aw2",
+      "blocking": [],
+      "blocked_by": [
+        "aai-platform-12jf"
+      ],
+      "tags": [
+        "programme",
+        "blocked-external"
+      ],
+      "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+      "archived": false,
+      "updated_at": "2026-10-20T17:00:00Z",
+      "url": "https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-se78--step-9-charts-m1-to-m5-and-acceptance-criteria.md"
+    },
+    {
+      "repo": "litlfred/aai-platform",
+      "id": "aai-platform-uhe0",
+      "title": "Step 5: READMEs and the workstream directory issue",
+      "status": "todo",
+      "type": "task",
+      "priority": "normal",
+      "parent": "aai-platform-7aw2",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "programme"
+      ],
+      "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+      "archived": false,
+      "updated_at": "2026-10-20T17:00:00Z",
+      "url": "https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-uhe0--step-5-readmes-and-the-workstream-directory-issue.md"
+    },
+    {
+      "repo": "litlfred/aai-platform",
+      "id": "aai-platform-wfvg",
+      "title": "Review the project 110 items with Ritika after the pilot",
+      "status": "todo",
+      "type": "task",
+      "priority": "normal",
+      "parent": "aai-platform-7aw2",
+      "blocking": [],
+      "blocked_by": [
+        "aai-platform-55mk"
+      ],
+      "tags": [
+        "programme",
+        "blocked-external"
+      ],
+      "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+      "archived": false,
+      "updated_at": "2026-10-20T17:00:00Z",
+      "url": "https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-wfvg--review-the-project-110-items-with-ritika-after-the.md"
+    },
+    {
+      "repo": "litlfred/aai-platform",
+      "id": "aai-platform-wyr6",
+      "title": "Step 1: pre-flight check of the WHO organisation",
+      "status": "todo",
+      "type": "task",
+      "priority": "normal",
+      "parent": "aai-platform-7aw2",
+      "blocking": [],
+      "blocked_by": [
+        "aai-platform-afe0"
+      ],
+      "tags": [
+        "programme",
+        "blocked-external"
+      ],
+      "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+      "archived": false,
+      "updated_at": "2026-10-20T17:00:00Z",
+      "url": "https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-wyr6--step-1-pre-flight-check-of-the-who-organisation.md"
     },
     {
       "repo": "litlfred/folio-assistant",
