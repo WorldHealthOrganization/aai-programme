@@ -43,6 +43,20 @@ It is a cat-harness instance named `aai-programme`, declared in [`aai-programme.
 
 [`index.config.json`](index.config.json) lists the other knowledge graphs whose work plans the board reviews, each pinned to a commit the owner approved and limited to its `beans` directory. Until that list has been tested, `beans-sources.json` and `scripts/pull-beans.ts` still build the board.
 
+## Programme automations
+
+What runs on its own (AUTO-07). The scripts are in [`scripts/programme/`](scripts/programme/); their decisions are in `rules.ts`, tested in `rules.test.ts`; the workflow is [`programme-automations.yml`](.github/workflows/programme-automations.yml). Every script reruns safely and has `--dry-run` (AUTO-08). None sets Integration readiness, Review status, Risk category, Impact, a decision or a risk acceptance (AUTO-05).
+
+| Automation | Trigger | What it does | Scope | Owner |
+|---|---|---|---|---|
+| AUTO-01 auto-add | the project's own workflow | Adds programme-level items by type, and workstream items labelled `thin-slice`, `sprint-demo`, `blocked` or `at-risk` | the programme project | PM & Architecture Integration |
+| AUTO-03 Programme status | an issue opened, closed or reopened | Not started on a new programme item with no value; Done when closed as completed; Cancelled when closed as not planned; In progress when reopened | items on the programme project | PM & Architecture Integration |
+| AUTO-04 Delivery health | daily | Raises an epic's Delivery health to the worst `blocked` or `at-risk` label on its open sub-issues; never lowers it | open epics | the epic's owner lowers it |
+| AUTO-10 validation check | daily | An item Validated with no `Validation confirmed:` comment from the Technical Integration Lead gets `validation-exception` and one comment; the label goes when the comment appears or the value changes | items on the programme project | Technical Integration Lead |
+| AUTO-11 backfill | by hand (workflow_dispatch, `backfill`) | Adds existing qualifying issues that are not on the project yet | `repositories` in `config.json` | PM & Architecture Integration |
+
+They need three settings before they can run: `project.number` and `technicalIntegrationLead` in [`scripts/programme/config.json`](scripts/programme/config.json), and the `PROGRAMME_TOKEN` secret. Until then each stops and says what is missing (AUTO-09).
+
 ## Labels
 
 The labels from section 7.3 of the programme requirements. Keep them unchanged.

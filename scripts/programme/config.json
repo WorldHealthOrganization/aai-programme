@@ -1,0 +1,8 @@
+{
+  "$comment": "Settings for the programme automations (AUTO-03, AUTO-04, AUTO-10, AUTO-11). project.number is set once the project exists; technicalIntegrationLead is the GitHub login AUTO-10 accepts confirmations from (section 11: a setting, not hard-coded). typeSource is `label` in the litlfred staging copy (type: labels) and `issue-type` in the WHO build.",
+  "project": { "owner": "litlfred", "ownerType": "user", "number": null },
+  "repositories": ["litlfred/aai-programme"],
+  "typeSource": "label",
+  "programmeTypes": ["type:epic", "type:milestone", "type:research-question", "type:dependency", "type:decision", "type:assumption"],
+  "technicalIntegrationLead": null
+}
