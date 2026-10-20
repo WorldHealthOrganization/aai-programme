@@ -45,7 +45,15 @@
               ]
             }
           },
-          "note": "Reviewed for its work plan only (beans). Also holds folio-assistant's beans: folio-assistant keeps them on cat/cat-harness/beans. No trust recorded yet: the owner approves each pin before it is fetched."
+          "note": "Reviewed for its work plan only (beans). Also holds folio-assistant's beans: folio-assistant keeps them on cat/cat-harness/beans.",
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-10-20",
+              "ref": "44e87adeaa7354910eaaa21072e62bd35b16f21f",
+              "evidence": "Owner litlfred, 2026-10-20, answering \"Record your trust consent for the five remote KGs to review?\" in a Claude Code session: \"Approve all five\". Pinned to each repository's main at that time, for its beans directory only."
+            }
+          }
         }
       }
     },
@@ -62,7 +70,15 @@
               ]
             }
           },
-          "note": "Reviewed for its work plan only (beans). No trust recorded yet: the owner approves each pin before it is fetched."
+          "note": "Reviewed for its work plan only (beans).",
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-10-20",
+              "ref": "3420b76c9c72eaadfa56ddd0ce2b004be120657a",
+              "evidence": "Owner litlfred, 2026-10-20, answering \"Record your trust consent for the five remote KGs to review?\" in a Claude Code session: \"Approve all five\". Pinned to each repository's main at that time, for its beans directory only."
+            }
+          }
         }
       }
     },
@@ -79,7 +95,15 @@
               ]
             }
           },
-          "note": "Reviewed for its work plan only (beans). No trust recorded yet: the owner approves each pin before it is fetched."
+          "note": "Reviewed for its work plan only (beans).",
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-10-20",
+              "ref": "b66b510356821b4b6d5e43c948fb79243d080083",
+              "evidence": "Owner litlfred, 2026-10-20, answering \"Record your trust consent for the five remote KGs to review?\" in a Claude Code session: \"Approve all five\". Pinned to each repository's main at that time, for its beans directory only."
+            }
+          }
         }
       }
     },
@@ -96,7 +120,15 @@
               ]
             }
           },
-          "note": "Reviewed for its work plan only (beans). No trust recorded yet: the owner approves each pin before it is fetched."
+          "note": "Reviewed for its work plan only (beans).",
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-10-20",
+              "ref": "0bd1c81657b269884c2a5c1962c7934e30fc1fef",
+              "evidence": "Owner litlfred, 2026-10-20, answering \"Record your trust consent for the five remote KGs to review?\" in a Claude Code session: \"Approve all five\". Pinned to each repository's main at that time, for its beans directory only."
+            }
+          }
         }
       }
     },
@@ -113,7 +145,15 @@
               ]
             }
           },
-          "note": "smart-ra declares the instance dpi-h-ra. Reviewed for its work plan only (beans). No trust recorded yet: the owner approves each pin before it is fetched."
+          "note": "smart-ra declares the instance dpi-h-ra. Reviewed for its work plan only (beans).",
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-10-20",
+              "ref": "408bbfa969dd3536bba066b3ad7b304fce2881ee",
+              "evidence": "Owner litlfred, 2026-10-20, answering \"Record your trust consent for the five remote KGs to review?\" in a Claude Code session: \"Approve all five\". Pinned to each repository's main at that time, for its beans directory only."
+            }
+          }
         }
       }
     }

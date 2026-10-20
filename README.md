@@ -36,7 +36,7 @@ It is a cat-harness instance named `aai-programme`, declared in [`aai-programme.
 - **`processes/`**: the programme's processes as BPMN, starting with the build sequence. See [`processes/README.md`](processes/README.md).
 - **`beans/`**: the work plan, kept on the branch `cat/aai-platform/beans`.
 
-[`index.config.json`](index.config.json) lists the other knowledge graphs whose work plans the board reviews, each pinned to a commit and limited to its `beans` directory. Each pin is fetched only once the owner approves it. Until that list has been tested, `beans-sources.json` and `scripts/pull-beans.ts` still build the board.
+[`index.config.json`](index.config.json) lists the other knowledge graphs whose work plans the board reviews, each pinned to a commit the owner approved and limited to its `beans` directory. Until that list has been tested, `beans-sources.json` and `scripts/pull-beans.ts` still build the board.
 
 ## Labels
 
