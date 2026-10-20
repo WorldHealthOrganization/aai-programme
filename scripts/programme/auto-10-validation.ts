@@ -3,11 +3,11 @@
  * is Validated needs a `Validation confirmed:` comment from the Technical
  * Integration Lead. Without one: the `validation-exception` label and one
  * comment. With one, or off Validated: the label goes. Never changes
- * Integration readiness.
+ * Integration readiness, which it reads from the `readiness:` label.
  *
  *   bun run scripts/programme/auto-10-validation.ts [--dry-run]
  */
-import { config, DRY, readProject, rest, restAll } from "./lib.ts";
+import { config, DRY, readItems, rest, restAll } from "./lib.ts";
 import { validationAction } from "./rules.ts";
 
 const lead = config.technicalIntegrationLead;
@@ -16,8 +16,7 @@ if (!lead) {
   process.exit(2);
 }
 const LABEL = "validation-exception";
-const project = readProject();
-for (const item of project.items) {
+for (const item of readItems()) {
   const hasLabel = item.labels.includes(LABEL);
   if (item.fields["Integration readiness"] !== "Validated" && !hasLabel) continue;
   const comments = restAll<{ user: { login: string }; body: string }>(`repos/${item.repo}/issues/${item.number}/comments?per_page=100`).map((c) => ({ login: c.user.login, body: c.body }));

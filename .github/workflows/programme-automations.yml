@@ -4,10 +4,9 @@
 # are in rules.ts and tested in rules.test.ts. What each does, its trigger,
 # scope and owner: README, "Programme automations" (AUTO-07).
 #
-# Needs the PROGRAMME_TOKEN secret: a token with read and write access to
-# Projects for the project's owner, and to this repository's issues. The
-# default token cannot write a user's or an organisation's project. Without
-# it every job stops and says so (AUTO-09).
+# No token beyond the workflow's own (owner, 2026-10-20): the programme
+# fields are labels on the issues (scripts/programme/fields.ts), which the
+# default token can write. Nothing here writes a project.
 name: Programme automations
 
 on:
@@ -17,11 +16,6 @@ on:
     - cron: "41 5 * * *"
   workflow_dispatch:
     inputs:
-      run:
-        description: "Which to run"
-        type: choice
-        options: [health-and-validation, backfill]
-        default: health-and-validation
       dry_run:
         description: "Say what would change, change nothing"
         type: boolean
@@ -39,15 +33,9 @@ jobs:
   run:
     runs-on: ubuntu-latest
     env:
-      GH_TOKEN: ${{ secrets.PROGRAMME_TOKEN }}
+      GH_TOKEN: ${{ github.token }}
       DRY: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && '--dry-run' || '' }}
     steps:
-      - name: Stop if the token is missing (AUTO-09)
-        run: |
-          if [ -z "$GH_TOKEN" ]; then
-            echo "::error::the PROGRAMME_TOKEN secret is not set: it needs read and write access to Projects for the project's owner, and to this repository's issues"
-            exit 1
-          fi
       - uses: actions/checkout@v4
       - uses: oven-sh/setup-bun@v2
         with:
@@ -56,11 +44,8 @@ jobs:
         if: github.event_name == 'issues'
         run: bun run scripts/programme/auto-03-status.ts
       - name: AUTO-04 Delivery health roll-up
-        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.run == 'health-and-validation')
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: bun run scripts/programme/auto-04-health.ts $DRY
       - name: AUTO-10 Validation check
-        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.run == 'health-and-validation')
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: bun run scripts/programme/auto-10-validation.ts $DRY
-      - name: AUTO-11 Backfill
-        if: github.event_name == 'workflow_dispatch' && inputs.run == 'backfill'
-        run: bun run scripts/programme/auto-11-backfill.ts $DRY

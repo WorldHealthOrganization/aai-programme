@@ -64,3 +64,17 @@ describe("AUTO-01 / AUTO-11 who belongs on the board", () => {
     expect(qualifies(["type:task"], types)).toBe(false);
   });
 });
+
+import { fieldsFromLabels, relabel } from "./fields.ts";
+describe("fields as labels", () => {
+  test("reads one value per field", () => {
+    expect(fieldsFromLabels(["ws:WS1 Knowledge graph", "health:Blocked", "type:feature"])).toEqual({ Workstream: "WS1 Knowledge graph", "Delivery health": "Blocked" });
+  });
+  test("relabel swaps the old value for the new one (PIL-01: one value, held once)", () => {
+    expect(relabel(["health:On track", "x"], "Delivery health", "Blocked")).toEqual({ remove: ["health:On track"], add: ["health:Blocked"] });
+    expect(relabel(["health:Blocked"], "Delivery health", "Blocked")).toEqual({ remove: [], add: [] });
+  });
+  test("refuses a value the field does not have", () => {
+    expect(() => relabel([], "Delivery health", "Fine")).toThrow();
+  });
+});

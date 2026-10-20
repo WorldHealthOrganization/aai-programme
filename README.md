@@ -45,17 +45,16 @@ It is a cat-harness instance named `aai-programme`, declared in [`aai-programme.
 
 ## Programme automations
 
-What runs on its own (AUTO-07). The scripts are in [`scripts/programme/`](scripts/programme/); their decisions are in `rules.ts`, tested in `rules.test.ts`; the workflow is [`programme-automations.yml`](.github/workflows/programme-automations.yml). Every script reruns safely and has `--dry-run` (AUTO-08). None sets Integration readiness, Review status, Risk category, Impact, a decision or a risk acceptance (AUTO-05).
+What runs on its own (AUTO-07). **No tokens** (owner, 2026-10-20): the programme fields are labels on the issues ([`fields.ts`](scripts/programme/fields.ts)), the automations write those labels with the workflow's own token, and [project 110](https://github.com/orgs/WorldHealthOrganization/projects/110), the programme project by the owner's decision of the same day, shows them ([set-up](docs/staging-project.md)). The scripts are in [`scripts/programme/`](scripts/programme/); their decisions are in `rules.ts`, tested in `rules.test.ts`; the workflow is [`programme-automations.yml`](.github/workflows/programme-automations.yml). Every script reruns safely and has `--dry-run` (AUTO-08). None sets Integration readiness, Review status, Risk category, Impact, a decision or a risk acceptance (AUTO-05).
 
 | Automation | Trigger | What it does | Scope | Owner |
 |---|---|---|---|---|
-| AUTO-01 auto-add | the project's own workflow | Adds programme-level items by type, and workstream items labelled `thin-slice`, `sprint-demo`, `blocked` or `at-risk` | the programme project | PM & Architecture Integration |
-| AUTO-03 Programme status | an issue opened, closed or reopened | Not started on a new programme item with no value; Done when closed as completed; Cancelled when closed as not planned; In progress when reopened | items on the programme project | PM & Architecture Integration |
-| AUTO-04 Delivery health | daily | Raises an epic's Delivery health to the worst `blocked` or `at-risk` label on its open sub-issues; never lowers it | open epics | the epic's owner lowers it |
-| AUTO-10 validation check | daily | An item Validated with no `Validation confirmed:` comment from the Technical Integration Lead gets `validation-exception` and one comment; the label goes when the comment appears or the value changes | items on the programme project | Technical Integration Lead |
-| AUTO-11 backfill | by hand (workflow_dispatch, `backfill`) | Adds existing qualifying issues that are not on the project yet | `repositories` in `config.json` | PM & Architecture Integration |
+| AUTO-01 add to the board | by hand in project 110 | Programme-level items by type, and workstream items labelled `thin-slice`, `sprint-demo`, `blocked` or `at-risk`. 110's auto-add cannot read a repository outside WHO's organisation | project 110 | PM & Architecture Integration |
+| AUTO-03 Programme status | an issue opened, closed or reopened | `status:Not started` on a new programme item with no status; `Done` when closed as completed; `Cancelled` when closed as not planned; `In progress` when reopened | items on the board | PM & Architecture Integration |
+| AUTO-04 Delivery health | daily | Raises an open epic's `health:` label to the worst `blocked` or `at-risk` label on its open sub-issues; never lowers it | open epics | the epic's owner lowers it |
+| AUTO-10 validation check | daily | An item labelled `readiness:Validated` with no `Validation confirmed:` comment from the Technical Integration Lead gets `validation-exception` and one comment; the label goes when the comment appears or the value changes | items on the board | Technical Integration Lead |
 
-They need three settings before they can run: `project.number` and `technicalIntegrationLead` in [`scripts/programme/config.json`](scripts/programme/config.json), and the `PROGRAMME_TOKEN` secret. Until then each stops and says what is missing (AUTO-09).
+AUTO-10 needs `technicalIntegrationLead` in [`scripts/programme/config.json`](scripts/programme/config.json); until it is set, it stops and says so (AUTO-09). AUTO-11 (backfill) is not needed: nothing can add to 110 without a token, so items are added there by hand.
 
 ## Labels
 

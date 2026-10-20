@@ -13,9 +13,12 @@
  * none moves or changes existing operational work (section 12). Each body
  * carries a **Programme fields** table: what the staging project's fields
  * (section 7.4 fallback) are set to, because this repository's owner is a
- * personal account and has no issue fields. The type of each item is a
- * `type:` label for the same reason (docs/staging-project.md).
+ * personal account and has no issue fields. Each field the table sets is also
+ * a label (`programme/fields.ts`), since with no tokens the issue holds the
+ * values. The type of each item is a `type:` label for the same reason.
  */
+import { FIELDS, labelFor } from "./programme/fields.ts";
+
 const REPO = "litlfred/aai-programme";
 const DRY = process.argv.includes("--dry-run");
 
@@ -112,7 +115,12 @@ function bodyOf(item: Item): string {
   return `${item.body}\n\n**Programme fields** (set these in the staging project):\n\n| Field | Value |\n|---|---|\n${rows.join("\n")}\n\n_A pilot item (section 12), closed after the bulk import._\n`;
 }
 
-type Issue = { number: number; id: number; title: string };
+type Issue = { number: number; id: number; title: string; labels?: { name: string }[] };
+
+/** The item's labels plus one label per programme field it sets (no tokens: the issue holds the values). */
+function labelsOf(item: Item): string[] {
+  return [...item.labels, ...Object.entries(item.fields).filter(([f]) => f in FIELDS).map(([f, v]) => labelFor(f, v))];
+}
 const existing = new Map<string, Issue>();
 {
   try {
@@ -128,14 +136,21 @@ for (const item of ITEMS) {
   const found = existing.get(item.title);
   if (found) {
     byKey.set(item.key, found);
-    console.log(`exists  #${found.number} ${item.title}`);
+    const have = new Set((found.labels ?? []).map((l) => l.name));
+    const missing = labelsOf(item).filter((l) => !have.has(l));
+    if (!missing.length) console.log(`exists  #${found.number} ${item.title}`);
+    else if (DRY) console.log(`label   #${found.number} + ${missing.join(", ")}`);
+    else {
+      gh(["-X", "POST", `repos/${REPO}/issues/${found.number}/labels`, "--input", "-"], JSON.stringify({ labels: missing }));
+      console.log(`labelled #${found.number} + ${missing.join(", ")}`);
+    }
     continue;
   }
   if (DRY) {
     console.log(`create  ${item.title}  [${item.labels.join(", ")}]`);
     continue;
   }
-  const made = gh(["-X", "POST", `repos/${REPO}/issues`, "--input", "-"], JSON.stringify({ title: item.title, body: bodyOf(item), labels: item.labels })) as Issue;
+  const made = gh(["-X", "POST", `repos/${REPO}/issues`, "--input", "-"], JSON.stringify({ title: item.title, body: bodyOf(item), labels: labelsOf(item) })) as Issue;
   byKey.set(item.key, made);
   console.log(`created #${made.number} ${item.title}`);
 }
