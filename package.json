@@ -7,7 +7,8 @@
     "site:library": "bun run folio-assistant-core/scripts/build-library-site.ts --out",
     "site:build": "bun run cat-harness-tools/scripts/build-instance-site.ts --root . --instance aai-programme",
     "site:render-bpmn": "bun run cat render:bpmn",
-    "site:board": "bun run scripts/site-board.ts"
+    "site:board": "bun run scripts/site-board.ts",
+    "site:redirects": "bun run scripts/site-redirects.ts"
   },
   "_workspaces_comment": "The mounted code layers, as workspaces, as smart-ra lists them: they import each other by package name, and nothing publishes those packages.",
   "workspaces": [
