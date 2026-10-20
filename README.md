@@ -1,6 +1,10 @@
-# aai-programme (staged as aai-platform)
+# aai-programme
 
-Platform for the WHO Assured AI programme: shared hosting and engineering. Programme status is held on GitHub issues; see the programme set-up request, [litlfred/folio-assistant#2605](https://github.com/litlfred/folio-assistant/issues/2605).
+Coordination for the WHO Assured AI programme: the requirements, the processes that build the programme's GitHub set-up, and the combined work plan. Staged here, in `litlfred/aai-programme`, until the owner syncs it to the WHO organisation. Programme status is held on GitHub issues; see the programme set-up request, [litlfred/folio-assistant#2605](https://github.com/litlfred/folio-assistant/issues/2605).
+
+The site is at <https://litlfred.github.io/aai-programme/>, and each pull request's preview at `STAGING/<branch>/` under it.
+
+Until Platform has a repository of its own, its scope is recorded here.
 
 ## What Platform is
 
