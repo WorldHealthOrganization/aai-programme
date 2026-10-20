@@ -1,4 +1,4 @@
-# aai-platform
+# aai-programme (staged as aai-platform)
 
 Platform for the WHO Assured AI programme: shared hosting and engineering. Programme status is held on GitHub issues; see the programme set-up request, [litlfred/folio-assistant#2605](https://github.com/litlfred/folio-assistant/issues/2605).
 
@@ -28,6 +28,15 @@ The Platform board of record is the **issues** on the programme and Platform pro
 - **Going back.** An issue that turns out to be agent housekeeping is closed as not planned, with a link to the bean that carries on the work.
 
 The board below counts open beans without an issue, so the gaps stay visible.
+
+## This repository is a knowledge graph
+
+It is a cat-harness instance named `aai-programme`, declared in [`aai-programme.json`](aai-programme.json). It holds:
+
+- **`processes/`**: the programme's processes as BPMN, starting with the build sequence. See [`processes/README.md`](processes/README.md).
+- **`beans/`**: the work plan, kept on the branch `cat/aai-platform/beans`.
+
+[`index.config.json`](index.config.json) lists the other knowledge graphs whose work plans the board reviews, each pinned to a commit and limited to its `beans` directory. Each pin is fetched only once the owner approves it. Until that list has been tested, `beans-sources.json` and `scripts/pull-beans.ts` still build the board.
 
 ## Labels
 

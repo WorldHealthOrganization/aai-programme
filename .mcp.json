@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "folio-assistant": {
+      "command": "bun",
+      "args": [
+        "run",
+        "folio-assistant/cat-harness-tools/src/index.ts",
+        "--stdio",
+        "--repo",
+        "."
+      ]
+    }
+  }
+}

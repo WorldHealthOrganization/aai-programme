@@ -1,0 +1,17 @@
+# Publish this instance's JSON-LD context to gh-pages, at
+# <iriBase>ns/context/v1.jsonld, on every push to main. Everything is decided in
+# the reusable workflow; it creates gh-pages on its first run if it is absent.
+# GitHub Pages is switched on once, by hand, after that first run:
+# Settings -> Pages -> "Deploy from a branch: gh-pages, / (root)".
+name: Publish JSON-LD context
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish:
+    uses: litlfred/cat-harness-tools/.github/workflows/layer-publish-context.yml@main
+    with:
+      instance: aai-programme

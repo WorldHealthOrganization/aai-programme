@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  xmlns:cat-harness.processes="https://litlfred.github.io/cat-harness/0.1.0/processes/ns#"
+                  id="Definitions_AAI_Build" targetNamespace="https://litlfred.github.io/aai-programme/workflows"
+                  exporter="folio-assistant" exporterVersion="1">
+  <bpmn:resource id="pm-architecture-integration" name="PM &amp; Architecture Integration"/>
+  <bpmn:resource id="who-github-owner" name="WHO GitHub owner"/>
+  <bpmn:resource id="build-agent" name="Build agent"/>
+  <bpmn:resource id="technical-integration-lead" name="Technical Integration Lead"/>
+  <bpmn:collaboration id="Collaboration_AAI_Build">
+    <bpmn:participant id="Participant_AAI_Build" name="Assured AI programme: build the GitHub set-up" processRef="Process_AAI_Build"/>
+  </bpmn:collaboration>
+  <bpmn:process id="Process_AAI_Build" name="Assured AI programme: build the GitHub set-up" isExecutable="false">
+    <bpmn:documentation>Build the shared programme project, its repositories and automations in the order section 13 of the programme requirements sets, stopping wherever a decision, a credential or a pilot test is missing. Nothing past pre-flight is created until the decisions for that step are confirmed, and nothing is bulk-imported until every pilot test passes.</bpmn:documentation>
+    <bpmn:extensionElements>
+      <cat-harness.processes:policy enforcement="strict"/>
+    </bpmn:extensionElements>
+    <bpmn:laneSet id="LaneSet_AAI_Build">
+      <bpmn:lane id="Lane_PM" name="PM &amp; Architecture Integration" partitionElementRef="pm-architecture-integration">
+        <bpmn:documentation>Owns sequencing, dates, dependencies, evidence and escalation, and supplies the section 14 inputs. Does not make technical readiness judgements (DP-05).</bpmn:documentation>
+        <bpmn:flowNodeRef>Start_AAI_Build</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>A_Inputs</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>End_AAI_Build</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_Owner" name="WHO GitHub owner" partitionElementRef="who-github-owner">
+        <bpmn:documentation>Answers the section 3 decisions and runs organisation-level changes only an owner can make: issue types, issue fields and credentials (BD-05, BD-08).</bpmn:documentation>
+        <bpmn:flowNodeRef>A_Decide</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>A_OrgSetup</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_Agent" name="Build agent" partitionElementRef="build-agent">
+        <bpmn:documentation>Builds what the decisions allow and stops where the requirements say to stop. Never invents users, teams, repositories, dates or field values (section 14).</bpmn:documentation>
+        <bpmn:flowNodeRef>A_Preflight</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>GW_Decided</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>A_Repos</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>A_Projects</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>A_Readmes</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>GW_Creds</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>End_StopCreds</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>A_Automations</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>A_Pilot</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>GW_Pilot</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>End_StopPilot</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>A_Import</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>A_Charts</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>A_Report</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_TIL" name="Technical Integration Lead" partitionElementRef="technical-integration-lead">
+        <bpmn:documentation>Confirms validation with a comment starting `Validation confirmed:` (DP-05, AUTO-10). Automation never sets Validated.</bpmn:documentation>
+        <bpmn:flowNodeRef>A_Validate</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="Start_AAI_Build" name="Build requested"/>
+    <bpmn:task id="A_Preflight" name="Step 1: pre-flight">
+      <bpmn:documentation>Inspect the organisation read-only: issue types, issue fields and headroom, project field counts, projects, teams, repository policies, SSO or EMU, and permissions. Reuse compatible configuration; create nothing that duplicates it (section 13 step 1).</bpmn:documentation>
+    </bpmn:task>
+    <bpmn:exclusiveGateway id="GW_Decided" name="Decisions for the next step confirmed?">
+      <bpmn:documentation>Answered from the section 3 decision record: is every decision that step 2 onward depends on confirmed? `no` sends the open ones to the owner; nothing past pre-flight is built until they are.</bpmn:documentation>
+    </bpmn:exclusiveGateway>
+    <bpmn:task id="A_Decide" name="Answer the open BD decisions">
+      <bpmn:documentation>BD-01a, BD-03a, BD-03b, BD-05, BD-06 and BD-08, each with its recommended default unless the owner says otherwise. The answers are recorded on the programme issue.</bpmn:documentation>
+    </bpmn:task>
+    <bpmn:task id="A_OrgSetup" name="Step 2: create or reuse issue types and fields">
+      <bpmn:documentation>Create or reuse the section 5.1 issue types (`AAI` prefix where new) and the section 7.1 issue fields, and pin them as section 5.3 says. If issue fields cannot be used, apply the section 7.4 fallback and record it.</bpmn:documentation>
+    </bpmn:task>
+    <bpmn:task id="A_Repos" name="Step 3: repositories, roles and labels">
+      <bpmn:documentation>Create `aai-programme`, `aai-pm` and the two workstream repositories the pilot needs, with the BD-04 roles and the section 7.3 labels. A workstream repository is created only once its lead is confirmed.</bpmn:documentation>
+    </bpmn:task>
+    <bpmn:task id="A_Projects" name="Step 4: programme project and template">
+      <bpmn:documentation>Create the programme project with views V1 to V13 in the listed order, and the workstream template from section 8.3.</bpmn:documentation>
+    </bpmn:task>
+    <bpmn:task id="A_Readmes" name="Step 5: READMEs and directory">
+      <bpmn:documentation>Write the READMEs (AC-10, AUTO-07, LINK-02, LINK-03, LINK-07) and create the pinned Workstream directory issue (LINK-01).</bpmn:documentation>
+    </bpmn:task>
+    <bpmn:exclusiveGateway id="GW_Creds" name="Automation credentials in place?">
+      <bpmn:documentation>Answered by whether the BD-08 credentials exist as an organisation secret. `no` stops and reports exactly which permission is needed (AUTO-09); the agent never creates credentials itself.</bpmn:documentation>
+    </bpmn:exclusiveGateway>
+    <bpmn:endEvent id="End_StopCreds" name="Stopped: credentials needed">
+      <bpmn:documentation>The build stops before step 6 and reports the permission it needs.</bpmn:documentation>
+    </bpmn:endEvent>
+    <bpmn:task id="A_Automations" name="Step 6: automations AUTO-01 to AUTO-11">
+      <bpmn:documentation>Set up the automations. Every script reruns safely and has `--dry-run` (AUTO-08). None sets readiness, review status, risk category, impact, a decision or risk acceptance (AUTO-05).</bpmn:documentation>
+    </bpmn:task>
+    <bpmn:task id="A_Pilot" name="Step 7: pilot build">
+      <bpmn:documentation>Build the section 12 pilot set from representative Assured AI items, each marked as a pilot, and run PIL-01 to PIL-11.</bpmn:documentation>
+    </bpmn:task>
+    <bpmn:task id="A_Validate" name="Confirm validation on the pilot item">
+      <bpmn:documentation>For PIL-07: post `Validation confirmed:` with the evidence on the pilot item, so AUTO-10 removes the `validation-exception` label.</bpmn:documentation>
+    </bpmn:task>
+    <bpmn:exclusiveGateway id="GW_Pilot" name="Every pilot test passed?">
+      <bpmn:documentation>Answered by the PIL-01 to PIL-11 results. `no` stops the build and reports the failure; there is no bulk import after a failed pilot.</bpmn:documentation>
+    </bpmn:exclusiveGateway>
+    <bpmn:endEvent id="End_StopPilot" name="Stopped: a pilot test failed">
+      <bpmn:documentation>The build stops and reports which pilot test failed.</bpmn:documentation>
+    </bpmn:endEvent>
+    <bpmn:task id="A_Inputs" name="Provide the section 14 inputs">
+      <bpmn:documentation>The epics CSV reviewed by each lead, the Gates output list, R1 to R7, the dependency register with restricted content removed, the directory details, and the needed GitHub usernames.</bpmn:documentation>
+    </bpmn:task>
+    <bpmn:task id="A_Import" name="Step 8: bulk import and backfill">
+      <bpmn:documentation>Import the inputs, leaving missing values empty and listing them, then run the AUTO-11 backfill.</bpmn:documentation>
+    </bpmn:task>
+    <bpmn:task id="A_Charts" name="Step 9: charts and acceptance checks">
+      <bpmn:documentation>Build charts M1 to M5, or record which cannot be built natively, and check AC-01 to AC-19.</bpmn:documentation>
+    </bpmn:task>
+    <bpmn:task id="A_Report" name="Step 10: build report">
+      <bpmn:documentation>Hand back the section 16 report.</bpmn:documentation>
+    </bpmn:task>
+    <bpmn:endEvent id="End_AAI_Build" name="Build report handed back"/>
+    <bpmn:sequenceFlow id="SF_AAI_Build_1" sourceRef="Start_AAI_Build" targetRef="A_Preflight"/>
+    <bpmn:sequenceFlow id="SF_AAI_Build_2" sourceRef="A_Preflight" targetRef="GW_Decided"/>
+    <bpmn:sequenceFlow id="SF_AAI_Build_3" name="no" sourceRef="GW_Decided" targetRef="A_Decide"/>
+    <bpmn:sequenceFlow id="SF_AAI_Build_4" sourceRef="A_Decide" targetRef="A_Preflight"/>
+    <bpmn:sequenceFlow id="SF_AAI_Build_5" name="yes" sourceRef="GW_Decided" targetRef="A_OrgSetup"/>
+    <bpmn:sequenceFlow id="SF_AAI_Build_6" sourceRef="A_OrgSetup" targetRef="A_Repos"/>
+    <bpmn:sequenceFlow id="SF_AAI_Build_7" sourceRef="A_Repos" targetRef="A_Projects"/>
+    <bpmn:sequenceFlow id="SF_AAI_Build_8" sourceRef="A_Projects" targetRef="A_Readmes"/>
+    <bpmn:sequenceFlow id="SF_AAI_Build_9" sourceRef="A_Readmes" targetRef="GW_Creds"/>
+    <bpmn:sequenceFlow id="SF_AAI_Build_10" name="no" sourceRef="GW_Creds" targetRef="End_StopCreds"/>
+    <bpmn:sequenceFlow id="SF_AAI_Build_11" name="yes" sourceRef="GW_Creds" targetRef="A_Automations"/>
+    <bpmn:sequenceFlow id="SF_AAI_Build_12" sourceRef="A_Automations" targetRef="A_Pilot"/>
+    <bpmn:sequenceFlow id="SF_AAI_Build_13" sourceRef="A_Pilot" targetRef="A_Validate"/>
+    <bpmn:sequenceFlow id="SF_AAI_Build_14" sourceRef="A_Validate" targetRef="GW_Pilot"/>
+    <bpmn:sequenceFlow id="SF_AAI_Build_15" name="no" sourceRef="GW_Pilot" targetRef="End_StopPilot"/>
+    <bpmn:sequenceFlow id="SF_AAI_Build_16" name="yes" sourceRef="GW_Pilot" targetRef="A_Inputs"/>
+    <bpmn:sequenceFlow id="SF_AAI_Build_17" sourceRef="A_Inputs" targetRef="A_Import"/>
+    <bpmn:sequenceFlow id="SF_AAI_Build_18" sourceRef="A_Import" targetRef="A_Charts"/>
+    <bpmn:sequenceFlow id="SF_AAI_Build_19" sourceRef="A_Charts" targetRef="A_Report"/>
+    <bpmn:sequenceFlow id="SF_AAI_Build_20" sourceRef="A_Report" targetRef="End_AAI_Build"/>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="Diagram_AAI_Build">
+    <bpmndi:BPMNPlane id="Plane_AAI_Build" bpmnElement="Collaboration_AAI_Build">
+      <bpmndi:BPMNShape id="Shape_Participant_AAI_Build" bpmnElement="Participant_AAI_Build" isHorizontal="true">
+        <dc:Bounds x="160" y="80" width="2710" height="680" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Lane_PM" bpmnElement="Lane_PM" isHorizontal="true">
+        <dc:Bounds x="190" y="80" width="2680" height="170" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Lane_Owner" bpmnElement="Lane_Owner" isHorizontal="true">
+        <dc:Bounds x="190" y="250" width="2680" height="170" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Lane_Agent" bpmnElement="Lane_Agent" isHorizontal="true">
+        <dc:Bounds x="190" y="420" width="2680" height="170" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Lane_TIL" bpmnElement="Lane_TIL" isHorizontal="true">
+        <dc:Bounds x="190" y="590" width="2680" height="170" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Start_AAI_Build" bpmnElement="Start_AAI_Build">
+        <dc:Bounds x="302" y="147" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_A_Preflight" bpmnElement="A_Preflight">
+        <dc:Bounds x="410" y="465" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_GW_Decided" bpmnElement="GW_Decided" isMarkerVisible="true">
+        <dc:Bounds x="595" y="480" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_A_Decide" bpmnElement="A_Decide">
+        <dc:Bounds x="560" y="295" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_A_OrgSetup" bpmnElement="A_OrgSetup">
+        <dc:Bounds x="710" y="295" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_A_Repos" bpmnElement="A_Repos">
+        <dc:Bounds x="860" y="465" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_A_Projects" bpmnElement="A_Projects">
+        <dc:Bounds x="1010" y="465" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_A_Readmes" bpmnElement="A_Readmes">
+        <dc:Bounds x="1160" y="465" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_GW_Creds" bpmnElement="GW_Creds" isMarkerVisible="true">
+        <dc:Bounds x="1345" y="480" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_End_StopCreds" bpmnElement="End_StopCreds">
+        <dc:Bounds x="1442" y="542" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_A_Automations" bpmnElement="A_Automations">
+        <dc:Bounds x="1460" y="465" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_A_Pilot" bpmnElement="A_Pilot">
+        <dc:Bounds x="1610" y="465" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_A_Validate" bpmnElement="A_Validate">
+        <dc:Bounds x="1760" y="635" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_GW_Pilot" bpmnElement="GW_Pilot" isMarkerVisible="true">
+        <dc:Bounds x="1945" y="480" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_End_StopPilot" bpmnElement="End_StopPilot">
+        <dc:Bounds x="2042" y="542" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_A_Inputs" bpmnElement="A_Inputs">
+        <dc:Bounds x="2060" y="125" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_A_Import" bpmnElement="A_Import">
+        <dc:Bounds x="2210" y="465" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_A_Charts" bpmnElement="A_Charts">
+        <dc:Bounds x="2360" y="465" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_A_Report" bpmnElement="A_Report">
+        <dc:Bounds x="2510" y="465" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_End_AAI_Build" bpmnElement="End_AAI_Build">
+        <dc:Bounds x="2702" y="147" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Build_1" bpmnElement="SF_AAI_Build_1">
+        <di:waypoint x="338" y="165" />
+        <di:waypoint x="374" y="165" />
+        <di:waypoint x="374" y="505" />
+        <di:waypoint x="410" y="505" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Build_2" bpmnElement="SF_AAI_Build_2">
+        <di:waypoint x="530" y="505" />
+        <di:waypoint x="595" y="505" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Build_3" bpmnElement="SF_AAI_Build_3">
+        <di:waypoint x="620" y="480" />
+        <di:waypoint x="620" y="375" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Build_4" bpmnElement="SF_AAI_Build_4">
+        <di:waypoint x="620" y="295" />
+        <di:waypoint x="620" y="445" />
+        <di:waypoint x="470" y="445" />
+        <di:waypoint x="470" y="465" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Build_5" bpmnElement="SF_AAI_Build_5">
+        <di:waypoint x="645" y="505" />
+        <di:waypoint x="677" y="505" />
+        <di:waypoint x="677" y="335" />
+        <di:waypoint x="710" y="335" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Build_6" bpmnElement="SF_AAI_Build_6">
+        <di:waypoint x="830" y="335" />
+        <di:waypoint x="845" y="335" />
+        <di:waypoint x="845" y="505" />
+        <di:waypoint x="860" y="505" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Build_7" bpmnElement="SF_AAI_Build_7">
+        <di:waypoint x="980" y="505" />
+        <di:waypoint x="1010" y="505" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Build_8" bpmnElement="SF_AAI_Build_8">
+        <di:waypoint x="1130" y="505" />
+        <di:waypoint x="1160" y="505" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Build_9" bpmnElement="SF_AAI_Build_9">
+        <di:waypoint x="1280" y="505" />
+        <di:waypoint x="1345" y="505" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Build_10" bpmnElement="SF_AAI_Build_10">
+        <di:waypoint x="1395" y="505" />
+        <di:waypoint x="1418" y="505" />
+        <di:waypoint x="1418" y="560" />
+        <di:waypoint x="1442" y="560" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Build_11" bpmnElement="SF_AAI_Build_11">
+        <di:waypoint x="1395" y="505" />
+        <di:waypoint x="1460" y="505" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Build_12" bpmnElement="SF_AAI_Build_12">
+        <di:waypoint x="1580" y="505" />
+        <di:waypoint x="1610" y="505" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Build_13" bpmnElement="SF_AAI_Build_13">
+        <di:waypoint x="1730" y="505" />
+        <di:waypoint x="1745" y="505" />
+        <di:waypoint x="1745" y="675" />
+        <di:waypoint x="1760" y="675" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Build_14" bpmnElement="SF_AAI_Build_14">
+        <di:waypoint x="1880" y="675" />
+        <di:waypoint x="1912" y="675" />
+        <di:waypoint x="1912" y="505" />
+        <di:waypoint x="1945" y="505" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Build_15" bpmnElement="SF_AAI_Build_15">
+        <di:waypoint x="1995" y="505" />
+        <di:waypoint x="2018" y="505" />
+        <di:waypoint x="2018" y="560" />
+        <di:waypoint x="2042" y="560" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Build_16" bpmnElement="SF_AAI_Build_16">
+        <di:waypoint x="1995" y="505" />
+        <di:waypoint x="2027" y="505" />
+        <di:waypoint x="2027" y="165" />
+        <di:waypoint x="2060" y="165" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Build_17" bpmnElement="SF_AAI_Build_17">
+        <di:waypoint x="2180" y="165" />
+        <di:waypoint x="2195" y="165" />
+        <di:waypoint x="2195" y="505" />
+        <di:waypoint x="2210" y="505" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Build_18" bpmnElement="SF_AAI_Build_18">
+        <di:waypoint x="2330" y="505" />
+        <di:waypoint x="2360" y="505" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Build_19" bpmnElement="SF_AAI_Build_19">
+        <di:waypoint x="2480" y="505" />
+        <di:waypoint x="2510" y="505" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Build_20" bpmnElement="SF_AAI_Build_20">
+        <di:waypoint x="2630" y="505" />
+        <di:waypoint x="2666" y="505" />
+        <di:waypoint x="2666" y="165" />
+        <di:waypoint x="2702" y="165" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

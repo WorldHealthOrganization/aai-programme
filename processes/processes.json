@@ -1,0 +1,5 @@
+{
+  "$schema": "concern-groups/v1",
+  "_comment": "aai-programme declares no concern group of its own: its diagrams are members of the groups cat-harness/processes/processes.json declares, by sitting at the same-named path (`process`).",
+  "groups": []
+}

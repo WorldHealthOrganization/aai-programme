@@ -1,0 +1,123 @@
+{
+  "$schema": "folio-index-config/v1",
+  "instances": [
+    {
+      "name": "aai-programme",
+      "source": {
+        "local": {
+          "at": "."
+        }
+      },
+      "dependencies": {
+        "folioAssistant": [
+          {
+            "name": "cat-harness",
+            "path": "folio-assistant/cat-harness"
+          },
+          {
+            "name": "cat-harness-tools",
+            "path": "folio-assistant/cat-harness-tools"
+          }
+        ]
+      },
+      "feedbackDir": ".folio-feedback",
+      "skills": ".claude/skills/local",
+      "viewer": {
+        "dir": "folio-assistant/cat-harness-tools/viewer",
+        "port": 8080
+      },
+      "readme": {
+        "linkStyle": "blob",
+        "publishRef": "gh-pages"
+      },
+      "_review_comment": "Replaces beans-sources.json (owner, 2026-10-20: \"if we did a KG, then we could just list those as remote KGs to review\"). Left out because they declare no beans directory: bootstrap, bootstrap-tools, folio-assistant-sci, fhir-harness, who-iris. folio-assistant is an index, not an instance; its beans arrive through cat-harness. qou is never mounted (owner, 2026-10-20)."
+    },
+    {
+      "name": "cat-harness",
+      "source": {
+        "remote": {
+          "repository": "litlfred/cat-harness",
+          "ref": "44e87adeaa7354910eaaa21072e62bd35b16f21f",
+          "overrides": {
+            "cat-harness": {
+              "directories": [
+                "beans"
+              ]
+            }
+          },
+          "note": "Reviewed for its work plan only (beans). Also holds folio-assistant's beans: folio-assistant keeps them on cat/cat-harness/beans. No trust recorded yet: the owner approves each pin before it is fetched."
+        }
+      }
+    },
+    {
+      "name": "cat-harness-tools",
+      "source": {
+        "remote": {
+          "repository": "litlfred/cat-harness-tools",
+          "ref": "3420b76c9c72eaadfa56ddd0ce2b004be120657a",
+          "overrides": {
+            "cat-harness-tools": {
+              "directories": [
+                "beans"
+              ]
+            }
+          },
+          "note": "Reviewed for its work plan only (beans). No trust recorded yet: the owner approves each pin before it is fetched."
+        }
+      }
+    },
+    {
+      "name": "folio-assistant-core",
+      "source": {
+        "remote": {
+          "repository": "litlfred/folio-assistant-core",
+          "ref": "b66b510356821b4b6d5e43c948fb79243d080083",
+          "overrides": {
+            "folio-assistant-core": {
+              "directories": [
+                "beans"
+              ]
+            }
+          },
+          "note": "Reviewed for its work plan only (beans). No trust recorded yet: the owner approves each pin before it is fetched."
+        }
+      }
+    },
+    {
+      "name": "dth-hrh",
+      "source": {
+        "remote": {
+          "repository": "litlfred/dth-hrh",
+          "ref": "0bd1c81657b269884c2a5c1962c7934e30fc1fef",
+          "overrides": {
+            "dth-hrh": {
+              "directories": [
+                "beans"
+              ]
+            }
+          },
+          "note": "Reviewed for its work plan only (beans). No trust recorded yet: the owner approves each pin before it is fetched."
+        }
+      }
+    },
+    {
+      "name": "dpi-h-ra",
+      "source": {
+        "remote": {
+          "repository": "litlfred/smart-ra",
+          "ref": "408bbfa969dd3536bba066b3ad7b304fce2881ee",
+          "overrides": {
+            "dpi-h-ra": {
+              "directories": [
+                "beans"
+              ]
+            }
+          },
+          "note": "smart-ra declares the instance dpi-h-ra. Reviewed for its work plan only (beans). No trust recorded yet: the owner approves each pin before it is fetched."
+        }
+      }
+    }
+  ],
+  "title": "aai-programme",
+  "description": "The Assured AI programme coordination instance, and the knowledge graphs whose work plans it reviews."
+}
