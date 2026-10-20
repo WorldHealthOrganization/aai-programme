@@ -54,4 +54,6 @@ writeFileSync(
     "",
   ].join("\n"),
 );
-console.log(`wrote ${rows.length} requirement page(s) and the index into ${dest}`);
+// The staging project's set-up, a page of its own beside the requirements.
+writeFileSync(join(out, "docs/staging-project.md"), `---\ntitle: Staging the programme project\n---\n\n${readFileSync(join(root, "docs/staging-project.md"), "utf8")}`);
+console.log(`wrote ${rows.length} requirement page(s), the index and the staging-project page into ${dest}`);
