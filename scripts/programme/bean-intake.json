@@ -1,0 +1,501 @@
+{
+  "$comment": "Programme issues for the beans that apply to the workstreams (beans analysis, 2026-10-20). Created by scripts/programme/create-items.ts; the beans themselves are not changed (owner: nothing that touches other repositories). A bean whose file URL is longer than 140 characters is named and linked by its folder: a longer URL does not survive being written from an agent session.",
+  "marker": "bean-intake",
+  "items": [
+    {
+      "key": "e1",
+      "title": "Epic proposal (WS1): WHO guidance into the L1 knowledge graph",
+      "labels": [
+        "proposal"
+      ],
+      "fields": {
+        "Workstream": "WS1 Knowledge graph",
+        "Pipeline stage": "KG Knowledge graph",
+        "Programme status": "Not started"
+      },
+      "body": "Ingest WHO guidance and the evidence behind it into the L1 knowledge graph: one ingestion pipeline from source documents to a complete library, extraction of guideline tables and recommendations into knowledge-graph nodes, the bibliography, and terminology checked against existing vocabularies. The immunizations L1 graph is the first instance.\n\nThis is an **epic proposal** (req:aai-linking#LINK-07): the PM & Architecture Integration accepts, amends or declines it. Once accepted it takes the `type:epic` label and appears in V1. Its features below are sub-issues."
+    },
+    {
+      "key": "e2",
+      "title": "Epic proposal (WS2): L1 and DAK authoring on the SMART stack",
+      "labels": [
+        "proposal"
+      ],
+      "fields": {
+        "Workstream": "WS2 Authoring",
+        "Pipeline stage": "L2 Operational (DAK)",
+        "Programme status": "Not started"
+      },
+      "body": "Author L2 operational content (the DAK) and the L1 document it comes from as document kinds, with their processes (BPMN), personas, data dictionary and process catalogues, and support for reviewing large documents. Builds on the SMART stack (core, FHIR harness, smart-base).\n\nThis is an **epic proposal** (req:aai-linking#LINK-07): the PM & Architecture Integration accepts, amends or declines it. Once accepted it takes the `type:epic` label and appears in V1. Its features below are sub-issues."
+    },
+    {
+      "key": "e3",
+      "title": "Epic proposal (WS3): evaluate outputs across models and routes",
+      "labels": [
+        "proposal",
+        "route:0",
+        "route:a",
+        "route:b"
+      ],
+      "fields": {
+        "Workstream": "WS3 Evaluation",
+        "Pipeline stage": "EVAL Evaluation",
+        "Programme status": "Not started"
+      },
+      "body": "Evaluate what the pipeline produces: outcome evaluation of runs across models, test data for subject-matter-expert review of decision support and indicators, fixed and generated data sets, and controlled experiments on how a run is managed. Feeds the comparison of Route 0, Route A and Route B with the Control route.\n\nThis is an **epic proposal** (req:aai-linking#LINK-07): the PM & Architecture Integration accepts, amends or declines it. Once accepted it takes the `type:epic` label and appears in V1. Its features below are sub-issues."
+    },
+    {
+      "key": "e4",
+      "title": "Epic proposal (WS4): translated renders and their review",
+      "labels": [
+        "proposal"
+      ],
+      "fields": {
+        "Workstream": "WS4 Localization",
+        "Pipeline stage": "LOC Localization",
+        "Programme status": "Not started"
+      },
+      "body": "Translate published renders and review the translations: the translation pipeline, authoring the translation catalogues, and adjudicating round-trip findings. Country adaptation of a DAK is not yet covered by any work item.\n\nThis is an **epic proposal** (req:aai-linking#LINK-07): the PM & Architecture Integration accepts, amends or declines it. Once accepted it takes the `type:epic` label and appears in V1. Its features below are sub-issues."
+    },
+    {
+      "key": "e5",
+      "title": "Epic proposal (Platform): deployment, publishing and the knowledge graph's publication",
+      "labels": [
+        "proposal"
+      ],
+      "fields": {
+        "Workstream": "Platform",
+        "Pipeline stage": "Cross-cutting / N/A",
+        "Programme status": "Not started"
+      },
+      "body": "Shared hosting and engineering: deployment topologies, agent-run publishing of the SMART IG repositories, tool contracts and releases for the health-skill (MCP) surface, and publishing the knowledge graph with a complete JSON-LD context.\n\nThis is an **epic proposal** (req:aai-linking#LINK-07): the PM & Architecture Integration accepts, amends or declines it. Once accepted it takes the `type:epic` label and appears in V1. Its features below are sub-issues."
+    },
+    {
+      "key": "ioa4",
+      "title": "Feature (WS1): Immunizations L1 knowledge graph from DAK Component 1",
+      "labels": [
+        "type:feature"
+      ],
+      "fields": {
+        "Workstream": "WS1 Knowledge graph",
+        "Pipeline stage": "KG Knowledge graph"
+      },
+      "parent": "e1",
+      "body": "The work is planned and tracked as bean [folio-assistant-ioa4](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-ioa4--x.md) in `litlfred/folio-assistant` (in-progress); this issue is its coordination record for the programme (BD-02a). The bean is not changed from here."
+    },
+    {
+      "key": "8pzh",
+      "title": "Feature (WS1): Extract L1 knowledge-graph nodes from guideline documents",
+      "labels": [
+        "type:feature"
+      ],
+      "fields": {
+        "Workstream": "WS1 Knowledge graph",
+        "Pipeline stage": "KG Knowledge graph"
+      },
+      "parent": "e1",
+      "body": "The work is planned and tracked as bean folio-assistant-8pzh ([its folder](https://github.com/litlfred/cat-harness/tree/cat/cat-harness/beans/beans/defs)) in `litlfred/cat-harness` (in-progress); this issue is its coordination record for the programme (BD-02a). The bean is not changed from here."
+    },
+    {
+      "key": "urat",
+      "title": "Feature (WS1): Tabular source data as CSVW, measured on real sources",
+      "labels": [
+        "type:feature"
+      ],
+      "fields": {
+        "Workstream": "WS1 Knowledge graph",
+        "Pipeline stage": "KG Knowledge graph"
+      },
+      "parent": "e1",
+      "body": "The work is planned and tracked as bean [folio-core-urat](https://github.com/litlfred/folio-assistant-core/blob/main/beans/defs/folio-core-urat--migrate-folio-tabular-recordsv1-to-folio-tabular-c.md) in `litlfred/folio-assistant-core` (in-progress); this issue is its coordination record for the programme (BD-02a). The bean is not changed from here."
+    },
+    {
+      "key": "slw1",
+      "title": "Feature (WS1): One ingestion pipeline from uploaded sources to a complete L1 library",
+      "labels": [
+        "type:feature"
+      ],
+      "fields": {
+        "Workstream": "WS1 Knowledge graph",
+        "Pipeline stage": "L1 Corpus"
+      },
+      "parent": "e1",
+      "body": "The work is planned and tracked as bean folio-assistant-slw1 ([its folder](https://github.com/litlfred/folio-assistant/tree/cat/cat-harness/beans/beans/defs)) in `litlfred/folio-assistant` (todo); this issue is its coordination record for the programme (BD-02a). The bean is not changed from here."
+    },
+    {
+      "key": "0lde",
+      "title": "Feature (WS1): Ingest the evidence behind a guideline (PICO, reviews, GRADE)",
+      "labels": [
+        "type:feature"
+      ],
+      "fields": {
+        "Workstream": "WS1 Knowledge graph",
+        "Pipeline stage": "L1 Corpus"
+      },
+      "parent": "e1",
+      "body": "The work is planned and tracked as bean folio-assistant-0lde ([its folder](https://github.com/litlfred/folio-assistant/tree/cat/cat-harness/beans/beans/defs)) in `litlfred/folio-assistant` (todo); this issue is its coordination record for the programme (BD-02a). The bean is not changed from here."
+    },
+    {
+      "key": "5yhm",
+      "title": "Feature (WS1): Check terminology against existing vocabularies, and adjudicate",
+      "labels": [
+        "type:feature"
+      ],
+      "fields": {
+        "Workstream": "WS1 Knowledge graph",
+        "Pipeline stage": "KG Knowledge graph"
+      },
+      "parent": "e1",
+      "body": "The work is planned and tracked as bean folio-assistant-5yhm ([its folder](https://github.com/litlfred/folio-assistant/tree/cat/cat-harness/beans/beans/defs)) in `litlfred/folio-assistant` (in-progress); this issue is its coordination record for the programme (BD-02a). The bean is not changed from here."
+    },
+    {
+      "key": "63q4",
+      "title": "Feature (WS1): Bibliography as knowledge-graph reference nodes",
+      "labels": [
+        "type:feature"
+      ],
+      "fields": {
+        "Workstream": "WS1 Knowledge graph",
+        "Pipeline stage": "KG Knowledge graph"
+      },
+      "parent": "e1",
+      "body": "The work is planned and tracked as bean folio-assistant-63q4 ([its folder](https://github.com/litlfred/folio-assistant/tree/cat/cat-harness/beans/beans/defs)) in `litlfred/folio-assistant` (in-progress); this issue is its coordination record for the programme (BD-02a). The bean is not changed from here."
+    },
+    {
+      "key": "qvxh",
+      "title": "Feature (WS2): L1 and DAK as document kinds in smart-base",
+      "labels": [
+        "type:feature"
+      ],
+      "fields": {
+        "Workstream": "WS2 Authoring",
+        "Pipeline stage": "L2 Operational (DAK)"
+      },
+      "parent": "e2",
+      "body": "The work is planned and tracked as bean folio-assistant-qvxh ([its folder](https://github.com/litlfred/folio-assistant/tree/cat/cat-harness/beans/beans/defs)) in `litlfred/folio-assistant` (in-progress); this issue is its coordination record for the programme (BD-02a). The bean is not changed from here."
+    },
+    {
+      "key": "cz17",
+      "title": "Feature (WS2): The DAK type, with its Logical Model",
+      "labels": [
+        "type:feature"
+      ],
+      "fields": {
+        "Workstream": "WS2 Authoring",
+        "Pipeline stage": "L2 Operational (DAK)"
+      },
+      "parent": "e2",
+      "body": "The work is planned and tracked as bean folio-assistant-cz17 ([its folder](https://github.com/litlfred/folio-assistant-core/tree/main/beans/defs)) in `litlfred/folio-assistant-core` (todo); this issue is its coordination record for the programme (BD-02a). The bean is not changed from here."
+    },
+    {
+      "key": "96y4",
+      "title": "Feature (WS2): Immunizations business processes as BPMN",
+      "labels": [
+        "type:feature"
+      ],
+      "fields": {
+        "Workstream": "WS2 Authoring",
+        "Pipeline stage": "L2 Operational (DAK)"
+      },
+      "parent": "e2",
+      "body": "The work is planned and tracked as bean folio-assistant-96y4 ([its folder](https://github.com/litlfred/folio-assistant/tree/cat/cat-harness/beans/beans/defs)) in `litlfred/folio-assistant` (in-progress); this issue is its coordination record for the programme (BD-02a). The bean is not changed from here."
+    },
+    {
+      "key": "cydz",
+      "title": "Feature (WS2): Link IG personas to BPMN swimlanes",
+      "labels": [
+        "type:feature"
+      ],
+      "fields": {
+        "Workstream": "WS2 Authoring",
+        "Pipeline stage": "L2 Operational (DAK)"
+      },
+      "parent": "e2",
+      "body": "The work is planned and tracked as bean folio-assistant-cydz ([its folder](https://github.com/litlfred/folio-assistant/tree/cat/cat-harness/beans/beans/defs)) in `litlfred/folio-assistant` (todo); this issue is its coordination record for the programme (BD-02a). The bean is not changed from here."
+    },
+    {
+      "key": "fm9n",
+      "title": "Feature (WS2): Data dictionary as a web annex in the knowledge graph",
+      "labels": [
+        "type:feature"
+      ],
+      "fields": {
+        "Workstream": "WS2 Authoring",
+        "Pipeline stage": "L2 Operational (DAK)"
+      },
+      "parent": "e2",
+      "body": "The work is planned and tracked as bean folio-assistant-fm9n ([its folder](https://github.com/litlfred/folio-assistant/tree/cat/cat-harness/beans/beans/defs)) in `litlfred/folio-assistant` (todo); this issue is its coordination record for the programme (BD-02a). The bean is not changed from here."
+    },
+    {
+      "key": "2ipj",
+      "title": "Feature (WS2): Process catalogues: clinical, public health and health system",
+      "labels": [
+        "type:feature"
+      ],
+      "fields": {
+        "Workstream": "WS2 Authoring",
+        "Pipeline stage": "L2 Operational (DAK)"
+      },
+      "parent": "e2",
+      "body": "The work is planned and tracked as bean folio-assistant-2ipj ([its folder](https://github.com/litlfred/folio-assistant/tree/cat/cat-harness/beans/beans/defs)) in `litlfred/folio-assistant` (todo); this issue is its coordination record for the programme (BD-02a). The bean is not changed from here."
+    },
+    {
+      "key": "4nfs",
+      "title": "Feature (WS2): Skills and processes for ontologists and terminologists",
+      "labels": [
+        "type:feature"
+      ],
+      "fields": {
+        "Workstream": "WS2 Authoring",
+        "Pipeline stage": "L2 Operational (DAK)"
+      },
+      "parent": "e2",
+      "body": "The work is planned and tracked as bean folio-assistant-4nfs ([its folder](https://github.com/litlfred/folio-assistant/tree/cat/cat-harness/beans/beans/defs)) in `litlfred/folio-assistant` (todo); this issue is its coordination record for the programme (BD-02a). The bean is not changed from here."
+    },
+    {
+      "key": "q4jm",
+      "title": "Feature (WS2): Review large documents such as a DAK",
+      "labels": [
+        "type:feature",
+        "needs-review"
+      ],
+      "fields": {
+        "Workstream": "WS2 Authoring",
+        "Pipeline stage": "L2 Operational (DAK)"
+      },
+      "parent": "e2",
+      "body": "The work is planned and tracked as bean folio-assistant-q4jm ([its folder](https://github.com/litlfred/folio-assistant/tree/cat/cat-harness/beans/beans/defs)) in `litlfred/folio-assistant` (todo); this issue is its coordination record for the programme (BD-02a). The bean is not changed from here."
+    },
+    {
+      "key": "oz9e",
+      "title": "Feature (WS3): Outcome evaluation of runs across models",
+      "labels": [
+        "type:feature",
+        "route:0",
+        "route:a",
+        "route:b"
+      ],
+      "fields": {
+        "Workstream": "WS3 Evaluation",
+        "Pipeline stage": "EVAL Evaluation"
+      },
+      "parent": "e3",
+      "body": "The work is planned and tracked as bean folio-assistant-oz9e ([its folder](https://github.com/litlfred/folio-assistant/tree/cat/cat-harness/beans/beans/defs)) in `litlfred/folio-assistant` (todo); this issue is its coordination record for the programme (BD-02a). The bean is not changed from here."
+    },
+    {
+      "key": "vljz",
+      "title": "Feature (WS3): Test data for SME review of decision support and indicators",
+      "labels": [
+        "type:feature",
+        "route:control",
+        "needs-review"
+      ],
+      "fields": {
+        "Workstream": "WS3 Evaluation",
+        "Pipeline stage": "EVAL Evaluation",
+        "Review type": "SME sign-off",
+        "Review status": "Not submitted"
+      },
+      "parent": "e3",
+      "body": "The work is planned and tracked as bean folio-assistant-vljz ([its folder](https://github.com/litlfred/folio-assistant/tree/cat/cat-harness/beans/beans/defs)) in `litlfred/folio-assistant` (todo); this issue is its coordination record for the programme (BD-02a). The bean is not changed from here."
+    },
+    {
+      "key": "vm6m",
+      "title": "Feature (WS3): Fixed and generated test data sets",
+      "labels": [
+        "type:feature"
+      ],
+      "fields": {
+        "Workstream": "WS3 Evaluation",
+        "Pipeline stage": "EVAL Evaluation"
+      },
+      "parent": "e3",
+      "body": "The work is planned and tracked as bean folio-assistant-vm6m ([its folder](https://github.com/litlfred/folio-assistant/tree/cat/cat-harness/beans/beans/defs)) in `litlfred/folio-assistant` (todo); this issue is its coordination record for the programme (BD-02a). The bean is not changed from here."
+    },
+    {
+      "key": "502c",
+      "title": "Feature (WS3): Experiment: a run forced along its process versus one that manages it",
+      "labels": [
+        "type:feature"
+      ],
+      "fields": {
+        "Workstream": "WS3 Evaluation",
+        "Pipeline stage": "EVAL Evaluation"
+      },
+      "parent": "e3",
+      "body": "The work is planned and tracked as bean folio-assistant-502c ([its folder](https://github.com/litlfred/folio-assistant/tree/cat/cat-harness/beans/beans/defs)) in `litlfred/folio-assistant` (todo); this issue is its coordination record for the programme (BD-02a). The bean is not changed from here."
+    },
+    {
+      "key": "m4s1",
+      "title": "Feature (WS4): Author the 36 translation catalogues",
+      "labels": [
+        "type:feature",
+        "needs-review"
+      ],
+      "fields": {
+        "Workstream": "WS4 Localization",
+        "Pipeline stage": "LOC Localization"
+      },
+      "parent": "e4",
+      "body": "The work is planned and tracked as bean folio-assistant-m4s1 ([its folder](https://github.com/litlfred/folio-assistant/tree/cat/cat-harness/beans/beans/defs)) in `litlfred/folio-assistant` (todo); this issue is its coordination record for the programme (BD-02a). The bean is not changed from here."
+    },
+    {
+      "key": "2mb0",
+      "title": "Feature (WS4): Adjudicate the 68 round-trip translation findings",
+      "labels": [
+        "type:feature",
+        "needs-review"
+      ],
+      "fields": {
+        "Workstream": "WS4 Localization",
+        "Pipeline stage": "LOC Localization"
+      },
+      "parent": "e4",
+      "body": "The work is planned and tracked as bean [folio-core-2mb0](https://github.com/litlfred/folio-assistant-core/blob/main/beans/defs/folio-core-2mb0--adjudicate-the-68-round-trip-findings-on-who-iriss.md) in `litlfred/folio-assistant-core` (todo); this issue is its coordination record for the programme (BD-02a). The bean is not changed from here."
+    },
+    {
+      "key": "5a3l",
+      "title": "Feature (Platform): Deployment topologies and operating modes",
+      "labels": [
+        "type:feature"
+      ],
+      "fields": {
+        "Workstream": "Platform",
+        "Pipeline stage": "Cross-cutting / N/A"
+      },
+      "parent": "e5",
+      "body": "The work is planned and tracked as bean folio-assistant-5a3l ([its folder](https://github.com/litlfred/folio-assistant/tree/cat/cat-harness/beans/beans/defs)) in `litlfred/folio-assistant` (in-progress); this issue is its coordination record for the programme (BD-02a). The bean is not changed from here."
+    },
+    {
+      "key": "n3h9",
+      "title": "Feature (Platform): Agent-run publishing for the SMART IG repositories",
+      "labels": [
+        "type:feature"
+      ],
+      "fields": {
+        "Workstream": "Platform",
+        "Pipeline stage": "L3 Computable (FHIR/CQL)"
+      },
+      "parent": "e5",
+      "body": "The work is planned and tracked as bean folio-assistant-n3h9 ([its folder](https://github.com/litlfred/folio-assistant/tree/cat/cat-harness/beans/beans/defs)) in `litlfred/folio-assistant` (in-progress); this issue is its coordination record for the programme (BD-02a). The bean is not changed from here."
+    },
+    {
+      "key": "jut3",
+      "title": "Feature (Platform): Render SMART IG pages with the site's own theme",
+      "labels": [
+        "type:feature"
+      ],
+      "fields": {
+        "Workstream": "Platform",
+        "Pipeline stage": "L3 Computable (FHIR/CQL)"
+      },
+      "parent": "e5",
+      "body": "The work is planned and tracked as bean folio-assistant-jut3 ([its folder](https://github.com/litlfred/folio-assistant/tree/cat/cat-harness/beans/beans/defs)) in `litlfred/folio-assistant` (in-progress); this issue is its coordination record for the programme (BD-02a). The bean is not changed from here."
+    },
+    {
+      "key": "tdir",
+      "title": "Feature (Platform): Tool contracts as published JSON Schema (the MCP surface)",
+      "labels": [
+        "type:feature"
+      ],
+      "fields": {
+        "Workstream": "Platform",
+        "Pipeline stage": "L5 Health skills + MCP"
+      },
+      "parent": "e5",
+      "body": "The work is planned and tracked as bean folio-assistant-tdir ([its folder](https://github.com/litlfred/folio-assistant/tree/cat/cat-harness/beans/beans/defs)) in `litlfred/folio-assistant` (in-progress); this issue is its coordination record for the programme (BD-02a). The bean is not changed from here."
+    },
+    {
+      "key": "3sbm",
+      "title": "Feature (Platform): Named, versioned tool releases with provenance",
+      "labels": [
+        "type:feature"
+      ],
+      "fields": {
+        "Workstream": "Platform",
+        "Pipeline stage": "Cross-cutting / N/A"
+      },
+      "parent": "e5",
+      "body": "The work is planned and tracked as bean folio-assistant-3sbm ([its folder](https://github.com/litlfred/cat-harness/tree/cat/cat-harness/beans/beans/defs)) in `litlfred/cat-harness` (in-progress); this issue is its coordination record for the programme (BD-02a). The bean is not changed from here."
+    },
+    {
+      "key": "zzmr",
+      "title": "Feature (Platform): Publish the knowledge graph with a complete JSON-LD context",
+      "labels": [
+        "type:feature"
+      ],
+      "fields": {
+        "Workstream": "Platform",
+        "Pipeline stage": "KG Knowledge graph"
+      },
+      "parent": "e5",
+      "body": "The work is planned and tracked as bean folio-assistant-zzmr ([its folder](https://github.com/litlfred/folio-assistant/tree/cat/cat-harness/beans/beans/defs)) in `litlfred/folio-assistant` (in-progress); this issue is its coordination record for the programme (BD-02a). The bean is not changed from here."
+    },
+    {
+      "key": "dl9v6",
+      "title": "DEC-B1: Which CDN, if any, serves the WHO L1 corpus",
+      "labels": [
+        "type:decision"
+      ],
+      "fields": {
+        "Workstream": "Platform",
+        "Programme status": "Not started"
+      },
+      "body": "Whether a CDN layer sits in front of the WHO L1 corpus, and which.\n\nFrom bean(s) folio-assistant-l9v6 ([its folder](https://github.com/litlfred/folio-assistant/tree/cat/cat-harness/beans/beans/defs)). The decision and its outcome are recorded here; deliberation stays off GitHub (section 6). The DEC-number is a placeholder until the PM numbers it."
+    },
+    {
+      "key": "dsd5v",
+      "title": "DEC-B2: Where SPDX licence identifiers are used",
+      "labels": [
+        "type:decision"
+      ],
+      "fields": {
+        "Workstream": "WS5 Governance and stewardship",
+        "Programme status": "Not started"
+      },
+      "body": "Where SPDX 3 should, could and should not be used for the programme's content and code, including whether downstream consumers would read SPDX at all. Five owner decisions are pending in the bean.\n\nFrom bean(s) folio-assistant-sd5v ([its folder](https://github.com/litlfred/folio-assistant/tree/cat/cat-harness/beans/beans/defs)); folio-assistant-ffv7 ([its folder](https://github.com/litlfred/folio-assistant/tree/cat/cat-harness/beans/beans/defs)). The decision and its outcome are recorded here; deliberation stays off GitHub (section 6). The DEC-number is a placeholder until the PM numbers it."
+    },
+    {
+      "key": "dtopo",
+      "title": "DEC-B3: Review the sovereign and self-sovereign deployment proposals",
+      "labels": [
+        "type:decision"
+      ],
+      "fields": {
+        "Workstream": "Platform",
+        "Programme status": "Not started"
+      },
+      "body": "Review the two proposed deployment topologies: a sovereign cloud (hosted forge, jurisdiction-defined addresses) and self-sovereign (own infrastructure, inward-facing).\n\nFrom bean(s) folio-assistant-4y2i ([its folder](https://github.com/litlfred/folio-assistant/tree/cat/cat-harness/beans/beans/defs)); folio-assistant-61tg ([its folder](https://github.com/litlfred/folio-assistant/tree/cat/cat-harness/beans/beans/defs)). The decision and its outcome are recorded here; deliberation stays off GitHub (section 6). The DEC-number is a placeholder until the PM numbers it."
+    },
+    {
+      "key": "d53rv",
+      "title": "D-B1: Fetching IRIS PDFs and FHIR packages that the agents' environment cannot reach",
+      "labels": [
+        "type:dependency",
+        "at-risk"
+      ],
+      "fields": {
+        "Workstream": "WS1 Knowledge graph",
+        "Delivery health": "At risk",
+        "Risk category": "Technical",
+        "Impact": "High"
+      },
+      "body": "- Waiting workstream: WS1 Knowledge graph (also WS2 and Platform)\n- Waiting epic: the WS1 epic proposal\n- Depends on workstream: Platform\n- Depends on: a way for agents to fetch WHO IRIS documents and FHIR packages their environment blocks\n- Needed by: before the L1 ingestion of new guidance\n- Consequence if late: no new L1 sources; IG builds that need FHIR packages cannot run\n- Next action: Platform decides how agents get network access to these hosts; the Platform lead, once named\n- Owner: the PM & Architecture Integration\n\nFrom bean(s) folio-assistant-53rv ([its folder](https://github.com/litlfred/folio-assistant/tree/cat/cat-harness/beans/beans/defs)). The D-number is a placeholder until the PM numbers it."
+    },
+    {
+      "key": "dcz17",
+      "title": "D-B2: The DAK Logical Model, pending upstream",
+      "labels": [
+        "type:dependency",
+        "at-risk"
+      ],
+      "fields": {
+        "Workstream": "WS2 Authoring",
+        "Delivery health": "At risk",
+        "Risk category": "External",
+        "Impact": "Medium"
+      },
+      "body": "- Waiting workstream: WS2 Authoring\n- Waiting epic: the WS2 epic proposal\n- Depends on: the DAK Logical Model, owned upstream\n- Needed by: before the DAK type is final\n- Consequence if late: the DAK type stays provisional\n- Next action: confirm the upstream date with its owner; the WS2 lead, once named\n- Owner: the PM & Architecture Integration\n\nFrom bean(s) folio-assistant-cz17 ([its folder](https://github.com/litlfred/folio-assistant-core/tree/main/beans/defs)). The D-number is a placeholder until the PM numbers it."
+    }
+  ]
+}

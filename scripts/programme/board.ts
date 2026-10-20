@@ -32,10 +32,16 @@ const TODAY = new Date().toISOString().slice(0, 10);
 // ── read ──────────────────────────────────────────────────────────
 type Raw = { number: number; title: string; html_url: string; state: string; body: string | null; labels: { name: string }[]; assignees: { login: string }[]; sub_issues_summary?: { total: number; completed: number }; pull_request?: unknown };
 const items: BoardItem[] = [];
+/** Epic proposals awaiting the PM (LINK-07): not on the board until accepted, listed so they are seen. */
+const proposals: { item: BoardItem; features: number }[] = [];
 for (const repo of config.repositories) {
   for (const r of restAll<Raw>(`repos/${repo}/issues?state=all&per_page=100`)) {
     if (r.pull_request) continue;
     const labels = r.labels.map((l) => l.name);
+    if (labels.includes("proposal") && r.state === "open") {
+      proposals.push({ item: boardItem({ ...r, repo, labels, assignees: r.assignees.map((a) => a.login) }), features: r.sub_issues_summary?.total ?? 0 });
+      continue;
+    }
     if (!qualifies(labels, config.programmeTypes)) continue;
     let parent: number | undefined;
     if (!labels.some((l) => config.programmeTypes.includes(l))) {
@@ -186,6 +192,7 @@ writeFileSync(
   `---\ntitle: Programme board\n---\n\n${STYLE}\n\n# Programme board\n\nThe Assured AI programme's views and metrics (section 8), built from the issues' labels, with nothing kept by hand. The same issues show in [project 110](https://github.com/orgs/WorldHealthOrganization/projects/110).\n\n` +
     `## Views\n\n${table(["View", "Shows"], views.map((v) => [`[${v.id.toUpperCase()} ${v.name}](${v.id}.html)`, v.what]))}\n\n` +
     `## Metrics\n\n${metrics.map(([id, name, body]) => `### ${id} ${name}\n\n${body}`).join("\n\n")}\n\n` +
+    `## Proposals awaiting the PM\n\nEpics proposed by a workstream, for the PM & Architecture Integration to accept, amend or decline (req:aai-linking#LINK-07). They join V1 once accepted.\n\n${proposals.length ? table(["Proposal", "Workstream", "Pipeline stage", "Features"], proposals.map((p) => [link(p.item), f(p.item, "Workstream"), f(p.item, "Pipeline stage"), String(p.features)])) : "_None._"}\n\n` +
     `## Checks\n\n- **Every item has a Workstream** (req:aai-linking#LINK-06): ${noWs.length ? `**no** — ${noWs.map(link).join(", ")}` : "yes"}.\n- Items on the board: ${items.length} (AUTO-01's rule; a WS5 task with none of its labels stays off).\n\n_${stamp}_\n`,
 );
 console.log(`wrote ${OUT}: ${views.length} views, ${metrics.length} metrics, ${items.length} item(s)`);

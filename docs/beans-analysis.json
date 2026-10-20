@@ -1,0 +1,3379 @@
+[
+ {
+  "store": "aai",
+  "repo": "litlfred/aai-programme",
+  "id": "aai-platform-64nd",
+  "title": "Step 2: create or reuse the issue types and issue fields",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "aai-platform-7aw2",
+  "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+  "updated_at": "2026-10-20 17:00:00+00:00",
+  "ws": "AAI",
+  "stage": "X"
+ },
+ {
+  "store": "aai",
+  "repo": "litlfred/aai-programme",
+  "id": "aai-platform-r9vd",
+  "title": "Write requirements v0.4.2 from the 2026-10-20 decisions",
+  "status": "in-progress",
+  "type": "task",
+  "priority": "normal",
+  "parent": "aai-platform-7aw2",
+  "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+  "updated_at": "2026-10-20 18:00:00+00:00",
+  "ws": "AAI",
+  "stage": "X"
+ },
+ {
+  "store": "aai",
+  "repo": "litlfred/aai-programme",
+  "id": "aai-platform-wfvg",
+  "title": "Review the project 110 items with Ritika after the pilot",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "aai-platform-7aw2",
+  "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+  "updated_at": "2026-10-20 17:00:00+00:00",
+  "ws": "AAI",
+  "stage": "X"
+ },
+ {
+  "store": "aai",
+  "repo": "litlfred/aai-programme",
+  "id": "aai-platform-15r2",
+  "title": "Step 10: build report",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "aai-platform-7aw2",
+  "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+  "updated_at": "2026-10-20 17:00:00+00:00",
+  "ws": "AAI",
+  "stage": "X"
+ },
+ {
+  "store": "aai",
+  "repo": "litlfred/aai-programme",
+  "id": "aai-platform-p1bd",
+  "title": "Pull beans from the platform repositories into one board",
+  "status": "in-progress",
+  "type": "task",
+  "priority": "normal",
+  "parent": null,
+  "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+  "updated_at": "2026-10-20 14:00:00+00:00",
+  "ws": "AAI",
+  "stage": "X"
+ },
+ {
+  "store": "aai",
+  "repo": "litlfred/aai-programme",
+  "id": "aai-platform-kv50",
+  "title": "Answer dgv21: cross-workstream marking as fields, not labels",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "aai-platform-7aw2",
+  "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+  "updated_at": "2026-10-20 17:00:00+00:00",
+  "ws": "AAI",
+  "stage": "X"
+ },
+ {
+  "store": "aai",
+  "repo": "litlfred/aai-programme",
+  "id": "aai-platform-7aw2",
+  "title": "Build the Assured AI programme GitHub set-up (requirements v0.4.2)",
+  "status": "todo",
+  "type": "epic",
+  "priority": "normal",
+  "parent": null,
+  "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+  "updated_at": "2026-10-20 17:00:00+00:00",
+  "ws": "AAI",
+  "stage": "X"
+ },
+ {
+  "store": "aai",
+  "repo": "litlfred/aai-programme",
+  "id": "aai-platform-12jf",
+  "title": "Step 8: bulk import",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "aai-platform-7aw2",
+  "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+  "updated_at": "2026-10-20 17:00:00+00:00",
+  "ws": "AAI",
+  "stage": "X"
+ },
+ {
+  "store": "aai",
+  "repo": "litlfred/aai-programme",
+  "id": "aai-platform-s7wq",
+  "title": "Sync the fork to the WHO repository",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "aai-platform-7aw2",
+  "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+  "updated_at": "2026-10-20 16:00:00+00:00",
+  "ws": "AAI",
+  "stage": "X"
+ },
+ {
+  "store": "aai",
+  "repo": "litlfred/aai-programme",
+  "id": "aai-platform-7ba1",
+  "title": "Turn on issues in this repository",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "aai-platform-7aw2",
+  "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+  "updated_at": "2026-10-20 17:00:00+00:00",
+  "ws": "AAI",
+  "stage": "X"
+ },
+ {
+  "store": "aai",
+  "repo": "litlfred/aai-programme",
+  "id": "aai-platform-4oyq",
+  "title": "Agree the rule for when a bean becomes an issue",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "aai-platform-7aw2",
+  "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+  "updated_at": "2026-10-20 17:00:00+00:00",
+  "ws": "AAI",
+  "stage": "X"
+ },
+ {
+  "store": "aai",
+  "repo": "litlfred/aai-programme",
+  "id": "aai-platform-6o0v",
+  "title": "Rename aai-platform to aai-programme",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "aai-platform-7aw2",
+  "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+  "updated_at": "2026-10-20 17:00:00+00:00",
+  "ws": "AAI",
+  "stage": "X"
+ },
+ {
+  "store": "aai",
+  "repo": "litlfred/aai-programme",
+  "id": "aai-platform-kaoz",
+  "title": "Settle SEC-04 for a public aai-platform",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "aai-platform-7aw2",
+  "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+  "updated_at": "2026-10-20 18:00:00+00:00",
+  "ws": "AAI",
+  "stage": "X"
+ },
+ {
+  "store": "aai",
+  "repo": "litlfred/aai-programme",
+  "id": "aai-platform-l2kn",
+  "title": "Name the Platform lead and give them Maintain access",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "aai-platform-7aw2",
+  "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+  "updated_at": "2026-10-20 16:00:00+00:00",
+  "ws": "AAI",
+  "stage": "X"
+ },
+ {
+  "store": "aai",
+  "repo": "litlfred/aai-programme",
+  "id": "aai-platform-se78",
+  "title": "Step 9: charts M1 to M5 and acceptance criteria",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "aai-platform-7aw2",
+  "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+  "updated_at": "2026-10-20 17:00:00+00:00",
+  "ws": "AAI",
+  "stage": "X"
+ },
+ {
+  "store": "aai",
+  "repo": "litlfred/aai-programme",
+  "id": "aai-platform-g4tm",
+  "title": "Add the gates: labels",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "aai-platform-7aw2",
+  "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+  "updated_at": "2026-10-20 16:00:00+00:00",
+  "ws": "AAI",
+  "stage": "X"
+ },
+ {
+  "store": "aai",
+  "repo": "litlfred/aai-programme",
+  "id": "aai-platform-296c",
+  "title": "Step 3: repositories, roles and labels",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "aai-platform-7aw2",
+  "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+  "updated_at": "2026-10-20 17:00:00+00:00",
+  "ws": "AAI",
+  "stage": "X"
+ },
+ {
+  "store": "aai",
+  "repo": "litlfred/aai-programme",
+  "id": "aai-platform-55mk",
+  "title": "Step 7: pilot build and tests PIL-01 to PIL-11",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "aai-platform-7aw2",
+  "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+  "updated_at": "2026-10-20 17:00:00+00:00",
+  "ws": "AAI",
+  "stage": "X"
+ },
+ {
+  "store": "aai",
+  "repo": "litlfred/aai-programme",
+  "id": "aai-platform-ci17",
+  "title": "Step 6: automation scripts AUTO-01 to AUTO-11",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "aai-platform-7aw2",
+  "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+  "updated_at": "2026-10-20 17:00:00+00:00",
+  "ws": "AAI",
+  "stage": "X"
+ },
+ {
+  "store": "aai",
+  "repo": "litlfred/aai-programme",
+  "id": "aai-platform-oqd4",
+  "title": "Make this repository a cat-harness instance",
+  "status": "in-progress",
+  "type": "task",
+  "priority": "normal",
+  "parent": "aai-platform-7aw2",
+  "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+  "updated_at": "2026-10-20 18:00:00+00:00",
+  "ws": "AAI",
+  "stage": "X"
+ },
+ {
+  "store": "aai",
+  "repo": "litlfred/aai-programme",
+  "id": "aai-platform-uhe0",
+  "title": "Step 5: READMEs and the workstream directory issue",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "aai-platform-7aw2",
+  "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+  "updated_at": "2026-10-20 17:00:00+00:00",
+  "ws": "AAI",
+  "stage": "X"
+ },
+ {
+  "store": "aai",
+  "repo": "litlfred/aai-programme",
+  "id": "aai-platform-afe0",
+  "title": "Get the BD decisions from the WHO GitHub owners",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "aai-platform-7aw2",
+  "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+  "updated_at": "2026-10-20 17:00:00+00:00",
+  "ws": "AAI",
+  "stage": "X"
+ },
+ {
+  "store": "aai",
+  "repo": "litlfred/aai-programme",
+  "id": "aai-platform-b3vu",
+  "title": "Get the section 17 open points from the PM",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "aai-platform-7aw2",
+  "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+  "updated_at": "2026-10-20 17:00:00+00:00",
+  "ws": "AAI",
+  "stage": "X"
+ },
+ {
+  "store": "aai",
+  "repo": "litlfred/aai-programme",
+  "id": "aai-platform-ru5n",
+  "title": "Step 4: programme project and workstream template",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "aai-platform-7aw2",
+  "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+  "updated_at": "2026-10-20 17:00:00+00:00",
+  "ws": "AAI",
+  "stage": "X"
+ },
+ {
+  "store": "aai",
+  "repo": "litlfred/aai-programme",
+  "id": "aai-platform-wyr6",
+  "title": "Step 1: pre-flight check of the WHO organisation",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "aai-platform-7aw2",
+  "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+  "updated_at": "2026-10-20 17:00:00+00:00",
+  "ws": "AAI",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-1swy",
+  "title": "QA: verdicts, sidecars and the audited review record",
+  "status": "in-progress",
+  "type": "epic",
+  "priority": "normal",
+  "parent": "folio-assistant-rwmf",
+  "issue": null,
+  "updated_at": "2026-10-04 15:12:14+00:00",
+  "also": [
+   "ch",
+   "cht"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-9rq1",
+  "title": "ONE NAVBAR: every navbar capability is a harness feature, drawn by one mechanism on every layout (.side-bar, .fa-nav rail, viewer pages)",
+  "status": "todo",
+  "type": "feature",
+  "priority": "normal",
+  "parent": "folio-assistant-rwmf",
+  "issue": null,
+  "updated_at": "2026-10-05 08:39:49+00:00",
+  "also": [
+   "ch",
+   "cht"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-yxob",
+  "title": "Formal-edge extractor in folio-assistant-sci + generated blueprint export (#1492)",
+  "status": "in-progress",
+  "type": "feature",
+  "priority": "normal",
+  "parent": "folio-assistant-zzmr",
+  "issue": null,
+  "updated_at": "2026-09-29 23:29:01+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "ch",
+  "repo": "litlfred/cat-harness",
+  "id": "folio-assistant-rfuq",
+  "title": "S4 direction and placement: zero wrong-direction edges; placement PR2-PR9; 9umr finale",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-7x5n",
+  "issue": null,
+  "updated_at": "2026-10-16 06:30:00+00:00",
+  "also": [
+   "fa"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "cht",
+  "repo": "litlfred/cat-harness-tools",
+  "id": "folio-assistant-w8jq",
+  "title": "MERGE GATE (a): adversarial agentic code review is a required check on any agent-touched PR, with a committed verdict",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-nok9",
+  "issue": null,
+  "updated_at": "2026-10-20 15:20:36+00:00",
+  "also": [
+   "ch",
+   "fa"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-l9v6",
+  "title": "DECISION (proposed): which CDN layer, if any, in front of the WHO L1 corpus (slide 2, #1614)",
+  "status": "todo",
+  "type": "task",
+  "priority": null,
+  "parent": "folio-assistant-5a3l",
+  "issue": null,
+  "updated_at": "2026-09-30 17:47:45+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "PLAT",
+  "stage": "KG"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-4y2i",
+  "title": "TOPOLOGY: sovereign cloud \u2014 hosted forge, jurisdiction-defined URLs, L4-L5 data stores",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-5a3l",
+  "issue": null,
+  "updated_at": "2026-09-19 09:01:53+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "PLAT",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-8fq9",
+  "title": "Placement PR7: tests regroup by concern group, retargeted to cat-harness-tools/",
+  "status": "todo",
+  "type": "task",
+  "priority": null,
+  "parent": "folio-assistant-iirv",
+  "issue": null,
+  "updated_at": "2026-10-16 06:55:00+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-hajp",
+  "title": "INTERACTION: the asking rule is enforced by three layers, not remembered",
+  "status": "todo",
+  "type": "feature",
+  "priority": "normal",
+  "parent": "folio-assistant-ahvw",
+  "issue": null,
+  "updated_at": "2026-10-16 10:30:00+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-1xhc",
+  "title": "CI RELIABILITY: a gate that does not fire is indistinguishable from one that passed",
+  "status": "in-progress",
+  "type": "epic",
+  "priority": "normal",
+  "parent": "folio-assistant-rwmf",
+  "issue": null,
+  "updated_at": "2026-10-04 15:12:14+00:00",
+  "also": [
+   "ch",
+   "cht"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "ch",
+  "repo": "litlfred/cat-harness",
+  "id": "folio-assistant-xp72",
+  "title": "SCALE FIXTURE: a before/after large-document pair with a golden ChangeSet and a measured performance budget",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-q4jm",
+  "issue": null,
+  "updated_at": "2026-10-16 06:30:00+00:00",
+  "also": [
+   "fa",
+   "fac"
+  ],
+  "ws": "WS2",
+  "stage": "L2"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-30jr",
+  "title": "hfag's last three: declare the merge queue as a state graph, give it a viewer and tile, and record a train run",
+  "status": "in-progress",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-hfag",
+  "issue": null,
+  "updated_at": "2026-10-20 10:30:00+00:00",
+  "also": [
+   "ch",
+   "cht"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-2gst",
+  "title": "QA READERS F1: kg-audit reads its carried state (pair attestations, voice reviews, test runs) from qa-store \u2014 two false-cleans, and the kg-qa D2 split",
+  "status": "in-progress",
+  "type": "task",
+  "priority": "critical",
+  "parent": "folio-assistant-3fva",
+  "issue": null,
+  "updated_at": "2026-10-16 06:30:00+00:00",
+  "also": [
+   "ch",
+   "cht"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fac",
+  "repo": "litlfred/folio-assistant-core",
+  "id": "folio-assistant-v49e",
+  "title": "WORKFLOW VIEW: cat-harness folio shows where todos and beans sit in the BPMN/DMN, and where a process is breaking down",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-yj32",
+  "issue": null,
+  "updated_at": "2026-10-10 16:34:20+00:00",
+  "also": [
+   "ch",
+   "fa"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-fnx4",
+  "title": "KG SUBSCRIPTIONS: subscribe to an external KG, materialise chosen subgraphs, assets and harnesses; known substrates; visualizer",
+  "status": "in-progress",
+  "type": "epic",
+  "priority": "normal",
+  "parent": "folio-assistant-vuip",
+  "issue": null,
+  "updated_at": "2026-10-02 22:49:41+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "PLAT",
+  "stage": "KG"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-53rv",
+  "title": "NETWORK-ACCESS AGENT: fetch what this environment cannot reach (FHIR packages for the mirror, WHO guideline PDFs from IRIS, published IG outputs) and commit them to GitHub",
+  "status": "todo",
+  "type": "task",
+  "priority": "high",
+  "parent": "folio-assistant-ahvw",
+  "issue": null,
+  "updated_at": "2026-10-16 10:45:00+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "PLAT",
+  "stage": "L1"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-oycs",
+  "title": "Remove the legacy special-branch names (qa-reports, lake-cache/, fhir-ast/, state) once every remote is renamed to cat-",
+  "status": "todo",
+  "type": "task",
+  "priority": null,
+  "parent": "folio-assistant-fs43",
+  "issue": null,
+  "updated_at": "2026-10-02 18:10:08+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "ch",
+  "repo": "litlfred/cat-harness",
+  "id": "folio-assistant-8pzh",
+  "title": "smart-base: extract smart-kg L1 instance documents (publication, section, recommendation) from ingested guideline PDFs",
+  "status": "in-progress",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-qvxh",
+  "issue": null,
+  "updated_at": "2026-10-12 18:55:00+00:00",
+  "also": [
+   "fa"
+  ],
+  "ws": "WS1",
+  "stage": "KG"
+ },
+ {
+  "store": "cht",
+  "repo": "litlfred/cat-harness-tools",
+  "id": "folio-assistant-gp2f",
+  "title": "PAGE WEIGHT: move per-page nav, harness bar, icons, scripts and IG chrome CSS into shared cached assets (#1885)",
+  "status": "in-progress",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-rwmf",
+  "issue": null,
+  "updated_at": "2026-10-11 12:45:00+00:00",
+  "also": [
+   "ch",
+   "fa"
+  ],
+  "ws": "PLAT",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-fwtz",
+  "title": "docs-site must rebuild when the bean branch moves (ref + concurrency)",
+  "status": "todo",
+  "type": "task",
+  "priority": null,
+  "parent": "folio-assistant-fs43",
+  "issue": null,
+  "updated_at": "2026-10-16 06:30:00+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-o3xy",
+  "title": "UI & ACCESSIBILITY: the rendered site is the artefact a reader judges",
+  "status": "in-progress",
+  "type": "epic",
+  "priority": "normal",
+  "parent": "folio-assistant-rwmf",
+  "issue": null,
+  "updated_at": "2026-10-05 04:57:14+00:00",
+  "also": [
+   "ch",
+   "cht",
+   "fac"
+  ],
+  "ws": "PLAT",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-fm9n",
+  "title": "Data dictionary web annex: in the KG, loaded dynamically (not the full workbook)",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-uhkv",
+  "issue": null,
+  "updated_at": "2026-10-10 16:47:37+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "WS2",
+  "stage": "L2"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-3hk4",
+  "title": "QA-PUBLISH must publish real results once main holds none (5hox blocker)",
+  "status": "in-progress",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-3fva",
+  "issue": null,
+  "updated_at": "2026-10-16 10:30:00+00:00",
+  "also": [
+   "ch",
+   "cht"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fac",
+  "repo": "litlfred/folio-assistant-core",
+  "id": "folio-assistant-ckej",
+  "title": "CONJECTURE REGISTER: a register node per open problem, and a formal|identification field on conjecture() (folio-assistant-sci)",
+  "status": "todo",
+  "type": "feature",
+  "priority": "normal",
+  "parent": "folio-assistant-0lmb",
+  "issue": null,
+  "updated_at": "2026-10-10 16:34:20+00:00",
+  "also": [
+   "ch",
+   "fa"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "ch",
+  "repo": "litlfred/cat-harness",
+  "id": "folio-assistant-5xfr",
+  "title": "qou's pin bump must rename folio.config.json AND add qaAxes in the same commit, or it silently loses both",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-1swy",
+  "issue": null,
+  "updated_at": "2026-10-16 06:30:00+00:00",
+  "also": [
+   "fa",
+   "cht"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-tfqf",
+  "title": "QA READERS F6: docs site, staging and preview publish QA from qa-reports \u2014 silent shrink of /assets/qa and a false 965 to 2 count",
+  "status": "in-progress",
+  "type": "task",
+  "priority": "high",
+  "parent": "folio-assistant-3fva",
+  "issue": null,
+  "updated_at": "2026-10-16 06:30:00+00:00",
+  "also": [
+   "ch",
+   "cht"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "ch",
+  "repo": "litlfred/cat-harness",
+  "id": "folio-assistant-34cm",
+  "title": "The committed site build under cat-harness/docs/ is 44% of all merge conflicts, and the publish workflow rebuilds it anyway",
+  "status": "todo",
+  "type": "bug",
+  "priority": "normal",
+  "parent": "folio-assistant-hfag",
+  "issue": null,
+  "updated_at": "2026-10-16 06:30:00+00:00",
+  "also": [
+   "fa",
+   "cht"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-amom",
+  "title": "MODE: test/swarm \u2014 a stack of models over shared or independent work queues",
+  "status": "todo",
+  "type": "feature",
+  "priority": "normal",
+  "parent": "folio-assistant-5a3l",
+  "issue": null,
+  "updated_at": "2026-09-19 08:55:37+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "WS3",
+  "stage": "EVAL"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-fs43",
+  "title": "ARC: state graphs on a declared 'state' branch \u2014 beans, workflow instances, todos, issue-marks off main; 'which ref holds this graph' becomes a declaration",
+  "status": "in-progress",
+  "type": "epic",
+  "priority": "normal",
+  "parent": "folio-assistant-rwmf",
+  "issue": null,
+  "updated_at": "2026-10-04 15:12:14+00:00",
+  "also": [
+   "ch",
+   "cht"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-502c",
+  "title": "EXPERIMENT: forced along a BPMN vs managing it \u2014 do outcomes change, at what compute?",
+  "status": "todo",
+  "type": "task",
+  "priority": null,
+  "parent": "folio-assistant-ahvw",
+  "issue": null,
+  "updated_at": "2026-09-19 17:04:01+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "WS3",
+  "stage": "EVAL"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-46ob",
+  "title": "Missing viewers: 100 navbar rows read 'no viewer yet' across 47 kinds on the live site",
+  "status": "todo",
+  "type": "epic",
+  "priority": "normal",
+  "parent": "folio-assistant-rwmf",
+  "issue": null,
+  "updated_at": "2026-10-16 10:30:00+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-r0tm",
+  "title": "ADAPTERS CLOSURE (yj6r): ruling request \u2014 hoist adapters/document + adapters/paper across three instances; paper-first is FREE and the 15 was 16",
+  "status": "draft",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-vke6",
+  "issue": null,
+  "updated_at": "2026-09-30 11:08:23+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-mcsm",
+  "title": "Voice docs pages + WHO library ingestion: per-voice documentation, PDF extraction, JSON-LD graph (issue #208 follow-up)",
+  "status": "in-progress",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-slw1",
+  "issue": null,
+  "updated_at": "2026-10-06 18:26:10+00:00",
+  "also": [
+   "ch",
+   "fac"
+  ],
+  "ws": "WS1",
+  "stage": "L1"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-kpcl",
+  "title": "STREAM 4/4: trust the instruments \u2014 the stale-claim sweep, CI that does not fire, and the QA record (1xhc + 1swy + ahvw, 43 open beans)",
+  "status": "todo",
+  "type": "task",
+  "priority": "high",
+  "parent": "folio-assistant-ahvw",
+  "issue": null,
+  "updated_at": "2026-09-29 20:50:31+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-d308",
+  "title": "CODE DISPENSATION: 868 code files \u2192 13 Tool nodes, each bound to a BPMN task",
+  "status": "in-progress",
+  "type": "epic",
+  "priority": "normal",
+  "parent": "folio-assistant-zzmr",
+  "issue": null,
+  "updated_at": "2026-09-20 04:33:51+00:00",
+  "also": [
+   "ch",
+   "cht"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-mo75",
+  "title": "NAMED SUBGRAPH MOUNTS: hydrated metadata first, then a chosen set (nested ids, node sets, concern names) \u2014 the nn8e follow-up",
+  "status": "todo",
+  "type": "feature",
+  "priority": "normal",
+  "parent": "folio-assistant-fnx4",
+  "issue": null,
+  "updated_at": "2026-10-16 10:50:00+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-nn8e",
+  "title": "Remote mount replaces the bootstrap and bootstrap-tools submodules (MVP), issue 2462",
+  "status": "in-progress",
+  "type": "task",
+  "priority": "high",
+  "parent": "folio-assistant-0mpw",
+  "issue": null,
+  "updated_at": "2026-10-09 17:43:31+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "PLAT",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-nytj",
+  "title": "A sidecar records its auditor's hash, so two concurrent PRs go green alone and red together",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-1swy",
+  "issue": null,
+  "updated_at": "2026-10-16 10:30:00+00:00",
+  "also": [
+   "ch",
+   "cht"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-cydz",
+  "title": "IG personas cross-link to BPMN swimlanes, with a lane/persona QA check",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-uhkv",
+  "issue": null,
+  "updated_at": "2026-10-10 16:47:37+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "WS2",
+  "stage": "L2"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-p9bu",
+  "title": "Placement PR9: harness docs pages follow their subject to the owning instance",
+  "status": "in-progress",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-iirv",
+  "issue": null,
+  "updated_at": "2026-10-16 06:30:00+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-9hxd",
+  "title": "CREDENTIALS (iii): credentials/ declaration (needs, profile, registry) for bootstrap-tools and folio-assistant",
+  "status": "todo",
+  "type": "task",
+  "priority": null,
+  "parent": "folio-assistant-5a3l",
+  "issue": null,
+  "updated_at": "2026-10-16 10:10:00+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-vm6m",
+  "title": "TEST DATA: fixed and generated data sets as a skill family, specialised per content type",
+  "status": "todo",
+  "type": "feature",
+  "priority": "normal",
+  "parent": "folio-assistant-5a3l",
+  "issue": null,
+  "updated_at": "2026-10-01 08:00:56+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "WS3",
+  "stage": "EVAL"
+ },
+ {
+  "store": "ch",
+  "repo": "litlfred/cat-harness",
+  "id": "folio-assistant-0mpw",
+  "title": "Remote mount of a harness: declared directory with a remote source, defaults in the harness's own declaration",
+  "status": "in-progress",
+  "type": "feature",
+  "priority": "normal",
+  "parent": "folio-assistant-fnx4",
+  "issue": null,
+  "updated_at": "2026-10-12 16:28:09+00:00",
+  "also": [
+   "fa"
+  ],
+  "ws": "PLAT",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-jut3",
+  "title": "SMART-* VIA JUST-THE-DOCS: stop mounting IG Publisher HTML; render input/pages from post-processed JSON-LD + metadata through the Jekyll pipeline",
+  "status": "in-progress",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-uhkv",
+  "issue": null,
+  "updated_at": "2026-10-09 19:56:59+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "PLAT",
+  "stage": "L3"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-oqe3",
+  "title": "Gates: the 16 stale-check gates become compute-and-judge, with --against <ref> for new-vs-inherited findings",
+  "status": "in-progress",
+  "type": "feature",
+  "priority": "high",
+  "parent": "folio-assistant-3fva",
+  "issue": null,
+  "updated_at": "2026-10-16 06:30:00+00:00",
+  "also": [
+   "ch",
+   "cht"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "ch",
+  "repo": "litlfred/cat-harness",
+  "id": "folio-assistant-lx2s",
+  "title": "Feature-branch staging under gh-pages (issue #215)",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-1xhc",
+  "issue": null,
+  "updated_at": "2026-10-16 06:30:00+00:00",
+  "also": [
+   "fa",
+   "cht"
+  ],
+  "ws": "PLAT",
+  "stage": "X"
+ },
+ {
+  "store": "fac",
+  "repo": "litlfred/folio-assistant-core",
+  "id": "folio-assistant-d5f1",
+  "title": "INGEST: narrative description per image, localized, including images extracted from PDFs",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-slw1",
+  "issue": null,
+  "updated_at": "2026-10-10 16:34:20+00:00",
+  "also": [
+   "ch",
+   "fa"
+  ],
+  "ws": "WS1",
+  "stage": "L1"
+ },
+ {
+  "store": "ch",
+  "repo": "litlfred/cat-harness",
+  "id": "folio-assistant-3sbm",
+  "title": "TOOL RELEASES + PROFILES: named, versioned, hashed tool sets with per-tool runtimes; PROV-O log of what each run used; SPDX 3 as export",
+  "status": "in-progress",
+  "type": "feature",
+  "priority": "normal",
+  "parent": "folio-assistant-zzmr",
+  "issue": null,
+  "updated_at": "2026-10-12 18:35:00+00:00",
+  "also": [
+   "fa"
+  ],
+  "ws": "PLAT",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-oz9e",
+  "title": "BENCHMARK: outcome evaluation of harness runs across models (close B8 \u2014 accuracy, not only structure)",
+  "status": "todo",
+  "type": "feature",
+  "priority": "normal",
+  "parent": "folio-assistant-5a3l",
+  "issue": null,
+  "updated_at": "2026-09-29 21:32:03+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "WS3",
+  "stage": "EVAL"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-x80s",
+  "title": "INGEST: agent summaries of prose blocks, a QA sidecar drained slowly during ingestion",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-slw1",
+  "issue": null,
+  "updated_at": "2026-10-16 10:30:00+00:00",
+  "also": [
+   "ch",
+   "fac"
+  ],
+  "ws": "WS1",
+  "stage": "L1"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-ioa4",
+  "title": "Immunizations L1 knowledge graph from DAK Component 1; smart-kg L1 schema to Zod in smart-base",
+  "status": "in-progress",
+  "type": "feature",
+  "priority": "normal",
+  "parent": "folio-assistant-uhkv",
+  "issue": null,
+  "updated_at": "2026-10-06 08:58:14+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "WS1",
+  "stage": "KG"
+ },
+ {
+  "store": "ch",
+  "repo": "litlfred/cat-harness",
+  "id": "folio-assistant-1qrr",
+  "title": "FEATURE-STAGING: the workflow definition comes from the BASE but the checkout is the PR HEAD, so a newly-added step fails every branch that predates it",
+  "status": "todo",
+  "type": "bug",
+  "priority": "normal",
+  "parent": "folio-assistant-1xhc",
+  "issue": null,
+  "updated_at": "2026-10-16 06:30:00+00:00",
+  "also": [
+   "fa",
+   "cht"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-1dre",
+  "title": "PAGES SERVING PROBE: the instrument pages-publish-health counts, and it can only be built in CI because egress refuses every route from an agent",
+  "status": "in-progress",
+  "type": "feature",
+  "priority": null,
+  "parent": "folio-assistant-1xhc",
+  "issue": null,
+  "updated_at": "2026-10-16 06:30:00+00:00",
+  "also": [
+   "ch",
+   "cht"
+  ],
+  "ws": "PLAT",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-y4uj",
+  "title": "Ingest #1614 item 4 sources 7, 8, 11: FHIR TestPlan, ITB docs, CWA 16408, Gherkin ref, MCP spec, hmans/beans README",
+  "status": "in-progress",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-scfh",
+  "issue": null,
+  "updated_at": "2026-10-16 06:30:00+00:00",
+  "also": [
+   "ch",
+   "fac"
+  ],
+  "ws": "WS1",
+  "stage": "L1"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-5uyl",
+  "title": "Extract the immunizations L1 graph from DAK Component 1 into smart-immunizations/library",
+  "status": "in-progress",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-ioa4",
+  "issue": null,
+  "updated_at": "2026-10-06 09:39:52+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "WS1",
+  "stage": "KG"
+ },
+ {
+  "store": "ch",
+  "repo": "litlfred/cat-harness",
+  "id": "folio-assistant-w1gy",
+  "title": "Separation stage 5: QA both new repositories from fresh sibling clones",
+  "status": "todo",
+  "type": "task",
+  "priority": null,
+  "parent": "folio-assistant-iirv",
+  "issue": null,
+  "updated_at": "2026-10-16 06:30:00+00:00",
+  "also": [
+   "fa"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "ch",
+  "repo": "litlfred/cat-harness",
+  "id": "folio-assistant-txue",
+  "title": "S5 code out of cat-harness: stages 1a-1d (70lx absorbs w2gr 3b), 8lcl, y9r6, vj2p",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-7x5n",
+  "issue": null,
+  "updated_at": "2026-10-16 06:30:00+00:00",
+  "also": [
+   "fa"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-cy4p",
+  "title": "BPMN ENGINE: a Tool node, with downcompilation per coding agent",
+  "status": "in-progress",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-ahvw",
+  "issue": null,
+  "updated_at": "2026-10-16 13:55:00+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-n3h9",
+  "title": "HARNESS the smart-* IG repositories: index.config.json remote mounts, Actions gh-pages switched off, agent-run harnessed publish",
+  "status": "in-progress",
+  "type": "epic",
+  "priority": "high",
+  "parent": "folio-assistant-vuip",
+  "issue": null,
+  "updated_at": "2026-10-16 10:45:00+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "PLAT",
+  "stage": "L3"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-0lde",
+  "title": "L1 EVIDENCE: ingest the external evidence an L1 guideline computes from (PICO question sets, Cochrane/WHO systematic reviews, GRADE profiles)",
+  "status": "todo",
+  "type": "task",
+  "priority": null,
+  "parent": "folio-assistant-qvxh",
+  "issue": null,
+  "updated_at": "2026-10-04 10:13:24+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "WS1",
+  "stage": "L1"
+ },
+ {
+  "store": "cht",
+  "repo": "litlfred/cat-harness-tools",
+  "id": "folio-assistant-0dav",
+  "title": "QA READERS F2b: the eleven self-sidecar gates compute and judge; audit-coverage stops reporting a moved kind as empty",
+  "status": "todo",
+  "type": "task",
+  "priority": "high",
+  "parent": "folio-assistant-3fva",
+  "issue": null,
+  "updated_at": "2026-10-20 15:20:36+00:00",
+  "also": [
+   "ch",
+   "fa"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-8wj1",
+  "title": "QA READERS F4: block and translation read-modify-write writers stop dropping agent verdicts when the prior is absent \u2014 the block-qa D2 split",
+  "status": "in-progress",
+  "type": "task",
+  "priority": "critical",
+  "parent": "folio-assistant-3fva",
+  "issue": null,
+  "updated_at": "2026-10-16 06:30:00+00:00",
+  "also": [
+   "ch",
+   "cht"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-uhkv",
+  "title": "SMART STACK: core \u2192 fhir-harness \u2192 smart-base \u2192 {smart-l1, smart-dak, smart-ig}",
+  "status": "in-progress",
+  "type": "epic",
+  "priority": "high",
+  "parent": "folio-assistant-vuip",
+  "issue": null,
+  "updated_at": "2026-10-10 07:19:24+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "WS2",
+  "stage": "L3"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-rwmf",
+  "title": "GOAL 4 / PLATFORM: the harness's own reliability \u2014 gates, process, QA, merge pipeline, deployment \u2014 which every GOAL stands on",
+  "status": "in-progress",
+  "type": "milestone",
+  "priority": "high",
+  "parent": null,
+  "issue": null,
+  "updated_at": "2026-10-05 04:57:29+00:00",
+  "also": [
+   "ch",
+   "cht",
+   "fac"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-2upx",
+  "title": "DOCUMENTATION: one SDO voice, RFC 2119 requirement levels, and the pages the knowledge graph is missing",
+  "status": "in-progress",
+  "type": "epic",
+  "priority": "high",
+  "parent": "folio-assistant-rwmf",
+  "issue": null,
+  "updated_at": "2026-10-04 15:12:15+00:00",
+  "also": [
+   "ch",
+   "cht"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-bbza",
+  "title": "S5-b: tool implementations land on their layer \u2014 folio-specific to core, maths to sci (23 rows)",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-7x5n",
+  "issue": null,
+  "updated_at": "2026-10-16 06:55:00+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fac",
+  "repo": "litlfred/folio-assistant-core",
+  "id": "folio-assistant-o7eq",
+  "title": "URL SPACE: rendered assets mirror the instantiation structure \u2014 <baseurl>/ for the root, <baseurl>/<instance>/<path> for every enabled harness",
+  "status": "todo",
+  "type": "feature",
+  "priority": "normal",
+  "parent": "folio-assistant-yj32",
+  "issue": null,
+  "updated_at": "2026-10-10 16:34:20+00:00",
+  "also": [
+   "ch",
+   "fa"
+  ],
+  "ws": "PLAT",
+  "stage": "KG"
+ },
+ {
+  "store": "ch",
+  "repo": "litlfred/cat-harness",
+  "id": "folio-assistant-423d",
+  "title": "REVIEW COMMENTS: anchored to block id as 9gyz Findings, surviving moves \u2014 and the write path a static page lacks",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-q4jm",
+  "issue": null,
+  "updated_at": "2026-10-16 06:30:00+00:00",
+  "also": [
+   "fa",
+   "fac"
+  ],
+  "ws": "WS2",
+  "stage": "L2"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-f8wp",
+  "title": "Placement PR8: schemas regroup and move with their importers; library sources by group; residual gate",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-iirv",
+  "issue": null,
+  "updated_at": "2026-10-16 06:55:00+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-95sk",
+  "title": "FOLIO AS CONVENTION (R24, R27\u2013R29): the folio on any harness, materialised assets and reader documents in folio/, cross-library references \u2014 wait on the split",
+  "status": "todo",
+  "type": "task",
+  "priority": null,
+  "parent": "folio-assistant-vke6",
+  "issue": null,
+  "updated_at": "2026-09-23 17:59:01+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-a9tx",
+  "title": "IG PUBLISHER FORK: requirements for an agent working a local experimental fork, and what the AST must carry",
+  "status": "todo",
+  "type": "feature",
+  "priority": "normal",
+  "parent": "folio-assistant-uhkv",
+  "issue": null,
+  "updated_at": "2026-10-01 12:35:15+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "WS2",
+  "stage": "L3"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-ffv7",
+  "title": "ASK DOWNSTREAM: would a kg-to-portal consumer read SPDX (SBOM or licence ids)? D1 of the SPDX proposal waits on it",
+  "status": "todo",
+  "type": "task",
+  "priority": null,
+  "parent": "folio-assistant-zzmr",
+  "issue": null,
+  "updated_at": "2026-10-03 10:44:28+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "WS5",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-vke6",
+  "title": "SPLIT (#223): cut this repo into layers that can depend on each other",
+  "status": "in-progress",
+  "type": "epic",
+  "priority": "normal",
+  "parent": "folio-assistant-vuip",
+  "issue": null,
+  "updated_at": "2026-09-20 18:48:38+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-5yhm",
+  "title": "TERMINOLOGY: identification, mapping and adjudication \u2014 a glossary term is CHECKED against an existing terminology, never only minted",
+  "status": "in-progress",
+  "type": "feature",
+  "priority": "normal",
+  "parent": "folio-assistant-0lmb",
+  "issue": null,
+  "updated_at": "2026-10-02 08:01:23+00:00",
+  "also": [
+   "ch",
+   "fac"
+  ],
+  "ws": "WS1",
+  "stage": "KG"
+ },
+ {
+  "store": "fac",
+  "repo": "litlfred/folio-assistant-core",
+  "id": "folio-assistant-dp1j",
+  "title": "KG AFFORDANCES: browse, materialise, instantiate, copy-into-my-folio \u2014 as processes and skills, gated by write capability",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-yj32",
+  "issue": null,
+  "updated_at": "2026-10-10 16:34:20+00:00",
+  "also": [
+   "ch",
+   "fa"
+  ],
+  "ws": "PLAT",
+  "stage": "KG"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-4dbr",
+  "title": "Forge portability: GitLab and sovereign-compute as additional Tool nodes, not a sixth repo",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-5a3l",
+  "issue": null,
+  "updated_at": "2026-09-29 20:52:41+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "PLAT",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-yj32",
+  "title": "HARNESS AS INTERFACE: a harness instance's default rendering is LHS + docs/ + a themed folio board, and it is a KG-DS management system",
+  "status": "todo",
+  "type": "epic",
+  "priority": "normal",
+  "parent": "folio-assistant-rwmf",
+  "issue": null,
+  "updated_at": "2026-10-05 04:57:14+00:00",
+  "also": [
+   "ch",
+   "cht",
+   "fac"
+  ],
+  "ws": "PLAT",
+  "stage": "KG"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-61tg",
+  "title": "TOPOLOGY: self-sovereign \u2014 own infrastructure, inward-facing, wallets and DAK intake",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-5a3l",
+  "issue": null,
+  "updated_at": "2026-09-19 09:01:53+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "PLAT",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-m4s1",
+  "title": "TRANSLATION CATALOGUES: 36 (locale, page) .po files must be AUTHORED \u2014 the templates now exist, nobody has been ASKED, and #1399 is held on it",
+  "status": "todo",
+  "type": "bug",
+  "priority": "normal",
+  "parent": "folio-assistant-bzyu",
+  "issue": null,
+  "updated_at": "2026-10-16 10:30:00+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "WS4",
+  "stage": "LOC"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-rq8s",
+  "title": "A SESSION BLOCKED ON THE OWNER IS INVISIBLE: four sessions held verbatim questions that only the session API could see, and nothing durable records one",
+  "status": "in-progress",
+  "type": "bug",
+  "priority": "normal",
+  "parent": "folio-assistant-ahvw",
+  "issue": null,
+  "updated_at": "2026-10-20 16:00:00+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-4nfs",
+  "title": "ONTOLOGIST / TERMINOLOGIST: skills, methodologies, tools and processes for reviewing content and classifying/coding it",
+  "status": "todo",
+  "type": "feature",
+  "priority": "high",
+  "parent": "folio-assistant-0lmb",
+  "issue": null,
+  "updated_at": "2026-10-16 10:45:00+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "WS2",
+  "stage": "L2"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-rnfl",
+  "title": "Phase I.3 \u2014 rename `content/` \u2192 `folio/` (2,408 occurrences, 429 files) (#223)",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-vke6",
+  "issue": null,
+  "updated_at": "2026-10-12 16:05:00+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-vuip",
+  "title": "GOAL 1: separation of repos into dir/repos, each harness instantiation with config and initiation steps skilled, tooled and tested",
+  "status": "in-progress",
+  "type": "milestone",
+  "priority": "high",
+  "parent": null,
+  "issue": null,
+  "updated_at": "2026-10-09 17:47:39+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-m8gz",
+  "title": "BEAN LIFECYCLE: archiving is drawn nowhere, and Process_BeanLifecycle is called by nothing",
+  "status": "in-progress",
+  "type": "feature",
+  "priority": "normal",
+  "parent": "folio-assistant-ahvw",
+  "issue": null,
+  "updated_at": "2026-10-20 10:05:00+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-5zs1",
+  "title": "Agent memory target: OpenAI Codex CLI (not implemented \u2014 owner 2026-10-06)",
+  "status": "todo",
+  "type": "task",
+  "priority": null,
+  "parent": "folio-assistant-31ni",
+  "issue": null,
+  "updated_at": "2026-10-06 18:35:16+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "PLAT",
+  "stage": "L5"
+ },
+ {
+  "store": "cht",
+  "repo": "litlfred/cat-harness-tools",
+  "id": "folio-assistant-nok9",
+  "title": "MERGE GATE: agentic adversarial review + content-type compile gates, and per-content-block QA backfill",
+  "status": "todo",
+  "type": "feature",
+  "priority": "normal",
+  "parent": "folio-assistant-hfag",
+  "issue": null,
+  "updated_at": "2026-10-20 15:20:36+00:00",
+  "also": [
+   "ch",
+   "fa"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fac",
+  "repo": "litlfred/folio-assistant-core",
+  "id": "folio-assistant-6h47",
+  "title": "RENDER STAGE 3: the dynamic-state export has a position but no filename \u2014 the owner left it open on purpose",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-yj32",
+  "issue": null,
+  "updated_at": "2026-10-10 16:34:20+00:00",
+  "also": [
+   "ch",
+   "fa"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-0uu2",
+  "title": "DECLARATION GAP: every top-level directory is a declared subgraph \u2014 the split, and the headline count was wrong three ways",
+  "status": "in-progress",
+  "type": "feature",
+  "priority": "normal",
+  "parent": "folio-assistant-zzmr",
+  "issue": null,
+  "updated_at": "2026-09-24 06:22:01+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-qh1s",
+  "title": "LIT SEARCH: a process and methodologies for organising requirements as they are filed",
+  "status": "todo",
+  "type": "task",
+  "priority": null,
+  "parent": "folio-assistant-2upx",
+  "issue": null,
+  "updated_at": "2026-09-23 19:34:01+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-63q4",
+  "title": "Bibliography: Reference KG nodes, a path-limited bibliography viewer (like the glossary), exports in BibTeX / CSL-JSON / RIS / Dublin Core, per asset and per subgraph",
+  "status": "in-progress",
+  "type": "feature",
+  "priority": "normal",
+  "parent": "folio-assistant-zzmr",
+  "issue": null,
+  "updated_at": "2026-10-14 18:15:00+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "WS1",
+  "stage": "KG"
+ },
+ {
+  "store": "ch",
+  "repo": "litlfred/cat-harness",
+  "id": "folio-assistant-197s",
+  "title": "Dependabot cannot run Bun here: 'could not run Bun \u2026 configuration error' on #908, and the npm ecosystem never touches bun.lock",
+  "status": "todo",
+  "type": "bug",
+  "priority": "normal",
+  "parent": "folio-assistant-1xhc",
+  "issue": null,
+  "updated_at": "2026-10-16 06:30:00+00:00",
+  "also": [
+   "fa",
+   "cht"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-ahvw",
+  "title": "PROCESS: how an agent decides what it is doing, and what governs each step",
+  "status": "in-progress",
+  "type": "epic",
+  "priority": "normal",
+  "parent": "folio-assistant-rwmf",
+  "issue": null,
+  "updated_at": "2026-10-20 09:52:00+00:00",
+  "also": [
+   "ch",
+   "cht"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fac",
+  "repo": "litlfred/folio-assistant-core",
+  "id": "folio-assistant-hf2q",
+  "title": "PROGRAMME PROGRESS: an epic burn-down and a math-progress heat map as a board feed",
+  "status": "todo",
+  "type": "feature",
+  "priority": "normal",
+  "parent": "folio-assistant-6lb8",
+  "issue": null,
+  "updated_at": "2026-10-10 16:34:20+00:00",
+  "also": [
+   "ch",
+   "fa"
+  ],
+  "ws": "WS5",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-v7bg",
+  "title": "TOOL 1/13: Task_Publish \u2014 publication & export (34 files, 19 entry points)",
+  "status": "in-progress",
+  "type": "task",
+  "priority": "high",
+  "parent": "folio-assistant-d308",
+  "issue": null,
+  "updated_at": "2026-09-20 16:39:06+00:00",
+  "also": [
+   "ch",
+   "cht"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-saqd",
+  "title": "S5-a: maths code out of cat-harness into folio-assistant-sci's code (#223 partition; 49 MOVE + 10 split)",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-7x5n",
+  "issue": null,
+  "updated_at": "2026-10-16 06:55:00+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-96y4",
+  "title": "smart-immunizations has no BPMN: IMMZ.A-I exist only as SVG images, and its personas only as HTML",
+  "status": "in-progress",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-uhkv",
+  "issue": null,
+  "updated_at": "2026-10-20 17:56:44+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "WS2",
+  "stage": "L2"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-slw1",
+  "title": "INGEST: one pipeline from uploads/ to a complete L1 library",
+  "status": "todo",
+  "type": "epic",
+  "priority": "normal",
+  "parent": "folio-assistant-npuo",
+  "issue": null,
+  "updated_at": "2026-10-04 15:12:16+00:00",
+  "also": [
+   "ch",
+   "fac"
+  ],
+  "ws": "WS1",
+  "stage": "L1"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-sd5v",
+  "title": "SPDX 3 applicability: where it should, could and should not be used \u2014 impact on processes, tasks and gates",
+  "status": "in-progress",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-zzmr",
+  "issue": null,
+  "updated_at": "2026-10-03 10:44:49+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "WS5",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-hs08",
+  "title": "MIGRATION: the content/ -> folio/ rename has reached the declaration and NOTHING that reads a folio",
+  "status": "in-progress",
+  "type": "task",
+  "priority": "high",
+  "parent": "folio-assistant-zzmr",
+  "issue": null,
+  "updated_at": "2026-09-22 18:18:42+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-8lcl",
+  "title": "Separation stage 1b: Zod moves to cat-harness-tools; generated JSON Schema stays in cat-harness",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-iirv",
+  "issue": null,
+  "updated_at": "2026-10-16 06:55:00+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-750a",
+  "title": "Work-state kinds have no viewer: bean defs, bean notes, workflow state, memory, sweep marks, boards, merge queue, surveys, todo feedback/items, interaction",
+  "status": "todo",
+  "type": "feature",
+  "priority": "normal",
+  "parent": "folio-assistant-46ob",
+  "issue": null,
+  "updated_at": "2026-10-15 19:33:06+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-4682",
+  "title": "Agent memory target: Gemini CLI (not implemented \u2014 owner 2026-10-06)",
+  "status": "todo",
+  "type": "task",
+  "priority": null,
+  "parent": "folio-assistant-31ni",
+  "issue": null,
+  "updated_at": "2026-10-06 18:35:15+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "PLAT",
+  "stage": "L5"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-2ipj",
+  "title": "PROCESS CATALOGUES: clinical (smart-base-clinical holds none yet), public health and health system (from the DTH documents)",
+  "status": "todo",
+  "type": "feature",
+  "priority": "normal",
+  "parent": "folio-assistant-uhkv",
+  "issue": null,
+  "updated_at": "2026-10-16 10:45:00+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "WS2",
+  "stage": "L2"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-10uc",
+  "title": "RENDERED SURFACE: navbar, visualisers, stickies \u2014 GOAL 2's stream, moved under GOAL 4 at GOAL 2's sign-off",
+  "status": "in-progress",
+  "type": "task",
+  "priority": "high",
+  "parent": "folio-assistant-rwmf",
+  "issue": null,
+  "updated_at": "2026-10-16 10:30:00+00:00",
+  "also": [
+   "ch",
+   "cht"
+  ],
+  "ws": "PLAT",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-3fva",
+  "title": "ARC: QA & test evidence off main \u2014 a commit-keyed qa-reports branch, and a test-plan \u2192 certification process",
+  "status": "in-progress",
+  "type": "epic",
+  "priority": "high",
+  "parent": "folio-assistant-rwmf",
+  "issue": null,
+  "updated_at": "2026-10-04 15:13:14+00:00",
+  "also": [
+   "ch",
+   "cht"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-32f6",
+  "title": "Prefix the harness's special branches with cat- (qa-reports, lake-cache/*, state); gh-pages unchanged",
+  "status": "in-progress",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-fs43",
+  "issue": null,
+  "updated_at": "2026-10-06 06:26:49+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-pzwb",
+  "title": "Placement PR2: finish splitting folio-core and regroup the harness skill topics",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-iirv",
+  "issue": null,
+  "updated_at": "2026-10-09 17:42:07+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fac",
+  "repo": "litlfred/folio-assistant-core",
+  "id": "folio-assistant-kx6i",
+  "title": "PAPER SITE in the harness rendering (yj32): math, Lean links and notation macros, blocking qou's legacy-render retirement",
+  "status": "todo",
+  "type": "feature",
+  "priority": "normal",
+  "parent": "folio-assistant-yj32",
+  "issue": null,
+  "updated_at": "2026-10-10 16:34:20+00:00",
+  "also": [
+   "ch",
+   "fa"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-1r0p",
+  "title": "INGEST: audio \u2014 transcription and translation",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-slw1",
+  "issue": null,
+  "updated_at": "2026-10-06 06:37:28+00:00",
+  "also": [
+   "ch",
+   "fac"
+  ],
+  "ws": "WS1",
+  "stage": "L1"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-8jur",
+  "title": "FHIR / IG kinds have no viewer: IG AST, OpenAPI, external schemas, L1 extraction, themes",
+  "status": "todo",
+  "type": "feature",
+  "priority": "normal",
+  "parent": "folio-assistant-46ob",
+  "issue": null,
+  "updated_at": "2026-10-15 16:53:28+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "PLAT",
+  "stage": "L3"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-oq1j",
+  "title": "QA READERS F3: detangle, LSI and tool-run readers fetch by ref or recompute",
+  "status": "in-progress",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-3fva",
+  "issue": null,
+  "updated_at": "2026-10-16 06:30:00+00:00",
+  "also": [
+   "ch",
+   "cht"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-7mwa",
+  "title": "Retire qa:resolve-conflicts and the test/results .gitattributes entries; move the 14 per-instance test/results dirs and the folio_init template",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-3fva",
+  "issue": null,
+  "updated_at": "2026-10-16 06:30:00+00:00",
+  "also": [
+   "ch",
+   "cht"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-bzyu",
+  "title": "TRANSLATION: the gettext pipeline, translated renders, and their QA",
+  "status": "in-progress",
+  "type": "epic",
+  "priority": "normal",
+  "parent": "folio-assistant-rwmf",
+  "issue": null,
+  "updated_at": "2026-10-04 15:12:15+00:00",
+  "also": [
+   "ch",
+   "cht"
+  ],
+  "ws": "WS4",
+  "stage": "LOC"
+ },
+ {
+  "store": "ch",
+  "repo": "litlfred/cat-harness",
+  "id": "folio-assistant-ec2a",
+  "title": "LSI over blocks and Lean declarations: extend lsi-indexing with folio and lean-decl graph kinds and a cross-graph query",
+  "status": "in-progress",
+  "type": "feature",
+  "priority": "normal",
+  "parent": "folio-assistant-zzmr",
+  "issue": null,
+  "updated_at": "2026-10-16 06:30:00+00:00",
+  "also": [
+   "fa"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-scfh",
+  "title": "INGEST SLIDES: pptx+odp rung, a11y probe, KG/folio-asst deck into library, methodology gaps, docs (#1614)",
+  "status": "in-progress",
+  "type": "feature",
+  "priority": "normal",
+  "parent": "folio-assistant-slw1",
+  "issue": null,
+  "updated_at": "2026-09-30 15:01:31+00:00",
+  "also": [
+   "ch",
+   "fac"
+  ],
+  "ws": "WS1",
+  "stage": "L1"
+ },
+ {
+  "store": "ch",
+  "repo": "litlfred/cat-harness",
+  "id": "folio-assistant-lthi",
+  "title": "S4-c: cat-harness items owed to core, who-iris, smart-base, fhir-harness or the root (~45 rows)",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-7x5n",
+  "issue": null,
+  "updated_at": "2026-10-16 07:00:00+00:00",
+  "also": [
+   "fa"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-zzmr",
+  "title": "KG: the knowledge graph's own structure, declaration and publication",
+  "status": "in-progress",
+  "type": "epic",
+  "priority": "normal",
+  "parent": "folio-assistant-vuip",
+  "issue": null,
+  "updated_at": "2026-10-04 15:12:15+00:00",
+  "also": [
+   "ch",
+   "cht"
+  ],
+  "ws": "PLAT",
+  "stage": "KG"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-k8rc",
+  "title": "The TypeScript prose backlog: 344 mentions, and the exemption does not cover all of them",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-vke6",
+  "issue": null,
+  "updated_at": "2026-10-16 10:30:00+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-h3tx",
+  "title": "PHASE P4: the Publisher invoked for AST + QA only; a release still cut from a full build and saying so",
+  "status": "todo",
+  "type": "feature",
+  "priority": "normal",
+  "parent": "folio-assistant-uhkv",
+  "issue": null,
+  "updated_at": "2026-10-01 12:35:15+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "PLAT",
+  "stage": "L3"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-g196",
+  "title": "Every preview stores a full copy of the site because per-preview facts are baked into every page",
+  "status": "todo",
+  "type": "feature",
+  "priority": "normal",
+  "parent": "folio-assistant-1xhc",
+  "issue": null,
+  "updated_at": "2026-10-16 10:30:00+00:00",
+  "also": [
+   "ch",
+   "cht"
+  ],
+  "ws": "PLAT",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-q2aj",
+  "title": "Recheck Beads (gastownhall/beads) maturity against beans",
+  "status": "todo",
+  "type": "task",
+  "priority": null,
+  "parent": "folio-assistant-8jt6",
+  "issue": null,
+  "updated_at": "2026-09-23 22:32:13+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-c4rz",
+  "title": "Migrate the feedback store into the declared todos/ graph",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-8jt6",
+  "issue": null,
+  "updated_at": "2026-09-29 20:52:42+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-xxh4",
+  "title": "Agent memory target: GitHub Copilot (not implemented \u2014 owner 2026-10-06)",
+  "status": "todo",
+  "type": "task",
+  "priority": null,
+  "parent": "folio-assistant-31ni",
+  "issue": null,
+  "updated_at": "2026-10-06 18:35:16+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "PLAT",
+  "stage": "L5"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-0lmb",
+  "title": "CONTENT MODEL: block kinds, adapters and the authoring surface",
+  "status": "in-progress",
+  "type": "epic",
+  "priority": "normal",
+  "parent": "folio-assistant-npuo",
+  "issue": null,
+  "updated_at": "2026-10-04 15:12:16+00:00",
+  "also": [
+   "ch",
+   "fac"
+  ],
+  "ws": "WS2",
+  "stage": "L2"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-79t3",
+  "title": "A repo's type set is the markers it carries, closed under the dependency tree",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-vke6",
+  "issue": null,
+  "updated_at": "2026-09-23 06:15:45+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-8jt6",
+  "title": "MEMORY & TODOS: notes an agent or a person carries, attached to the graph",
+  "status": "in-progress",
+  "type": "epic",
+  "priority": "normal",
+  "parent": "folio-assistant-rwmf",
+  "issue": null,
+  "updated_at": "2026-10-05 04:57:14+00:00",
+  "also": [
+   "ch",
+   "cht"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-46l0",
+  "title": "The same commit fails DIFFERENTLY in three environments, so a green run cannot be read as a green tree",
+  "status": "todo",
+  "type": "bug",
+  "priority": "normal",
+  "parent": "folio-assistant-1xhc",
+  "issue": null,
+  "updated_at": "2026-10-16 10:30:00+00:00",
+  "also": [
+   "ch",
+   "cht"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-mgxw",
+  "title": "S7 seed staging repos the sibling's way: one seed PR per litlfred/<name> repo, on a branch",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-7x5n",
+  "issue": null,
+  "updated_at": "2026-10-09 17:42:07+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-5a3l",
+  "title": "DEPLOYMENT: topologies and operating modes are two axes, not one list of modes",
+  "status": "in-progress",
+  "type": "epic",
+  "priority": "high",
+  "parent": "folio-assistant-rwmf",
+  "issue": null,
+  "updated_at": "2026-10-04 15:12:14+00:00",
+  "also": [
+   "ch",
+   "cht"
+  ],
+  "ws": "PLAT",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-7x5n",
+  "title": "SEPARATION ARC: one workplan consolidating five stalled sessions' GOAL 1 work (S0\u2013S8)",
+  "status": "in-progress",
+  "type": "epic",
+  "priority": "high",
+  "parent": "folio-assistant-vuip",
+  "issue": null,
+  "updated_at": "2026-10-09 17:47:24+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-hfag",
+  "title": "Merge pipeline: train process, queue state, reprioritisation, gates",
+  "status": "in-progress",
+  "type": "epic",
+  "priority": "high",
+  "parent": "folio-assistant-rwmf",
+  "issue": null,
+  "updated_at": "2026-10-16 10:40:00+00:00",
+  "also": [
+   "ch",
+   "cht"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-vj2p",
+  "title": "Separation stage 1d: cat-harness is self-contained \u2014 each instance hosts its own outputs; prose cites code by repository",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-iirv",
+  "issue": null,
+  "updated_at": "2026-10-09 17:42:07+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "ch",
+  "repo": "litlfred/cat-harness",
+  "id": "folio-assistant-iirv",
+  "title": "cat-harness / cat-harness-tools separation",
+  "status": "in-progress",
+  "type": "epic",
+  "priority": null,
+  "parent": "folio-assistant-vuip",
+  "issue": null,
+  "updated_at": "2026-10-12 18:30:00+00:00",
+  "also": [
+   "fa"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "ch",
+  "repo": "litlfred/cat-harness",
+  "id": "folio-assistant-1l13",
+  "title": "witness-pipeline.yml has never run \u2014 keep, template, or retire?",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-1xhc",
+  "issue": null,
+  "updated_at": "2026-10-16 06:30:00+00:00",
+  "also": [
+   "fa",
+   "cht"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "ch",
+  "repo": "litlfred/cat-harness",
+  "id": "folio-assistant-f1e1",
+  "title": "Identity of the person typing, outside a GitHub environment \u2014 needs WAY more work",
+  "status": "in-progress",
+  "type": "feature",
+  "priority": null,
+  "parent": "folio-assistant-7x5n",
+  "issue": null,
+  "updated_at": "2026-10-16 06:30:00+00:00",
+  "also": [
+   "fa"
+  ],
+  "ws": "PLAT",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-b5f0",
+  "title": "INSTANTIATION: what it means to instantiate a harness \u2014 the config file, the slot, and the process that cannot be started",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-zzmr",
+  "issue": null,
+  "updated_at": "2026-10-04 09:56:46+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "PLAT",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-pomp",
+  "title": "A stale origin/main produced two confident wrong findings in one session \u2014 'not in my checkout' is not 'does not exist'",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-ahvw",
+  "issue": null,
+  "updated_at": "2026-10-16 10:30:00+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-tdir",
+  "title": "TOOL FOLDERS: one Tool per `tools/<id>/<id>.ts`, its own published JSON-LD and IRI, its I/O types as their own JSON Schema files, and a QA report per Tool \u2014 migrate every litlfred instance",
+  "status": "in-progress",
+  "type": "feature",
+  "priority": "high",
+  "parent": "folio-assistant-zzmr",
+  "issue": null,
+  "updated_at": "2026-10-15 18:05:00+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "PLAT",
+  "stage": "L5"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-q2wm",
+  "title": "RENDER SAFETY: declared XSS hints on tools and skills, lazy loading, and dynamic render from the graph",
+  "status": "todo",
+  "type": "task",
+  "priority": "high",
+  "parent": "folio-assistant-6lb8",
+  "issue": null,
+  "updated_at": "2026-10-16 10:30:00+00:00",
+  "also": [
+   "ch",
+   "fac"
+  ],
+  "ws": "PLAT",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-uvfs",
+  "title": "Agent memory target: Cursor (not implemented \u2014 owner 2026-10-06)",
+  "status": "todo",
+  "type": "task",
+  "priority": null,
+  "parent": "folio-assistant-31ni",
+  "issue": null,
+  "updated_at": "2026-10-06 18:35:16+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "PLAT",
+  "stage": "L5"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-qvxh",
+  "title": "SMART L1 and DAK as DOCUMENT KINDS with visualizers inside smart-base, not harnesses",
+  "status": "in-progress",
+  "type": "feature",
+  "priority": "normal",
+  "parent": "folio-assistant-uhkv",
+  "issue": null,
+  "updated_at": "2026-10-04 13:06:48+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "WS2",
+  "stage": "L2"
+ },
+ {
+  "store": "ch",
+  "repo": "litlfred/cat-harness",
+  "id": "folio-assistant-mwzd",
+  "title": "INGEST trust + origin sources (#1614 item 4): WHO SMART Trust IG, C2PA spec, DSpace 7 REST contract",
+  "status": "in-progress",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-scfh",
+  "issue": null,
+  "updated_at": "2026-10-16 07:00:00+00:00",
+  "also": [
+   "fa",
+   "fac"
+  ],
+  "ws": "WS1",
+  "stage": "L1"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-398x",
+  "title": "GUIDELINE DOMAIN: clinical / public health / health system strengthening, as a glossary scheme applied through classifications",
+  "status": "todo",
+  "type": "feature",
+  "priority": "normal",
+  "parent": "folio-assistant-0lmb",
+  "issue": null,
+  "updated_at": "2026-10-16 10:45:00+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "WS1",
+  "stage": "KG"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-npuo",
+  "title": "GOAL 5 / CONTENT: the content model and the ingest pipeline that feeds it",
+  "status": "in-progress",
+  "type": "milestone",
+  "priority": "normal",
+  "parent": null,
+  "issue": null,
+  "updated_at": "2026-10-16 10:30:00+00:00",
+  "also": [
+   "ch",
+   "fac"
+  ],
+  "ws": "WS1",
+  "stage": "L1"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-ybwt",
+  "title": "Placement PR1: content-type skill packages move up to their owning instances",
+  "status": "in-progress",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-9umr",
+  "issue": null,
+  "updated_at": "2026-10-16 06:30:00+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-vljz",
+  "title": "QA: test data for SME review of decision support and indicator definitions",
+  "status": "todo",
+  "type": "feature",
+  "priority": "normal",
+  "parent": "folio-assistant-5a3l",
+  "issue": null,
+  "updated_at": "2026-09-19 08:55:36+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "WS3",
+  "stage": "EVAL"
+ },
+ {
+  "store": "ch",
+  "repo": "litlfred/cat-harness",
+  "id": "folio-assistant-syiq",
+  "title": "S4-a: cat-harness sci-subject skills move or split to folio-assistant-sci (watchers, editorial graph, Milnor; ~48 rows)",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-7x5n",
+  "issue": null,
+  "updated_at": "2026-10-16 06:30:00+00:00",
+  "also": [
+   "fa"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-6lb8",
+  "title": "FOLIO BOARD: a resizable Miro-style board, notes that move and attach, and semantic zoom to avatars",
+  "status": "in-progress",
+  "type": "epic",
+  "priority": "normal",
+  "parent": "folio-assistant-rwmf",
+  "issue": null,
+  "updated_at": "2026-10-05 04:57:13+00:00",
+  "also": [
+   "ch",
+   "cht",
+   "fac"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fac",
+  "repo": "litlfred/folio-assistant-core",
+  "id": "folio-assistant-supn",
+  "title": "HARNESS CARDS BECOME TODOS: outstanding work, a next-action recommendation from initialisation state, and health badges",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-yj32",
+  "issue": null,
+  "updated_at": "2026-10-10 16:34:20+00:00",
+  "also": [
+   "ch",
+   "fa"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-xka5",
+  "title": "Pages grouped by harness, following the URL; each harness owns its sub-doc graphs",
+  "status": "in-progress",
+  "type": "task",
+  "priority": null,
+  "parent": "folio-assistant-9rq1",
+  "issue": null,
+  "updated_at": "2026-10-05 16:20:41+00:00",
+  "also": [
+   "ch",
+   "cht"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-8mlt",
+  "title": "CREDENTIALS (iv): rename BOOTSTRAP_PAGES_TOKEN -> PUBLISH_SITE_BOOTSTRAP (bootstrap-tools) and MERGE_MAIN_TOKEN -> PUSH_BRANCH_TRIGGERING_CI (merge-main.yml)",
+  "status": "in-progress",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-5a3l",
+  "issue": null,
+  "updated_at": "2026-10-16 10:10:00+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-y9r6",
+  "title": "Separation stage 1c: cat-harness content holds no code \u2014 block manifests, tool and skill definitions become JSON",
+  "status": "todo",
+  "type": "task",
+  "priority": null,
+  "parent": "folio-assistant-iirv",
+  "issue": null,
+  "updated_at": "2026-10-16 06:30:00+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-6gme",
+  "title": "Remaining single-instance kinds have no viewer: scenarios, policies, UML, test plan, tool releases, vocab mapping, voice vendors, waivers, substrate snapshots, basic CDN site, Lean packages, bootstrap-tools skills",
+  "status": "todo",
+  "type": "feature",
+  "priority": "normal",
+  "parent": "folio-assistant-46ob",
+  "issue": null,
+  "updated_at": "2026-10-15 16:53:28+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-q4jm",
+  "title": "LARGE-DOCUMENT REVIEW: a review/ visualiser for a folio's diff from main \u2014 pluggable renderers, heat maps, navigation and review comments, keyed on folio/ block ids",
+  "status": "todo",
+  "type": "epic",
+  "priority": "high",
+  "parent": "folio-assistant-rwmf",
+  "issue": null,
+  "updated_at": "2026-10-05 04:57:14+00:00",
+  "also": [
+   "ch",
+   "cht",
+   "fac"
+  ],
+  "ws": "WS2",
+  "stage": "L2"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-2i5f",
+  "title": "TERMINOLOGY / adjudication: the extractor vs the terminology, and judge vs judge \u2014 call the existing process, restate nothing",
+  "status": "in-progress",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-5yhm",
+  "issue": null,
+  "updated_at": "2026-10-02 08:01:23+00:00",
+  "also": [
+   "ch",
+   "fac"
+  ],
+  "ws": "WS1",
+  "stage": "KG"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-9umr",
+  "title": "Concern subgraphs: cat-harness skills live in one declared subgraph per semantic concern (first: KG + library out of folio-core)",
+  "status": "in-progress",
+  "type": "epic",
+  "priority": "normal",
+  "parent": "folio-assistant-vuip",
+  "issue": null,
+  "updated_at": "2026-10-01 09:00:24+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-18p1",
+  "title": "EXPORT test-plan/v1 \u2192 FHIR R5 TestPlan in fhir-harness, once SMART Guidelines IG content is complete",
+  "status": "draft",
+  "type": "feature",
+  "priority": "normal",
+  "parent": "folio-assistant-3fva",
+  "issue": null,
+  "updated_at": "2026-10-01 09:12:25+00:00",
+  "also": [
+   "ch",
+   "cht"
+  ],
+  "ws": "WS2",
+  "stage": "L3"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-rfev",
+  "title": "C: built-ins self-register at the outermost layer \u2014 wire the ContributionRegistry for the first time",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-vke6",
+  "issue": null,
+  "updated_at": "2026-10-16 10:30:00+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fa",
+  "repo": "litlfred/folio-assistant",
+  "id": "folio-assistant-31ni",
+  "title": "Agent memory for every vendor: one memory source, one assembler, per-vendor agent files",
+  "status": "todo",
+  "type": "feature",
+  "priority": null,
+  "parent": "folio-assistant-7x5n",
+  "issue": null,
+  "updated_at": "2026-10-06 18:31:42+00:00",
+  "also": [
+   "ch"
+  ],
+  "ws": "PLAT",
+  "stage": "L5"
+ },
+ {
+  "store": "ch",
+  "repo": "litlfred/cat-harness",
+  "id": "folio-assistant-ymvt",
+  "title": "INDEX.CONFIG.JSON: one root file declares the instantiated harnesses, their sources and which one controls <base>/index.html",
+  "status": "in-progress",
+  "type": "feature",
+  "priority": "high",
+  "parent": "folio-assistant-7x5n",
+  "issue": null,
+  "updated_at": "2026-10-14 20:30:00+00:00",
+  "also": [
+   "fa"
+  ],
+  "ws": "PLAT",
+  "stage": "X"
+ },
+ {
+  "store": "cht",
+  "repo": "litlfred/cat-harness-tools",
+  "id": "folio-assistant-ey1c",
+  "title": "MERGE PIPELINE ASYMMETRY: merge-main regenerates a PR branch, but nothing regenerates main after a PR merges into it",
+  "status": "todo",
+  "type": "bug",
+  "priority": "normal",
+  "parent": "folio-assistant-hfag",
+  "issue": null,
+  "updated_at": "2026-10-20 15:20:36+00:00",
+  "also": [
+   "ch",
+   "fa"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fac",
+  "repo": "litlfred/folio-assistant-core",
+  "id": "folio-assistant-cz17",
+  "title": "Migrate dak.json in: the DAK type is ours, and its Logical Model is pending upstream",
+  "status": "todo",
+  "type": "task",
+  "priority": "normal",
+  "parent": "folio-assistant-0lmb",
+  "issue": null,
+  "updated_at": "2026-10-10 16:34:20+00:00",
+  "also": [
+   "ch",
+   "fa"
+  ],
+  "ws": "WS2",
+  "stage": "L2"
+ },
+ {
+  "store": "ch",
+  "repo": "litlfred/cat-harness",
+  "id": "folio-assistant-4fv8",
+  "title": "Placement PR4: whole roles, stories, actors and capabilities move up to their owners",
+  "status": "todo",
+  "type": "task",
+  "priority": null,
+  "parent": "folio-assistant-iirv",
+  "issue": null,
+  "updated_at": "2026-10-16 06:30:00+00:00",
+  "also": [
+   "fa"
+  ],
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "cht",
+  "repo": "litlfred/cat-harness-tools",
+  "id": "cat-tools-og5t",
+  "title": "PAPER SITE in the harness rendering (yj32): math, Lean links and notation macros, blocking qou's legacy-render retirement",
+  "status": "todo",
+  "type": "feature",
+  "priority": null,
+  "parent": "folio-assistant-yj32",
+  "issue": null,
+  "updated_at": "2026-10-20 15:15:39+00:00",
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "cht",
+  "repo": "litlfred/cat-harness-tools",
+  "id": "cat-tools-1as6",
+  "title": "RENDER STAGE 3: the dynamic-state export has a position but no filename \u2014 the owner left it open on purpose",
+  "status": "todo",
+  "type": "task",
+  "priority": null,
+  "parent": "folio-assistant-yj32",
+  "issue": null,
+  "updated_at": "2026-10-20 15:15:39+00:00",
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "cht",
+  "repo": "litlfred/cat-harness-tools",
+  "id": "cat-tools-e1lo",
+  "title": "INGEST: narrative description per image, localized, including images extracted from PDFs",
+  "status": "todo",
+  "type": "task",
+  "priority": null,
+  "parent": null,
+  "issue": null,
+  "updated_at": "2026-10-20 15:15:39+00:00",
+  "ws": "WS1",
+  "stage": "L1"
+ },
+ {
+  "store": "cht",
+  "repo": "litlfred/cat-harness-tools",
+  "id": "cat-tools-tk99",
+  "title": "PROGRAMME PROGRESS: an epic burn-down and a math-progress heat map as a board feed",
+  "status": "todo",
+  "type": "feature",
+  "priority": null,
+  "parent": "folio-assistant-6lb8",
+  "issue": null,
+  "updated_at": "2026-10-20 15:15:39+00:00",
+  "ws": "WS5",
+  "stage": "X"
+ },
+ {
+  "store": "cht",
+  "repo": "litlfred/cat-harness-tools",
+  "id": "cat-tools-sthf",
+  "title": "URL SPACE: rendered assets mirror the instantiation structure \u2014 <baseurl>/ for the root, <baseurl>/<instance>/<path> for every enabled harness",
+  "status": "todo",
+  "type": "feature",
+  "priority": null,
+  "parent": "folio-assistant-yj32",
+  "issue": null,
+  "updated_at": "2026-10-20 17:23:49+00:00",
+  "ws": "PLAT",
+  "stage": "KG"
+ },
+ {
+  "store": "cht",
+  "repo": "litlfred/cat-harness-tools",
+  "id": "cat-tools-bbnd",
+  "title": "Translation info drawer: open more translation detail from every translation warning \u2014 blocks, pages, (sub)graphs, locales",
+  "status": "in-progress",
+  "type": "feature",
+  "priority": null,
+  "parent": null,
+  "issue": null,
+  "updated_at": "2026-10-20 15:32:16+00:00",
+  "ws": "WS4",
+  "stage": "LOC"
+ },
+ {
+  "store": "cht",
+  "repo": "litlfred/cat-harness-tools",
+  "id": "cat-tools-0nxe",
+  "title": "Skill install for Gemini CLI, Cursor and Copilot hosts (x4mt follow-up) \u2014 verify formats first",
+  "status": "draft",
+  "type": "task",
+  "priority": "normal",
+  "parent": null,
+  "issue": null,
+  "updated_at": "2026-10-12 15:45:25+00:00",
+  "ws": "WS2",
+  "stage": "L5"
+ },
+ {
+  "store": "cht",
+  "repo": "litlfred/cat-harness-tools",
+  "id": "cat-tools-5jij",
+  "title": "qa-axis-summary reads a JSON shape qa-sweep never emits, so every axis reports \"criteria run: 0\"",
+  "status": "todo",
+  "type": "bug",
+  "priority": null,
+  "parent": null,
+  "issue": null,
+  "updated_at": "2026-10-20 15:58:00+00:00",
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fac",
+  "repo": "litlfred/folio-assistant-core",
+  "id": "folio-assistant-cpe7",
+  "title": "PR CHECKS: core judges its own graph and QA on every pull request",
+  "status": "in-progress",
+  "type": "feature",
+  "priority": "high",
+  "parent": null,
+  "issue": null,
+  "updated_at": "2026-10-14 16:35:00+00:00",
+  "ws": "NA",
+  "stage": "X"
+ },
+ {
+  "store": "fac",
+  "repo": "litlfred/folio-assistant-core",
+  "id": "folio-core-shsz",
+  "title": "Translation info drawer on every translation warning (pointer \u2192 cat-tools-bbnd)",
+  "status": "todo",
+  "type": "feature",
+  "priority": null,
+  "parent": "folio-assistant-slw1",
+  "issue": null,
+  "updated_at": "2026-10-20 15:32:54+00:00",
+  "ws": "WS4",
+  "stage": "LOC"
+ },
+ {
+  "store": "fac",
+  "repo": "litlfred/folio-assistant-core",
+  "id": "folio-core-2mb0",
+  "title": "Adjudicate the 68 round-trip findings on who-iris's catalogues (66 warn, 2 fail)",
+  "status": "todo",
+  "type": "task",
+  "priority": null,
+  "parent": "folio-assistant-slw1",
+  "issue": null,
+  "updated_at": "2026-10-11 08:10:00+00:00",
+  "ws": "WS4",
+  "stage": "LOC"
+ },
+ {
+  "store": "fac",
+  "repo": "litlfred/folio-assistant-core",
+  "id": "folio-core-urat",
+  "title": "Migrate folio-tabular-records/v1 to folio-tabular-csvw/v1, measured on real tabular sources",
+  "status": "in-progress",
+  "type": "task",
+  "priority": null,
+  "parent": "folio-assistant-slw1",
+  "issue": null,
+  "updated_at": "2026-10-20 16:20:00+00:00",
+  "ws": "WS1",
+  "stage": "KG"
+ },
+ {
+  "store": "ra",
+  "repo": "litlfred/smart-ra",
+  "id": "dpi-h-ra-szj8",
+  "title": "DPI-H RA public review: intake, adjudication and publication of the revised guidance",
+  "status": "in-progress",
+  "type": "epic",
+  "priority": null,
+  "parent": null,
+  "issue": null,
+  "updated_at": "2026-10-04 20:11:54+00:00",
+  "ws": "WS5",
+  "stage": "X"
+ }
+]

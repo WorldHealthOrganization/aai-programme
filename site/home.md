@@ -12,6 +12,7 @@ Coordination for the WHO Assured AI programme, staged in [`litlfred/aai-programm
 | **Requirement nodes** | [One statement per requirement ID]({{ '/docs/requirements/' | relative_url }}), cited as `req:<group>#<ID>`, for example `req:aai-automation#AUTO-04`. |
 | **Programme board** | [The board]({{ '/programme/' | relative_url }}): views V1 to V13 and metrics M1 to M5, built from the issues' labels, grouped by Workstream. The same issues show in [project 110](https://github.com/orgs/WorldHealthOrganization/projects/110) ([set-up]({{ '/docs/staging-project.html' | relative_url }})). |
 | **QA: integration readiness** | [Who set each readiness value and who confirmed validation]({{ '/qa/validation/' | relative_url }}), from the issues' history: flags a confirmation by the same person who set Validated, or one without evidence. |
+| **Beans that apply** | [How the litlfred work items map to the workstreams](https://github.com/litlfred/aai-programme/blob/main/docs/beans-analysis.md), and the [37 issues](https://github.com/litlfred/aai-programme/issues?q=label%3Abean-intake) they became: five epic proposals awaiting the PM, 27 features, three decisions, two dependencies. |
 | **Build process** | [The section 13 build sequence]({{ '/en/cat-harness/processes/programme-build.html' | relative_url }}): who does each step, and where the build must stop. |
 | **Work plan** | [The combined board]({{ '/board/' | relative_url }}): this repository's work items and those of the platform repositories it reviews. |
 
