@@ -7,28 +7,7 @@
     "broken-link": 0,
     "orphaned": 0,
     "bean-changed": 0,
-    "untriaged": 4
+    "untriaged": 0
   },
-  "findings": [
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-j3ls",
-      "detail": "litlfred/folio-assistant: MOUNTED ROOT: harness tools run from a remote-mounted cat-harness take the MOUNT as their root, not the instance being worked on"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-ml9h",
-      "detail": "litlfred/folio-assistant: DRAIN 2026-10-10: open bean backlog across cat-harness, cat-harness-tools and folio-assistant-core, leaves up, three lanes"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-w0at",
-      "detail": "litlfred/folio-assistant: S8 cut over: submodule if imported, subscription if read; in-tree copy removed only on owner OK"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-yex5",
-      "detail": "litlfred/folio-assistant: DRAIN COORDINATION: spawned helper sessions refuse owner authority relayed by the coordinator — lane B stopped after one bean awaiting the owner's own words"
-    }
-  ]
+  "findings": []
 }
