@@ -1,8 +1,35 @@
 # aai-platform
 
-The Platform workstream of the WHO Assured AI programme: shared hosting and engineering. Programme status is held on GitHub issues; see the programme set-up request, [litlfred/folio-assistant#2605](https://github.com/litlfred/folio-assistant/issues/2605).
+Platform for the WHO Assured AI programme: shared hosting and engineering. Programme status is held on GitHub issues; see the programme set-up request, [litlfred/folio-assistant#2605](https://github.com/litlfred/folio-assistant/issues/2605).
 
-## Beans
+## What Platform is
+
+Agreed by the PM & Architecture Integration on [folio-assistant#2605](https://github.com/litlfred/folio-assistant/issues/2605#issuecomment-6291128158):
+
+- Platform is a **cross-cutting technical delivery function** that supports WS1 to WS5. It is not a sixth research workstream.
+- It follows the same issue, field, label and linking rules as the workstream repositories `aai-ws1` to `aai-ws4`. Its deliverables are features under programme epics in `aai-programme`.
+- It has a named lead with Maintain access on this repository. **The lead is not yet confirmed.**
+- Technical integration readiness is judged by the Technical Integration Lead, not by Platform.
+
+### Still to agree
+
+- **Lead.** To be confirmed with Ritika and the relevant technical colleagues.
+- **Scope.** Which activities belong to Platform and which to WS1 or the other technical workstreams. Candidates from project 110, to be reviewed with Ritika before anything moves: rendering knowledge-graph content to Pages, pipeline Docker images, deploying folio-assistant to OHS, safe self-hosting, and the country data-sovereign pipeline (cross-workstream).
+- **Board.** If project 110 becomes the Platform board, Ritika and the Platform lead agree who owns it.
+
+## Issues and beans
+
+The Platform board of record is the **issues** on the programme and Platform projects. Beans are the agents' working notes on how to do that work. They never replace an issue.
+
+**Proposed rule for when a bean becomes an issue** (open for discussion):
+
+- **Open an issue** when the work needs a person to see or act on it: it delivers part of a programme epic, changes a date, creates or clears a dependency on another workstream, or needs a human review or decision. Link the bean to it with `issue:`.
+- **Keep it a bean** when it is a step inside work that already has an issue, or agent housekeeping that nobody outside the repository needs to track.
+- **Going back.** An issue that turns out to be agent housekeeping is closed as not planned, with a link to the bean that carries on the work.
+
+The board below counts open beans without an issue, so the gaps stay visible.
+
+## Beans board
 
 Beans are the agents' work plan: one Markdown file per work item, read by the [`beans`](https://github.com/hmans/beans) CLI.
 
