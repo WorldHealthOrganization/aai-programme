@@ -5,6 +5,7 @@ title: Name the Platform lead and give them Maintain access
 status: todo
 type: task
 priority: normal
+parent: aai-platform-7aw2
 tags:
     - governance
 created_at: 2026-10-20T16:00:00Z

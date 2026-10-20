@@ -5,6 +5,7 @@ title: Write requirements v0.4.2 from the 2026-10-20 decisions
 status: in-progress
 type: task
 priority: normal
+parent: aai-platform-7aw2
 tags:
     - requirements
 created_at: 2026-10-20T16:00:00Z

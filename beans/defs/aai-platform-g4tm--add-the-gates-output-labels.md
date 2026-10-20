@@ -5,6 +5,7 @@ title: "Add the gates: labels"
 status: todo
 type: task
 priority: normal
+parent: aai-platform-7aw2
 tags:
     - labels
 created_at: 2026-10-20T16:00:00Z
