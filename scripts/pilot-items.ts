@@ -60,7 +60,7 @@ const ITEMS: Item[] = [
   {
     key: "platform",
     title: "[Pilot] Feature (Platform): serve the thin slice's health skill",
-    labels: ["pilot", "type:feature"],
+    labels: ["pilot", "type:feature", "sprint-demo"],
     fields: { Workstream: "Platform", "Pipeline stage": "L5 Health skills + MCP", "Delivery health": "On track", "Integration readiness": "Not ready" , "Start date": "2026-11-09", "Target date": "2026-11-27"},
     body: "Hosts the skill the thin slice produces, so it can be called through MCP.",
     parent: "epic",
