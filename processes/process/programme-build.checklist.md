@@ -21,7 +21,7 @@ Build the shared programme project, its repositories and automations in the orde
 
 ### Decide — Decisions for the next step confirmed? (`GW_Decided`)
 
-- Answered from the section 3 decision record: is every decision that step 2 onward depends on confirmed?
+- Answered from the section 3 decision record (req:aai-decisions): is every decision that step 2 onward depends on confirmed?
 - Call `workflow_complete` with `node: "GW_Decided"` and `outcome` set to the label that holds:
   - «no» → `A_Decide` (Answer the open BD decisions)
   - «yes» → `A_OrgSetup` (Step 2: create or reuse issue types and fields)
@@ -36,28 +36,28 @@ Build the shared programme project, its repositories and automations in the orde
 ### 3. Step 2: create or reuse issue types and fields (`A_OrgSetup`)
 
 - Who: the `WHO GitHub owner` lane (role `who-github-owner`).
-- What: Create or reuse the section 5.1 issue types (`AAI` prefix where new) and the section 7.1 issue fields, and pin them as section 5.3 says.
+- What: Create or reuse the section 5.1 issue types and the section 7.1 issue fields, and pin them as section 5.3 says.
 - Record it: `workflow_complete` with `node: "A_OrgSetup"`.
 - next: → `A_Repos` (Step 3: repositories, roles and labels)
 
 ### 4. Step 3: repositories, roles and labels (`A_Repos`)
 
 - Who: the `Build agent` lane (role `build-agent`).
-- What: Create `aai-programme`, `aai-pm` and the two workstream repositories the pilot needs, with the BD-04 roles and the section 7.3 labels.
+- What: Create `aai-programme` and the two workstream repositories the pilot needs, public, with the BD-04 roles and the section 7.3 labels (req:aai-information#SEC-04).
 - Record it: `workflow_complete` with `node: "A_Repos"`.
 - next: → `A_Projects` (Step 4: programme project and template)
 
 ### 5. Step 4: programme project and template (`A_Projects`)
 
 - Who: the `Build agent` lane (role `build-agent`).
-- What: Create the programme project with views V1 to V13 in the listed order, and the workstream template from section 8.3.
+- What: Create the programme project with views V1 to V13 in the listed order (req:aai-views), and the workstream template from section 8.3.
 - Record it: `workflow_complete` with `node: "A_Projects"`.
 - next: → `A_Readmes` (Step 5: READMEs and directory)
 
 ### 6. Step 5: READMEs and directory (`A_Readmes`)
 
 - Who: the `Build agent` lane (role `build-agent`).
-- What: Write the READMEs (AC-10, AUTO-07, LINK-02, LINK-03, LINK-07) and create the pinned Workstream directory issue (LINK-01).
+- What: Write the READMEs (req:aai-acceptance#AC-10, req:aai-automation#AUTO-07) and create the pinned Workstream directory issue (req:aai-linking#LINK-01).
 - Record it: `workflow_complete` with `node: "A_Readmes"`.
 - next: → `GW_Creds` (Automation credentials in place?)
 
@@ -75,27 +75,20 @@ Build the shared programme project, its repositories and automations in the orde
 ### 7. Step 6: automations AUTO-01 to AUTO-11 (`A_Automations`)
 
 - Who: the `Build agent` lane (role `build-agent`).
-- What: Set up the automations.
+- What: Set up the automations (req:aai-automation).
 - Record it: `workflow_complete` with `node: "A_Automations"`.
-- next: → `A_Pilot` (Step 7: pilot build)
+- next: → `Call_Pilot` (Step 7: the pilot)
 
-### 8. Step 7: pilot build (`A_Pilot`)
+### 8. Step 7: the pilot (`Call_Pilot`)
 
 - Who: the `Build agent` lane (role `build-agent`).
-- What: Build the section 12 pilot set from representative Assured AI items, each marked as a pilot, and run PIL-01 to PIL-11.
-- Record it: `workflow_complete` with `node: "A_Pilot"`.
-- next: → `A_Validate` (Confirm validation on the pilot item)
-
-### 9. Confirm validation on the pilot item (`A_Validate`)
-
-- Who: the `Technical Integration Lead` lane (role `technical-integration-lead`).
-- What: For PIL-07: post `Validation confirmed:` with the evidence on the pilot item, so AUTO-10 removes the `validation-exception` label.
-- Record it: `workflow_complete` with `node: "A_Validate"`.
+- What: Build and test the section 12 pilot set; see the pilot process.
+- A subprocess (`Process_AAI_Pilot`): `workflow_next` reports its own steps; complete those — this call activity itself is not completable.
 - next: → `GW_Pilot` (Every pilot test passed?)
 
 ### Decide — Every pilot test passed? (`GW_Pilot`)
 
-- Answered by the PIL-01 to PIL-11 results.
+- Answered by the pilot's results (req:aai-pilot).
 - Call `workflow_complete` with `node: "GW_Pilot"` and `outcome` set to the label that holds:
   - «no» → `End_StopPilot` (Stopped: a pilot test failed)
   - «yes» → `A_Inputs` (Provide the section 14 inputs)
@@ -104,28 +97,28 @@ Build the shared programme project, its repositories and automations in the orde
 
 - The instance completes here: The build stops and reports which pilot test failed. `workflow_next` then reports nothing enabled — that, not this line, is the record of completion.
 
-### 10. Provide the section 14 inputs (`A_Inputs`)
+### 9. Provide the section 14 inputs (`A_Inputs`)
 
 - Who: the `PM & Architecture Integration` lane (role `pm-architecture-integration`).
-- What: The epics CSV reviewed by each lead, the Gates output list, R1 to R7, the dependency register with restricted content removed, the directory details, and the needed GitHub usernames.
+- What: The epics CSV reviewed by each lead, the Gates output list, R1 to R7, the dependency register with anything section 6 keeps off GitHub removed, the directory details, and the needed GitHub usernames.
 - Record it: `workflow_complete` with `node: "A_Inputs"`.
 - next: → `A_Import` (Step 8: bulk import and backfill)
 
-### 11. Step 8: bulk import and backfill (`A_Import`)
+### 10. Step 8: bulk import and backfill (`A_Import`)
 
 - Who: the `Build agent` lane (role `build-agent`).
 - What: Import the inputs, leaving missing values empty and listing them, then run the AUTO-11 backfill.
 - Record it: `workflow_complete` with `node: "A_Import"`.
 - next: → `A_Charts` (Step 9: charts and acceptance checks)
 
-### 12. Step 9: charts and acceptance checks (`A_Charts`)
+### 11. Step 9: charts and acceptance checks (`A_Charts`)
 
 - Who: the `Build agent` lane (role `build-agent`).
-- What: Build charts M1 to M5, or record which cannot be built natively, and check AC-01 to AC-19.
+- What: Build charts M1 to M5 (req:aai-metrics), or record which cannot be built natively, and check AC-01 to AC-19 (req:aai-acceptance).
 - Record it: `workflow_complete` with `node: "A_Charts"`.
 - next: → `A_Report` (Step 10: build report)
 
-### 13. Step 10: build report (`A_Report`)
+### 12. Step 10: build report (`A_Report`)
 
 - Who: the `Build agent` lane (role `build-agent`).
 - What: Hand back the section 16 report.

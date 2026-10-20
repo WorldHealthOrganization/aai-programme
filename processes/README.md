@@ -1,13 +1,13 @@
 # Processes
 
-The Assured AI programme's processes, as BPMN. Each diagram says who does each step and where the work must stop. The diagram is the authority; the `.checklist.md` beside it is generated from it.
+The Assured AI programme's processes, as BPMN. Each diagram says who does each step and where the work must stop, and cites the requirement statements it carries out (`req:<group>#<ID>`, see [`docs/requirements/`](../docs/requirements/)). The diagram is the authority; the `.checklist.md` beside it is generated from it. The site draws each one: [all processes](https://litlfred.github.io/aai-programme/en/cat-harness/processes/).
 
-| Diagram | What it covers |
-|---|---|
-| [`process/programme-build.bpmn`](process/programme-build.bpmn) ([checklist](process/programme-build.checklist.md)) | The build sequence in section 13 of the programme requirements: pre-flight, organisation set-up, repositories, projects, READMEs, automations, pilot, bulk import, charts and the build report. It stops when a decision or the automation credentials are missing, or a pilot test fails |
+| Diagram | What it covers | Requirements |
+|---|---|---|
+| [Build the GitHub set-up](https://litlfred.github.io/aai-programme/en/cat-harness/processes/programme-build.html) ([bpmn](process/programme-build.bpmn), [checklist](process/programme-build.checklist.md)) | The section 13 build sequence. It stops when decisions or credentials are missing, and calls the pilot | §13, `req:aai-decisions`, `req:aai-acceptance` |
+| [The pilot](https://litlfred.github.io/aai-programme/en/cat-harness/processes/programme-pilot.html) ([bpmn](process/programme-pilot.bpmn), [checklist](process/programme-pilot.checklist.md)) | Build the pilot set, run every pilot test, stop on the first failure | `req:aai-pilot`, DP-08 |
+| [Record and escalate a dependency](https://litlfred.github.io/aai-programme/en/cat-harness/processes/dependency-escalation.html) ([bpmn](process/dependency-escalation.bpmn), [checklist](process/dependency-escalation.checklist.md)) | From a native "blocked by" link to a D-number issue, and when epics are linked | `req:aai-dependencies` |
+| [Propose a new or changed epic](https://litlfred.github.io/aai-programme/en/cat-harness/processes/epic-proposal.html) ([bpmn](process/epic-proposal.bpmn), [checklist](process/epic-proposal.checklist.md)) | A lead proposes; the PM accepts, amends or declines | LINK-07, LINK-04 |
+| [Confirm a component is ready to integrate](https://litlfred.github.io/aai-programme/en/cat-harness/processes/integration-validation.html) ([bpmn](process/integration-validation.bpmn), [checklist](process/integration-validation.checklist.md)) | The lead sets Ready to integrate; the Technical Integration Lead confirms with evidence | DP-05, AUTO-10 |
 
-![The programme build process](process/programme-build.svg)
-
-The picture is drawn from the diagram; regenerate it when the diagram changes.
-
-Lanes are roles: PM & Architecture Integration, WHO GitHub owner, Build agent and Technical Integration Lead.
+Lanes are roles: PM & Architecture Integration, WHO GitHub owner, Build agent, Technical Integration Lead, Workstream lead and Workstream team.

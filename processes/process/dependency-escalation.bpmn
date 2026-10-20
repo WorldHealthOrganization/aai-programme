@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  xmlns:cat-harness.processes="https://litlfred.github.io/cat-harness/0.1.0/processes/ns#"
+                  id="Definitions_AAI_Dependency" targetNamespace="https://litlfred.github.io/aai-programme/workflows"
+                  exporter="folio-assistant" exporterVersion="1">
+  <bpmn:resource id="workstream-team" name="Workstream team"/>
+  <bpmn:resource id="workstream-lead" name="Workstream lead"/>
+  <bpmn:resource id="pm-architecture-integration" name="PM &amp; Architecture Integration"/>
+  <bpmn:collaboration id="Collaboration_AAI_Dependency">
+    <bpmn:participant id="Participant_AAI_Dependency" name="Assured AI programme: record and escalate a dependency" processRef="Process_AAI_Dependency"/>
+  </bpmn:collaboration>
+  <bpmn:process id="Process_AAI_Dependency" name="Assured AI programme: record and escalate a dependency" isExecutable="false">
+    <bpmn:documentation>A dependency starts as a native &quot;blocked by&quot; link in the workstream (req:aai-dependencies#DEP-01). It becomes a D-number issue in `aai-programme` only when it is programme-significant: it crosses workstreams or partners and needs a deadline, negotiation, escalation or an assessment of consequences (req:aai-dependencies#DEP-02).</bpmn:documentation>
+    <bpmn:extensionElements>
+      <cat-harness.processes:policy enforcement="strict"/>
+    </bpmn:extensionElements>
+    <bpmn:laneSet id="LaneSet_AAI_Dependency">
+      <bpmn:lane id="Lane_Team" name="Workstream team" partitionElementRef="workstream-team">
+        <bpmn:documentation>The people delivering a workstream's features, stories and spikes, in its own repository.</bpmn:documentation>
+        <bpmn:flowNodeRef>Start_AAI_Dependency</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>A_Native</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_Lead" name="Workstream lead" partitionElementRef="workstream-lead">
+        <bpmn:documentation>Owns the workstream's delivery and its project (req:aai-design-principles#DP-02). Proposes epics; never creates them.</bpmn:documentation>
+        <bpmn:flowNodeRef>GW_Significant</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>End_StopLocal</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>A_Raise</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_PM" name="PM &amp; Architecture Integration" partitionElementRef="pm-architecture-integration">
+        <bpmn:documentation>Owns sequencing, dates, dependencies, evidence and escalation. Does not make technical readiness judgements (req:aai-design-principles#DP-05).</bpmn:documentation>
+        <bpmn:flowNodeRef>A_DNumber</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>A_Next</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>GW_Epic</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>End_StopNoLink</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>A_EpicLink</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>End_AAI_Dependency</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="Start_AAI_Dependency" name="A dependency is found"/>
+    <bpmn:task id="A_Native" name="Link the issues with &quot;blocked by&quot;">
+      <bpmn:documentation>GitHub's native relationship between the two issues (req:aai-dependencies#DEP-01).</bpmn:documentation>
+    </bpmn:task>
+    <bpmn:exclusiveGateway id="GW_Significant" name="Programme-significant?">
+      <bpmn:documentation>Answered by the lead against DEP-02: does it cross workstreams or partners, and need a deadline, negotiation, escalation or an assessment of consequences?</bpmn:documentation>
+    </bpmn:exclusiveGateway>
+    <bpmn:endEvent id="End_StopLocal" name="Handled in the workstream">
+      <bpmn:documentation>The native link is the whole record.</bpmn:documentation>
+    </bpmn:endEvent>
+    <bpmn:task id="A_Raise" name="Raise it with the PM">
+      <bpmn:documentation>Name the waiting epic, what it waits on, when it is needed by and the consequence if late.</bpmn:documentation>
+    </bpmn:task>
+    <bpmn:task id="A_DNumber" name="Create the D-number issue">
+      <bpmn:documentation>In `aai-programme`, its title starting with the D-number (req:aai-acceptance#AC-14), its body following the DEP-05 template, with Workstream (the waiting one), Target date (needed by), Delivery health, Risk category, Impact and assignee (req:aai-dependencies#DEP-05).</bpmn:documentation>
+    </bpmn:task>
+    <bpmn:task id="A_Next" name="Write the Next action">
+      <bpmn:documentation>When it is At risk or Blocked: what will happen, who will do it, and by when, in the issue body. It then shows in V9 and V10 (req:aai-views#V9, #V10).</bpmn:documentation>
+    </bpmn:task>
+    <bpmn:exclusiveGateway id="GW_Epic" name="A true blocking dependency between epics?">
+      <bpmn:documentation>Answered by the PM (req:aai-dependencies#DEP-03): is it a true blocking dependency on another epic, rather than on a review, an external decision or a shared platform item?</bpmn:documentation>
+    </bpmn:exclusiveGateway>
+    <bpmn:endEvent id="End_StopNoLink" name="Tracked in V9 and V10">
+      <bpmn:documentation>No native link between epics: the D-number issue is the record.</bpmn:documentation>
+    </bpmn:endEvent>
+    <bpmn:task id="A_EpicLink" name="Link the two epics with &quot;blocked by&quot;">
+      <bpmn:documentation>Only for a true blocking dependency between epics (req:aai-dependencies#DEP-03).</bpmn:documentation>
+    </bpmn:task>
+    <bpmn:endEvent id="End_AAI_Dependency" name="Tracked, and the epics linked"/>
+    <bpmn:sequenceFlow id="SF_AAI_Dependency_1" sourceRef="Start_AAI_Dependency" targetRef="A_Native"/>
+    <bpmn:sequenceFlow id="SF_AAI_Dependency_2" sourceRef="A_Native" targetRef="GW_Significant"/>
+    <bpmn:sequenceFlow id="SF_AAI_Dependency_3" name="no" sourceRef="GW_Significant" targetRef="End_StopLocal"/>
+    <bpmn:sequenceFlow id="SF_AAI_Dependency_4" name="yes" sourceRef="GW_Significant" targetRef="A_Raise"/>
+    <bpmn:sequenceFlow id="SF_AAI_Dependency_5" sourceRef="A_Raise" targetRef="A_DNumber"/>
+    <bpmn:sequenceFlow id="SF_AAI_Dependency_6" sourceRef="A_DNumber" targetRef="A_Next"/>
+    <bpmn:sequenceFlow id="SF_AAI_Dependency_7" sourceRef="A_Next" targetRef="GW_Epic"/>
+    <bpmn:sequenceFlow id="SF_AAI_Dependency_8" name="no" sourceRef="GW_Epic" targetRef="End_StopNoLink"/>
+    <bpmn:sequenceFlow id="SF_AAI_Dependency_9" name="yes" sourceRef="GW_Epic" targetRef="A_EpicLink"/>
+    <bpmn:sequenceFlow id="SF_AAI_Dependency_10" sourceRef="A_EpicLink" targetRef="End_AAI_Dependency"/>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="Diagram_AAI_Dependency">
+    <bpmndi:BPMNPlane id="Plane_AAI_Dependency" bpmnElement="Collaboration_AAI_Dependency">
+      <bpmndi:BPMNShape id="Shape_Participant_AAI_Dependency" bpmnElement="Participant_AAI_Dependency" isHorizontal="true">
+        <dc:Bounds x="160" y="80" width="1660" height="510" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Lane_Team_AAI_Dependency" bpmnElement="Lane_Team" isHorizontal="true">
+        <dc:Bounds x="190" y="80" width="1630" height="170" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Lane_Lead_AAI_Dependency" bpmnElement="Lane_Lead" isHorizontal="true">
+        <dc:Bounds x="190" y="250" width="1630" height="170" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Lane_PM_AAI_Dependency" bpmnElement="Lane_PM" isHorizontal="true">
+        <dc:Bounds x="190" y="420" width="1630" height="170" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Start_AAI_Dependency_AAI_Dependency" bpmnElement="Start_AAI_Dependency">
+        <dc:Bounds x="302" y="147" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_A_Native_AAI_Dependency" bpmnElement="A_Native">
+        <dc:Bounds x="410" y="125" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_GW_Significant_AAI_Dependency" bpmnElement="GW_Significant" isMarkerVisible="true">
+        <dc:Bounds x="595" y="310" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_End_StopLocal_AAI_Dependency" bpmnElement="End_StopLocal">
+        <dc:Bounds x="692" y="372" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_A_Raise_AAI_Dependency" bpmnElement="A_Raise">
+        <dc:Bounds x="860" y="295" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_A_DNumber_AAI_Dependency" bpmnElement="A_DNumber">
+        <dc:Bounds x="1010" y="465" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_A_Next_AAI_Dependency" bpmnElement="A_Next">
+        <dc:Bounds x="1160" y="465" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_GW_Epic_AAI_Dependency" bpmnElement="GW_Epic" isMarkerVisible="true">
+        <dc:Bounds x="1345" y="480" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_End_StopNoLink_AAI_Dependency" bpmnElement="End_StopNoLink">
+        <dc:Bounds x="1442" y="542" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_A_EpicLink_AAI_Dependency" bpmnElement="A_EpicLink">
+        <dc:Bounds x="1460" y="465" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_End_AAI_Dependency_AAI_Dependency" bpmnElement="End_AAI_Dependency">
+        <dc:Bounds x="1652" y="487" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Dependency_1" bpmnElement="SF_AAI_Dependency_1">
+        <di:waypoint x="338" y="165" />
+        <di:waypoint x="410" y="165" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Dependency_2" bpmnElement="SF_AAI_Dependency_2">
+        <di:waypoint x="530" y="165" />
+        <di:waypoint x="562" y="165" />
+        <di:waypoint x="562" y="335" />
+        <di:waypoint x="595" y="335" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Dependency_3" bpmnElement="SF_AAI_Dependency_3">
+        <di:waypoint x="645" y="335" />
+        <di:waypoint x="668" y="335" />
+        <di:waypoint x="668" y="390" />
+        <di:waypoint x="692" y="390" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Dependency_4" bpmnElement="SF_AAI_Dependency_4">
+        <di:waypoint x="645" y="335" />
+        <di:waypoint x="860" y="335" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Dependency_5" bpmnElement="SF_AAI_Dependency_5">
+        <di:waypoint x="980" y="335" />
+        <di:waypoint x="995" y="335" />
+        <di:waypoint x="995" y="505" />
+        <di:waypoint x="1010" y="505" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Dependency_6" bpmnElement="SF_AAI_Dependency_6">
+        <di:waypoint x="1130" y="505" />
+        <di:waypoint x="1160" y="505" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Dependency_7" bpmnElement="SF_AAI_Dependency_7">
+        <di:waypoint x="1280" y="505" />
+        <di:waypoint x="1345" y="505" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Dependency_8" bpmnElement="SF_AAI_Dependency_8">
+        <di:waypoint x="1395" y="505" />
+        <di:waypoint x="1418" y="505" />
+        <di:waypoint x="1418" y="560" />
+        <di:waypoint x="1442" y="560" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Dependency_9" bpmnElement="SF_AAI_Dependency_9">
+        <di:waypoint x="1395" y="505" />
+        <di:waypoint x="1460" y="505" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Dependency_10" bpmnElement="SF_AAI_Dependency_10">
+        <di:waypoint x="1580" y="505" />
+        <di:waypoint x="1652" y="505" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

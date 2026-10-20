@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  xmlns:cat-harness.processes="https://litlfred.github.io/cat-harness/0.1.0/processes/ns#"
+                  id="Definitions_AAI_Validation" targetNamespace="https://litlfred.github.io/aai-programme/workflows"
+                  exporter="folio-assistant" exporterVersion="1">
+  <bpmn:resource id="workstream-lead" name="Workstream lead"/>
+  <bpmn:resource id="technical-integration-lead" name="Technical Integration Lead"/>
+  <bpmn:collaboration id="Collaboration_AAI_Validation">
+    <bpmn:participant id="Participant_AAI_Validation" name="Assured AI programme: confirm a component is ready to integrate" processRef="Process_AAI_Validation"/>
+  </bpmn:collaboration>
+  <bpmn:process id="Process_AAI_Validation" name="Assured AI programme: confirm a component is ready to integrate" isExecutable="false">
+    <bpmn:documentation>Integration readiness is proposed by the workstream lead and confirmed by the Technical Integration Lead with evidence (req:aai-design-principles#DP-05). The `Validation confirmed:` comment is the record; changing the field alone does not count, and no automation sets Validated (req:aai-automation#AUTO-05, #AUTO-10).</bpmn:documentation>
+    <bpmn:extensionElements>
+      <cat-harness.processes:policy enforcement="strict"/>
+    </bpmn:extensionElements>
+    <bpmn:laneSet id="LaneSet_AAI_Validation">
+      <bpmn:lane id="Lane_Lead" name="Workstream lead" partitionElementRef="workstream-lead">
+        <bpmn:documentation>Owns the workstream's delivery and its project (req:aai-design-principles#DP-02). Proposes epics; never creates them.</bpmn:documentation>
+        <bpmn:flowNodeRef>Start_AAI_Validation</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>A_Ready</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_TIL" name="Technical Integration Lead" partitionElementRef="technical-integration-lead">
+        <bpmn:documentation>Confirms validation with a comment starting `Validation confirmed:` and the evidence (req:aai-design-principles#DP-05, req:aai-automation#AUTO-10).</bpmn:documentation>
+        <bpmn:flowNodeRef>A_Check</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>GW_Valid</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>End_StopNotYet</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>A_Confirm</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>End_AAI_Validation</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="Start_AAI_Validation" name="Work believed ready"/>
+    <bpmn:task id="A_Ready" name="Set Integration readiness to Ready to integrate">
+      <bpmn:documentation>With the evidence linked in the issue. The item then appears in V6's &quot;Awaiting validation&quot; filter, the Technical Integration Lead's queue (req:aai-views#V6).</bpmn:documentation>
+    </bpmn:task>
+    <bpmn:task id="A_Check" name="Check the evidence">
+      <bpmn:documentation>With the relevant workstream leads and subject-matter experts.</bpmn:documentation>
+    </bpmn:task>
+    <bpmn:exclusiveGateway id="GW_Valid" name="Validated?">
+      <bpmn:documentation>The Technical Integration Lead's judgement, never inferred from closed sub-issues.</bpmn:documentation>
+    </bpmn:exclusiveGateway>
+    <bpmn:endEvent id="End_StopNotYet" name="Not yet: back with the workstream">
+      <bpmn:documentation>Comment what is missing, and readiness goes back to Partly ready or Not ready. The lead starts again when it is addressed.</bpmn:documentation>
+    </bpmn:endEvent>
+    <bpmn:task id="A_Confirm" name="Post Validation confirmed: and set Validated">
+      <bpmn:documentation>A comment starting `Validation confirmed:` with a short note or evidence link, then Integration readiness = Validated (req:aai-automation#AUTO-10).</bpmn:documentation>
+    </bpmn:task>
+    <bpmn:endEvent id="End_AAI_Validation" name="Validated"/>
+    <bpmn:sequenceFlow id="SF_AAI_Validation_1" sourceRef="Start_AAI_Validation" targetRef="A_Ready"/>
+    <bpmn:sequenceFlow id="SF_AAI_Validation_2" sourceRef="A_Ready" targetRef="A_Check"/>
+    <bpmn:sequenceFlow id="SF_AAI_Validation_3" sourceRef="A_Check" targetRef="GW_Valid"/>
+    <bpmn:sequenceFlow id="SF_AAI_Validation_4" name="no" sourceRef="GW_Valid" targetRef="End_StopNotYet"/>
+    <bpmn:sequenceFlow id="SF_AAI_Validation_5" name="yes" sourceRef="GW_Valid" targetRef="A_Confirm"/>
+    <bpmn:sequenceFlow id="SF_AAI_Validation_6" sourceRef="A_Confirm" targetRef="End_AAI_Validation"/>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="Diagram_AAI_Validation">
+    <bpmndi:BPMNPlane id="Plane_AAI_Validation" bpmnElement="Collaboration_AAI_Validation">
+      <bpmndi:BPMNShape id="Shape_Participant_AAI_Validation" bpmnElement="Participant_AAI_Validation" isHorizontal="true">
+        <dc:Bounds x="160" y="80" width="1150" height="340" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Lane_Lead_AAI_Validation" bpmnElement="Lane_Lead" isHorizontal="true">
+        <dc:Bounds x="190" y="80" width="1120" height="170" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Lane_TIL_AAI_Validation" bpmnElement="Lane_TIL" isHorizontal="true">
+        <dc:Bounds x="190" y="250" width="1120" height="170" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Start_AAI_Validation_AAI_Validation" bpmnElement="Start_AAI_Validation">
+        <dc:Bounds x="302" y="147" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_A_Ready_AAI_Validation" bpmnElement="A_Ready">
+        <dc:Bounds x="410" y="125" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_A_Check_AAI_Validation" bpmnElement="A_Check">
+        <dc:Bounds x="560" y="295" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_GW_Valid_AAI_Validation" bpmnElement="GW_Valid" isMarkerVisible="true">
+        <dc:Bounds x="745" y="310" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_End_StopNotYet_AAI_Validation" bpmnElement="End_StopNotYet">
+        <dc:Bounds x="842" y="372" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_A_Confirm_AAI_Validation" bpmnElement="A_Confirm">
+        <dc:Bounds x="950" y="295" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_End_AAI_Validation_AAI_Validation" bpmnElement="End_AAI_Validation">
+        <dc:Bounds x="1142" y="317" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Validation_1" bpmnElement="SF_AAI_Validation_1">
+        <di:waypoint x="338" y="165" />
+        <di:waypoint x="410" y="165" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Validation_2" bpmnElement="SF_AAI_Validation_2">
+        <di:waypoint x="530" y="165" />
+        <di:waypoint x="545" y="165" />
+        <di:waypoint x="545" y="335" />
+        <di:waypoint x="560" y="335" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Validation_3" bpmnElement="SF_AAI_Validation_3">
+        <di:waypoint x="680" y="335" />
+        <di:waypoint x="745" y="335" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Validation_4" bpmnElement="SF_AAI_Validation_4">
+        <di:waypoint x="795" y="335" />
+        <di:waypoint x="818" y="335" />
+        <di:waypoint x="818" y="390" />
+        <di:waypoint x="842" y="390" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Validation_5" bpmnElement="SF_AAI_Validation_5">
+        <di:waypoint x="795" y="335" />
+        <di:waypoint x="950" y="335" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Validation_6" bpmnElement="SF_AAI_Validation_6">
+        <di:waypoint x="1070" y="335" />
+        <di:waypoint x="1142" y="335" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

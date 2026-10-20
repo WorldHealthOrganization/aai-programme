@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  xmlns:cat-harness.processes="https://litlfred.github.io/cat-harness/0.1.0/processes/ns#"
+                  id="Definitions_AAI_Epic" targetNamespace="https://litlfred.github.io/aai-programme/workflows"
+                  exporter="folio-assistant" exporterVersion="1">
+  <bpmn:resource id="workstream-lead" name="Workstream lead"/>
+  <bpmn:resource id="pm-architecture-integration" name="PM &amp; Architecture Integration"/>
+  <bpmn:collaboration id="Collaboration_AAI_Epic">
+    <bpmn:participant id="Participant_AAI_Epic" name="Assured AI programme: propose a new or changed epic" processRef="Process_AAI_Epic"/>
+  </bpmn:collaboration>
+  <bpmn:process id="Process_AAI_Epic" name="Assured AI programme: propose a new or changed epic" isExecutable="false">
+    <bpmn:documentation>Epics are programme-level and owned by the PM. A workstream lead who needs a new or changed epic opens an issue in `aai-programme` proposing it; the PM accepts or declines it. Leads create features, stories and spikes under epics freely (req:aai-linking#LINK-07).</bpmn:documentation>
+    <bpmn:extensionElements>
+      <cat-harness.processes:policy enforcement="strict"/>
+    </bpmn:extensionElements>
+    <bpmn:laneSet id="LaneSet_AAI_Epic">
+      <bpmn:lane id="Lane_Lead" name="Workstream lead" partitionElementRef="workstream-lead">
+        <bpmn:documentation>Owns the workstream's delivery and its project (req:aai-design-principles#DP-02). Proposes epics; never creates them.</bpmn:documentation>
+        <bpmn:flowNodeRef>Start_AAI_Epic</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>A_Propose</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>A_Revise</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>A_Features</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>End_AAI_Epic</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_PM" name="PM &amp; Architecture Integration" partitionElementRef="pm-architecture-integration">
+        <bpmn:documentation>Owns sequencing, dates, dependencies, evidence and escalation. Does not make technical readiness judgements (req:aai-design-principles#DP-05).</bpmn:documentation>
+        <bpmn:flowNodeRef>A_Review</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>GW_Decision</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>A_Create</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>End_StopDeclined</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="Start_AAI_Epic" name="A new or changed epic is needed"/>
+    <bpmn:task id="A_Propose" name="Open a proposal issue in aai-programme">
+      <bpmn:documentation>Say what the epic delivers, its workstream, its dates, its Gates outputs and research questions, and why the existing epics do not cover it.</bpmn:documentation>
+    </bpmn:task>
+    <bpmn:task id="A_Review" name="Review the proposal">
+      <bpmn:documentation>Against the programme plan, the Gates outputs and the other workstreams' epics.</bpmn:documentation>
+    </bpmn:task>
+    <bpmn:exclusiveGateway id="GW_Decision" name="Accept, amend or decline?">
+      <bpmn:documentation>The PM's decision, recorded on the proposal issue.</bpmn:documentation>
+    </bpmn:exclusiveGateway>
+    <bpmn:task id="A_Revise" name="Revise the proposal">
+      <bpmn:documentation>Answer the PM's points on the same issue.</bpmn:documentation>
+    </bpmn:task>
+    <bpmn:task id="A_Create" name="Create or change the epic">
+      <bpmn:documentation>The epic issue with its fields (Workstream, dates, Gates output, Primary research question, Backlog ref). It then appears in V1 and V2 (req:aai-views#V1, #V2).</bpmn:documentation>
+    </bpmn:task>
+    <bpmn:task id="A_Features" name="Add features under the epic">
+      <bpmn:documentation>As sub-issues in the workstream repository, so their progress rolls up into V1 (req:aai-linking#LINK-04).</bpmn:documentation>
+    </bpmn:task>
+    <bpmn:endEvent id="End_AAI_Epic" name="Epic in the programme"/>
+    <bpmn:endEvent id="End_StopDeclined" name="Declined, with the reason">
+      <bpmn:documentation>The PM closes the proposal as not planned, saying why.</bpmn:documentation>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="SF_AAI_Epic_1" sourceRef="Start_AAI_Epic" targetRef="A_Propose"/>
+    <bpmn:sequenceFlow id="SF_AAI_Epic_2" sourceRef="A_Propose" targetRef="A_Review"/>
+    <bpmn:sequenceFlow id="SF_AAI_Epic_3" sourceRef="A_Review" targetRef="GW_Decision"/>
+    <bpmn:sequenceFlow id="SF_AAI_Epic_4" name="amend" sourceRef="GW_Decision" targetRef="A_Revise"/>
+    <bpmn:sequenceFlow id="SF_AAI_Epic_5" sourceRef="A_Revise" targetRef="A_Review"/>
+    <bpmn:sequenceFlow id="SF_AAI_Epic_6" name="accept" sourceRef="GW_Decision" targetRef="A_Create"/>
+    <bpmn:sequenceFlow id="SF_AAI_Epic_7" sourceRef="A_Create" targetRef="A_Features"/>
+    <bpmn:sequenceFlow id="SF_AAI_Epic_8" sourceRef="A_Features" targetRef="End_AAI_Epic"/>
+    <bpmn:sequenceFlow id="SF_AAI_Epic_9" name="decline" sourceRef="GW_Decision" targetRef="End_StopDeclined"/>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="Diagram_AAI_Epic">
+    <bpmndi:BPMNPlane id="Plane_AAI_Epic" bpmnElement="Collaboration_AAI_Epic">
+      <bpmndi:BPMNShape id="Shape_Participant_AAI_Epic" bpmnElement="Participant_AAI_Epic" isHorizontal="true">
+        <dc:Bounds x="160" y="80" width="1300" height="340" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Lane_Lead_AAI_Epic" bpmnElement="Lane_Lead" isHorizontal="true">
+        <dc:Bounds x="190" y="80" width="1270" height="170" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Lane_PM_AAI_Epic" bpmnElement="Lane_PM" isHorizontal="true">
+        <dc:Bounds x="190" y="250" width="1270" height="170" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Start_AAI_Epic_AAI_Epic" bpmnElement="Start_AAI_Epic">
+        <dc:Bounds x="302" y="147" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_A_Propose_AAI_Epic" bpmnElement="A_Propose">
+        <dc:Bounds x="410" y="125" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_A_Review_AAI_Epic" bpmnElement="A_Review">
+        <dc:Bounds x="560" y="295" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_GW_Decision_AAI_Epic" bpmnElement="GW_Decision" isMarkerVisible="true">
+        <dc:Bounds x="745" y="310" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_A_Revise_AAI_Epic" bpmnElement="A_Revise">
+        <dc:Bounds x="710" y="125" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_A_Create_AAI_Epic" bpmnElement="A_Create">
+        <dc:Bounds x="950" y="295" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_A_Features_AAI_Epic" bpmnElement="A_Features">
+        <dc:Bounds x="1100" y="125" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_End_AAI_Epic_AAI_Epic" bpmnElement="End_AAI_Epic">
+        <dc:Bounds x="1292" y="147" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_End_StopDeclined_AAI_Epic" bpmnElement="End_StopDeclined">
+        <dc:Bounds x="842" y="372" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Epic_1" bpmnElement="SF_AAI_Epic_1">
+        <di:waypoint x="338" y="165" />
+        <di:waypoint x="410" y="165" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Epic_2" bpmnElement="SF_AAI_Epic_2">
+        <di:waypoint x="530" y="165" />
+        <di:waypoint x="545" y="165" />
+        <di:waypoint x="545" y="335" />
+        <di:waypoint x="560" y="335" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Epic_3" bpmnElement="SF_AAI_Epic_3">
+        <di:waypoint x="680" y="335" />
+        <di:waypoint x="745" y="335" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Epic_4" bpmnElement="SF_AAI_Epic_4">
+        <di:waypoint x="770" y="310" />
+        <di:waypoint x="770" y="205" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Epic_5" bpmnElement="SF_AAI_Epic_5">
+        <di:waypoint x="770" y="205" />
+        <di:waypoint x="770" y="275" />
+        <di:waypoint x="620" y="275" />
+        <di:waypoint x="620" y="295" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Epic_6" bpmnElement="SF_AAI_Epic_6">
+        <di:waypoint x="795" y="335" />
+        <di:waypoint x="950" y="335" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Epic_7" bpmnElement="SF_AAI_Epic_7">
+        <di:waypoint x="1070" y="335" />
+        <di:waypoint x="1085" y="335" />
+        <di:waypoint x="1085" y="165" />
+        <di:waypoint x="1100" y="165" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Epic_8" bpmnElement="SF_AAI_Epic_8">
+        <di:waypoint x="1220" y="165" />
+        <di:waypoint x="1292" y="165" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_Epic_9" bpmnElement="SF_AAI_Epic_9">
+        <di:waypoint x="795" y="335" />
+        <di:waypoint x="818" y="335" />
+        <di:waypoint x="818" y="390" />
+        <di:waypoint x="842" y="390" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
