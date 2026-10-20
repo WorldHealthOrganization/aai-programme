@@ -77,3 +77,21 @@ describe("fields as labels", () => {
     expect(() => relabel([], "Delivery health", "Fine")).toThrow();
   });
 });
+
+import { validationProvenance } from "./rules.ts";
+describe("QA report: validation provenance", () => {
+  const set = { event: "labeled", label: "readiness:Validated", actor: "lead", at: "2026-10-20T10:00:00Z" };
+  test("someone else confirmed, with evidence", () => {
+    const p = validationProvenance({ events: [set], comments: [{ login: "til", body: "Validation confirmed: https://example.org/run/1", association: "COLLABORATOR", at: "2026-10-21T09:00:00Z" }] });
+    expect(p.setBy).toBe("lead");
+    expect(p.selfConfirmed).toBe(false);
+    expect(p.confirmations[0]!.evidence).toBe(true);
+  });
+  test("the setter is the only confirmer: self-confirmed", () => {
+    expect(validationProvenance({ events: [set], comments: [{ login: "Lead", body: "Validation confirmed: done", association: "OWNER", at: "x" }] }).selfConfirmed).toBe(true);
+  });
+  test("the last time it was set is the one that counts", () => {
+    const again = { ...set, actor: "other", at: "2026-10-22T00:00:00Z" };
+    expect(validationProvenance({ events: [set, again], comments: [] }).setBy).toBe("other");
+  });
+});

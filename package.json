@@ -9,7 +9,8 @@
     "site:render-bpmn": "bun run cat render:bpmn",
     "site:board": "bun run scripts/site-board.ts",
     "site:redirects": "bun run scripts/site-redirects.ts",
-    "site:requirements": "bun run scripts/site-requirements.ts"
+    "site:requirements": "bun run scripts/site-requirements.ts",
+    "site:qa-validation": "bun run scripts/programme/qa-validation.ts --site"
   },
   "_workspaces_comment": "The mounted code layers, as workspaces, as smart-ra lists them: they import each other by package name, and nothing publishes those packages.",
   "workspaces": [

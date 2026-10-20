@@ -117,3 +117,28 @@ export function validationAction(i: {
 export function qualifies(labels: string[], programmeTypeLabels: string[]): boolean {
   return labels.some((l) => programmeTypeLabels.includes(l)) || labels.some((l) => ["thin-slice", "sprint-demo", "blocked", "at-risk"].includes(l));
 }
+
+/**
+ * The QA report's reading of one item's validation (owner, 2026-10-20: with
+ * write access as the authorization, report WHO did it): who last set
+ * `readiness:Validated`, who confirmed and with what access, whether a
+ * confirmation links evidence, and whether the person who set it is the
+ * only one who confirmed it. Reported, never enforced.
+ */
+export function validationProvenance(i: {
+  events: { event: string; label?: string; actor: string; at: string }[];
+  comments: { login: string; body: string; association?: Association; at: string }[];
+}): {
+  setBy?: string;
+  setAt?: string;
+  confirmations: { by: string; association?: Association; at: string; evidence: boolean }[];
+  selfConfirmed: boolean;
+} {
+  const sets = i.events.filter((e) => e.event === "labeled" && e.label === "readiness:Validated");
+  const last = sets[sets.length - 1];
+  const confirmations = i.comments
+    .filter((c) => c.body.trimStart().startsWith("Validation confirmed:"))
+    .map((c) => ({ by: c.login, association: c.association, at: c.at, evidence: /https?:\/\/\S+/.test(c.body) }));
+  const selfConfirmed = !!last && confirmations.length > 0 && confirmations.every((c) => c.by.toLowerCase() === last.actor.toLowerCase());
+  return { setBy: last?.actor, setAt: last?.at, confirmations, selfConfirmed };
+}

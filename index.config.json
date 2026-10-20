@@ -45,7 +45,8 @@
             "site:library",
             "site:board",
             "site:requirements",
-            "site:redirects"
+            "site:redirects",
+            "site:qa-validation"
           ],
           "siteSteps": [],
           "keep": [
