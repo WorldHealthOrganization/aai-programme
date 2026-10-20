@@ -39,6 +39,7 @@
         "build": {
           "home": "site/home.md",
           "pre": [
+            "site:check-origin",
             "site:render-bpmn"
           ],
           "sourceSteps": [

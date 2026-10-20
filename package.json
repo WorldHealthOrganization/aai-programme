@@ -12,7 +12,8 @@
     "site:requirements": "bun run scripts/site-requirements.ts",
     "site:qa-validation": "bun run scripts/programme/qa-validation.ts --site",
     "site:programme-board": "bun run scripts/programme/board.ts --site",
-    "site:drift": "bun run scripts/programme/bean-drift.ts --site"
+    "site:drift": "bun run scripts/programme/bean-drift.ts --site",
+    "site:check-origin": "bun run scripts/check-origin.ts"
   },
   "_workspaces_comment": "The mounted code layers, as workspaces, as smart-ra lists them: they import each other by package name, and nothing publishes those packages.",
   "workspaces": [
