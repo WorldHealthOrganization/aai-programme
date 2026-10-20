@@ -6,8 +6,8 @@
       "state": "ok",
       "branch": "cat/aai-platform/beans",
       "path": "beans/defs",
-      "commit": "0aaa08314d6433b0ea12870f6669521bd3557bee",
-      "count": 4
+      "commit": "b6ca2e1cbbb42faf42689ab38dc38d525d0afb9c",
+      "count": 5
     },
     {
       "repo": "litlfred/folio-assistant",
@@ -103,6 +103,23 @@
     }
   ],
   "beans": [
+    {
+      "repo": "litlfred/aai-platform",
+      "id": "aai-platform-g4tm",
+      "title": "Add the gates: labels",
+      "status": "todo",
+      "type": "task",
+      "priority": "normal",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "labels"
+      ],
+      "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+      "archived": false,
+      "updated_at": "2026-10-20T16:00:00Z",
+      "url": "https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-g4tm--add-the-gates-output-labels.md"
+    },
     {
       "repo": "litlfred/aai-platform",
       "id": "aai-platform-l2kn",

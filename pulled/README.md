@@ -8,7 +8,7 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 
 | Repository | Store | In progress | To do | Draft | Completed | Scrapped | Open without issue |
 |---|---|--:|--:|--:|--:|--:|--:|
-| [aai-platform](https://github.com/litlfred/aai-platform) | `cat/aai-platform/beans` @ `0aaa083` | 2 | 2 | 0 | 0 | 0 | 0 |
+| [aai-platform](https://github.com/litlfred/aai-platform) | `cat/aai-platform/beans` @ `b6ca2e1` | 2 | 3 | 0 | 0 | 0 | 0 |
 | [folio-assistant](https://github.com/litlfred/folio-assistant) | `cat/cat-harness/beans` @ `f377757` (154 bean(s) also kept, more recently, in another store) | 58 | 74 | 2 | 1379 | 40 | 132 |
 | [bootstrap](https://github.com/litlfred/bootstrap) | no beans yet | – | – | – | – | – | – |
 | [bootstrap-tools](https://github.com/litlfred/bootstrap-tools) | no beans yet | – | – | – | – | – | – |
@@ -38,12 +38,13 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 
 ## Open beans
 
-### aai-platform (4 open)
+### aai-platform (5 open)
 
 | Bean | Status | Priority | Type | Title | Issue |
 |---|---|---|---|---|---|
 | [aai-platform-p1bd](https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-p1bd--pull-beans-from-the-platform-repositories-into-one-board.md) | in-progress | normal | task | Pull beans from the platform repositories into one board | [folio-assistant#2605](https://github.com/litlfred/folio-assistant/issues/2605) |
 | [aai-platform-r9vd](https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-r9vd--requirements-v0-4-2.md) | in-progress | normal | task | Write requirements v0.4.2 from the 2026-10-20 decisions | [folio-assistant#2605](https://github.com/litlfred/folio-assistant/issues/2605) |
+| [aai-platform-g4tm](https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-g4tm--add-the-gates-output-labels.md) | todo | normal | task | Add the gates: labels | [folio-assistant#2605](https://github.com/litlfred/folio-assistant/issues/2605) |
 | [aai-platform-l2kn](https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-l2kn--name-the-platform-lead.md) | todo | normal | task | Name the Platform lead and give them Maintain access | [folio-assistant#2605](https://github.com/litlfred/folio-assistant/issues/2605) |
 | [aai-platform-s7wq](https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-s7wq--sync-the-fork-to-the-who-repository.md) | todo | normal | task | Sync the fork to the WHO repository | [folio-assistant#2605](https://github.com/litlfred/folio-assistant/issues/2605) |
 
