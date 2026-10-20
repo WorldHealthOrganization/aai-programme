@@ -46,7 +46,8 @@
             "site:board",
             "site:requirements",
             "site:redirects",
-            "site:qa-validation"
+            "site:qa-validation",
+            "site:programme-board"
           ],
           "siteSteps": [],
           "keep": [

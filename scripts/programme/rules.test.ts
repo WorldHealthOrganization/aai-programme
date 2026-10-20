@@ -95,3 +95,21 @@ describe("QA report: validation provenance", () => {
     expect(validationProvenance({ events: [set, again], comments: [] }).setBy).toBe("other");
   });
 });
+
+import { bodyFields, boardItem, nextAction } from "./board-model.ts";
+describe("board model", () => {
+  const body = "Text.\n\nNext action: WS1 merges it; the WS1 lead, by Friday\n\n**Programme fields** (set these):\n\n| Field | Value |\n|---|---|\n| Workstream | WS3 Evaluation |\n| Target date | 2026-11-20 |\n";
+  test("reads the Programme fields table", () => {
+    expect(bodyFields(body)).toEqual({ Workstream: "WS3 Evaluation", "Target date": "2026-11-20" });
+  });
+  test("reads the Next action line", () => {
+    expect(nextAction(body)).toBe("WS1 merges it; the WS1 lead, by Friday");
+    expect(nextAction("- Next action: do it")).toBe("do it");
+  });
+  test("labels win over the body for the same field", () => {
+    const b = boardItem({ repo: "o/r", number: 1, title: "t", html_url: "u", state: "open", body, labels: ["ws:WS1 Knowledge graph", "type:feature"], assignees: [] });
+    expect(b.fields.Workstream).toBe("WS1 Knowledge graph");
+    expect(b.fields["Target date"]).toBe("2026-11-20");
+    expect(b.type).toBe("feature");
+  });
+});
