@@ -62,31 +62,48 @@ export function rolledUpHealth(current: string | null | undefined, subIssueLabel
 /** The marker that makes AUTO-10's comment findable, so it is posted once. */
 export const EXCEPTION_MARKER = "<!-- auto-10:validation-exception -->";
 
+/** What GitHub records about a commenter's relationship to the repository. */
+export type Association = "OWNER" | "MEMBER" | "COLLABORATOR" | "CONTRIBUTOR" | "FIRST_TIME_CONTRIBUTOR" | "FIRST_TIMER" | "NONE" | string;
+
+/**
+ * Whose `Validation confirmed:` counts. Owner, 2026-10-20: with no named
+ * Technical Integration Lead, the repository's own permissions are the
+ * authorization: its owner, members and collaborators. Naming a lead narrows
+ * it to that login. The cost, said where it is decided: anyone with write
+ * access can confirm, so a partner with Write on their own workstream
+ * repository (BD-04) could confirm their own work there.
+ */
+export function confirms(c: { login: string; body: string; association?: Association }, lead: string | null): boolean {
+  if (!c.body.trimStart().startsWith("Validation confirmed:")) return false;
+  if (lead) return c.login.toLowerCase() === lead.toLowerCase();
+  return c.association === "OWNER" || c.association === "MEMBER" || c.association === "COLLABORATOR";
+}
+
 /**
  * AUTO-10 (req:aai-automation#AUTO-10): what to do about one item. An item
- * whose Integration readiness is Validated must carry a comment from the
- * Technical Integration Lead starting `Validation confirmed:`. Without one it
- * gets the `validation-exception` label and ONE explanatory comment; when the
- * confirmation appears, or the value moves off Validated, the label goes. It
- * never changes Integration readiness.
+ * whose Integration readiness is Validated must carry a confirming comment
+ * (`confirms`). Without one it gets the `validation-exception` label and ONE
+ * explanatory comment; when the confirmation appears, or the value moves off
+ * Validated, the label goes. It never changes Integration readiness.
  */
 export function validationAction(i: {
   readiness: string | null | undefined;
-  comments: { login: string; body: string }[];
-  lead: string;
+  comments: { login: string; body: string; association?: Association }[];
+  lead: string | null;
   hasLabel: boolean;
 }): { addLabel: boolean; removeLabel: boolean; comment?: string } {
-  const confirmed = i.comments.some((c) => c.login.toLowerCase() === i.lead.toLowerCase() && c.body.trimStart().startsWith("Validation confirmed:"));
+  const confirmed = i.comments.some((c) => confirms(c, i.lead));
   const validated = i.readiness === "Validated";
   if (validated && !confirmed) {
     const already = i.comments.some((c) => c.body.includes(EXCEPTION_MARKER));
+    const who = i.lead ? `@${i.lead}` : "someone with write access to this repository";
     return {
       addLabel: !i.hasLabel,
       removeLabel: false,
       comment: already
         ? undefined
-        : `${EXCEPTION_MARKER}\nIntegration readiness is **Validated**, but there is no comment from @${i.lead} starting \`Validation confirmed:\`. ` +
-          "Validation is recorded by that comment, with the evidence (DP-05); the field alone does not count. This label goes when the comment is added or the value changes.",
+        : `${EXCEPTION_MARKER}\nIntegration readiness is **Validated**, but there is no comment from ${who} starting \`Validation confirmed:\`. ` +
+          "Validation is recorded by that comment, with the evidence (DP-05); the label alone does not count. This flag goes when the comment is added or the value changes.",
     };
   }
   return { addLabel: false, removeLabel: i.hasLabel };

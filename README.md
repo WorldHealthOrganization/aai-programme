@@ -52,9 +52,9 @@ What runs on its own (AUTO-07). **No tokens** (owner, 2026-10-20): the programme
 | AUTO-01 add to the board | by hand in project 110 | Programme-level items by type, and workstream items labelled `thin-slice`, `sprint-demo`, `blocked` or `at-risk`. 110's auto-add cannot read a repository outside WHO's organisation | project 110 | PM & Architecture Integration |
 | AUTO-03 Programme status | an issue opened, closed or reopened | `status:Not started` on a new programme item with no status; `Done` when closed as completed; `Cancelled` when closed as not planned; `In progress` when reopened | items on the board | PM & Architecture Integration |
 | AUTO-04 Delivery health | daily | Raises an open epic's `health:` label to the worst `blocked` or `at-risk` label on its open sub-issues; never lowers it | open epics | the epic's owner lowers it |
-| AUTO-10 validation check | daily | An item labelled `readiness:Validated` with no `Validation confirmed:` comment from the Technical Integration Lead gets `validation-exception` and one comment; the label goes when the comment appears or the value changes | items on the board | Technical Integration Lead |
+| AUTO-10 validation check | daily | An item labelled `readiness:Validated` with no `Validation confirmed:` comment from someone with write access to the repository (or, once named, the Technical Integration Lead) gets `validation-exception` and one comment; the label goes when the comment appears or the value changes | items on the board | Technical Integration Lead |
 
-AUTO-10 needs `technicalIntegrationLead` in [`scripts/programme/config.json`](scripts/programme/config.json); until it is set, it stops and says so (AUTO-09). AUTO-11 (backfill) is not needed: nothing can add to 110 without a token, so items are added there by hand.
+Whose confirmation counts for AUTO-10 (owner, 2026-10-20): the repository's own permissions, so its owner, members and collaborators, while no Technical Integration Lead is named. Setting `technicalIntegrationLead` in [`scripts/programme/config.json`](scripts/programme/config.json) narrows it to that login. Until then anyone with write access can confirm, so a partner with Write on their own workstream repository could confirm their own work there. AUTO-11 (backfill) is not needed: nothing can add to 110 without a token, so items are added there by hand.
 
 ## Labels
 

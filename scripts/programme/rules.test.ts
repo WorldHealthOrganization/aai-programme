@@ -32,26 +32,25 @@ describe("AUTO-04 Delivery health roll-up", () => {
 });
 
 describe("AUTO-10 validation check", () => {
-  const lead = "til";
   test("Validated with no confirmation: label and one comment (PIL-07)", () => {
-    const a = validationAction({ readiness: "Validated", comments: [], lead, hasLabel: false });
+    const a = validationAction({ readiness: "Validated", comments: [], lead: null, hasLabel: false });
     expect(a.addLabel).toBe(true);
     expect(a.comment).toContain(EXCEPTION_MARKER);
   });
   test("run again: nothing more", () => {
-    const a = validationAction({ readiness: "Validated", comments: [{ login: "bot", body: `${EXCEPTION_MARKER}\n…` }], lead, hasLabel: true });
+    const a = validationAction({ readiness: "Validated", comments: [{ login: "bot", body: `${EXCEPTION_MARKER}\n…`, association: "NONE" }], lead: null, hasLabel: true });
     expect(a).toEqual({ addLabel: false, removeLabel: false, comment: undefined });
   });
-  test("the lead's confirmation removes the label", () => {
-    const a = validationAction({ readiness: "Validated", comments: [{ login: "TIL", body: "Validation confirmed: evidence at …" }], lead, hasLabel: true });
-    expect(a).toEqual({ addLabel: false, removeLabel: true });
+  test("no lead named: a collaborator's confirmation counts, an outsider's does not", () => {
+    expect(validationAction({ readiness: "Validated", comments: [{ login: "x", body: "Validation confirmed: evidence", association: "COLLABORATOR" }], lead: null, hasLabel: true })).toEqual({ addLabel: false, removeLabel: true });
+    expect(validationAction({ readiness: "Validated", comments: [{ login: "y", body: "Validation confirmed: trust me", association: "CONTRIBUTOR" }], lead: null, hasLabel: false }).addLabel).toBe(true);
   });
-  test("someone else's confirmation does not count", () => {
-    const a = validationAction({ readiness: "Validated", comments: [{ login: "partner", body: "Validation confirmed: trust me" }], lead, hasLabel: false });
-    expect(a.addLabel).toBe(true);
+  test("a lead named: only theirs counts", () => {
+    expect(validationAction({ readiness: "Validated", comments: [{ login: "TIL", body: "Validation confirmed: evidence", association: "NONE" }], lead: "til", hasLabel: true })).toEqual({ addLabel: false, removeLabel: true });
+    expect(validationAction({ readiness: "Validated", comments: [{ login: "owner", body: "Validation confirmed: ok", association: "OWNER" }], lead: "til", hasLabel: false }).addLabel).toBe(true);
   });
   test("moving off Validated removes the label", () => {
-    expect(validationAction({ readiness: "Ready to integrate", comments: [], lead, hasLabel: true })).toEqual({ addLabel: false, removeLabel: true });
+    expect(validationAction({ readiness: "Ready to integrate", comments: [], lead: null, hasLabel: true })).toEqual({ addLabel: false, removeLabel: true });
   });
 });
 

@@ -1,7 +1,7 @@
 /**
  * AUTO-10 (req:aai-automation#AUTO-10): every item whose Integration readiness
  * is Validated needs a `Validation confirmed:` comment from the Technical
- * Integration Lead. Without one: the `validation-exception` label and one
+ * Integration Lead, or, while none is named, from anyone with write access. Without one: the `validation-exception` label and one
  * comment. With one, or off Validated: the label goes. Never changes
  * Integration readiness, which it reads from the `readiness:` label.
  *
@@ -10,16 +10,13 @@
 import { config, DRY, readItems, rest, restAll } from "./lib.ts";
 import { validationAction } from "./rules.ts";
 
+// No lead named: the repository's own permissions decide whose confirmation counts (rules.ts, `confirms`).
 const lead = config.technicalIntegrationLead;
-if (!lead) {
-  console.error("::error::technicalIntegrationLead is not set in scripts/programme/config.json: AUTO-10 cannot tell whose confirmation counts (section 14 input)");
-  process.exit(2);
-}
 const LABEL = "validation-exception";
 for (const item of readItems()) {
   const hasLabel = item.labels.includes(LABEL);
   if (item.fields["Integration readiness"] !== "Validated" && !hasLabel) continue;
-  const comments = restAll<{ user: { login: string }; body: string }>(`repos/${item.repo}/issues/${item.number}/comments?per_page=100`).map((c) => ({ login: c.user.login, body: c.body }));
+  const comments = restAll<{ user: { login: string }; body: string; author_association: string }>(`repos/${item.repo}/issues/${item.number}/comments?per_page=100`).map((c) => ({ login: c.user.login, body: c.body, association: c.author_association }));
   const a = validationAction({ readiness: item.fields["Integration readiness"], comments, lead, hasLabel });
   const at = `${item.repo}#${item.number}`;
   if (a.addLabel) DRY ? console.log(`would label ${at} ${LABEL}`) : rest(`repos/${item.repo}/issues/${item.number}/labels`, "POST", { labels: [LABEL] });
