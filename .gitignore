@@ -32,3 +32,7 @@ node_modules/
 # END state mounts
 # Kept on cat/aai-platform/beans; mounted here by state:mount, never committed to main
 /beans/**
+
+# Rendered from the mounted layers by mount:remote (the agent surface); regenerated in every checkout
+/.agents/
+/.claude/commands/

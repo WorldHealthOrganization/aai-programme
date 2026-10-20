@@ -66,7 +66,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "b66b510356821b4b6d5e43c948fb79243d080083",
+          "ref": "bb5dc64b6afd7c8b6f361d0bcc8806d7ca15710d",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -83,8 +83,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-20",
-              "ref": "b66b510356821b4b6d5e43c948fb79243d080083",
-              "evidence": "Owner litlfred, 2026-10-20, answering \"Approve these pins (trust consent per commit, mounted whole)\" in a Claude Code session: \"Approve, build like smart-ra\". Mounted whole so the site is built with the platform chrome."
+              "ref": "bb5dc64b6afd7c8b6f361d0bcc8806d7ca15710d",
+              "evidence": "Owner litlfred, 2026-10-20 18:51Z, in a Claude Code session: \"repin_merge when ready PRs next 3 hrs\" (window to 21:51Z). Repinned to the layer's main at that time."
             }
           }
         }
@@ -95,7 +95,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "44e87adeaa7354910eaaa21072e62bd35b16f21f",
+          "ref": "be2f3cfb2d9203e3bb9a71e320a31cd602b937ae",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -112,8 +112,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-20",
-              "ref": "44e87adeaa7354910eaaa21072e62bd35b16f21f",
-              "evidence": "Owner litlfred, 2026-10-20, answering \"Approve these pins (trust consent per commit, mounted whole)\" in a Claude Code session: \"Approve, build like smart-ra\". Mounted whole so the site is built with the platform chrome."
+              "ref": "be2f3cfb2d9203e3bb9a71e320a31cd602b937ae",
+              "evidence": "Owner litlfred, 2026-10-20 18:51Z, in a Claude Code session: \"repin_merge when ready PRs next 3 hrs\" (window to 21:51Z). Repinned to the layer's main at that time."
             }
           }
         }
@@ -124,7 +124,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "3420b76c9c72eaadfa56ddd0ce2b004be120657a",
+          "ref": "435bc2724475474eebb21d2dab0f9b4ed6a861b0",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -138,8 +138,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-20",
-              "ref": "3420b76c9c72eaadfa56ddd0ce2b004be120657a",
-              "evidence": "Owner litlfred, 2026-10-20, answering \"Approve these pins (trust consent per commit, mounted whole)\" in a Claude Code session: \"Approve, build like smart-ra\". Mounted whole so the site is built with the platform chrome."
+              "ref": "435bc2724475474eebb21d2dab0f9b4ed6a861b0",
+              "evidence": "Owner litlfred, 2026-10-20 18:51Z, in a Claude Code session: \"repin_merge when ready PRs next 3 hrs\" (window to 21:51Z). Repinned to the layer's main at that time."
             }
           }
         }
