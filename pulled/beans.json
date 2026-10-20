@@ -6,8 +6,8 @@
       "state": "ok",
       "branch": "cat/aai-platform/beans",
       "path": "beans/defs",
-      "commit": "ede4a80d9728d76c961ebd5aab734efe815cc62f",
-      "count": 1
+      "commit": "0aaa08314d6433b0ea12870f6669521bd3557bee",
+      "count": 4
     },
     {
       "repo": "litlfred/folio-assistant",
@@ -105,6 +105,23 @@
   "beans": [
     {
       "repo": "litlfred/aai-platform",
+      "id": "aai-platform-l2kn",
+      "title": "Name the Platform lead and give them Maintain access",
+      "status": "todo",
+      "type": "task",
+      "priority": "normal",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "governance"
+      ],
+      "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+      "archived": false,
+      "updated_at": "2026-10-20T16:00:00Z",
+      "url": "https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-l2kn--name-the-platform-lead.md"
+    },
+    {
+      "repo": "litlfred/aai-platform",
       "id": "aai-platform-p1bd",
       "title": "Pull beans from the platform repositories into one board",
       "status": "in-progress",
@@ -119,6 +136,40 @@
       "archived": false,
       "updated_at": "2026-10-20T14:00:00Z",
       "url": "https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-p1bd--pull-beans-from-the-platform-repositories-into-one-board.md"
+    },
+    {
+      "repo": "litlfred/aai-platform",
+      "id": "aai-platform-r9vd",
+      "title": "Write requirements v0.4.2 from the 2026-10-20 decisions",
+      "status": "in-progress",
+      "type": "task",
+      "priority": "normal",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "requirements"
+      ],
+      "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+      "archived": false,
+      "updated_at": "2026-10-20T16:00:00Z",
+      "url": "https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-r9vd--requirements-v0-4-2.md"
+    },
+    {
+      "repo": "litlfred/aai-platform",
+      "id": "aai-platform-s7wq",
+      "title": "Sync the fork to the WHO repository",
+      "status": "todo",
+      "type": "task",
+      "priority": "normal",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "sync"
+      ],
+      "issue": "https://github.com/litlfred/folio-assistant/issues/2605",
+      "archived": false,
+      "updated_at": "2026-10-20T16:00:00Z",
+      "url": "https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-s7wq--sync-the-fork-to-the-who-repository.md"
     },
     {
       "repo": "litlfred/folio-assistant",
