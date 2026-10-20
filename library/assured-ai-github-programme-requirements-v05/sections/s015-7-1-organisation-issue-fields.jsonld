@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/aai-programme/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/assured-ai-github-programme-requirements-v05/sections/s015-7-1-organisation-issue-fields",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "7.1 Organisation issue fields",
+  "contains": [
+    "library/assured-ai-github-programme-requirements-v05/blocks/prose-s015-7-1-organisation-issue-fields"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/assured-ai-github-programme-requirements-v05/manifest.jsonld",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/assured-ai-github-programme-requirements-v05/manifest.jsonld",
+  "provenance": "ingested"
+}

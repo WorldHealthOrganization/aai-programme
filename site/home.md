@@ -8,7 +8,7 @@ Coordination for the WHO Assured AI programme, staged in [`litlfred/aai-programm
 
 | Area | Where |
 |---|---|
-| **Requirements** | [v0.4.2 draft, for review]({{ '/en/cat-harness/library/aai-programme/assured-ai-github-programme-requirements-v042/' | relative_url }}) · [v0.4.1, as written by the PM & Architecture Integration]({{ '/en/cat-harness/library/aai-programme/assured-ai-github-programme-requirements-v041/' | relative_url }}). Each section is a JSON-LD node. |
+| **Requirements** | [v0.5, current draft: all public, no private layer]({{ '/en/cat-harness/library/aai-programme/assured-ai-github-programme-requirements-v05/' | relative_url }}). Earlier: [v0.4.2]({{ '/en/cat-harness/library/aai-programme/assured-ai-github-programme-requirements-v042/' | relative_url }}) · [v0.4.1, as written by the PM & Architecture Integration]({{ '/en/cat-harness/library/aai-programme/assured-ai-github-programme-requirements-v041/' | relative_url }}) · [v0.3.6, the original request]({{ '/en/cat-harness/library/aai-programme/assured-ai-github-programme-requirements-v036/' | relative_url }}) (from [litlfred/smart-ra#76](https://github.com/litlfred/smart-ra/issues/76)). Each section is a JSON-LD node. |
 | **Build process** | [The section 13 build sequence]({{ '/en/cat-harness/processes/programme-build.html' | relative_url }}): who does each step, and where the build must stop. |
 | **Work plan** | [The combined board]({{ '/board/' | relative_url }}): this repository's work items and those of the platform repositories it reviews. |
 

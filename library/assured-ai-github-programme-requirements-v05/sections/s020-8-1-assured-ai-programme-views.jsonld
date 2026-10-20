@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/aai-programme/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/assured-ai-github-programme-requirements-v05/sections/s020-8-1-assured-ai-programme-views",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "8.1 Assured AI Programme views",
+  "contains": [
+    "library/assured-ai-github-programme-requirements-v05/blocks/prose-s020-8-1-assured-ai-programme-views"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/assured-ai-github-programme-requirements-v05/manifest.jsonld",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/assured-ai-github-programme-requirements-v05/manifest.jsonld",
+  "provenance": "ingested"
+}
