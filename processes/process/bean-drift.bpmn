@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  xmlns:cat-harness.processes="https://litlfred.github.io/cat-harness/0.1.0/processes/ns#"
+                  id="Definitions_AAI_BeanDrift" targetNamespace="https://litlfred.github.io/aai-programme/workflows"
+                  exporter="folio-assistant" exporterVersion="1">
+  <bpmn:resource id="programme-automation" name="Programme automation"/>
+  <bpmn:resource id="workstream-lead" name="Workstream lead"/>
+  <bpmn:collaboration id="Collaboration_AAI_BeanDrift">
+    <bpmn:participant id="Participant_AAI_BeanDrift" name="Assured AI programme: act on bean drift" processRef="Process_AAI_BeanDrift"/>
+  </bpmn:collaboration>
+  <bpmn:process id="Process_AAI_BeanDrift" name="Assured AI programme: act on bean drift" isExecutable="false">
+    <bpmn:documentation>Keep the programme issues and the beans they carry from drifting apart. The issue owns the programme fields, dates, review and epic; the bean owns the steps and their execution; neither copies the other. The drift check compares them and flags; a person decides what changes (req:aai-design-principles#DP-06).</bpmn:documentation>
+    <bpmn:extensionElements>
+      <cat-harness.processes:policy enforcement="strict"/>
+    </bpmn:extensionElements>
+    <bpmn:laneSet id="LaneSet_AAI_BeanDrift">
+      <bpmn:lane id="Lane_Auto" name="Programme automation" partitionElementRef="programme-automation">
+        <bpmn:documentation>The bean drift check (scripts/programme/bean-drift.ts): runs daily in the Pull beans workflow and on a `/check-drift` comment. It reports; it never changes an issue (req:aai-design-principles#DP-06).</bpmn:documentation>
+        <bpmn:flowNodeRef>Start_AAI_BeanDrift</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>A_Pull</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>A_Check</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>GW_Flags</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>End_StopClean</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_Lead" name="Workstream lead" partitionElementRef="workstream-lead">
+        <bpmn:documentation>Decides what a bean is to the programme, and keeps the issue that carries it current. An agent may act in this lane and propose; the lead decides.</bpmn:documentation>
+        <bpmn:flowNodeRef>A_Review</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Call_Triage</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>End_AAI_BeanDrift</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="Start_AAI_BeanDrift" name="Daily, or a /check-drift comment">
+      <bpmn:documentation>The Pull beans workflow each day; a `/check-drift` comment by someone with write access; or by hand.</bpmn:documentation>
+    </bpmn:startEvent>
+    <bpmn:task id="A_Pull" name="Refresh the beans snapshot">
+      <bpmn:documentation>scripts/pull-beans.ts reads every store in beans-sources.json into pulled/beans.json.</bpmn:documentation>
+    </bpmn:task>
+    <bpmn:task id="A_Check" name="Check every linked issue against its beans">
+      <bpmn:documentation>scripts/programme/bean-drift.ts: bean completed or scrapped while the issue is open; issue closed while the bean is open; a link to a bean not found; a bean changed since the issue was last touched; an open feature under a closed epic or proposal; open beans nobody has triaged. It writes pulled/drift.md, and replies to a /check-drift comment.</bpmn:documentation>
+    </bpmn:task>
+    <bpmn:exclusiveGateway id="GW_Flags" name="Any flags?">
+      <bpmn:documentation>Answered by the report.</bpmn:documentation>
+    </bpmn:exclusiveGateway>
+    <bpmn:endEvent id="End_StopClean" name="No drift"/>
+    <bpmn:task id="A_Review" name="Review each flag">
+      <bpmn:documentation>On the board's Bean drift page. For each: close the issue (completed or not planned), reopen it, fix or replace its bean line, move it to another epic, or, for an untriaged bean, triage it.</bpmn:documentation>
+    </bpmn:task>
+    <bpmn:callActivity id="Call_Triage" name="Triage the untriaged beans" calledElement="Process_AAI_BeanTriage">
+      <bpmn:documentation>Each untriaged bean goes through the bean-triage process.</bpmn:documentation>
+    </bpmn:callActivity>
+    <bpmn:endEvent id="End_AAI_BeanDrift" name="Issues and beans agree"/>
+    <bpmn:sequenceFlow id="SF_AAI_BeanDrift_1" sourceRef="Start_AAI_BeanDrift" targetRef="A_Pull"/>
+    <bpmn:sequenceFlow id="SF_AAI_BeanDrift_2" sourceRef="A_Pull" targetRef="A_Check"/>
+    <bpmn:sequenceFlow id="SF_AAI_BeanDrift_3" sourceRef="A_Check" targetRef="GW_Flags"/>
+    <bpmn:sequenceFlow id="SF_AAI_BeanDrift_4" name="no" sourceRef="GW_Flags" targetRef="End_StopClean"/>
+    <bpmn:sequenceFlow id="SF_AAI_BeanDrift_5" name="yes" sourceRef="GW_Flags" targetRef="A_Review"/>
+    <bpmn:sequenceFlow id="SF_AAI_BeanDrift_6" sourceRef="A_Review" targetRef="Call_Triage"/>
+    <bpmn:sequenceFlow id="SF_AAI_BeanDrift_7" sourceRef="Call_Triage" targetRef="End_AAI_BeanDrift"/>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="Diagram_AAI_BeanDrift">
+    <bpmndi:BPMNPlane id="Plane_AAI_BeanDrift" bpmnElement="Collaboration_AAI_BeanDrift">
+      <bpmndi:BPMNShape id="Shape_Participant_AAI_BeanDrift" bpmnElement="Participant_AAI_BeanDrift" isHorizontal="true">
+        <dc:Bounds x="160" y="80" width="1210" height="340" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Lane_Auto_AAI_BeanDrift" bpmnElement="Lane_Auto" isHorizontal="true">
+        <dc:Bounds x="190" y="80" width="1180" height="170" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Lane_Lead_AAI_BeanDrift" bpmnElement="Lane_Lead" isHorizontal="true">
+        <dc:Bounds x="190" y="250" width="1180" height="170" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Start_AAI_BeanDrift_AAI_BeanDrift" bpmnElement="Start_AAI_BeanDrift">
+        <dc:Bounds x="302" y="147" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_A_Pull_AAI_BeanDrift" bpmnElement="A_Pull">
+        <dc:Bounds x="410" y="125" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_A_Check_AAI_BeanDrift" bpmnElement="A_Check">
+        <dc:Bounds x="560" y="125" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_GW_Flags_AAI_BeanDrift" bpmnElement="GW_Flags" isMarkerVisible="true">
+        <dc:Bounds x="745" y="140" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_End_StopClean_AAI_BeanDrift" bpmnElement="End_StopClean">
+        <dc:Bounds x="842" y="202" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_A_Review_AAI_BeanDrift" bpmnElement="A_Review">
+        <dc:Bounds x="860" y="295" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Call_Triage_AAI_BeanDrift" bpmnElement="Call_Triage">
+        <dc:Bounds x="1010" y="295" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_End_AAI_BeanDrift_AAI_BeanDrift" bpmnElement="End_AAI_BeanDrift">
+        <dc:Bounds x="1202" y="317" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_BeanDrift_1" bpmnElement="SF_AAI_BeanDrift_1">
+        <di:waypoint x="338" y="165" />
+        <di:waypoint x="410" y="165" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_BeanDrift_2" bpmnElement="SF_AAI_BeanDrift_2">
+        <di:waypoint x="530" y="165" />
+        <di:waypoint x="560" y="165" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_BeanDrift_3" bpmnElement="SF_AAI_BeanDrift_3">
+        <di:waypoint x="680" y="165" />
+        <di:waypoint x="745" y="165" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_BeanDrift_4" bpmnElement="SF_AAI_BeanDrift_4">
+        <di:waypoint x="795" y="165" />
+        <di:waypoint x="818" y="165" />
+        <di:waypoint x="818" y="220" />
+        <di:waypoint x="842" y="220" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_BeanDrift_5" bpmnElement="SF_AAI_BeanDrift_5">
+        <di:waypoint x="795" y="165" />
+        <di:waypoint x="827" y="165" />
+        <di:waypoint x="827" y="335" />
+        <di:waypoint x="860" y="335" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_BeanDrift_6" bpmnElement="SF_AAI_BeanDrift_6">
+        <di:waypoint x="980" y="335" />
+        <di:waypoint x="1010" y="335" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_BeanDrift_7" bpmnElement="SF_AAI_BeanDrift_7">
+        <di:waypoint x="1130" y="335" />
+        <di:waypoint x="1202" y="335" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

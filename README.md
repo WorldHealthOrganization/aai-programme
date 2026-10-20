@@ -58,14 +58,7 @@ Whose confirmation counts for AUTO-10 (owner, 2026-10-20): the repository's own 
 
 ## Programme issues and beans
 
-Beans are how the work is done, in whichever repository does it; programme issues are how the programme sees it. They are linked, and kept from drifting, like this (owner, 2026-10-20):
-
-- **The issue is the record of the link.** A programme issue that carries a bean says so in its body, one hidden line per bean: `<!-- bean: litlfred/folio-assistant/folio-assistant-ioa4 -->`. Nothing else holds the link, and nothing in the bean's own repository is written: the bean is linked to, read-only.
-- **Who owns what.** The bean owns the steps and their execution; the issue owns the programme fields (its labels), dates, review and epic. Neither copies the other.
-- **New work.** A bean that delivers part of an epic, changes a date, creates or clears a cross-workstream dependency, or needs a human review or decision gets an issue (the rule above): a person or an agent opens it, under its epic or proposal, with its `ws:`, `stage:` and `type:` labels and its bean line. A step under a bean that already has an issue stays a bean. `scripts/programme/create-items.ts` creates a batch from a one-off spec.
-- **Triage record.** Every open bean is either carried by an issue, under one that is, or triaged: [`docs/beans-analysis.json`](docs/beans-analysis.json) holds the 201 reviewed on 2026-10-20 and [`docs/beans-triage.json`](docs/beans-triage.json) every later decision, `{ "id", "decision": "not-applicable" | "step" | "issue #n", "by", "at" }`.
-- **Drift check.** `scripts/programme/bean-drift.ts` compares each issue with its beans and flags: bean completed or scrapped while the issue is open; issue closed while the bean is open; a link to a bean not found; a bean changed since its issue was last touched; an open feature under a closed epic or proposal; open beans nobody has triaged. It flags; a person acts (DP-06). The report is [`pulled/drift.md`](pulled/drift.md) and the board's [Bean drift](https://litlfred.github.io/aai-programme/programme/drift.html) page.
-- **When it runs.** Daily, in the Pull beans workflow, after the beans snapshot is refreshed. On demand: comment `/check-drift` on any issue (someone with write access); the summary comes back as a reply. Or Actions → Pull beans → Run workflow, or `bun run scripts/programme/bean-drift.ts` locally.
+How a bean becomes a programme issue, and how the two are kept from drifting, is in the knowledge graph as two processes: [triage a bean](https://litlfred.github.io/aai-programme/en/cat-harness/processes/bean-triage.html) ([bpmn](processes/process/bean-triage.bpmn)) and [act on bean drift](https://litlfred.github.io/aai-programme/en/cat-harness/processes/bean-drift.html) ([bpmn](processes/process/bean-drift.bpmn)). Run the check on demand by commenting `/check-drift` on any issue; the report is [`pulled/drift.md`](pulled/drift.md) and the board's [Bean drift](https://litlfred.github.io/aai-programme/programme/drift.html) page.
 
 ## Labels
 
