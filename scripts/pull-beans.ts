@@ -177,13 +177,17 @@ function readStore(src: Source): StoreResult {
     return { repo: src.repo, state: "no-store", branch: store.branch, commit: got.commit, note: `no bean files (looked in ${candidates.join(", ")})`, beans: [] };
 
   const beans: Bean[] = [];
+  const skipped: string[] = [];
   for (const f of files) {
     const t = git(["show", `FETCH_HEAD:${f}`], dir);
-    if (!t.ok) continue;
-    const b = parseBean(src.repo, store.branch, f, t.out);
+    const b = t.ok ? parseBean(src.repo, store.branch, f, t.out) : undefined;
     if (b) beans.push(b);
+    else skipped.push(f.split("/").pop()!);
   }
-  return { repo: src.repo, state: "ok", branch: store.branch, path, commit: got.commit, beans };
+  // A bean that cannot be read is reported, not silently dropped.
+  for (const f of skipped) console.error(`skipped: ${src.repo} ${f} (cannot read its front matter)`);
+  const note = skipped.length ? `${skipped.length} file(s) skipped: front matter does not parse` : undefined;
+  return { repo: src.repo, state: "ok", branch: store.branch, path, commit: got.commit, note, beans };
 }
 
 const rank = (order: string[], v: string) => {
@@ -288,7 +292,7 @@ function dedupe(results: StoreResult[]) {
     const before = r.beans.length;
     r.beans = r.beans.filter((b) => best.get(b.id) === b);
     const dropped = before - r.beans.length;
-    if (dropped) r.note = `${dropped} bean(s) also kept, more recently, in another store`;
+    if (dropped) r.note = [r.note, `${dropped} bean(s) also kept, more recently, in another store`].filter(Boolean).join("; ");
   }
 }
 
