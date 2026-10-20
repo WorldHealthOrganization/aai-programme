@@ -9,7 +9,7 @@ parent: aai-platform-7aw2
 tags:
     - programme
 created_at: 2026-10-20T17:00:00Z
-updated_at: 2026-10-20T17:00:00Z
+updated_at: 2026-10-20T18:00:00Z
 issue: https://github.com/litlfred/folio-assistant/issues/2605
 ---
 
@@ -17,4 +17,5 @@ SEC-04 says making any repository public is a separate governance decision. The 
 
 ## Done when
 
-- [ ] Chine-E accepts or rejects the exception, and v0.4.2 records the outcome
+- [x] v0.4.2 records the owner's exception (section 0, change 7; SEC-04)
+- [ ] Chine-E accepts or rejects it

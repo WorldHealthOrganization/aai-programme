@@ -9,7 +9,7 @@ parent: aai-platform-7aw2
 tags:
     - requirements
 created_at: 2026-10-20T16:00:00Z
-updated_at: 2026-10-20T16:00:00Z
+updated_at: 2026-10-20T18:00:00Z
 issue: https://github.com/litlfred/folio-assistant/issues/2605
 ---
 
@@ -17,6 +17,6 @@ Fold Chine-E's decisions of 2026-10-20 into the programme requirements: no `aai-
 
 ## Done when
 
-- [ ] v0.4.2 is drafted with a list of what changed
-- [ ] It is posted where the owner chooses
+- [x] v0.4.2 is drafted with a list of what changed
+- [x] It is posted where the owner chooses: `docs/requirements-v0.4.2.md`, linked from #2605
 - [ ] Chine-E accepts it

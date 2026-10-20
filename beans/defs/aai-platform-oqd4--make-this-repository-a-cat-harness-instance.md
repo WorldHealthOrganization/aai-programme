@@ -2,14 +2,14 @@
 # aai-platform-oqd4
 $schema: bean/1.0.0
 title: "Make this repository a cat-harness instance"
-status: todo
+status: in-progress
 type: task
 priority: normal
 parent: aai-platform-7aw2
 tags:
     - programme
 created_at: 2026-10-20T17:00:00Z
-updated_at: 2026-10-20T17:00:00Z
+updated_at: 2026-10-20T18:00:00Z
 issue: https://github.com/litlfred/folio-assistant/issues/2605
 ---
 
@@ -17,6 +17,6 @@ Today it is hand-rolled: no `aai-platform.json` declaration and no `index.config
 
 ## Done when
 
-- [ ] The owner chooses instance, harness or neither
-- [ ] If instance: it is scaffolded and passes its checks
+- [x] The owner chooses instance, harness or neither: a harness (owner, 2026-10-20), so `processes/` holds the programme's processes
+- [ ] It is scaffolded (done: `init-folio --instance`, schemas valid) and passes the repo-wide checks (not yet run: they need folio-assistant checked out)
 - [ ] It is tested whether mounted repositories show live beans or the pinned copy, before the custom script is retired
