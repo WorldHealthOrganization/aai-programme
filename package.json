@@ -1,0 +1,19 @@
+{
+  "name": "aai-programme",
+  "private": true,
+  "_cat_comment": "The one root script the harness assumes: its commands spawn `bun run cat <name>` from the checkout root, and run-script.ts finds <name> in whichever mounted layer declares it (as smart-ra does).",
+  "scripts": {
+    "cat": "bun cat-harness-tools/scripts/run-script.ts",
+    "site:library": "bun run folio-assistant-core/scripts/build-library-site.ts --out",
+    "site:build": "bun run cat-harness-tools/scripts/build-instance-site.ts --root . --instance aai-programme",
+    "site:render-bpmn": "bun run cat render:bpmn",
+    "site:board": "bun run scripts/site-board.ts"
+  },
+  "_workspaces_comment": "The mounted code layers, as workspaces, as smart-ra lists them: they import each other by package name, and nothing publishes those packages.",
+  "workspaces": [
+    "bootstrap-tools",
+    "cat-harness",
+    "cat-harness-tools",
+    "folio-assistant-core"
+  ]
+}

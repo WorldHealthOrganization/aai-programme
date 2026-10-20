@@ -1,0 +1,17 @@
+---
+title: Assured AI programme
+---
+
+# Assured AI programme
+
+Coordination for the WHO Assured AI programme, staged in [`litlfred/aai-programme`](https://github.com/litlfred/aai-programme) until the owner syncs it to the WHO organisation. Programme status is held on GitHub issues: see the programme set-up request, [litlfred/folio-assistant#2605](https://github.com/litlfred/folio-assistant/issues/2605).
+
+| Area | Where |
+|---|---|
+| **Requirements** | [v0.4.2 draft, for review]({{ '/en/cat-harness/library/aai-programme/assured-ai-github-programme-requirements-v042/' | relative_url }}) · [v0.4.1, as written by the PM & Architecture Integration]({{ '/en/cat-harness/library/aai-programme/assured-ai-github-programme-requirements-v041/' | relative_url }}). Each section is a JSON-LD node. |
+| **Build process** | [The section 13 build sequence]({{ '/en/cat-harness/processes/programme-build.html' | relative_url }}): who does each step, and where the build must stop. |
+| **Work plan** | [The combined board]({{ '/board/' | relative_url }}): this repository's work items and those of the platform repositories it reviews. |
+
+## What Platform is
+
+Platform is a cross-cutting technical delivery function that supports WS1 to WS5, not a sixth research workstream. Its lead is not yet confirmed. Until Platform has a repository of its own, its scope is recorded in the [README](https://github.com/litlfred/aai-programme#what-platform-is).

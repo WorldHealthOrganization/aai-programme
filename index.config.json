@@ -12,25 +12,77 @@
         "folioAssistant": [
           {
             "name": "cat-harness",
-            "path": "folio-assistant/cat-harness"
+            "path": "cat-harness"
           },
           {
             "name": "cat-harness-tools",
-            "path": "folio-assistant/cat-harness-tools"
+            "path": "cat-harness-tools"
+          },
+          {
+            "name": "folio-assistant-core",
+            "path": "folio-assistant-core"
           }
         ]
       },
       "feedbackDir": ".folio-feedback",
       "skills": ".claude/skills/local",
       "viewer": {
-        "dir": "folio-assistant/cat-harness-tools/viewer",
+        "dir": "cat-harness-tools/viewer",
         "port": 8080
       },
       "readme": {
         "linkStyle": "blob",
         "publishRef": "gh-pages"
       },
-      "_review_comment": "Replaces beans-sources.json (owner, 2026-10-20: \"if we did a KG, then we could just list those as remote KGs to review\"). Left out because they declare no beans directory: bootstrap, bootstrap-tools, folio-assistant-sci, fhir-harness, who-iris. folio-assistant is an index, not an instance; its beans arrive through cat-harness. qou is never mounted (owner, 2026-10-20)."
+      "_review_comment": "The platform layers are mounted whole, as smart-ra mounts them, so the site is built with the platform chrome. Other repositories' work plans are NOT reviewed through mounts: a mount is pinned to a commit, and beans live on a state branch outside that commit's tree, so a mount of dth-hrh or smart-ra arrived with no beans (measured 2026-10-20). beans-sources.json and scripts/pull-beans.ts read each beans branch live, and stay.",
+      "site": {
+        "build": {
+          "home": "site/home.md",
+          "pre": [
+            "site:render-bpmn"
+          ],
+          "sourceSteps": [
+            "site:library",
+            "site:board"
+          ],
+          "siteSteps": [],
+          "keep": [
+            "ns"
+          ],
+          "coverage": "report"
+        }
+      },
+      "_site_comment": "Built and published by an agent with cat-harness-tools/scripts/build-instance-site.ts, never by a workflow (owner, 2026-10-10, bean n3h9). `keep`: `ns`, the JSON-LD context publish-instance-context writes onto gh-pages.",
+      "_coverage_comment": "`coverage: report`, not refuse: the cat-harness `beans` visualiser asks for one page per instance, and its state-viewer has no per-instance renderer for beans (\"has no per-instance renderer\", build log 2026-10-20), so a site that mounts layers holding beans can never satisfy it. The combined page en/cat-harness/beans/ is built. Return to refuse once the platform writes those pages."
+    },
+    {
+      "name": "folio-assistant-core",
+      "source": {
+        "remote": {
+          "repository": "litlfred/folio-assistant-core",
+          "ref": "b66b510356821b4b6d5e43c948fb79243d080083",
+          "overrides": {
+            "folio-assistant-core": {
+              "whole": true
+            },
+            "cat-harness": {
+              "skip": true
+            },
+            "cat-harness-tools": {
+              "skip": true
+            }
+          },
+          "note": "A platform layer, mounted whole.",
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-10-20",
+              "ref": "b66b510356821b4b6d5e43c948fb79243d080083",
+              "evidence": "Owner litlfred, 2026-10-20, answering \"Approve these pins (trust consent per commit, mounted whole)\" in a Claude Code session: \"Approve, build like smart-ra\". Mounted whole so the site is built with the platform chrome."
+            }
+          }
+        }
+      }
     },
     {
       "name": "cat-harness",
@@ -40,18 +92,22 @@
           "ref": "44e87adeaa7354910eaaa21072e62bd35b16f21f",
           "overrides": {
             "cat-harness": {
-              "directories": [
-                "beans"
-              ]
+              "whole": true
+            },
+            "bootstrap": {
+              "skip": true
+            },
+            "bootstrap-tools": {
+              "skip": true
             }
           },
-          "note": "Reviewed for its work plan only (beans). Also holds folio-assistant's beans: folio-assistant keeps them on cat/cat-harness/beans.",
+          "note": "A platform layer, mounted whole.",
           "trust": {
             "consent": {
               "by": "litlfred",
               "on": "2026-10-20",
               "ref": "44e87adeaa7354910eaaa21072e62bd35b16f21f",
-              "evidence": "Owner litlfred, 2026-10-20, answering \"Record your trust consent for the five remote KGs to review?\" in a Claude Code session: \"Approve all five\". Pinned to each repository's main at that time, for its beans directory only."
+              "evidence": "Owner litlfred, 2026-10-20, answering \"Approve these pins (trust consent per commit, mounted whole)\" in a Claude Code session: \"Approve, build like smart-ra\". Mounted whole so the site is built with the platform chrome."
             }
           }
         }
@@ -65,93 +121,68 @@
           "ref": "3420b76c9c72eaadfa56ddd0ce2b004be120657a",
           "overrides": {
             "cat-harness-tools": {
-              "directories": [
-                "beans"
-              ]
+              "whole": true
+            },
+            "cat-harness": {
+              "skip": true
             }
           },
-          "note": "Reviewed for its work plan only (beans).",
+          "note": "A platform layer, mounted whole.",
           "trust": {
             "consent": {
               "by": "litlfred",
               "on": "2026-10-20",
               "ref": "3420b76c9c72eaadfa56ddd0ce2b004be120657a",
-              "evidence": "Owner litlfred, 2026-10-20, answering \"Record your trust consent for the five remote KGs to review?\" in a Claude Code session: \"Approve all five\". Pinned to each repository's main at that time, for its beans directory only."
+              "evidence": "Owner litlfred, 2026-10-20, answering \"Approve these pins (trust consent per commit, mounted whole)\" in a Claude Code session: \"Approve, build like smart-ra\". Mounted whole so the site is built with the platform chrome."
             }
           }
         }
       }
     },
     {
-      "name": "folio-assistant-core",
+      "name": "bootstrap",
       "source": {
         "remote": {
-          "repository": "litlfred/folio-assistant-core",
-          "ref": "b66b510356821b4b6d5e43c948fb79243d080083",
+          "repository": "litlfred/bootstrap",
+          "ref": "ebce7b7d627156214203b57c547125b331ffc5e5",
           "overrides": {
-            "folio-assistant-core": {
-              "directories": [
-                "beans"
-              ]
+            "bootstrap": {
+              "whole": true
             }
           },
-          "note": "Reviewed for its work plan only (beans).",
+          "note": "A platform layer, mounted whole.",
           "trust": {
             "consent": {
               "by": "litlfred",
               "on": "2026-10-20",
-              "ref": "b66b510356821b4b6d5e43c948fb79243d080083",
-              "evidence": "Owner litlfred, 2026-10-20, answering \"Record your trust consent for the five remote KGs to review?\" in a Claude Code session: \"Approve all five\". Pinned to each repository's main at that time, for its beans directory only."
+              "ref": "ebce7b7d627156214203b57c547125b331ffc5e5",
+              "evidence": "Owner litlfred, 2026-10-20, answering \"Approve these pins (trust consent per commit, mounted whole)\" in a Claude Code session: \"Approve, build like smart-ra\". Mounted whole so the site is built with the platform chrome."
             }
           }
         }
       }
     },
     {
-      "name": "dth-hrh",
+      "name": "bootstrap-tools",
       "source": {
         "remote": {
-          "repository": "litlfred/dth-hrh",
-          "ref": "0bd1c81657b269884c2a5c1962c7934e30fc1fef",
+          "repository": "litlfred/bootstrap-tools",
+          "ref": "3f5b43c8c9454da1272e5b08067535941b70178a",
           "overrides": {
-            "dth-hrh": {
-              "directories": [
-                "beans"
-              ]
+            "bootstrap-tools": {
+              "whole": true
+            },
+            "bootstrap": {
+              "skip": true
             }
           },
-          "note": "Reviewed for its work plan only (beans).",
+          "note": "A platform layer, mounted whole.",
           "trust": {
             "consent": {
               "by": "litlfred",
               "on": "2026-10-20",
-              "ref": "0bd1c81657b269884c2a5c1962c7934e30fc1fef",
-              "evidence": "Owner litlfred, 2026-10-20, answering \"Record your trust consent for the five remote KGs to review?\" in a Claude Code session: \"Approve all five\". Pinned to each repository's main at that time, for its beans directory only."
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "dpi-h-ra",
-      "source": {
-        "remote": {
-          "repository": "litlfred/smart-ra",
-          "ref": "408bbfa969dd3536bba066b3ad7b304fce2881ee",
-          "overrides": {
-            "dpi-h-ra": {
-              "directories": [
-                "beans"
-              ]
-            }
-          },
-          "note": "smart-ra declares the instance dpi-h-ra. Reviewed for its work plan only (beans).",
-          "trust": {
-            "consent": {
-              "by": "litlfred",
-              "on": "2026-10-20",
-              "ref": "408bbfa969dd3536bba066b3ad7b304fce2881ee",
-              "evidence": "Owner litlfred, 2026-10-20, answering \"Record your trust consent for the five remote KGs to review?\" in a Claude Code session: \"Approve all five\". Pinned to each repository's main at that time, for its beans directory only."
+              "ref": "3f5b43c8c9454da1272e5b08067535941b70178a",
+              "evidence": "Owner litlfred, 2026-10-20, answering \"Approve these pins (trust consent per commit, mounted whole)\" in a Claude Code session: \"Approve, build like smart-ra\". Mounted whole so the site is built with the platform chrome."
             }
           }
         }
@@ -159,5 +190,9 @@
     }
   ],
   "title": "aai-programme",
-  "description": "The Assured AI programme coordination instance, and the knowledge graphs whose work plans it reviews."
+  "description": "The Assured AI programme coordination instance, and the knowledge graphs whose work plans it reviews.",
+  "site": {
+    "landing": "aai-programme",
+    "agentRun": true
+  }
 }

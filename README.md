@@ -2,7 +2,7 @@
 
 Coordination for the WHO Assured AI programme: the requirements, the processes that build the programme's GitHub set-up, and the combined work plan. Staged here, in `litlfred/aai-programme`, until the owner syncs it to the WHO organisation. Programme status is held on GitHub issues; see the programme set-up request, [litlfred/folio-assistant#2605](https://github.com/litlfred/folio-assistant/issues/2605).
 
-The site is at <https://litlfred.github.io/aai-programme/>, and each pull request's preview at `STAGING/<branch>/` under it.
+The site is at <https://litlfred.github.io/aai-programme/>, and a branch's preview at `STAGING/<branch>/` under it. Both are built and published by an agent, never by a workflow (owner, 2026-10-10): `bun run site:build -- --publish` for the root, `bun run site:build -- --staging <branch> --publish` for a preview. Mount the layers first with `bun run cat mount:remote` and the work plan with `bun run cat state:mount`.
 
 Until Platform has a repository of its own, its scope is recorded here.
 
@@ -63,7 +63,7 @@ The `gates:` labels, one per Gates output, are added once the PM supplies the Ga
 
 Beans are the agents' work plan: one Markdown file per work item, read by the [`beans`](https://github.com/hmans/beans) CLI.
 
-- **This repository's beans** live on the branch [`cat/aai-platform/beans`](../../tree/cat/aai-platform/beans). Run `scripts/state-mount.sh` to put it at `.state/`, where `.beans.yml` points the CLI.
+- **This repository's beans** live on the branch [`cat/aai-platform/beans`](../../tree/cat/aai-platform/beans). `bun run cat state:mount` puts it at `beans/`.
 - **The combined board**, [`pulled/README.md`](pulled/README.md), lists the beans of every repository in [`beans-sources.json`](beans-sources.json). To add or remove a repository, edit that file. Repositories on its `deny` list are refused.
 - A bean that tracks programme work carries `issue:` with the URL of its GitHub issue. The issue is the source of truth; the board counts open beans without one.
 
