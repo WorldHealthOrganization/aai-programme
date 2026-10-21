@@ -2,10 +2,15 @@
   "@context": [
     "https://litlfred.github.io/aai-programme/ns/context/v1.jsonld",
     {
-      "@base": "https://litlfred.github.io/folio/"
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/0.1.0/ns#"
     }
   ],
   "@id": "library/assured-ai-github-programme-requirements-v041/blocks/prose-s001-assured-ai-requirements-for-the-programme-github",
+  "@type": [
+    "folio-assistant-core:Prose",
+    "doco:Section"
+  ],
   "kind": "prose",
   "title": "Assured AI: requirements for the programme GitHub project",
   "text": "../sections/s001-assured-ai-requirements-for-the-programme-github.md",

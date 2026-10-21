@@ -2,10 +2,15 @@
   "@context": [
     "https://litlfred.github.io/aai-programme/ns/context/v1.jsonld",
     {
-      "@base": "https://litlfred.github.io/folio/"
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/0.1.0/ns#"
     }
   ],
   "@id": "library/assured-ai-github-programme-requirements-v041/blocks/prose-s029-17-open-points-to-be-confirmed-by-the-pm",
+  "@type": [
+    "folio-assistant-core:Prose",
+    "doco:Section"
+  ],
   "kind": "prose",
   "title": "17. Open points to be confirmed by the PM",
   "text": "../sections/s029-17-open-points-to-be-confirmed-by-the-pm.md",

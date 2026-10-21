@@ -2,10 +2,15 @@
   "@context": [
     "https://litlfred.github.io/aai-programme/ns/context/v1.jsonld",
     {
-      "@base": "https://litlfred.github.io/folio/"
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/0.1.0/ns#"
     }
   ],
   "@id": "library/assured-ai-github-programme-requirements-v041/blocks/prose-s003-1-1-terms-used-in-this-document",
+  "@type": [
+    "folio-assistant-core:Prose",
+    "doco:Section"
+  ],
   "kind": "prose",
   "title": "1.1 Terms used in this document",
   "text": "../sections/s003-1-1-terms-used-in-this-document.md",
