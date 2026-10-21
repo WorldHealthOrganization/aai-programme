@@ -66,7 +66,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "bb5dc64b6afd7c8b6f361d0bcc8806d7ca15710d",
+          "ref": "8e61a1475449d757d6dfd94b57cd68dfd643a695",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -83,8 +83,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-20",
-              "ref": "bb5dc64b6afd7c8b6f361d0bcc8806d7ca15710d",
-              "evidence": "Owner litlfred, 2026-10-20 18:51Z, in a Claude Code session: \"repin_merge when ready PRs next 3 hrs\" (window to 21:51Z). Repinned to the layer's main at that time."
+              "ref": "8e61a1475449d757d6dfd94b57cd68dfd643a695",
+              "evidence": "Owner litlfred, 2026-10-20, in a Claude Code session: \"merge it and repin aai-programme\" (after cat-harness-tools#496 merged). Repinned to the layer's main at the time the repin was made."
             }
           }
         }
@@ -95,7 +95,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "be2f3cfb2d9203e3bb9a71e320a31cd602b937ae",
+          "ref": "76a08f462fd23d30d0320484a0ac0a0c129f0585",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -112,8 +112,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-20",
-              "ref": "be2f3cfb2d9203e3bb9a71e320a31cd602b937ae",
-              "evidence": "Owner litlfred, 2026-10-20 18:51Z, in a Claude Code session: \"repin_merge when ready PRs next 3 hrs\" (window to 21:51Z). Repinned to the layer's main at that time."
+              "ref": "76a08f462fd23d30d0320484a0ac0a0c129f0585",
+              "evidence": "Owner litlfred, 2026-10-20, in a Claude Code session: \"merge it and repin aai-programme\" (after cat-harness-tools#496 merged). Repinned to the layer's main at the time the repin was made."
             }
           }
         }
@@ -124,7 +124,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "435bc2724475474eebb21d2dab0f9b4ed6a861b0",
+          "ref": "ff406408583e82f8525794e5306eaf4479f2b30e",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -138,8 +138,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-20",
-              "ref": "435bc2724475474eebb21d2dab0f9b4ed6a861b0",
-              "evidence": "Owner litlfred, 2026-10-20 18:51Z, in a Claude Code session: \"repin_merge when ready PRs next 3 hrs\" (window to 21:51Z). Repinned to the layer's main at that time."
+              "ref": "ff406408583e82f8525794e5306eaf4479f2b30e",
+              "evidence": "Owner litlfred, 2026-10-20, in a Claude Code session: \"merge it and repin aai-programme\" (after cat-harness-tools#496 merged). Repinned to the layer's main at the time the repin was made."
             }
           }
         }
