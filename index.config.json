@@ -66,7 +66,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "8e61a1475449d757d6dfd94b57cd68dfd643a695",
+          "ref": "f35c1daff72439fec61ef8f5c15d218dc9e16d09",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -83,8 +83,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-20",
-              "ref": "8e61a1475449d757d6dfd94b57cd68dfd643a695",
-              "evidence": "Owner litlfred, 2026-10-20, in a Claude Code session: \"merge it and repin aai-programme\" (after cat-harness-tools#496 merged). Repinned to the layer's main at the time the repin was made."
+              "ref": "f35c1daff72439fec61ef8f5c15d218dc9e16d09",
+              "evidence": "Owner litlfred, 2026-10-21, in a Claude Code session: \"merge when green and repin aai-programme\" (after cat-harness#397 and cat-harness-tools#523 merged). Repinned to the layer's main at that time."
             }
           }
         }
@@ -95,7 +95,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "76a08f462fd23d30d0320484a0ac0a0c129f0585",
+          "ref": "59ddb5c831405b740a8ad6d8f0ba86d1f580a025",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -112,8 +112,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-20",
-              "ref": "76a08f462fd23d30d0320484a0ac0a0c129f0585",
-              "evidence": "Owner litlfred, 2026-10-20, in a Claude Code session: \"merge it and repin aai-programme\" (after cat-harness-tools#496 merged). Repinned to the layer's main at the time the repin was made."
+              "ref": "59ddb5c831405b740a8ad6d8f0ba86d1f580a025",
+              "evidence": "Owner litlfred, 2026-10-21, in a Claude Code session: \"merge when green and repin aai-programme\" (after cat-harness#397 and cat-harness-tools#523 merged). Repinned to the layer's main at that time."
             }
           }
         }
@@ -124,7 +124,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "ff406408583e82f8525794e5306eaf4479f2b30e",
+          "ref": "91f994cdb6df7baeaf6205f703d9e78db7b8ab83",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -138,8 +138,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-20",
-              "ref": "ff406408583e82f8525794e5306eaf4479f2b30e",
-              "evidence": "Owner litlfred, 2026-10-20, in a Claude Code session: \"merge it and repin aai-programme\" (after cat-harness-tools#496 merged). Repinned to the layer's main at the time the repin was made."
+              "ref": "91f994cdb6df7baeaf6205f703d9e78db7b8ab83",
+              "evidence": "Owner litlfred, 2026-10-21, in a Claude Code session: \"merge when green and repin aai-programme\" (after cat-harness#397 and cat-harness-tools#523 merged). Repinned to the layer's main at that time."
             }
           }
         }
@@ -150,7 +150,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap",
-          "ref": "ebce7b7d627156214203b57c547125b331ffc5e5",
+          "ref": "c71b96a3f2e8caf143b78bcf3ab6bb80060c82c2",
           "overrides": {
             "bootstrap": {
               "whole": true
@@ -161,8 +161,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-20",
-              "ref": "ebce7b7d627156214203b57c547125b331ffc5e5",
-              "evidence": "Owner litlfred, 2026-10-20, answering \"Approve these pins (trust consent per commit, mounted whole)\" in a Claude Code session: \"Approve, build like smart-ra\". Mounted whole so the site is built with the platform chrome."
+              "ref": "c71b96a3f2e8caf143b78bcf3ab6bb80060c82c2",
+              "evidence": "Owner litlfred, 2026-10-21, in a Claude Code session: \"merge when green and repin aai-programme\" (after cat-harness#397 and cat-harness-tools#523 merged). Repinned to the layer's main at that time."
             }
           }
         }
