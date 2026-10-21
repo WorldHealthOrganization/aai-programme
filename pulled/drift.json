@@ -1,13 +1,26 @@
 {
-  "checked": "2026-10-20",
+  "checked": "2026-10-21",
   "summary": {
-    "bean-done": 0,
+    "bean-done": 1,
     "bean-scrapped": 0,
     "issue-closed": 0,
     "broken-link": 0,
     "orphaned": 0,
-    "bean-changed": 0,
+    "bean-changed": 1,
     "untriaged": 0
   },
-  "findings": []
+  "findings": [
+    {
+      "kind": "bean-done",
+      "issue": 38,
+      "bean": "folio-core-2mb0",
+      "detail": "the bean is completed; close the issue as completed?"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 38,
+      "bean": "folio-core-2mb0",
+      "detail": "the bean changed (2026-10-20) after the issue was last touched (2026-10-20)"
+    }
+  ]
 }

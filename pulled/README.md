@@ -9,12 +9,12 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 | Repository | Store | In progress | To do | Draft | Completed | Scrapped | Open without issue |
 |---|---|--:|--:|--:|--:|--:|--:|
 | [aai-platform](https://github.com/litlfred/aai-platform) | `cat/aai-platform/beans` @ `befe225` | 3 | 22 | 0 | 0 | 0 | 0 |
-| [folio-assistant](https://github.com/litlfred/folio-assistant) | `cat/cat-harness/beans` @ `70e1ae6` (160 bean(s) also kept, more recently, in another store) | 58 | 65 | 2 | 1382 | 41 | 123 |
+| [folio-assistant](https://github.com/litlfred/folio-assistant) | `cat/cat-harness/beans` @ `f208a03` (159 bean(s) also kept, more recently, in another store) | 59 | 63 | 2 | 1384 | 41 | 122 |
 | [bootstrap](https://github.com/litlfred/bootstrap) | no beans yet | – | – | – | – | – | – |
 | [bootstrap-tools](https://github.com/litlfred/bootstrap-tools) | no beans yet | – | – | – | – | – | – |
 | [cat-harness](https://github.com/litlfred/cat-harness) | `cat/cat-harness/beans` @ `7c2493e` (1571 bean(s) also kept, more recently, in another store) | 8 | 14 | 0 | 113 | 1 | 22 |
-| [cat-harness-tools](https://github.com/litlfred/cat-harness-tools) | `main` @ `912e66b` (283 bean(s) also kept, more recently, in another store) | 4 | 9 | 1 | 12 | 0 | 13 |
-| [folio-assistant-core](https://github.com/litlfred/folio-assistant-core) | `main` @ `a2b6524` (181 bean(s) also kept, more recently, in another store) | 2 | 12 | 0 | 5 | 0 | 14 |
+| [cat-harness-tools](https://github.com/litlfred/cat-harness-tools) | `main` @ `ff40640` (283 bean(s) also kept, more recently, in another store) | 5 | 7 | 1 | 13 | 0 | 12 |
+| [folio-assistant-core](https://github.com/litlfred/folio-assistant-core) | `main` @ `8e61a14` (182 bean(s) also kept, more recently, in another store) | 2 | 10 | 0 | 6 | 0 | 12 |
 | [folio-assistant-sci](https://github.com/litlfred/folio-assistant-sci) | no beans yet | – | – | – | – | – | – |
 | [fhir-harness](https://github.com/litlfred/fhir-harness) | no beans yet | – | – | – | – | – | – |
 | [who-iris](https://github.com/litlfred/who-iris) | no beans yet | – | – | – | – | – | – |
@@ -76,7 +76,7 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 | [aai-platform-wfvg](https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-wfvg--review-the-project-110-items-with-ritika-after-the.md) | todo | normal | task | Review the project 110 items with Ritika after the pilot | [folio-assistant#2605](https://github.com/litlfred/folio-assistant/issues/2605) |
 | [aai-platform-wyr6](https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-wyr6--step-1-pre-flight-check-of-the-who-organisation.md) | todo | normal | task | Step 1: pre-flight check of the WHO organisation | [folio-assistant#2605](https://github.com/litlfred/folio-assistant/issues/2605) |
 
-### folio-assistant (123 open)
+### folio-assistant (122 open)
 
 | Bean | Status | Priority | Type | Title | Issue |
 |---|---|---|---|---|---|
@@ -107,6 +107,7 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 | [folio-assistant-30jr](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-30jr--hfags-last-three-declare-the-merge-queue-as-a-stat.md) | in-progress | normal | task | hfag's last three: declare the merge queue as a state graph, give it a viewer and tile, and record a train run |  |
 | [folio-assistant-32f6](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-32f6--prefix-the-harnesss-special-branches-with-cat-qa-r.md) | in-progress | normal | task | Prefix the harness's special branches with cat- (qa-reports, lake-cache/*, state); gh-pages unchanged |  |
 | [folio-assistant-3hk4](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-3hk4--qa-publish-must-publish-real-results-once-main-hol.md) | in-progress | normal | task | QA-PUBLISH must publish real results once main holds none (5hox blocker) |  |
+| [folio-assistant-4dbr](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-4dbr--forge-portability-gitlab-and-sovereign-compute-as.md) | in-progress | normal | task | Forge portability: GitLab and sovereign-compute as additional Tool nodes, not a sixth repo |  |
 | [folio-assistant-5uyl](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-5uyl--extract-the-immunizations-l1-graph-from-dak-compon.md) | in-progress | normal | task | Extract the immunizations L1 graph from DAK Component 1 into smart-immunizations/library |  |
 | [folio-assistant-5yhm](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-5yhm--terminology-identification-mapping-and-adjudicatio.md) | in-progress | normal | feature | TERMINOLOGY: identification, mapping and adjudication — a glossary term is CHECKED against an existing terminology, never only minted |  |
 | [folio-assistant-63q4](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-63q4--bibliography-reference-nodes-viewer-and-exports.md) | in-progress | normal | feature | Bibliography: Reference KG nodes, a path-limited bibliography viewer (like the glossary), exports in BibTeX / CSL-JSON / RIS / Dublin Core, per asset and per subgraph |  |
@@ -151,7 +152,6 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 | [folio-assistant-4682](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-4682--agent-memory-target-gemini-cli-not-implemented-own.md) | todo | normal | task | Agent memory target: Gemini CLI (not implemented — owner 2026-10-06) |  |
 | [folio-assistant-46l0](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-46l0--the-same-commit-fails-differently-in-three-environ.md) | todo | normal | bug | The same commit fails DIFFERENTLY in three environments, so a green run cannot be read as a green tree |  |
 | [folio-assistant-46ob](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-46ob--missing-viewers-100-navbar-rows-read-no-viewer-yet.md) | todo | normal | epic | Missing viewers: 100 navbar rows read 'no viewer yet' across 47 kinds on the live site |  |
-| [folio-assistant-4dbr](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-4dbr--forge-portability-gitlab-and-sovereign-compute-as.md) | todo | normal | task | Forge portability: GitLab and sovereign-compute as additional Tool nodes, not a sixth repo |  |
 | [folio-assistant-4y2i](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-4y2i--topology-sovereign-cloud-hosted-forge-jurisdiction.md) | todo | normal | task | TOPOLOGY: sovereign cloud — hosted forge, jurisdiction-defined URLs, L4-L5 data stores |  |
 | [folio-assistant-502c](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-502c--experiment-forced-along-a-bpmn-vs-managing-it-do-o.md) | todo | normal | task | EXPERIMENT: forced along a BPMN vs managing it — do outcomes change, at what compute? |  |
 | [folio-assistant-5zs1](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-5zs1--agent-memory-target-openai-codex-cli-not-implement.md) | todo | normal | task | Agent memory target: OpenAI Codex CLI (not implemented — owner 2026-10-06) |  |
@@ -179,7 +179,6 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 | [folio-assistant-g196](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-g196--every-preview-stores-a-full-copy-of-the-site-becau.md) | todo | normal | feature | Every preview stores a full copy of the site because per-preview facts are baked into every page |  |
 | [folio-assistant-h3tx](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-h3tx--phase-p4-the-publisher-invoked-for-ast-qa-only-a-r.md) | todo | normal | feature | PHASE P4: the Publisher invoked for AST + QA only; a release still cut from a full build and saying so |  |
 | [folio-assistant-hajp](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-hajp--interaction-the-asking-rule-is-enforced-by-three-l.md) | todo | normal | feature | INTERACTION: the asking rule is enforced by three layers, not remembered |  |
-| [folio-assistant-k8rc](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-k8rc--the-typescript-prose-backlog-344-and-two-of-them.md) | todo | normal | task | The TypeScript prose backlog: 344 mentions, and the exemption does not cover all of them |  |
 | [folio-assistant-l9v6](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-l9v6--decision-proposed-which-cdn-layer-if-any-in-front.md) | todo | normal | task | DECISION (proposed): which CDN layer, if any, in front of the WHO L1 corpus (slide 2, #1614) |  |
 | [folio-assistant-m4s1](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-m4s1--translation-catalogues-36-locale-page-po-files-mus.md) | todo | normal | bug | TRANSLATION CATALOGUES: 36 (locale, page) .po files must be AUTHORED — the templates now exist, nobody has been ASKED, and #1399 is held on it |  |
 | [folio-assistant-mgxw](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-mgxw--s7-seed-staging-repos-the-siblings-way-one-seed-pr.md) | todo | normal | task | S7 seed staging repos the sibling's way: one seed PR per litlfred/<name> repo, on a branch |  |
@@ -231,25 +230,24 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 | [folio-assistant-w1gy](https://github.com/litlfred/cat-harness/blob/cat/cat-harness/beans/beans/defs/folio-assistant-w1gy--separation-stage-5-qa-both-new-repositories-from-f.md) | todo | normal | task | Separation stage 5: QA both new repositories from fresh sibling clones |  |
 | [folio-assistant-xp72](https://github.com/litlfred/cat-harness/blob/cat/cat-harness/beans/beans/defs/folio-assistant-xp72--scale-fixture-a-beforeafter-large-document-pair-wi.md) | todo | normal | task | SCALE FIXTURE: a before/after large-document pair with a golden ChangeSet and a measured performance budget |  |
 
-### cat-harness-tools (13 open)
+### cat-harness-tools (12 open)
 
 | Bean | Status | Priority | Type | Title | Issue |
 |---|---|---|---|---|---|
-| [cat-tools-bbnd](https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/cat-tools-bbnd--translation-info-drawer-open-more-translation-deta.md) | in-progress | normal | feature | Translation info drawer: open more translation detail from every translation warning — blocks, pages, (sub)graphs, locales |  |
-| [cat-tools-e1lo](https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/cat-tools-e1lo--ingest-narrative-description-per-image-localized-i.md) | in-progress | normal | task | INGEST: narrative description per image, localized, including images extracted from PDFs |  |
+| [cat-tools-5jij](https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/cat-tools-5jij--qa-axis-summary-reads-a-json-shape-qa-sweep-never-e.md) | in-progress | normal | bug | qa-axis-summary reads a JSON shape qa-sweep never emits, so every axis reports "criteria run: 0" |  |
+| [cat-tools-og5t](https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/cat-tools-og5t--paper-site-in-the-harness-rendering-yj32-math-lean.md) | in-progress | normal | feature | PAPER SITE in the harness rendering (yj32): math, Lean links and notation macros, blocking qou's legacy-render retirement |  |
+| [cat-tools-sthf](https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/cat-tools-sthf--url-space-rendered-assets-mirror-the-instantiation.md) | in-progress | normal | feature | URL SPACE: rendered assets mirror the instantiation structure — <baseurl>/ for the root, <baseurl>/<instance>/<path> for every enabled harness |  |
 | [folio-assistant-gp2f](https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/folio-assistant-gp2f--page-weight-move-per-page-nav-harness-bar-icons-sc.md) | in-progress | normal | task | PAGE WEIGHT: move per-page nav, harness bar, icons, scripts and IG chrome CSS into shared cached assets (#1885) |  |
 | [folio-assistant-zzmr](https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/folio-assistant-zzmr--kg-the-knowledge-graphs-own-structure-declaration.md) | in-progress | normal | epic | KG: the knowledge graph's own structure, declaration and publication |  |
 | [folio-assistant-0dav](https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/folio-assistant-0dav--qa-readers-f2b-the-eleven-self-sidecar-gates-compu.md) | todo | high | task | QA READERS F2b: the eleven self-sidecar gates compute and judge; audit-coverage stops reporting a moved kind as empty |  |
 | [cat-tools-1as6](https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/cat-tools-1as6--render-stage-3-the-dynamic-state-export-has-a-posi.md) | todo | normal | task | RENDER STAGE 3: the dynamic-state export has a position but no filename — the owner left it open on purpose |  |
-| [cat-tools-5jij](https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/cat-tools-5jij--qa-axis-summary-reads-a-json-shape-qa-sweep-never-e.md) | todo | normal | bug | qa-axis-summary reads a JSON shape qa-sweep never emits, so every axis reports "criteria run: 0" |  |
-| [cat-tools-og5t](https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/cat-tools-og5t--paper-site-in-the-harness-rendering-yj32-math-lean.md) | todo | normal | feature | PAPER SITE in the harness rendering (yj32): math, Lean links and notation macros, blocking qou's legacy-render retirement |  |
-| [cat-tools-sthf](https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/cat-tools-sthf--url-space-rendered-assets-mirror-the-instantiation.md) | todo | normal | feature | URL SPACE: rendered assets mirror the instantiation structure — <baseurl>/ for the root, <baseurl>/<instance>/<path> for every enabled harness |  |
+| [cat-tools-e1lo](https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/cat-tools-e1lo--ingest-narrative-description-per-image-localized-i.md) | todo | normal | task | INGEST: narrative description per image, localized, including images extracted from PDFs |  |
 | [cat-tools-tk99](https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/cat-tools-tk99--programme-progress-an-epic-burn-down-and-a-math-pr.md) | todo | normal | feature | PROGRAMME PROGRESS: an epic burn-down and a math-progress heat map as a board feed |  |
 | [folio-assistant-ey1c](https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/folio-assistant-ey1c--merge-pipeline-asymmetry-merge-main-regenerates-a.md) | todo | normal | bug | MERGE PIPELINE ASYMMETRY: merge-main regenerates a PR branch, but nothing regenerates main after a PR merges into it |  |
 | [folio-assistant-nok9](https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/folio-assistant-nok9--merge-gate-agentic-adversarial-review-content-type.md) | todo | normal | feature | MERGE GATE: agentic adversarial review + content-type compile gates, and per-content-block QA backfill |  |
 | [folio-assistant-w8jq](https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/folio-assistant-w8jq--merge-gate-a-adversarial-agentic-code-review-is-a.md) | todo | normal | task | MERGE GATE (a): adversarial agentic code review is a required check on any agent-touched PR, with a committed verdict |  |
 
-### folio-assistant-core (14 open)
+### folio-assistant-core (12 open)
 
 | Bean | Status | Priority | Type | Title | Issue |
 |---|---|---|---|---|---|
@@ -265,8 +263,6 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 | [folio-assistant-o7eq](https://github.com/litlfred/folio-assistant-core/blob/main/beans/defs/folio-assistant-o7eq--url-space-rendered-assets-mirror-the-instantiation.md) | todo | normal | feature | URL SPACE: rendered assets mirror the instantiation structure — <baseurl>/ for the root, <baseurl>/<instance>/<path> for every enabled harness |  |
 | [folio-assistant-supn](https://github.com/litlfred/folio-assistant-core/blob/main/beans/defs/folio-assistant-supn--harness-cards-become-todos-outstanding-work-a-next.md) | todo | normal | task | HARNESS CARDS BECOME TODOS: outstanding work, a next-action recommendation from initialisation state, and health badges |  |
 | [folio-assistant-v49e](https://github.com/litlfred/folio-assistant-core/blob/main/beans/defs/folio-assistant-v49e--workflow-view-cat-harness-folio-shows-where-todos.md) | todo | normal | task | WORKFLOW VIEW: cat-harness folio shows where todos and beans sit in the BPMN/DMN, and where a process is breaking down |  |
-| [folio-core-2mb0](https://github.com/litlfred/folio-assistant-core/blob/main/beans/defs/folio-core-2mb0--adjudicate-the-68-round-trip-findings-on-who-iriss.md) | todo | normal | task | Adjudicate the 68 round-trip findings on who-iris's catalogues (66 warn, 2 fail) |  |
-| [folio-core-shsz](https://github.com/litlfred/folio-assistant-core/blob/main/beans/defs/folio-core-shsz--translation-info-drawer-on-every-translation-warni.md) | todo | normal | feature | Translation info drawer on every translation warning (pointer → cat-tools-bbnd) |  |
 
 ### smart-ra (1 open)
 
