@@ -1,15 +1,39 @@
 {
-  "checked": "2026-10-21",
+  "checked": "2026-10-22",
   "summary": {
-    "bean-done": 1,
+    "bean-done": 6,
     "bean-scrapped": 0,
     "issue-closed": 0,
     "broken-link": 0,
     "orphaned": 0,
-    "bean-changed": 1,
-    "untriaged": 0
+    "bean-changed": 8,
+    "untriaged": 2
   },
   "findings": [
+    {
+      "kind": "bean-done",
+      "issue": 46,
+      "bean": "folio-assistant-sd5v",
+      "detail": "the bean is completed; close the issue as completed?"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 46,
+      "bean": "folio-assistant-sd5v",
+      "detail": "the bean changed (2026-10-21) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 43,
+      "bean": "folio-assistant-3sbm",
+      "detail": "the bean changed (2026-10-21) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 42,
+      "bean": "folio-assistant-tdir",
+      "detail": "the bean changed (2026-10-21) after the issue was last touched (2026-10-20)"
+    },
     {
       "kind": "bean-done",
       "issue": 38,
@@ -21,6 +45,64 @@
       "issue": 38,
       "bean": "folio-core-2mb0",
       "detail": "the bean changed (2026-10-20) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-done",
+      "issue": 37,
+      "bean": "folio-assistant-m4s1",
+      "detail": "the bean is completed; close the issue as completed?"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 37,
+      "bean": "folio-assistant-m4s1",
+      "detail": "the bean changed (2026-10-21) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-done",
+      "issue": 27,
+      "bean": "folio-assistant-96y4",
+      "detail": "the bean is completed; close the issue as completed?"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 27,
+      "bean": "folio-assistant-96y4",
+      "detail": "the bean changed (2026-10-21) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-done",
+      "issue": 19,
+      "bean": "folio-assistant-8pzh",
+      "detail": "the bean is completed; close the issue as completed?"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 19,
+      "bean": "folio-assistant-8pzh",
+      "detail": "the bean changed (2026-10-21) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-done",
+      "issue": 18,
+      "bean": "folio-assistant-ioa4",
+      "detail": "the bean is completed; close the issue as completed?"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 18,
+      "bean": "folio-assistant-ioa4",
+      "detail": "the bean changed (2026-10-21) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-5o5c",
+      "detail": "litlfred/folio-assistant: Root-dependent platform outputs judged on a foreign content root (translation:obsolete, state:visualizer, processes:render)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "cat-tools-x5e0",
+      "detail": "litlfred/cat-harness-tools: Gates that read an absent repository-scoped graph should say not-applicable, not fail (content indexes outside folio-assistant)"
     }
   ]
 }
