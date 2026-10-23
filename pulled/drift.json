@@ -1,13 +1,13 @@
 {
-  "checked": "2026-10-22",
+  "checked": "2026-10-23",
   "summary": {
-    "bean-done": 6,
+    "bean-done": 7,
     "bean-scrapped": 0,
     "issue-closed": 0,
     "broken-link": 0,
     "orphaned": 0,
-    "bean-changed": 8,
-    "untriaged": 2
+    "bean-changed": 9,
+    "untriaged": 3
   },
   "findings": [
     {
@@ -33,6 +33,18 @@
       "issue": 42,
       "bean": "folio-assistant-tdir",
       "detail": "the bean changed (2026-10-21) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-done",
+      "issue": 41,
+      "bean": "folio-assistant-jut3",
+      "detail": "the bean is completed; close the issue as completed?"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 41,
+      "bean": "folio-assistant-jut3",
+      "detail": "the bean changed (2026-10-22) after the issue was last touched (2026-10-20)"
     },
     {
       "kind": "bean-done",
@@ -98,6 +110,11 @@
       "kind": "untriaged",
       "bean": "folio-assistant-5o5c",
       "detail": "litlfred/folio-assistant: Root-dependent platform outputs judged on a foreign content root (translation:obsolete, state:visualizer, processes:render)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-kyrg",
+      "detail": "litlfred/folio-assistant: HEALTH SWEEP cannot store its report: github-actions[bot] gets 403 on litlfred/cat-harness:cat/cat-harness/health"
     },
     {
       "kind": "untriaged",
