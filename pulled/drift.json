@@ -1,15 +1,33 @@
 {
-  "checked": "2026-10-23",
+  "checked": "2026-10-24",
   "summary": {
-    "bean-done": 7,
+    "bean-done": 8,
     "bean-scrapped": 0,
     "issue-closed": 0,
     "broken-link": 0,
     "orphaned": 0,
-    "bean-changed": 9,
-    "untriaged": 3
+    "bean-changed": 14,
+    "untriaged": 9
   },
   "findings": [
+    {
+      "kind": "bean-changed",
+      "issue": 51,
+      "bean": "cat-tools-tk99",
+      "detail": "the bean changed (2026-10-22) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-done",
+      "issue": 48,
+      "bean": "folio-assistant-53rv",
+      "detail": "the bean is completed; close the issue as completed?"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 48,
+      "bean": "folio-assistant-53rv",
+      "detail": "the bean changed (2026-10-23) after the issue was last touched (2026-10-20)"
+    },
     {
       "kind": "bean-done",
       "issue": 46,
@@ -44,7 +62,13 @@
       "kind": "bean-changed",
       "issue": 41,
       "bean": "folio-assistant-jut3",
-      "detail": "the bean changed (2026-10-22) after the issue was last touched (2026-10-20)"
+      "detail": "the bean changed (2026-10-23) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 40,
+      "bean": "folio-assistant-n3h9",
+      "detail": "the bean changed (2026-10-23) after the issue was last touched (2026-10-20)"
     },
     {
       "kind": "bean-done",
@@ -71,6 +95,12 @@
       "detail": "the bean changed (2026-10-21) after the issue was last touched (2026-10-20)"
     },
     {
+      "kind": "bean-changed",
+      "issue": 31,
+      "bean": "folio-assistant-4nfs",
+      "detail": "the bean changed (2026-10-23) after the issue was last touched (2026-10-20)"
+    },
+    {
       "kind": "bean-done",
       "issue": 27,
       "bean": "folio-assistant-96y4",
@@ -80,7 +110,13 @@
       "kind": "bean-changed",
       "issue": 27,
       "bean": "folio-assistant-96y4",
-      "detail": "the bean changed (2026-10-21) after the issue was last touched (2026-10-20)"
+      "detail": "the bean changed (2026-10-23) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 24,
+      "bean": "folio-assistant-63q4",
+      "detail": "the bean changed (2026-10-23) after the issue was last touched (2026-10-20)"
     },
     {
       "kind": "bean-done",
@@ -92,7 +128,7 @@
       "kind": "bean-changed",
       "issue": 19,
       "bean": "folio-assistant-8pzh",
-      "detail": "the bean changed (2026-10-21) after the issue was last touched (2026-10-20)"
+      "detail": "the bean changed (2026-10-23) after the issue was last touched (2026-10-20)"
     },
     {
       "kind": "bean-done",
@@ -104,12 +140,32 @@
       "kind": "bean-changed",
       "issue": 18,
       "bean": "folio-assistant-ioa4",
-      "detail": "the bean changed (2026-10-21) after the issue was last touched (2026-10-20)"
+      "detail": "the bean changed (2026-10-23) after the issue was last touched (2026-10-20)"
     },
     {
       "kind": "untriaged",
-      "bean": "folio-assistant-5o5c",
-      "detail": "litlfred/folio-assistant: Root-dependent platform outputs judged on a foreign content root (translation:obsolete, state:visualizer, processes:render)"
+      "bean": "folio-assistant-6g6o",
+      "detail": "litlfred/folio-assistant: CI: PR-time Liquid undefined-variable and post-merge regen checks block before merge"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-dft1",
+      "detail": "litlfred/folio-assistant: CI: draft PRs run only the fast tier; the full tier runs once the PR is ready for review"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-hfiu",
+      "detail": "litlfred/folio-assistant: CI: a layer PR merges only after a green folio-assistant run with the change pinned"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-jwg8",
+      "detail": "litlfred/folio-assistant: CI: stop the line while a post-merge check is red on main"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-ksek",
+      "detail": "litlfred/folio-assistant: CI: green PR must mean green main"
     },
     {
       "kind": "untriaged",
@@ -118,8 +174,18 @@
     },
     {
       "kind": "untriaged",
-      "bean": "cat-tools-x5e0",
-      "detail": "litlfred/cat-harness-tools: Gates that read an absent repository-scoped graph should say not-applicable, not fail (content indexes outside folio-assistant)"
+      "bean": "folio-assistant-p7mb",
+      "detail": "litlfred/folio-assistant: Whole-repo-derived artefacts still committed go stale on main after concurrent merges: build them at publish (owner option 1, 2026-10-23)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-w7r4",
+      "detail": "litlfred/folio-assistant: CONNECTED AGENT: W7 round 4, after the cone and link fixes from the W8 review, and W8, on smart-immunizations with tx.fhir.org"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-w8rv",
+      "detail": "litlfred/folio-assistant: W8 review of the w7r3 round, then the open provenance criteria (page fragments, dependency closure, terminology)"
     }
   ]
 }
