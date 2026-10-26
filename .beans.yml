@@ -1,5 +1,5 @@
 beans:
-    path: .state/beans/defs
+    path: beans/defs
     prefix: aai-platform-
     id_length: 4
     default_status: todo

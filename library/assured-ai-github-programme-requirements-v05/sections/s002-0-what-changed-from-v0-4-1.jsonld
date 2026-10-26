@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/aai-programme/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/assured-ai-github-programme-requirements-v05/sections/s002-0-what-changed-from-v0-4-1",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "0. What changed from v0.4.1",
+  "contains": [
+    "library/assured-ai-github-programme-requirements-v05/blocks/prose-s002-0-what-changed-from-v0-4-1"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/assured-ai-github-programme-requirements-v05/manifest.jsonld",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/assured-ai-github-programme-requirements-v05/manifest.jsonld",
+  "provenance": "ingested"
+}

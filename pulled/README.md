@@ -9,10 +9,10 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 | Repository | Store | In progress | To do | Draft | Completed | Scrapped | Open without issue |
 |---|---|--:|--:|--:|--:|--:|--:|
 | [aai-platform](https://github.com/litlfred/aai-platform) | `cat/aai-platform/beans` @ `befe225` | 3 | 22 | 0 | 0 | 0 | 0 |
-| [folio-assistant](https://github.com/litlfred/folio-assistant) | `cat/cat-harness/beans` @ `5e77e65` (128 bean(s) also kept, more recently, in another store) | 69 | 35 | 1 | 1477 | 42 | 104 |
+| [folio-assistant](https://github.com/litlfred/folio-assistant) | `cat/cat-harness/beans` @ `5e77e65` (1 file(s) skipped: front matter does not parse; 128 bean(s) also kept, more recently, in another store) | 69 | 35 | 1 | 1477 | 42 | 104 |
 | [bootstrap](https://github.com/litlfred/bootstrap) | no beans yet | – | – | – | – | – | – |
 | [bootstrap-tools](https://github.com/litlfred/bootstrap-tools) | no beans yet | – | – | – | – | – | – |
-| [cat-harness](https://github.com/litlfred/cat-harness) | `cat/cat-harness/beans` @ `25bd231` (1600 bean(s) also kept, more recently, in another store) | 2 | 1 | 0 | 120 | 1 | 3 |
+| [cat-harness](https://github.com/litlfred/cat-harness) | `cat/cat-harness/beans` @ `25bd231` (1 file(s) skipped: front matter does not parse; 1600 bean(s) also kept, more recently, in another store) | 2 | 1 | 0 | 120 | 1 | 3 |
 | [cat-harness-tools](https://github.com/litlfred/cat-harness-tools) | `main` @ `8a27ed3` (294 bean(s) also kept, more recently, in another store) | 2 | 1 | 0 | 15 | 0 | 3 |
 | [folio-assistant-core](https://github.com/litlfred/folio-assistant-core) | `main` @ `f53b0d0` (192 bean(s) also kept, more recently, in another store) | 0 | 0 | 0 | 8 | 0 | 0 |
 | [folio-assistant-sci](https://github.com/litlfred/folio-assistant-sci) | no beans yet | – | – | – | – | – | – |

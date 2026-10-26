@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  xmlns:cat-harness.processes="https://litlfred.github.io/cat-harness/0.1.0/processes/ns#"
+                  id="Definitions_AAI_BeanTriage" targetNamespace="https://litlfred.github.io/aai-programme/workflows"
+                  exporter="folio-assistant" exporterVersion="1">
+  <bpmn:resource id="workstream-lead" name="Workstream lead"/>
+  <bpmn:resource id="pm-architecture-integration" name="PM &amp; Architecture Integration"/>
+  <bpmn:collaboration id="Collaboration_AAI_BeanTriage">
+    <bpmn:participant id="Participant_AAI_BeanTriage" name="Assured AI programme: triage a bean" processRef="Process_AAI_BeanTriage"/>
+  </bpmn:collaboration>
+  <bpmn:process id="Process_AAI_BeanTriage" name="Assured AI programme: triage a bean" isExecutable="false">
+    <bpmn:documentation>Decide what an open bean is to the programme. Beans are how work is done, in whichever repository does it; programme issues are how the programme sees it. A bean gets an issue when it delivers part of an epic, changes a date, creates or clears a cross-workstream dependency, or needs a human review or decision. Otherwise it stays a bean. The issue is the record of the link, by a hidden line in its body, `&lt;!-- bean: owner/repo/id --&gt;`; nothing in the bean's repository is written.</bpmn:documentation>
+    <bpmn:extensionElements>
+      <cat-harness.processes:policy enforcement="strict"/>
+    </bpmn:extensionElements>
+    <bpmn:laneSet id="LaneSet_AAI_BeanTriage">
+      <bpmn:lane id="Lane_Lead" name="Workstream lead" partitionElementRef="workstream-lead">
+        <bpmn:documentation>Decides what a bean is to the programme, and keeps the issue that carries it current. An agent may act in this lane and propose; the lead decides.</bpmn:documentation>
+        <bpmn:flowNodeRef>Start_AAI_BeanTriage</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>GW_Matters</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>End_StopBean</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>GW_Epic</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>A_Issue</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>End_AAI_BeanTriage</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_PM" name="PM &amp; Architecture Integration" partitionElementRef="pm-architecture-integration">
+        <bpmn:documentation>Owns epics: accepts, amends or declines a proposal (req:aai-linking#LINK-07).</bpmn:documentation>
+        <bpmn:flowNodeRef>Call_Propose</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="Start_AAI_BeanTriage" name="An open bean nobody has triaged">
+      <bpmn:documentation>Found by the bean drift check, or by anyone reading a work plan.</bpmn:documentation>
+    </bpmn:startEvent>
+    <bpmn:exclusiveGateway id="GW_Matters" name="Does the programme need to see it?">
+      <bpmn:documentation>Answered by the rule: does it deliver part of an epic, change a date, create or clear a cross-workstream dependency, or need a human review or decision? `no` covers a step under a bean an issue already carries, and work outside the programme.</bpmn:documentation>
+    </bpmn:exclusiveGateway>
+    <bpmn:endEvent id="End_StopBean" name="Stays a bean: decision recorded">
+      <bpmn:documentation>Record the decision in docs/beans-triage.json: { id, decision: &quot;not-applicable&quot; or &quot;step&quot;, by, at }. The drift check then stops listing it.</bpmn:documentation>
+    </bpmn:endEvent>
+    <bpmn:exclusiveGateway id="GW_Epic" name="Is there an epic or proposal for it?">
+      <bpmn:documentation>Answered from the board's Workstreams page: does an open epic or epic proposal of its workstream cover it?</bpmn:documentation>
+    </bpmn:exclusiveGateway>
+    <bpmn:callActivity id="Call_Propose" name="Propose an epic" calledElement="Process_AAI_Epic">
+      <bpmn:documentation>There is none: propose one (the epic-proposal process); the issue goes under it.</bpmn:documentation>
+    </bpmn:callActivity>
+    <bpmn:task id="A_Issue" name="Open the issue with its bean line">
+      <bpmn:documentation>Under the epic or proposal, as a sub-issue: its `type:`, `ws:` and `stage:` labels, a Programme fields table, and one `&lt;!-- bean: owner/repo/id --&gt;` line per bean it carries. A decision or a dependency is a `type:decision` or `type:dependency` issue instead (req:aai-dependencies#DEP-02).</bpmn:documentation>
+    </bpmn:task>
+    <bpmn:endEvent id="End_AAI_BeanTriage" name="Carried by an issue"/>
+    <bpmn:sequenceFlow id="SF_AAI_BeanTriage_1" sourceRef="Start_AAI_BeanTriage" targetRef="GW_Matters"/>
+    <bpmn:sequenceFlow id="SF_AAI_BeanTriage_2" name="no" sourceRef="GW_Matters" targetRef="End_StopBean"/>
+    <bpmn:sequenceFlow id="SF_AAI_BeanTriage_3" name="yes" sourceRef="GW_Matters" targetRef="GW_Epic"/>
+    <bpmn:sequenceFlow id="SF_AAI_BeanTriage_4" name="yes" sourceRef="GW_Epic" targetRef="A_Issue"/>
+    <bpmn:sequenceFlow id="SF_AAI_BeanTriage_5" name="no" sourceRef="GW_Epic" targetRef="Call_Propose"/>
+    <bpmn:sequenceFlow id="SF_AAI_BeanTriage_6" sourceRef="Call_Propose" targetRef="A_Issue"/>
+    <bpmn:sequenceFlow id="SF_AAI_BeanTriage_7" sourceRef="A_Issue" targetRef="End_AAI_BeanTriage"/>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="Diagram_AAI_BeanTriage">
+    <bpmndi:BPMNPlane id="Plane_AAI_BeanTriage" bpmnElement="Collaboration_AAI_BeanTriage">
+      <bpmndi:BPMNShape id="Shape_Participant_AAI_BeanTriage" bpmnElement="Participant_AAI_BeanTriage" isHorizontal="true">
+        <dc:Bounds x="160" y="80" width="1150" height="340" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Lane_Lead_AAI_BeanTriage" bpmnElement="Lane_Lead" isHorizontal="true">
+        <dc:Bounds x="190" y="80" width="1120" height="170" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Lane_PM_AAI_BeanTriage" bpmnElement="Lane_PM" isHorizontal="true">
+        <dc:Bounds x="190" y="250" width="1120" height="170" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Start_AAI_BeanTriage_AAI_BeanTriage" bpmnElement="Start_AAI_BeanTriage">
+        <dc:Bounds x="302" y="147" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_GW_Matters_AAI_BeanTriage" bpmnElement="GW_Matters" isMarkerVisible="true">
+        <dc:Bounds x="445" y="140" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_End_StopBean_AAI_BeanTriage" bpmnElement="End_StopBean">
+        <dc:Bounds x="542" y="202" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_GW_Epic_AAI_BeanTriage" bpmnElement="GW_Epic" isMarkerVisible="true">
+        <dc:Bounds x="685" y="140" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Call_Propose_AAI_BeanTriage" bpmnElement="Call_Propose">
+        <dc:Bounds x="800" y="295" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_A_Issue_AAI_BeanTriage" bpmnElement="A_Issue">
+        <dc:Bounds x="950" y="125" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_End_AAI_BeanTriage_AAI_BeanTriage" bpmnElement="End_AAI_BeanTriage">
+        <dc:Bounds x="1142" y="147" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_BeanTriage_1" bpmnElement="SF_AAI_BeanTriage_1">
+        <di:waypoint x="338" y="165" />
+        <di:waypoint x="445" y="165" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_BeanTriage_2" bpmnElement="SF_AAI_BeanTriage_2">
+        <di:waypoint x="495" y="165" />
+        <di:waypoint x="518" y="165" />
+        <di:waypoint x="518" y="220" />
+        <di:waypoint x="542" y="220" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_BeanTriage_3" bpmnElement="SF_AAI_BeanTriage_3">
+        <di:waypoint x="495" y="165" />
+        <di:waypoint x="685" y="165" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_BeanTriage_4" bpmnElement="SF_AAI_BeanTriage_4">
+        <di:waypoint x="735" y="165" />
+        <di:waypoint x="950" y="165" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_BeanTriage_5" bpmnElement="SF_AAI_BeanTriage_5">
+        <di:waypoint x="735" y="165" />
+        <di:waypoint x="767" y="165" />
+        <di:waypoint x="767" y="335" />
+        <di:waypoint x="800" y="335" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_BeanTriage_6" bpmnElement="SF_AAI_BeanTriage_6">
+        <di:waypoint x="920" y="335" />
+        <di:waypoint x="935" y="335" />
+        <di:waypoint x="935" y="165" />
+        <di:waypoint x="950" y="165" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SF_AAI_BeanTriage_7" bpmnElement="SF_AAI_BeanTriage_7">
+        <di:waypoint x="1070" y="165" />
+        <di:waypoint x="1142" y="165" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

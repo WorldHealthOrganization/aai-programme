@@ -15,7 +15,7 @@
       "branch": "cat/cat-harness/beans",
       "path": "beans/defs",
       "commit": "5e77e65936c92c723a8afd3e7e4a6e6c89e03805",
-      "note": "128 bean(s) also kept, more recently, in another store",
+      "note": "1 file(s) skipped: front matter does not parse; 128 bean(s) also kept, more recently, in another store",
       "count": 1624
     },
     {
@@ -40,7 +40,7 @@
       "branch": "cat/cat-harness/beans",
       "path": "beans/defs",
       "commit": "25bd231879cfb016a4b8206bf0b6883e68dd16c7",
-      "note": "1600 bean(s) also kept, more recently, in another store",
+      "note": "1 file(s) skipped: front matter does not parse; 1600 bean(s) also kept, more recently, in another store",
       "count": 124
     },
     {

@@ -1,0 +1,60 @@
+{
+  "$schema": "cat-harness-declaration/1.0.0",
+  "name": "aai-programme",
+  "title": "Assured AI programme",
+  "iriBase": "https://litlfred.github.io/aai-programme/",
+  "version": "0.1.0",
+  "directories": [
+    {
+      "id": "beans",
+      "path": "beans/",
+      "graphTypologies": [
+        "beans"
+      ],
+      "source": {
+        "kind": "branch",
+        "branch": "cat/aai-platform/beans",
+        "keyedBy": "tip"
+      },
+      "description": "This instance's work plan — one Markdown file per bean, managed with the `beans` CLI (`.beans.yml`).",
+      "_branch_comment": "The beans already live on cat/aai-platform/beans, from before the repository was renamed. Rename the branch to cat/aai-programme/beans with the other renames (bean aai-platform-tren)."
+    },
+    {
+      "id": "aai-processes",
+      "path": "processes/",
+      "graphTypologies": [
+        "processes"
+      ],
+      "description": "The programme's processes as BPMN: who does each step of the build and where it must stop. Members of cat-harness's concern groups by sitting at the same-named path (`processes/process/`)."
+    },
+    {
+      "id": "uploads",
+      "path": "uploads/",
+      "graphTypologies": [
+        "uploads"
+      ],
+      "description": "Source files as received, before ingestion: the programme requirements as the PM & Architecture Integration wrote them (v0.4.1 from litlfred/folio-assistant#2605) and the v0.4.2 draft."
+    },
+    {
+      "id": "library",
+      "path": "library/",
+      "graphTypologies": [
+        "library"
+      ],
+      "description": "The ingested requirements: one entry per version, its sections as JSON-LD nodes, so beans, processes and issues can cite a section."
+    },
+    {
+      "id": "docs",
+      "path": "docs/",
+      "graphTypologies": [
+        "docs"
+      ],
+      "description": "Pages of this instance's site written in the repository, and the requirement nodes under docs/requirements/ (declared from within, docs/docs.json)."
+    }
+  ],
+  "description": "Coordination for the WHO Assured AI programme: the programme requirements, the processes that build and run it, and the combined work plan of the repositories it draws on. Staged in litlfred/aai-programme until the owner syncs it to the WHO organisation.",
+  "needs": [
+    "cat-harness",
+    "cat-harness-tools"
+  ]
+}

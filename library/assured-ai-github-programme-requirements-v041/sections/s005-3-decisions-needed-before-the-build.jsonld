@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/aai-programme/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/assured-ai-github-programme-requirements-v041/sections/s005-3-decisions-needed-before-the-build",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "3. Decisions needed before the build",
+  "contains": [
+    "library/assured-ai-github-programme-requirements-v041/blocks/prose-s005-3-decisions-needed-before-the-build"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/assured-ai-github-programme-requirements-v041/manifest.jsonld",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/assured-ai-github-programme-requirements-v041/manifest.jsonld",
+  "provenance": "ingested"
+}

@@ -1,0 +1,5 @@
+# ONE node_modules, at the root, as smart-ra and folio-assistant lay it out:
+# the mounted layers are the root package.json's workspaces, and a mount that
+# is not a workspace still resolves its imports through the root.
+[install]
+linker = "hoisted"

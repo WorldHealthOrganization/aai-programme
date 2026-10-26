@@ -1,0 +1,20 @@
+{
+  "@context": [
+    "https://litlfred.github.io/aai-programme/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/0.1.0/ns#"
+    }
+  ],
+  "@id": "library/assured-ai-github-programme-requirements-v042/blocks/prose-s031-18-out-of-scope",
+  "@type": [
+    "folio-assistant-core:Prose",
+    "doco:Section"
+  ],
+  "kind": "prose",
+  "title": "18. Out of scope",
+  "text": "../sections/s031-18-out-of-scope.md",
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/assured-ai-github-programme-requirements-v042/manifest.jsonld",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/assured-ai-github-programme-requirements-v042/manifest.jsonld",
+  "provenance": "ingested"
+}

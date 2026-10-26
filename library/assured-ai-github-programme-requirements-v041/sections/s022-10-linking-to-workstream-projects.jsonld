@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/aai-programme/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/assured-ai-github-programme-requirements-v041/sections/s022-10-linking-to-workstream-projects",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "10. Linking to workstream projects",
+  "contains": [
+    "library/assured-ai-github-programme-requirements-v041/blocks/prose-s022-10-linking-to-workstream-projects"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/assured-ai-github-programme-requirements-v041/manifest.jsonld",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/assured-ai-github-programme-requirements-v041/manifest.jsonld",
+  "provenance": "ingested"
+}

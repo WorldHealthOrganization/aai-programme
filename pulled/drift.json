@@ -1,0 +1,345 @@
+{
+  "checked": "2026-10-25",
+  "summary": {
+    "bean-done": 16,
+    "bean-scrapped": 0,
+    "issue-closed": 0,
+    "broken-link": 0,
+    "orphaned": 0,
+    "bean-changed": 30,
+    "untriaged": 11
+  },
+  "findings": [
+    {
+      "kind": "bean-changed",
+      "issue": 51,
+      "bean": "cat-tools-tk99",
+      "detail": "the bean changed (2026-10-22) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 49,
+      "bean": "folio-assistant-cz17",
+      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-done",
+      "issue": 48,
+      "bean": "folio-assistant-53rv",
+      "detail": "the bean is completed; close the issue as completed?"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 48,
+      "bean": "folio-assistant-53rv",
+      "detail": "the bean changed (2026-10-23) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 47,
+      "bean": "folio-assistant-4y2i",
+      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 47,
+      "bean": "folio-assistant-61tg",
+      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-done",
+      "issue": 46,
+      "bean": "folio-assistant-sd5v",
+      "detail": "the bean is completed; close the issue as completed?"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 46,
+      "bean": "folio-assistant-sd5v",
+      "detail": "the bean changed (2026-10-21) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-done",
+      "issue": 46,
+      "bean": "folio-assistant-ffv7",
+      "detail": "the bean is completed; close the issue as completed?"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 46,
+      "bean": "folio-assistant-ffv7",
+      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-done",
+      "issue": 45,
+      "bean": "folio-assistant-l9v6",
+      "detail": "the bean is completed; close the issue as completed?"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 45,
+      "bean": "folio-assistant-l9v6",
+      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 43,
+      "bean": "folio-assistant-3sbm",
+      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-done",
+      "issue": 42,
+      "bean": "folio-assistant-tdir",
+      "detail": "the bean is completed; close the issue as completed?"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 42,
+      "bean": "folio-assistant-tdir",
+      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-done",
+      "issue": 41,
+      "bean": "folio-assistant-jut3",
+      "detail": "the bean is completed; close the issue as completed?"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 41,
+      "bean": "folio-assistant-jut3",
+      "detail": "the bean changed (2026-10-23) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 40,
+      "bean": "folio-assistant-n3h9",
+      "detail": "the bean changed (2026-10-23) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-done",
+      "issue": 38,
+      "bean": "folio-core-2mb0",
+      "detail": "the bean is completed; close the issue as completed?"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 38,
+      "bean": "folio-core-2mb0",
+      "detail": "the bean changed (2026-10-20) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-done",
+      "issue": 37,
+      "bean": "folio-assistant-m4s1",
+      "detail": "the bean is completed; close the issue as completed?"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 37,
+      "bean": "folio-assistant-m4s1",
+      "detail": "the bean changed (2026-10-21) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 36,
+      "bean": "folio-assistant-502c",
+      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 35,
+      "bean": "folio-assistant-vm6m",
+      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 34,
+      "bean": "folio-assistant-vljz",
+      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 33,
+      "bean": "folio-assistant-oz9e",
+      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-done",
+      "issue": 31,
+      "bean": "folio-assistant-4nfs",
+      "detail": "the bean is completed; close the issue as completed?"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 31,
+      "bean": "folio-assistant-4nfs",
+      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-done",
+      "issue": 30,
+      "bean": "folio-assistant-2ipj",
+      "detail": "the bean is completed; close the issue as completed?"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 30,
+      "bean": "folio-assistant-2ipj",
+      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 29,
+      "bean": "folio-assistant-fm9n",
+      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-done",
+      "issue": 28,
+      "bean": "folio-assistant-cydz",
+      "detail": "the bean is completed; close the issue as completed?"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 28,
+      "bean": "folio-assistant-cydz",
+      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-done",
+      "issue": 27,
+      "bean": "folio-assistant-96y4",
+      "detail": "the bean is completed; close the issue as completed?"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 27,
+      "bean": "folio-assistant-96y4",
+      "detail": "the bean changed (2026-10-23) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 26,
+      "bean": "folio-assistant-cz17",
+      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 24,
+      "bean": "folio-assistant-63q4",
+      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-done",
+      "issue": 23,
+      "bean": "folio-assistant-5yhm",
+      "detail": "the bean is completed; close the issue as completed?"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 23,
+      "bean": "folio-assistant-5yhm",
+      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 22,
+      "bean": "folio-assistant-0lde",
+      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-done",
+      "issue": 20,
+      "bean": "folio-core-urat",
+      "detail": "the bean is completed; close the issue as completed?"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 20,
+      "bean": "folio-core-urat",
+      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-done",
+      "issue": 19,
+      "bean": "folio-assistant-8pzh",
+      "detail": "the bean is completed; close the issue as completed?"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 19,
+      "bean": "folio-assistant-8pzh",
+      "detail": "the bean changed (2026-10-23) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-done",
+      "issue": 18,
+      "bean": "folio-assistant-ioa4",
+      "detail": "the bean is completed; close the issue as completed?"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 18,
+      "bean": "folio-assistant-ioa4",
+      "detail": "the bean changed (2026-10-23) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-0exf",
+      "detail": "litlfred/folio-assistant: SHRINK THE WHOLE-REPO KG SLICE: it reached 8.3 MB; the budget was raised to 10 MB as a stopgap, find what grew and bring it back toward 5 MB"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-0om7",
+      "detail": "litlfred/folio-assistant: IG previews publish outline.json and rendered-impact.json for the review page"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-17iw",
+      "detail": "litlfred/folio-assistant: MIGRATION: public-health and health-system process catalogues move from smart-base to WHO/who-iris once it is live"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-6g6o",
+      "detail": "litlfred/folio-assistant: CI: PR-time Liquid undefined-variable and post-merge regen checks block before merge"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-bssi",
+      "detail": "litlfred/folio-assistant: BEAN DRAIN as a BPMN process: Process_BeanDrain calls the shared OPEN and CLOSE"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-e0uk",
+      "detail": "litlfred/folio-assistant: AGENT ADVICE PER REPO (phase 1): a generated, drift-checked skill index in every repo's AGENTS.md"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-hfiu",
+      "detail": "litlfred/folio-assistant: CI: a layer PR merges only after a green folio-assistant run with the change pinned"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-ksek",
+      "detail": "litlfred/folio-assistant: CI: green PR must mean green main"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-nvhg",
+      "detail": "litlfred/folio-assistant: TERMINOLOGY / adjudication leg 2: two judges disagree about a mapping (from 2i5f)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-p7mb",
+      "detail": "litlfred/folio-assistant: Whole-repo-derived artefacts still committed go stale on main after concurrent merges: build them at publish (owner option 1, 2026-10-23)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-t5zb",
+      "detail": "litlfred/folio-assistant: AGENT ADVICE PER REPO (phase 2): skill commands, agents, memory and .mcp.json where a repo has content for them"
+    }
+  ]
+}

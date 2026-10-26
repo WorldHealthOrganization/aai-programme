@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/aai-programme/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/assured-ai-github-programme-requirements-v036/sections/s012-7-fields",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "7. Fields",
+  "contains": [
+    "library/assured-ai-github-programme-requirements-v036/blocks/prose-s012-7-fields"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/assured-ai-github-programme-requirements-v036/manifest.jsonld",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/assured-ai-github-programme-requirements-v036/manifest.jsonld",
+  "provenance": "ingested"
+}

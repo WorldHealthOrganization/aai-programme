@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/aai-programme/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/assured-ai-github-programme-requirements-v042/sections/s022-9-dependencies",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "9. Dependencies",
+  "contains": [
+    "library/assured-ai-github-programme-requirements-v042/blocks/prose-s022-9-dependencies"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/assured-ai-github-programme-requirements-v042/manifest.jsonld",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/assured-ai-github-programme-requirements-v042/manifest.jsonld",
+  "provenance": "ingested"
+}

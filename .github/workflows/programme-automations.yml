@@ -1,0 +1,51 @@
+# The programme automations the requirements call for (section 11): GitHub
+# Actions by requirement, not site publishing, which is agent-run (owner,
+# 2026-10-10). Each step runs a script in scripts/programme/ whose decisions
+# are in rules.ts and tested in rules.test.ts. What each does, its trigger,
+# scope and owner: README, "Programme automations" (AUTO-07).
+#
+# No token beyond the workflow's own (owner, 2026-10-20): the programme
+# fields are labels on the issues (scripts/programme/fields.ts), which the
+# default token can write. Nothing here writes a project.
+name: Programme automations
+
+on:
+  issues:
+    types: [opened, closed, reopened]
+  schedule:
+    - cron: "41 5 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Say what would change, change nothing"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: programme-automations-${{ github.event.issue.number || github.event_name }}
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      DRY: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && '--dry-run' || '' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.4.2
+      - name: AUTO-03 Programme status
+        if: github.event_name == 'issues'
+        run: bun run scripts/programme/auto-03-status.ts
+      - name: AUTO-04 Delivery health roll-up
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: bun run scripts/programme/auto-04-health.ts $DRY
+      - name: AUTO-10 Validation check
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: bun run scripts/programme/auto-10-validation.ts $DRY
