@@ -1,12 +1,12 @@
 {
-  "checked": "2026-10-25",
+  "checked": "2026-10-26",
   "summary": {
-    "bean-done": 16,
+    "bean-done": 1,
     "bean-scrapped": 0,
-    "issue-closed": 0,
+    "issue-closed": 4,
     "broken-link": 0,
     "orphaned": 0,
-    "bean-changed": 30,
+    "bean-changed": 11,
     "untriaged": 11
   },
   "findings": [
@@ -17,70 +17,28 @@
       "detail": "the bean changed (2026-10-22) after the issue was last touched (2026-10-20)"
     },
     {
-      "kind": "bean-changed",
+      "kind": "issue-closed",
       "issue": 49,
       "bean": "folio-assistant-cz17",
-      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
+      "detail": "the issue is closed but the bean is in-progress"
     },
     {
-      "kind": "bean-done",
-      "issue": 48,
-      "bean": "folio-assistant-53rv",
-      "detail": "the bean is completed; close the issue as completed?"
-    },
-    {
-      "kind": "bean-changed",
-      "issue": 48,
-      "bean": "folio-assistant-53rv",
-      "detail": "the bean changed (2026-10-23) after the issue was last touched (2026-10-20)"
-    },
-    {
-      "kind": "bean-changed",
+      "kind": "issue-closed",
       "issue": 47,
       "bean": "folio-assistant-4y2i",
-      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
+      "detail": "the issue is closed but the bean is todo"
     },
     {
-      "kind": "bean-changed",
+      "kind": "issue-closed",
       "issue": 47,
       "bean": "folio-assistant-61tg",
-      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
+      "detail": "the issue is closed but the bean is todo"
     },
     {
-      "kind": "bean-done",
-      "issue": 46,
-      "bean": "folio-assistant-sd5v",
-      "detail": "the bean is completed; close the issue as completed?"
-    },
-    {
-      "kind": "bean-changed",
-      "issue": 46,
-      "bean": "folio-assistant-sd5v",
-      "detail": "the bean changed (2026-10-21) after the issue was last touched (2026-10-20)"
-    },
-    {
-      "kind": "bean-done",
-      "issue": 46,
-      "bean": "folio-assistant-ffv7",
-      "detail": "the bean is completed; close the issue as completed?"
-    },
-    {
-      "kind": "bean-changed",
-      "issue": 46,
-      "bean": "folio-assistant-ffv7",
-      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
-    },
-    {
-      "kind": "bean-done",
-      "issue": 45,
-      "bean": "folio-assistant-l9v6",
-      "detail": "the bean is completed; close the issue as completed?"
-    },
-    {
-      "kind": "bean-changed",
-      "issue": 45,
-      "bean": "folio-assistant-l9v6",
-      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
+      "kind": "issue-closed",
+      "issue": 44,
+      "bean": "folio-assistant-zzmr",
+      "detail": "the issue is closed but the bean is in-progress"
     },
     {
       "kind": "bean-changed",
@@ -89,58 +47,10 @@
       "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
     },
     {
-      "kind": "bean-done",
-      "issue": 42,
-      "bean": "folio-assistant-tdir",
-      "detail": "the bean is completed; close the issue as completed?"
-    },
-    {
-      "kind": "bean-changed",
-      "issue": 42,
-      "bean": "folio-assistant-tdir",
-      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
-    },
-    {
-      "kind": "bean-done",
-      "issue": 41,
-      "bean": "folio-assistant-jut3",
-      "detail": "the bean is completed; close the issue as completed?"
-    },
-    {
-      "kind": "bean-changed",
-      "issue": 41,
-      "bean": "folio-assistant-jut3",
-      "detail": "the bean changed (2026-10-23) after the issue was last touched (2026-10-20)"
-    },
-    {
       "kind": "bean-changed",
       "issue": 40,
       "bean": "folio-assistant-n3h9",
       "detail": "the bean changed (2026-10-23) after the issue was last touched (2026-10-20)"
-    },
-    {
-      "kind": "bean-done",
-      "issue": 38,
-      "bean": "folio-core-2mb0",
-      "detail": "the bean is completed; close the issue as completed?"
-    },
-    {
-      "kind": "bean-changed",
-      "issue": 38,
-      "bean": "folio-core-2mb0",
-      "detail": "the bean changed (2026-10-20) after the issue was last touched (2026-10-20)"
-    },
-    {
-      "kind": "bean-done",
-      "issue": 37,
-      "bean": "folio-assistant-m4s1",
-      "detail": "the bean is completed; close the issue as completed?"
-    },
-    {
-      "kind": "bean-changed",
-      "issue": 37,
-      "bean": "folio-assistant-m4s1",
-      "detail": "the bean changed (2026-10-21) after the issue was last touched (2026-10-20)"
     },
     {
       "kind": "bean-changed",
@@ -167,30 +77,6 @@
       "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
     },
     {
-      "kind": "bean-done",
-      "issue": 31,
-      "bean": "folio-assistant-4nfs",
-      "detail": "the bean is completed; close the issue as completed?"
-    },
-    {
-      "kind": "bean-changed",
-      "issue": 31,
-      "bean": "folio-assistant-4nfs",
-      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
-    },
-    {
-      "kind": "bean-done",
-      "issue": 30,
-      "bean": "folio-assistant-2ipj",
-      "detail": "the bean is completed; close the issue as completed?"
-    },
-    {
-      "kind": "bean-changed",
-      "issue": 30,
-      "bean": "folio-assistant-2ipj",
-      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
-    },
-    {
       "kind": "bean-changed",
       "issue": 29,
       "bean": "folio-assistant-fm9n",
@@ -201,24 +87,6 @@
       "issue": 28,
       "bean": "folio-assistant-cydz",
       "detail": "the bean is completed; close the issue as completed?"
-    },
-    {
-      "kind": "bean-changed",
-      "issue": 28,
-      "bean": "folio-assistant-cydz",
-      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
-    },
-    {
-      "kind": "bean-done",
-      "issue": 27,
-      "bean": "folio-assistant-96y4",
-      "detail": "the bean is completed; close the issue as completed?"
-    },
-    {
-      "kind": "bean-changed",
-      "issue": 27,
-      "bean": "folio-assistant-96y4",
-      "detail": "the bean changed (2026-10-23) after the issue was last touched (2026-10-20)"
     },
     {
       "kind": "bean-changed",
@@ -233,58 +101,10 @@
       "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
     },
     {
-      "kind": "bean-done",
-      "issue": 23,
-      "bean": "folio-assistant-5yhm",
-      "detail": "the bean is completed; close the issue as completed?"
-    },
-    {
-      "kind": "bean-changed",
-      "issue": 23,
-      "bean": "folio-assistant-5yhm",
-      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
-    },
-    {
       "kind": "bean-changed",
       "issue": 22,
       "bean": "folio-assistant-0lde",
       "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
-    },
-    {
-      "kind": "bean-done",
-      "issue": 20,
-      "bean": "folio-core-urat",
-      "detail": "the bean is completed; close the issue as completed?"
-    },
-    {
-      "kind": "bean-changed",
-      "issue": 20,
-      "bean": "folio-core-urat",
-      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
-    },
-    {
-      "kind": "bean-done",
-      "issue": 19,
-      "bean": "folio-assistant-8pzh",
-      "detail": "the bean is completed; close the issue as completed?"
-    },
-    {
-      "kind": "bean-changed",
-      "issue": 19,
-      "bean": "folio-assistant-8pzh",
-      "detail": "the bean changed (2026-10-23) after the issue was last touched (2026-10-20)"
-    },
-    {
-      "kind": "bean-done",
-      "issue": 18,
-      "bean": "folio-assistant-ioa4",
-      "detail": "the bean is completed; close the issue as completed?"
-    },
-    {
-      "kind": "bean-changed",
-      "issue": 18,
-      "bean": "folio-assistant-ioa4",
-      "detail": "the bean changed (2026-10-23) after the issue was last touched (2026-10-20)"
     },
     {
       "kind": "untriaged",
