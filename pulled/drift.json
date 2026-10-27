@@ -1,13 +1,13 @@
 {
-  "checked": "2026-10-26",
+  "checked": "2026-10-27",
   "summary": {
     "bean-done": 1,
     "bean-scrapped": 0,
-    "issue-closed": 4,
+    "issue-closed": 5,
     "broken-link": 0,
     "orphaned": 0,
-    "bean-changed": 11,
-    "untriaged": 11
+    "bean-changed": 16,
+    "untriaged": 12
   },
   "findings": [
     {
@@ -23,16 +23,28 @@
       "detail": "the issue is closed but the bean is in-progress"
     },
     {
-      "kind": "issue-closed",
+      "kind": "bean-changed",
+      "issue": 49,
+      "bean": "folio-assistant-cz17",
+      "detail": "the bean changed (2026-10-26) after the issue was last touched (2026-10-26)"
+    },
+    {
+      "kind": "bean-changed",
       "issue": 47,
       "bean": "folio-assistant-4y2i",
-      "detail": "the issue is closed but the bean is todo"
+      "detail": "the bean changed (2026-10-26) after the issue was last touched (2026-10-26)"
     },
     {
       "kind": "issue-closed",
       "issue": 47,
       "bean": "folio-assistant-61tg",
       "detail": "the issue is closed but the bean is todo"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 47,
+      "bean": "folio-assistant-61tg",
+      "detail": "the bean changed (2026-10-26) after the issue was last touched (2026-10-26)"
     },
     {
       "kind": "issue-closed",
@@ -44,13 +56,19 @@
       "kind": "bean-changed",
       "issue": 43,
       "bean": "folio-assistant-3sbm",
-      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
+      "detail": "the bean changed (2026-10-26) after the issue was last touched (2026-10-26)"
     },
     {
       "kind": "bean-changed",
       "issue": 40,
       "bean": "folio-assistant-n3h9",
       "detail": "the bean changed (2026-10-23) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "issue-closed",
+      "issue": 39,
+      "bean": "folio-assistant-5a3l",
+      "detail": "the issue is closed but the bean is in-progress"
     },
     {
       "kind": "bean-changed",
@@ -62,19 +80,25 @@
       "kind": "bean-changed",
       "issue": 35,
       "bean": "folio-assistant-vm6m",
-      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
+      "detail": "the bean changed (2026-10-26) after the issue was last touched (2026-10-26)"
     },
     {
       "kind": "bean-changed",
       "issue": 34,
       "bean": "folio-assistant-vljz",
-      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
+      "detail": "the bean changed (2026-10-26) after the issue was last touched (2026-10-26)"
     },
     {
       "kind": "bean-changed",
       "issue": 33,
       "bean": "folio-assistant-oz9e",
       "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 32,
+      "bean": "folio-assistant-q4jm",
+      "detail": "the bean changed (2026-10-26) after the issue was last touched (2026-10-26)"
     },
     {
       "kind": "bean-changed",
@@ -92,19 +116,31 @@
       "kind": "bean-changed",
       "issue": 26,
       "bean": "folio-assistant-cz17",
-      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
+      "detail": "the bean changed (2026-10-26) after the issue was last touched (2026-10-26)"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 25,
+      "bean": "folio-assistant-qvxh",
+      "detail": "the bean changed (2026-10-26) after the issue was last touched (2026-10-26)"
+    },
+    {
+      "kind": "issue-closed",
+      "issue": 24,
+      "bean": "folio-assistant-63q4",
+      "detail": "the issue is closed but the bean is in-progress"
     },
     {
       "kind": "bean-changed",
       "issue": 24,
       "bean": "folio-assistant-63q4",
-      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
+      "detail": "the bean changed (2026-10-26) after the issue was last touched (2026-10-26)"
     },
     {
       "kind": "bean-changed",
       "issue": 22,
       "bean": "folio-assistant-0lde",
-      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
+      "detail": "the bean changed (2026-10-26) after the issue was last touched (2026-10-26)"
     },
     {
       "kind": "untriaged",
@@ -160,6 +196,11 @@
       "kind": "untriaged",
       "bean": "folio-assistant-t5zb",
       "detail": "litlfred/folio-assistant: AGENT ADVICE PER REPO (phase 2): skill commands, agents, memory and .mcp.json where a repo has content for them"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-whlc",
+      "detail": "litlfred/folio-assistant: KG PUBLICATION: named subgraphs (referenced + hydrated), skeleton/payload split, late client-side materialization"
     }
   ]
 }
