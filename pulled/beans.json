@@ -14,7 +14,7 @@
       "state": "ok",
       "branch": "cat/cat-harness/beans",
       "path": "beans/defs",
-      "commit": "b2e02afcdcc7ebf8b28496fc98b1b15fa97f0597",
+      "commit": "7af7d577954ca5e54a7713cca6972d2611a3cce4",
       "note": "1 file(s) skipped: front matter does not parse; 129 bean(s) also kept, more recently, in another store",
       "count": 1623
     },
@@ -15639,7 +15639,7 @@
       "blocked_by": [],
       "tags": [],
       "archived": false,
-      "updated_at": "2026-10-26T14:55:00Z",
+      "updated_at": "2026-10-28T04:48:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-d5f1--ingest-narrative-description-per-image-localized-i.md"
     },
     {
@@ -23753,7 +23753,7 @@
       "blocked_by": [],
       "tags": [],
       "archived": false,
-      "updated_at": "2026-10-26T15:49:00Z",
+      "updated_at": "2026-10-27T21:33:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-x80s--ingest-agent-summaries-of-prose-blocks-a-qa-sideca.md"
     },
     {
