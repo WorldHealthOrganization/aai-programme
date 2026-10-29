@@ -9,12 +9,12 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 | Repository | Store | In progress | To do | Draft | Completed | Scrapped | Open without issue |
 |---|---|--:|--:|--:|--:|--:|--:|
 | [aai-platform](https://github.com/litlfred/aai-platform) | `cat/aai-platform/beans` @ `befe225` | 3 | 22 | 0 | 0 | 0 | 0 |
-| [folio-assistant](https://github.com/litlfred/folio-assistant) | `cat/cat-harness/beans` @ `7af7d57` (1 file(s) skipped: front matter does not parse; 129 bean(s) also kept, more recently, in another store) | 63 | 28 | 1 | 1489 | 42 | 91 |
+| [folio-assistant](https://github.com/litlfred/folio-assistant) | `cat/cat-harness/beans` @ `ecba83d` (129 bean(s) also kept, more recently, in another store) | 63 | 28 | 1 | 1490 | 42 | 91 |
 | [bootstrap](https://github.com/litlfred/bootstrap) | no beans yet | – | – | – | – | – | – |
 | [bootstrap-tools](https://github.com/litlfred/bootstrap-tools) | no beans yet | – | – | – | – | – | – |
 | [cat-harness](https://github.com/litlfred/cat-harness) | `cat/cat-harness/beans` @ `2ec0586` (1 file(s) skipped: front matter does not parse; 1599 bean(s) also kept, more recently, in another store) | 2 | 1 | 0 | 121 | 1 | 3 |
-| [cat-harness-tools](https://github.com/litlfred/cat-harness-tools) | `main` @ `59a0f7c` (294 bean(s) also kept, more recently, in another store) | 2 | 1 | 0 | 15 | 0 | 3 |
-| [folio-assistant-core](https://github.com/litlfred/folio-assistant-core) | `main` @ `0d0b459` (192 bean(s) also kept, more recently, in another store) | 0 | 0 | 0 | 8 | 0 | 0 |
+| [cat-harness-tools](https://github.com/litlfred/cat-harness-tools) | `main` @ `c7dea44` (294 bean(s) also kept, more recently, in another store) | 2 | 1 | 0 | 15 | 0 | 3 |
+| [folio-assistant-core](https://github.com/litlfred/folio-assistant-core) | `main` @ `c5f87b2` (192 bean(s) also kept, more recently, in another store) | 0 | 0 | 0 | 8 | 0 | 0 |
 | [folio-assistant-sci](https://github.com/litlfred/folio-assistant-sci) | no beans yet | – | – | – | – | – | – |
 | [fhir-harness](https://github.com/litlfred/fhir-harness) | no beans yet | – | – | – | – | – | – |
 | [who-iris](https://github.com/litlfred/who-iris) | no beans yet | – | – | – | – | – | – |

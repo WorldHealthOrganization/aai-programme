@@ -1,6 +1,6 @@
 # Bean drift
 
-Checked 2026-10-28: 33 programme issue(s) carrying 35 bean link(s), against 1801 beans from 12 stores. **Bean completed, issue still open: 1; Issue closed, bean still open: 5; Bean changed since the issue was last touched: 16; Open beans nobody has triaged: 12.**
+Checked 2026-10-29: 33 programme issue(s) carrying 35 bean link(s), against 1802 beans from 12 stores. **Bean completed, issue still open: 1; Issue closed, bean still open: 5; Bean changed since the issue was last touched: 16; Open beans nobody has triaged: 12.**
 
 Each finding is for a person to act on: change the issue, or record a triage decision in `docs/beans-triage.json`. Nothing here is changed automatically. Run it again by commenting `/check-drift` on any issue.
 
