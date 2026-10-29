@@ -14,9 +14,9 @@
       "state": "ok",
       "branch": "cat/cat-harness/beans",
       "path": "beans/defs",
-      "commit": "7af7d577954ca5e54a7713cca6972d2611a3cce4",
-      "note": "1 file(s) skipped: front matter does not parse; 129 bean(s) also kept, more recently, in another store",
-      "count": 1623
+      "commit": "ecba83dbedc2534d4c9c0846bf656db418de5934",
+      "note": "129 bean(s) also kept, more recently, in another store",
+      "count": 1624
     },
     {
       "repo": "litlfred/bootstrap",
@@ -48,7 +48,7 @@
       "state": "ok",
       "branch": "main",
       "path": "beans/defs",
-      "commit": "59a0f7c5b8a32b0dd8f5b2db74556206fdfe881e",
+      "commit": "c7dea446fcca117fd5b3fa1c90d96bb3033b1606",
       "note": "294 bean(s) also kept, more recently, in another store",
       "count": 18
     },
@@ -57,7 +57,7 @@
       "state": "ok",
       "branch": "main",
       "path": "beans/defs",
-      "commit": "0d0b4596dd9286525c6d6b32a1b1c6509d723160",
+      "commit": "c5f87b28e5a7f8cc89349e3587fd1c356bef351b",
       "note": "192 bean(s) also kept, more recently, in another store",
       "count": 8
     },
@@ -73,7 +73,7 @@
       "repo": "litlfred/fhir-harness",
       "state": "no-store",
       "branch": "main",
-      "commit": "e581473881809ad3445f4740425d46b719791949",
+      "commit": "27d4179fa53594e98952b1b7006dd29686c2643d",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -15639,7 +15639,7 @@
       "blocked_by": [],
       "tags": [],
       "archived": false,
-      "updated_at": "2026-10-28T04:48:00Z",
+      "updated_at": "2026-10-28T12:50:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-d5f1--ingest-narrative-description-per-image-localized-i.md"
     },
     {
@@ -18011,6 +18011,21 @@
       "archived": false,
       "updated_at": "2026-10-10T16:40:52Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-jo87--queued-stream-a-ingest-uploads-to-a-complete-l1-li.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-jog4",
+      "title": "DEPLOYMENT DESCRIPTIONS (examples): today's setup first, then the #363 scenarios, loaded by tests",
+      "status": "completed",
+      "type": "task",
+      "priority": "normal",
+      "parent": "folio-assistant-o1by",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [],
+      "archived": false,
+      "updated_at": "2026-10-26T13:20:00Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-jog4--deployment-description-examples-today-and-the-363-sc.md"
     },
     {
       "repo": "litlfred/folio-assistant",
@@ -23753,7 +23768,7 @@
       "blocked_by": [],
       "tags": [],
       "archived": false,
-      "updated_at": "2026-10-27T21:33:00Z",
+      "updated_at": "2026-10-28T12:59:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-x80s--ingest-agent-summaries-of-prose-blocks-a-qa-sideca.md"
     },
     {
