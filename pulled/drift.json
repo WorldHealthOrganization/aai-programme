@@ -1,5 +1,5 @@
 {
-  "checked": "2026-10-29",
+  "checked": "2026-10-30",
   "summary": {
     "bean-done": 1,
     "bean-scrapped": 0,
@@ -7,7 +7,7 @@
     "broken-link": 0,
     "orphaned": 0,
     "bean-changed": 16,
-    "untriaged": 12
+    "untriaged": 9
   },
   "findings": [
     {
@@ -26,7 +26,7 @@
       "kind": "bean-changed",
       "issue": 49,
       "bean": "folio-assistant-cz17",
-      "detail": "the bean changed (2026-10-26) after the issue was last touched (2026-10-26)"
+      "detail": "the bean changed (2026-10-29) after the issue was last touched (2026-10-26)"
     },
     {
       "kind": "bean-changed",
@@ -71,10 +71,16 @@
       "detail": "the issue is closed but the bean is in-progress"
     },
     {
+      "kind": "bean-done",
+      "issue": 36,
+      "bean": "folio-assistant-502c",
+      "detail": "the bean is completed; close the issue as completed?"
+    },
+    {
       "kind": "bean-changed",
       "issue": 36,
       "bean": "folio-assistant-502c",
-      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
+      "detail": "the bean changed (2026-10-29) after the issue was last touched (2026-10-20)"
     },
     {
       "kind": "bean-changed",
@@ -104,19 +110,13 @@
       "kind": "bean-changed",
       "issue": 29,
       "bean": "folio-assistant-fm9n",
-      "detail": "the bean changed (2026-10-24) after the issue was last touched (2026-10-20)"
-    },
-    {
-      "kind": "bean-done",
-      "issue": 28,
-      "bean": "folio-assistant-cydz",
-      "detail": "the bean is completed; close the issue as completed?"
+      "detail": "the bean changed (2026-10-29) after the issue was last touched (2026-10-20)"
     },
     {
       "kind": "bean-changed",
       "issue": 26,
       "bean": "folio-assistant-cz17",
-      "detail": "the bean changed (2026-10-26) after the issue was last touched (2026-10-26)"
+      "detail": "the bean changed (2026-10-29) after the issue was last touched (2026-10-26)"
     },
     {
       "kind": "bean-changed",
@@ -134,18 +134,13 @@
       "kind": "bean-changed",
       "issue": 24,
       "bean": "folio-assistant-63q4",
-      "detail": "the bean changed (2026-10-26) after the issue was last touched (2026-10-26)"
+      "detail": "the bean changed (2026-10-29) after the issue was last touched (2026-10-26)"
     },
     {
       "kind": "bean-changed",
       "issue": 22,
       "bean": "folio-assistant-0lde",
       "detail": "the bean changed (2026-10-26) after the issue was last touched (2026-10-26)"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-0exf",
-      "detail": "litlfred/folio-assistant: SHRINK THE WHOLE-REPO KG SLICE: it reached 8.3 MB; the budget was raised to 10 MB as a stopgap, find what grew and bring it back toward 5 MB"
     },
     {
       "kind": "untriaged",
@@ -161,21 +156,6 @@
       "kind": "untriaged",
       "bean": "folio-assistant-6g6o",
       "detail": "litlfred/folio-assistant: CI: PR-time Liquid undefined-variable and post-merge regen checks block before merge"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-bssi",
-      "detail": "litlfred/folio-assistant: BEAN DRAIN as a BPMN process: Process_BeanDrain calls the shared OPEN and CLOSE"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-e0uk",
-      "detail": "litlfred/folio-assistant: AGENT ADVICE PER REPO (phase 1): a generated, drift-checked skill index in every repo's AGENTS.md"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-hfiu",
-      "detail": "litlfred/folio-assistant: CI: a layer PR merges only after a green folio-assistant run with the change pinned"
     },
     {
       "kind": "untriaged",
@@ -199,8 +179,13 @@
     },
     {
       "kind": "untriaged",
-      "bean": "folio-assistant-whlc",
-      "detail": "litlfred/folio-assistant: KG PUBLICATION: named subgraphs (referenced + hydrated), skeleton/payload split, late client-side materialization"
+      "bean": "folio-assistant-tmo5",
+      "detail": "litlfred/folio-assistant: First real KG subscription: litlfred/ihris"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "cat-tools-ycn6",
+      "detail": "litlfred/cat-harness-tools: skill_update: a skill edit goes through a governed Tool, not a raw file write (folio-assistant#875)"
     }
   ]
 }
