@@ -36,7 +36,7 @@ statements:
 
 # Information classification
 
-What may be on GitHub, which is public, and what never is (section 6). Generated from [requirements v0.5](https://github.com/litlfred/aai-programme/blob/main/uploads/Assured_AI_GitHub_Programme_Requirements_v0.5.md) by `scripts/gen-requirements.ts`; do not edit by hand. Cite one as `req:aai-information#<ID>`.
+What may be on GitHub, which is public, and what never is (section 6). Generated from [requirements v0.5](https://github.com/WorldHealthOrganization/aai-programme/blob/main/uploads/Assured_AI_GitHub_Programme_Requirements_v0.5.md) by `scripts/gen-requirements.ts`; do not edit by hand. Cite one as `req:aai-information#<ID>`.
 
 | ID | Level | Requirement |
 |---|---|---|

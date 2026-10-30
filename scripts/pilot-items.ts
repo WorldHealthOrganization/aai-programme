@@ -18,8 +18,9 @@
  * values. The type of each item is a `type:` label for the same reason.
  */
 import { FIELDS, labelFor } from "./programme/fields.ts";
+import { thisRepo } from "./origin-repo.ts";
 
-const REPO = "litlfred/aai-programme";
+const REPO = thisRepo();
 const DRY = process.argv.includes("--dry-run");
 
 interface Item {

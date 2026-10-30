@@ -8,6 +8,7 @@
  *
  *   bun run scripts/site-board.ts <site source>
  */
+import { thisRepo } from "./origin-repo.ts";
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join, resolve } from "node:path";
 
@@ -17,7 +18,7 @@ if (!out) {
   process.exit(2);
 }
 const root = resolve(import.meta.dir, "..");
-const repo = "https://github.com/litlfred/aai-programme/blob/main";
+const repo = `https://github.com/${thisRepo()}/blob/main`;
 const board = readFileSync(join(root, "pulled/README.md"), "utf8")
   // Links up out of pulled/ name files in this repository: point them at GitHub.
   .replace(/\]\(\.\.\/([^)]+)\)/g, (_m, p: string) => `](${repo}/${p})`);

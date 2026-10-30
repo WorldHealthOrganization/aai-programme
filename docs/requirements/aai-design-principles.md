@@ -52,7 +52,7 @@ statements:
 
 # Design principles
 
-The principles every part of the build follows (section 2). Generated from [requirements v0.5](https://github.com/litlfred/aai-programme/blob/main/uploads/Assured_AI_GitHub_Programme_Requirements_v0.5.md) by `scripts/gen-requirements.ts`; do not edit by hand. Cite one as `req:aai-design-principles#<ID>`.
+The principles every part of the build follows (section 2). Generated from [requirements v0.5](https://github.com/WorldHealthOrganization/aai-programme/blob/main/uploads/Assured_AI_GitHub_Programme_Requirements_v0.5.md) by `scripts/gen-requirements.ts`; do not edit by hand. Cite one as `req:aai-design-principles#<ID>`.
 
 | ID | Level | Requirement |
 |---|---|---|

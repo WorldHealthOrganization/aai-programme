@@ -169,7 +169,7 @@ for (const g of GROUPS) {
   const body = [
     `# ${g.title}`,
     "",
-    `${g.description} Generated from [requirements v${VERSION}](https://github.com/litlfred/aai-programme/blob/main/${SOURCE}) by \`scripts/gen-requirements.ts\`; do not edit by hand. Cite one as \`req:${g.slug}#<ID>\`.`,
+    `${g.description} Generated from [requirements v${VERSION}](https://github.com/WorldHealthOrganization/aai-programme/blob/main/${SOURCE}) by \`scripts/gen-requirements.ts\`; do not edit by hand. Cite one as \`req:${g.slug}#<ID>\`.`,
     "",
     "| ID | Level | Requirement |",
     "|---|---|---|",
@@ -188,7 +188,7 @@ const set = {
   title: `Assured AI programme: requirements v${VERSION}`,
   methodology: "crdm",
   issue: ISSUE,
-  document: `https://github.com/litlfred/aai-programme/blob/main/${SOURCE}`,
+  document: `https://github.com/WorldHealthOrganization/aai-programme/blob/main/${SOURCE}`,
   stage: "proposed",
   members,
 };

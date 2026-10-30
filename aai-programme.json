@@ -52,7 +52,7 @@
       "description": "Pages of this instance's site written in the repository, and the requirement nodes under docs/requirements/ (declared from within, docs/docs.json)."
     }
   ],
-  "description": "Coordination for the WHO Assured AI programme: the programme requirements, the processes that build and run it, and the combined work plan of the repositories it draws on. Staged in litlfred/aai-programme until the owner syncs it to the WHO organisation.",
+  "description": "Coordination for the WHO Assured AI programme: the programme requirements, the processes that build and run it, and the combined work plan of the repositories it draws on. Its home is WorldHealthOrganization/aai-programme (moved 2026-10-26); litlfred/aai-programme is the staging copy, where the issues stay because GitHub cannot transfer them between owners.",
   "needs": [
     "cat-harness",
     "cat-harness-tools"
