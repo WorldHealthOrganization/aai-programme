@@ -119,7 +119,7 @@ statements:
 
 # Programme project views
 
-The views of the Assured AI Programme project (section 8.1). Generated from [requirements v0.5](https://github.com/litlfred/aai-programme/blob/main/uploads/Assured_AI_GitHub_Programme_Requirements_v0.5.md) by `scripts/gen-requirements.ts`; do not edit by hand. Cite one as `req:aai-views#<ID>`.
+The views of the Assured AI Programme project (section 8.1). Generated from [requirements v0.5](https://github.com/WorldHealthOrganization/aai-programme/blob/main/uploads/Assured_AI_GitHub_Programme_Requirements_v0.5.md) by `scripts/gen-requirements.ts`; do not edit by hand. Cite one as `req:aai-views#<ID>`.
 
 | ID | Level | Requirement |
 |---|---|---|

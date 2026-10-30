@@ -13,6 +13,7 @@
  * `marker` label, a missing label or link is added, and a body that differs
  * is updated. Only this repository's issues are touched.
  */
+import { thisRepo } from "../origin-repo.ts";
 import { readFileSync } from "node:fs";
 import { FIELDS, labelFor } from "./fields.ts";
 
@@ -23,7 +24,7 @@ if (at < 0) {
   process.exit(2);
 }
 const spec = JSON.parse(readFileSync(process.argv[at + 1]!, "utf8")) as { marker: string; repository?: string; items: Item[] };
-const REPO = spec.repository ?? "litlfred/aai-programme";
+const REPO = spec.repository ?? thisRepo();
 const DRY = process.argv.includes("--dry-run");
 
 function gh(args: string[], input?: string): unknown {

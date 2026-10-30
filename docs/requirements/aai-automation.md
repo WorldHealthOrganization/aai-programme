@@ -61,7 +61,7 @@ statements:
 
 # Automation
 
-What the automations do, and what they never do (section 11). Generated from [requirements v0.5](https://github.com/litlfred/aai-programme/blob/main/uploads/Assured_AI_GitHub_Programme_Requirements_v0.5.md) by `scripts/gen-requirements.ts`; do not edit by hand. Cite one as `req:aai-automation#<ID>`.
+What the automations do, and what they never do (section 11). Generated from [requirements v0.5](https://github.com/WorldHealthOrganization/aai-programme/blob/main/uploads/Assured_AI_GitHub_Programme_Requirements_v0.5.md) by `scripts/gen-requirements.ts`; do not edit by hand. Cite one as `req:aai-automation#<ID>`.
 
 | ID | Level | Requirement |
 |---|---|---|
