@@ -1,13 +1,13 @@
 {
-  "checked": "2026-10-31",
+  "checked": "2026-11-01",
   "summary": {
-    "bean-done": 2,
+    "bean-done": 3,
     "bean-scrapped": 0,
     "issue-closed": 2,
     "broken-link": 0,
     "orphaned": 0,
-    "bean-changed": 12,
-    "untriaged": 43
+    "bean-changed": 13,
+    "untriaged": 24
   },
   "findings": [
     {
@@ -51,6 +51,18 @@
       "issue": 43,
       "bean": "folio-assistant-3sbm",
       "detail": "the bean changed (2026-10-26) after the issue was last touched (2026-10-26)"
+    },
+    {
+      "kind": "bean-done",
+      "issue": 40,
+      "bean": "folio-assistant-n3h9",
+      "detail": "the bean is completed; close the issue as completed?"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 40,
+      "bean": "folio-assistant-n3h9",
+      "detail": "the bean changed (2026-10-31) after the issue was last touched (2026-10-31)"
     },
     {
       "kind": "issue-closed",
@@ -113,11 +125,6 @@
     },
     {
       "kind": "untriaged",
-      "bean": "folio-assistant-1sc6",
-      "detail": "litlfred/folio-assistant: smart-trust: release.yml is broken and over-privileged (checkout@v2, ::set-output, empty tag ref)"
-    },
-    {
-      "kind": "untriaged",
       "bean": "folio-assistant-33iz",
       "detail": "litlfred/folio-assistant: Security and QA review of the FHIR and SMART layers (2026-10-31)"
     },
@@ -128,43 +135,28 @@
     },
     {
       "kind": "untriaged",
-      "bean": "folio-assistant-6zcw",
-      "detail": "litlfred/folio-assistant: folio-assistant-sci cannot run the security gate"
+      "bean": "folio-assistant-6chd",
+      "detail": "litlfred/folio-assistant: Library ingestion: re-segment DTH handbook PDFs the same way every time"
     },
     {
       "kind": "untriaged",
-      "bean": "folio-assistant-8eyy",
-      "detail": "litlfred/folio-assistant: Lake cache extraction checks member paths but not member types"
+      "bean": "folio-assistant-6fez",
+      "detail": "litlfred/folio-assistant: Library sources regroup: cat-harness/library/ into library/<group>/<slug>/ (split from f8wp)"
     },
     {
       "kind": "untriaged",
-      "bean": "folio-assistant-a3fj",
-      "detail": "litlfred/folio-assistant: Dependency advisories: 7 high, 12 moderate in smart-trust, who-iris and dth-hrh installs"
+      "bean": "folio-assistant-aso6",
+      "detail": "litlfred/folio-assistant: deploy-folio runs branch scripts with production secrets and no permissions block"
     },
     {
       "kind": "untriaged",
-      "bean": "folio-assistant-avcq",
-      "detail": "litlfred/folio-assistant: terminology-sw.js says no request reaches the network, but unanswered cross-origin requests go out"
+      "bean": "folio-assistant-cysv",
+      "detail": "litlfred/folio-assistant: One DTH scaffold and seed tool in the platform (dth init), replacing per-repo copies"
     },
     {
       "kind": "untriaged",
-      "bean": "folio-assistant-dnrj",
-      "detail": "litlfred/folio-assistant: bootstrap: graph.schema.json lets a Subgraph path or Asset src be absolute or climb with .."
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-fg31",
-      "detail": "litlfred/folio-assistant: Shell-string and rm -rf hygiene: fsh-cone execSync and smart-base mount-platform.sh"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-hgxs",
-      "detail": "litlfred/folio-assistant: smart-immunizations package-lock.json: 27 advisories (1 critical tar, 14 high) via the npm dependency"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-hto2",
-      "detail": "litlfred/folio-assistant: Installs that fall back from the lockfile: smart-trust site-publish, who-iris checks, dth-hrh session hook"
+      "bean": "folio-assistant-dthl",
+      "detail": "litlfred/folio-assistant: DTH handbooks as L2 documents on smart-ra (HRH pilot, PHC, SC, PC, SFP)"
     },
     {
       "kind": "untriaged",
@@ -175,6 +167,16 @@
       "kind": "untriaged",
       "bean": "folio-assistant-llxa",
       "detail": "litlfred/folio-assistant: cat-harness CRDM skills: cite PHII and PATH CRDM as the method they adapt"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-lo3p",
+      "detail": "litlfred/folio-assistant: DMN QA check for the DTH house rules"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-ls3t",
+      "detail": "litlfred/folio-assistant: dth-l1-to-l2-ingest skill: add the lessons from dth-sc, dth-pc and dth-phc as rules"
     },
     {
       "kind": "untriaged",
@@ -198,28 +200,13 @@
     },
     {
       "kind": "untriaged",
-      "bean": "folio-assistant-plxg",
-      "detail": "litlfred/folio-assistant: lxml parses repository XML with default entity resolution (smart-base)"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-q7dh",
-      "detail": "litlfred/folio-assistant: check:dsa-hash: validate against official ODRL/DCAT/DCMI contexts, declare it as a Tool"
-    },
-    {
-      "kind": "untriaged",
       "bean": "folio-assistant-r29x",
       "detail": "litlfred/folio-assistant: R29 (PAUSED by owner): todos and sticky notes reference things across KG libraries, as one merged kind"
     },
     {
       "kind": "untriaged",
-      "bean": "folio-assistant-rx8k",
-      "detail": "litlfred/folio-assistant: smart-trust: Visual Studio state committed under .vs/"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-towy",
-      "detail": "litlfred/folio-assistant: smart-base issue skills: issue body reaches an LLM unfenced and LLM-chosen labels are applied unchecked"
+      "bean": "folio-assistant-sb31",
+      "detail": "litlfred/folio-assistant: SECURITY REVIEW 2026-10-31, GROUP B: folio-assistant-core, folio-assistant-sci and folio-assistant"
     },
     {
       "kind": "untriaged",
@@ -228,33 +215,13 @@
     },
     {
       "kind": "untriaged",
-      "bean": "folio-assistant-vj2d",
-      "detail": "litlfred/folio-assistant: dth-hrh: reusable workflows at @main in write-token workflows (security:gate fails)"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-vl71",
-      "detail": "litlfred/folio-assistant: smart-base ghbuild.yml runs ~36 scripts curled from WorldHealthOrganization/smart-base@main with a write token"
-    },
-    {
-      "kind": "untriaged",
       "bean": "folio-assistant-wox6",
       "detail": "litlfred/folio-assistant: Dependency advisories: happy-dom critical, node-forge, zod, undici"
     },
     {
       "kind": "untriaged",
-      "bean": "folio-assistant-wyez",
-      "detail": "litlfred/folio-assistant: fhir-harness bun.lock: 17 dependency advisories (7 high), node-forge and zod"
-    },
-    {
-      "kind": "untriaged",
       "bean": "folio-assistant-x09n",
       "detail": "litlfred/folio-assistant: Unpinned third-party actions in write-token workflows (smart-base, smart-ra, smart-immunizations)"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-xbfx",
-      "detail": "litlfred/folio-assistant: smart-trust: 12 unpinned actions and reusable workflows in write-token workflows (security:gate fails)"
     },
     {
       "kind": "untriaged",
@@ -268,58 +235,8 @@
     },
     {
       "kind": "untriaged",
-      "bean": "cat-tools-a1p9",
-      "detail": "litlfred/cat-harness-tools: UNPINNED ACTIONS IN WRITE-TOKEN WORKFLOWS: both release-npm.yml files and the folio-qa-sweep workflows run third-party actions by tag with contents: write and NPM_TOKEN"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "cat-tools-d3vq",
-      "detail": "litlfred/cat-harness-tools: DEPENDENCY ADVISORIES: bun audit reports 29 in the cat-harness-tools lockfile (8 high), including an undici TLS validation bypass under jsonld"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "cat-tools-g7ls",
-      "detail": "litlfred/cat-harness-tools: STANDALONE LOAD ERRORS: ~250 cat-harness-tools tests fail to load standalone because fhir-harness.json declares the \"glossary\" kind that only folio-assistant-core registers"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "cat-tools-j4sh",
-      "detail": "litlfred/cat-harness-tools: JSON.stringify IS NOT SHELL QUOTING: build-instance-site builds bash -c strings with JSON-quoted paths and excludes, where $( ) and backticks still expand"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "cat-tools-q8gk",
-      "detail": "litlfred/cat-harness-tools: SECURITY GATE ALWAYS REFUSES OUTSIDE THE COMPOSED ROOT: materialized-fixity is pinned to a folio-assistant-core script, and four checks crash or go undetermined from a layer checkout"
-    },
-    {
-      "kind": "untriaged",
       "bean": "cat-tools-sr31",
       "detail": "litlfred/cat-harness-tools: SECURITY REVIEW 2026-10-31: every harnessed layer, against the security sub-KG and the secure-code-authoring voice"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "cat-tools-w7tx",
-      "detail": "litlfred/cat-harness-tools: WITNESS DATA BECOMES PROGRAM TEXT: witness-parity runs a committed witness JSON invocation.reproduce string as bash -c with the full process environment"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-core-0b88",
-      "detail": "litlfred/folio-assistant-core: Core dependency advisories: undici 5.29 via jsonld 8"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-core-0dy3",
-      "detail": "litlfred/folio-assistant-core: folio-assistant-core cannot run the security gate"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-core-ho43",
-      "detail": "litlfred/folio-assistant-core: MCP document tools take file paths from tool arguments without containment"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-core-xpsq",
-      "detail": "litlfred/folio-assistant-core: Fetch scripts follow server-supplied links without a destination check"
     }
   ]
 }
