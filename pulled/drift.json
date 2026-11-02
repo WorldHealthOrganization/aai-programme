@@ -1,27 +1,15 @@
 {
-  "checked": "2026-11-01",
+  "checked": "2026-11-02",
   "summary": {
-    "bean-done": 3,
+    "bean-done": 1,
     "bean-scrapped": 0,
-    "issue-closed": 2,
+    "issue-closed": 0,
     "broken-link": 0,
     "orphaned": 0,
-    "bean-changed": 13,
-    "untriaged": 24
+    "bean-changed": 14,
+    "untriaged": 15
   },
   "findings": [
-    {
-      "kind": "bean-done",
-      "issue": 51,
-      "bean": "cat-tools-tk99",
-      "detail": "the bean is completed; close the issue as completed?"
-    },
-    {
-      "kind": "bean-changed",
-      "issue": 51,
-      "bean": "cat-tools-tk99",
-      "detail": "the bean changed (2026-10-30) after the issue was last touched (2026-10-20)"
-    },
     {
       "kind": "bean-changed",
       "issue": 49,
@@ -41,10 +29,10 @@
       "detail": "the bean changed (2026-10-30) after the issue was last touched (2026-10-26)"
     },
     {
-      "kind": "issue-closed",
+      "kind": "bean-changed",
       "issue": 44,
       "bean": "folio-assistant-zzmr",
-      "detail": "the issue is closed but the bean is in-progress"
+      "detail": "the bean changed (2026-10-31) after the issue was last touched (2026-10-26)"
     },
     {
       "kind": "bean-changed",
@@ -53,22 +41,10 @@
       "detail": "the bean changed (2026-10-26) after the issue was last touched (2026-10-26)"
     },
     {
-      "kind": "bean-done",
-      "issue": 40,
-      "bean": "folio-assistant-n3h9",
-      "detail": "the bean is completed; close the issue as completed?"
-    },
-    {
       "kind": "bean-changed",
-      "issue": 40,
-      "bean": "folio-assistant-n3h9",
-      "detail": "the bean changed (2026-10-31) after the issue was last touched (2026-10-31)"
-    },
-    {
-      "kind": "issue-closed",
       "issue": 39,
       "bean": "folio-assistant-5a3l",
-      "detail": "the issue is closed but the bean is in-progress"
+      "detail": "the bean changed (2026-11-01) after the issue was last touched (2026-10-26)"
     },
     {
       "kind": "bean-changed",
@@ -95,12 +71,6 @@
       "detail": "the bean changed (2026-10-26) after the issue was last touched (2026-10-26)"
     },
     {
-      "kind": "bean-done",
-      "issue": 26,
-      "bean": "folio-assistant-cz17",
-      "detail": "the bean is completed; close the issue as completed?"
-    },
-    {
       "kind": "bean-changed",
       "issue": 25,
       "bean": "folio-assistant-qvxh",
@@ -119,34 +89,26 @@
       "detail": "the bean changed (2026-10-26) after the issue was last touched (2026-10-26)"
     },
     {
+      "kind": "bean-done",
+      "issue": 21,
+      "bean": "folio-assistant-slw1",
+      "detail": "the bean is completed; close the issue as completed?"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 21,
+      "bean": "folio-assistant-slw1",
+      "detail": "the bean changed (2026-11-01) after the issue was last touched (2026-10-30)"
+    },
+    {
       "kind": "untriaged",
       "bean": "folio-assistant-17iw",
       "detail": "litlfred/folio-assistant: MIGRATION: public-health and health-system process catalogues move from smart-base to WHO/who-iris once it is live"
     },
     {
       "kind": "untriaged",
-      "bean": "folio-assistant-33iz",
-      "detail": "litlfred/folio-assistant: Security and QA review of the FHIR and SMART layers (2026-10-31)"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-3o2w",
-      "detail": "litlfred/folio-assistant: SECURITY REVIEW 2026-10-31, group D: smart-trust, who-iris, dth-hrh, bootstrap"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-6chd",
-      "detail": "litlfred/folio-assistant: Library ingestion: re-segment DTH handbook PDFs the same way every time"
-    },
-    {
-      "kind": "untriaged",
       "bean": "folio-assistant-6fez",
       "detail": "litlfred/folio-assistant: Library sources regroup: cat-harness/library/ into library/<group>/<slug>/ (split from f8wp)"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-aso6",
-      "detail": "litlfred/folio-assistant: deploy-folio runs branch scripts with production secrets and no permissions block"
     },
     {
       "kind": "untriaged",
@@ -160,18 +122,13 @@
     },
     {
       "kind": "untriaged",
-      "bean": "folio-assistant-ksek",
-      "detail": "litlfred/folio-assistant: CI: green PR must mean green main"
+      "bean": "folio-assistant-fvec",
+      "detail": "litlfred/folio-assistant: PUBLISH: Cloudflare R2 + CDN in front of the WHO L1 corpus (future; owner 2026-10-24)"
     },
     {
       "kind": "untriaged",
       "bean": "folio-assistant-llxa",
       "detail": "litlfred/folio-assistant: cat-harness CRDM skills: cite PHII and PATH CRDM as the method they adapt"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-lo3p",
-      "detail": "litlfred/folio-assistant: DMN QA check for the DTH house rules"
     },
     {
       "kind": "untriaged",
@@ -185,8 +142,8 @@
     },
     {
       "kind": "untriaged",
-      "bean": "folio-assistant-negd",
-      "detail": "litlfred/folio-assistant: COMPUTABLE DSAs: public agreement + ODRL, referenced by hash; GDHCN trust; one PDP (#2702, option D)"
+      "bean": "folio-assistant-nbp9",
+      "detail": "litlfred/folio-assistant: Move the deploy-folio secrets into the production environment, with a required reviewer"
     },
     {
       "kind": "untriaged",
@@ -200,33 +157,13 @@
     },
     {
       "kind": "untriaged",
+      "bean": "folio-assistant-pga6",
+      "detail": "litlfred/folio-assistant: Separation Phase III: L4/L5 Content, Tool and Test repos on the harness, plus current and future architecture write-up"
+    },
+    {
+      "kind": "untriaged",
       "bean": "folio-assistant-r29x",
       "detail": "litlfred/folio-assistant: R29 (PAUSED by owner): todos and sticky notes reference things across KG libraries, as one merged kind"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-sb31",
-      "detail": "litlfred/folio-assistant: SECURITY REVIEW 2026-10-31, GROUP B: folio-assistant-core, folio-assistant-sci and folio-assistant"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-vbhb",
-      "detail": "litlfred/folio-assistant: sci and folio-assistant pin tools and workflows to moving refs"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-wox6",
-      "detail": "litlfred/folio-assistant: Dependency advisories: happy-dom critical, node-forge, zod, undici"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-x09n",
-      "detail": "litlfred/folio-assistant: Unpinned third-party actions in write-token workflows (smart-base, smart-ra, smart-immunizations)"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-ylu8",
-      "detail": "litlfred/folio-assistant: Workflows with no permissions block run with the repository's default token"
     },
     {
       "kind": "untriaged",
@@ -235,8 +172,8 @@
     },
     {
       "kind": "untriaged",
-      "bean": "cat-tools-sr31",
-      "detail": "litlfred/cat-harness-tools: SECURITY REVIEW 2026-10-31: every harnessed layer, against the security sub-KG and the secure-code-authoring voice"
+      "bean": "folio-assistant-pvq4",
+      "detail": "litlfred/folio-assistant-core: REVIEW: a person confirms or rejects the agent-drafted block summaries"
     }
   ]
 }
