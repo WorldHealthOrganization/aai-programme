@@ -14,14 +14,14 @@
       "state": "ok",
       "branch": "cat/cat-harness/beans",
       "path": "beans/defs",
-      "commit": "86a2e9a3e17f0ab9cf89de244a45d46f2f64149a",
-      "count": 1368
+      "commit": "09d945b8f17067bd3e5cbbc08e7dfa8b4ad73d67",
+      "count": 1386
     },
     {
       "repo": "litlfred/bootstrap",
       "state": "no-store",
       "branch": "main",
-      "commit": "a83ae82db8a7d03c3febdf367a0a62b46c2eb0ed",
+      "commit": "c90ef456067a874fd7017a370232908ba62e9fcd",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -29,7 +29,7 @@
       "repo": "litlfred/bootstrap-tools",
       "state": "no-store",
       "branch": "main",
-      "commit": "f57b9e72a5a4fd3777aa8c1cee33088ce5899188",
+      "commit": "aa25987a2e637838be02baf4ed239d58086551a3",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -38,7 +38,7 @@
       "state": "ok",
       "branch": "cat/cat-harness/beans",
       "path": "beans",
-      "commit": "971c95851f1f658ae9285d4620b270f61dee0a57",
+      "commit": "50a082cfc9b56b613d19a31ab17746887da50e4a",
       "note": "67 bean(s) also kept, more recently, in another store",
       "count": 1
     },
@@ -47,7 +47,7 @@
       "state": "ok",
       "branch": "main",
       "path": "beans/defs",
-      "commit": "4cb624e69029a620681d745b881e3a167ba97669",
+      "commit": "365e1cfc6bdae802d711a5fb53fe5a840dbb4da0",
       "count": 319
     },
     {
@@ -55,14 +55,14 @@
       "state": "ok",
       "branch": "main",
       "path": "beans/defs",
-      "commit": "c6f940cc3ed533049e61141e66841813eac3629f",
+      "commit": "87d2bc34363d45fccdc15c7d348c2edd9567dec8",
       "count": 203
     },
     {
       "repo": "litlfred/folio-assistant-sci",
       "state": "no-store",
       "branch": "main",
-      "commit": "3f0e48091866dbd47e70ae0dcaed331782546ce2",
+      "commit": "830bbefc8ddaea81629db7f72fde311dbab4125d",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -70,7 +70,7 @@
       "repo": "litlfred/fhir-harness",
       "state": "no-store",
       "branch": "main",
-      "commit": "4c149b89da6df49e4d317a9935dfa4b6c658a847",
+      "commit": "c702c345824ce1e883609be8e9b9533e90b51d53",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -78,7 +78,7 @@
       "repo": "litlfred/who-iris",
       "state": "no-store",
       "branch": "main",
-      "commit": "fa5b707122395f288a4a89ec66e3343d7861fbe8",
+      "commit": "5f377c56e4027f8d94018bea016ff5fabca79c9b",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -94,7 +94,7 @@
       "repo": "litlfred/dth-hrh",
       "state": "no-store",
       "branch": "cat/dth-hrh/beans",
-      "commit": "8d9c28db94ddc583d95245e080a9f9ef152eb975",
+      "commit": "c190bb7f4ee1b59f2ef418d62f2966b453def052",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     }
@@ -20607,6 +20607,41 @@
     },
     {
       "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-4j43",
+      "title": "Harness drain 2026-11-02: cat-harness, cat-harness-tools, fhir-harness",
+      "status": "completed",
+      "type": "epic",
+      "priority": "high",
+      "parent": "folio-assistant-rwmf",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "harness-drain-2026-11-02"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-03T00:41:16Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-4j43--harness-drain-2026-11-02-cat-harness-tools-fhir-harness.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-65aj",
+      "title": "Paste Stub.gs into each review log",
+      "status": "todo",
+      "type": "task",
+      "priority": "normal",
+      "parent": "folio-assistant-dthl",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "review-sheet",
+        "person-step"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-02T15:23:00Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-65aj--paste-stub-gs-into-each-review-log.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
       "id": "folio-assistant-6chd",
       "title": "Library ingestion: re-segment DTH handbook PDFs the same way every time",
       "status": "completed",
@@ -20624,7 +20659,7 @@
       "repo": "litlfred/folio-assistant",
       "id": "folio-assistant-6fez",
       "title": "Library sources regroup: cat-harness/library/ into library/<group>/<slug>/ (split from f8wp)",
-      "status": "in-progress",
+      "status": "completed",
       "type": "task",
       "priority": "normal",
       "parent": "folio-assistant-iirv",
@@ -20632,7 +20667,7 @@
       "blocked_by": [],
       "tags": [],
       "archived": false,
-      "updated_at": "2026-10-31T15:35:00Z",
+      "updated_at": "2026-11-02T07:10:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-6fez--library-sources-regroup-into-library-group-slug.md"
     },
     {
@@ -20649,6 +20684,23 @@
       "archived": false,
       "updated_at": "2026-11-01T15:47:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-75c5--volume-separation-acceptance-run-gdz.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-8bm7",
+      "title": "Phase 1: fhir-harness main finishes a check run and turns green (closes fhir-harness#269, #271)",
+      "status": "completed",
+      "type": "task",
+      "priority": "high",
+      "parent": "folio-assistant-4j43",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "harness-drain-2026-11-02"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-02T11:02:00Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-8bm7--fhir-harness-main-finish-one-green-run.md"
     },
     {
       "repo": "litlfred/folio-assistant",
@@ -20720,6 +20772,80 @@
     },
     {
       "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-bmat",
+      "title": "Document back matter: Glossary (Terms, then Acronyms) at the end of every document (handover bean)",
+      "status": "in-progress",
+      "type": "task",
+      "priority": "normal",
+      "parent": "folio-assistant-npuo",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "document-structure",
+        "glossary",
+        "handover"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-02T19:26:00Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-bmat--document-back-matter-glossary-acronyms.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-bpnl",
+      "title": "Fix overlapping harness BPMN layouts (nice-BPMN criteria)",
+      "status": "in-progress",
+      "type": "task",
+      "priority": "normal",
+      "parent": "folio-assistant-rwmf",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "bpmn-layout"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-02T19:13:00Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-bpnl--fix-overlapping-harness-bpmn-layouts.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-bsd1",
+      "title": "BEAN STORE BEHIND ANY TOOL + STATE MACHINE STARTS ANY MODEL'S AGENT: proposal (WHO Assured AI / Gemini benchmarking context)",
+      "status": "in-progress",
+      "type": "feature",
+      "priority": "normal",
+      "parent": "folio-assistant-yj32",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "work-plan-store",
+        "workflow-state",
+        "agent-dispatch",
+        "model-benchmark",
+        "handover"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-02T19:13:00Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-bsd1--bean-store-behind-any-tool-and-agent-dispatch.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-c1ev",
+      "title": "Phase 5: harness bean tidy-up (6fez, fwtz, p7mb, iirv)",
+      "status": "completed",
+      "type": "task",
+      "priority": "low",
+      "parent": "folio-assistant-4j43",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "harness-drain-2026-11-02"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-02T06:58:00Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-c1ev--harness-drain-bean-tidy.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
       "id": "folio-assistant-cysv",
       "title": "One DTH scaffold and seed tool in the platform (dth init), replacing per-repo copies",
       "status": "todo",
@@ -20735,6 +20861,25 @@
     },
     {
       "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-drnh",
+      "title": "Merge-window drain to 2026-11-03 00:40Z: PRs, re-pin train, open cards (handover bean)",
+      "status": "in-progress",
+      "type": "task",
+      "priority": "high",
+      "parent": "folio-assistant-4j43",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "harness-drain-2026-11-02",
+        "merge-window",
+        "handover"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-03T05:02:05Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-drnh--merge-window-drain-handover-2026-11-02.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
       "id": "folio-assistant-dthl",
       "title": "DTH handbooks as L2 documents on smart-ra (HRH pilot, PHC, SC, PC, SFP)",
       "status": "in-progress",
@@ -20746,6 +20891,61 @@
       "archived": false,
       "updated_at": "2026-11-01T07:50:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-dthl--dth-handbooks-as-l2-documents-on-smart-ra-hrh-phc-sc-pc.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-eaa6",
+      "title": "Phase 2: harness close-outs (tools#962, #1299, #400, #1259)",
+      "status": "completed",
+      "type": "task",
+      "priority": "normal",
+      "parent": "folio-assistant-4j43",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "harness-drain-2026-11-02"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-02T07:15:00Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-eaa6--harness-drain-close-outs.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-fbmk",
+      "title": "Folio bookmarks and pinned blocks: pin any graph-kind block to the folio glass (handover bean)",
+      "status": "in-progress",
+      "type": "task",
+      "priority": "normal",
+      "parent": "folio-assistant-4j43",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "folio-glass",
+        "bookmarks",
+        "handover"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-02T19:13:00Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-fbmk--folio-bookmarks-and-pinned-blocks-handover.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-ftpc",
+      "title": "dth-pc: drop flattened step/risks table text from prose pages",
+      "status": "in-progress",
+      "type": "task",
+      "priority": "normal",
+      "parent": "folio-assistant-dthl",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "dth-pc",
+        "content",
+        "extraction-fix"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-02T20:05:00Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-ftpc--dth-pc-flattened-table-prose-cleanup.md"
     },
     {
       "repo": "litlfred/folio-assistant",
@@ -20774,8 +20974,25 @@
       "blocked_by": [],
       "tags": [],
       "archived": false,
-      "updated_at": "2026-10-31T21:45:00Z",
+      "updated_at": "2026-11-02T19:53:09Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-fwtz--docs-site-must-rebuild-when-the-bean-branch-moves.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-gzgh",
+      "title": "Phase 4: watch owned harness PRs land and close paired issues",
+      "status": "todo",
+      "type": "task",
+      "priority": "normal",
+      "parent": "folio-assistant-4j43",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "harness-drain-2026-11-02"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-02T06:50:00Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-gzgh--harness-drain-watch-owned-prs.md"
     },
     {
       "repo": "litlfred/folio-assistant",
@@ -20818,7 +21035,7 @@
       "repo": "litlfred/folio-assistant",
       "id": "folio-assistant-iirv",
       "title": "cat-harness / cat-harness-tools separation",
-      "status": "in-progress",
+      "status": "completed",
       "type": "epic",
       "priority": "normal",
       "parent": "folio-assistant-vuip",
@@ -20826,7 +21043,7 @@
       "blocked_by": [],
       "tags": [],
       "archived": false,
-      "updated_at": "2026-10-31T17:05:00Z",
+      "updated_at": "2026-11-02T07:10:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-iirv--cat-harness-cat-harness-tools-separation.md"
     },
     {
@@ -20883,6 +21100,24 @@
     },
     {
       "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-lgwt",
+      "title": "Review-log watcher: standing rules, how to watch, current state (handover bean)",
+      "status": "in-progress",
+      "type": "task",
+      "priority": "high",
+      "parent": "folio-assistant-dthl",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "review-log-watch",
+        "handover"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-02T20:02:26Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-lgwt--review-log-watcher-handover.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
       "id": "folio-assistant-llxa",
       "title": "cat-harness CRDM skills: cite PHII and PATH CRDM as the method they adapt",
       "status": "todo",
@@ -20917,7 +21152,7 @@
       "repo": "litlfred/folio-assistant",
       "id": "folio-assistant-ls3t",
       "title": "dth-l1-to-l2-ingest skill: add the lessons from dth-sc, dth-pc and dth-phc as rules",
-      "status": "in-progress",
+      "status": "completed",
       "type": "task",
       "priority": "normal",
       "parent": "folio-assistant-dthl",
@@ -20925,7 +21160,7 @@
       "blocked_by": [],
       "tags": [],
       "archived": false,
-      "updated_at": "2026-10-31T20:54:04Z",
+      "updated_at": "2026-11-02T08:00:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-ls3t--dth-l1-to-l2-ingest-skill-add-the-lessons-from-dth.md"
     },
     {
@@ -20980,6 +21215,23 @@
     },
     {
       "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-o161",
+      "title": "Phase 3: take over stalled harness PRs (tools#1129, tools#1359, cat-harness#932)",
+      "status": "completed",
+      "type": "task",
+      "priority": "normal",
+      "parent": "folio-assistant-4j43",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "harness-drain-2026-11-02"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-02T07:55:00Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-o161--harness-drain-take-over-stalled-prs.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
       "id": "folio-assistant-oz9e",
       "title": "BENCHMARK: outcome evaluation of harness runs across models (close B8 — accuracy, not only structure)",
       "status": "todo",
@@ -20997,7 +21249,7 @@
       "repo": "litlfred/folio-assistant",
       "id": "folio-assistant-p7mb",
       "title": "Whole-repo-derived artefacts still committed go stale on main after concurrent merges: build them at publish (owner option 1, 2026-10-23)",
-      "status": "in-progress",
+      "status": "completed",
       "type": "task",
       "priority": "normal",
       "parent": "folio-assistant-1xhc",
@@ -21005,8 +21257,28 @@
       "blocked_by": [],
       "tags": [],
       "archived": false,
-      "updated_at": "2026-11-01T06:25:00Z",
+      "updated_at": "2026-11-02T07:15:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-p7mb--whole-repo-derived-artefacts-still-committed-go-sta.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-pbv1",
+      "title": "BEANS BY PROCESS: processed-beans and processed-bean visualiser pages (BPMN with bean markers, filters, stalled search)",
+      "status": "in-progress",
+      "type": "feature",
+      "priority": "normal",
+      "parent": "folio-assistant-yj32",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "visualiser",
+        "beans",
+        "workflow-state",
+        "handover"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-02T19:10:00Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-pbv1--beans-by-process-visualiser-processed-beans-pages.md"
     },
     {
       "repo": "litlfred/folio-assistant",
@@ -21015,12 +21287,12 @@
       "status": "todo",
       "type": "task",
       "priority": "low",
-      "parent": "folio-assistant-iirv",
+      "parent": "folio-assistant-vuip",
       "blocking": [],
       "blocked_by": [],
       "tags": [],
       "archived": false,
-      "updated_at": "2026-11-01T17:05:00Z",
+      "updated_at": "2026-11-02T19:53:09Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-pga6--separation-phase-iii-and-architecture-doc.md"
     },
     {
@@ -21037,6 +21309,40 @@
       "archived": false,
       "updated_at": "2026-11-01T09:55:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-r29x--r29-todos-and-sticky-notes-reference-across-kg-l.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-rbib",
+      "title": "dpi-h-ra: footnote citations to KG bibliography (smart-ra#232, handover bean)",
+      "status": "in-progress",
+      "type": "task",
+      "priority": "normal",
+      "parent": "folio-assistant-4j43",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "smart-ra",
+        "references",
+        "handover"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-02T19:35:00Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-rbib--dpi-h-ra-bibliography-handover.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-rpc6",
+      "title": "MVP Phase 4: re-pin the layers on the 11 site PRs, bottom-up",
+      "status": "in-progress",
+      "type": "task",
+      "priority": "high",
+      "parent": "folio-assistant-rwmf",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [],
+      "archived": false,
+      "updated_at": "2026-11-02T19:15:00Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-rpc6--mvp-layer-re-pin-cascade.md"
     },
     {
       "repo": "litlfred/folio-assistant",
@@ -21068,6 +21374,25 @@
       "archived": false,
       "updated_at": "2026-11-01T22:10:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-sb31--security-review-2026-10-31-group-b-folio-assistant-layers.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-sbpn",
+      "title": "smart-ra block panel: left-gutter 📣, greyed section 🔗, filtered public comments (handover bean)",
+      "status": "in-progress",
+      "type": "task",
+      "priority": "high",
+      "parent": "folio-assistant-4j43",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "smart-ra",
+        "block-panel",
+        "handover"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-02T19:13:00Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-sbpn--smart-ra-block-panel-handover.md"
     },
     {
       "repo": "litlfred/folio-assistant",

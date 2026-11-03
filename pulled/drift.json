@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-02",
+  "checked": "2026-11-03",
   "summary": {
     "bean-done": 1,
     "bean-scrapped": 0,
@@ -7,7 +7,7 @@
     "broken-link": 0,
     "orphaned": 0,
     "bean-changed": 14,
-    "untriaged": 15
+    "untriaged": 25
   },
   "findings": [
     {
@@ -107,8 +107,23 @@
     },
     {
       "kind": "untriaged",
-      "bean": "folio-assistant-6fez",
-      "detail": "litlfred/folio-assistant: Library sources regroup: cat-harness/library/ into library/<group>/<slug>/ (split from f8wp)"
+      "bean": "folio-assistant-65aj",
+      "detail": "litlfred/folio-assistant: Paste Stub.gs into each review log"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-bmat",
+      "detail": "litlfred/folio-assistant: Document back matter: Glossary (Terms, then Acronyms) at the end of every document (handover bean)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-bpnl",
+      "detail": "litlfred/folio-assistant: Fix overlapping harness BPMN layouts (nice-BPMN criteria)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-bsd1",
+      "detail": "litlfred/folio-assistant: BEAN STORE BEHIND ANY TOOL + STATE MACHINE STARTS ANY MODEL'S AGENT: proposal (WHO Assured AI / Gemini benchmarking context)"
     },
     {
       "kind": "untriaged",
@@ -117,8 +132,23 @@
     },
     {
       "kind": "untriaged",
+      "bean": "folio-assistant-drnh",
+      "detail": "litlfred/folio-assistant: Merge-window drain to 2026-11-03 00:40Z: PRs, re-pin train, open cards (handover bean)"
+    },
+    {
+      "kind": "untriaged",
       "bean": "folio-assistant-dthl",
       "detail": "litlfred/folio-assistant: DTH handbooks as L2 documents on smart-ra (HRH pilot, PHC, SC, PC, SFP)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-fbmk",
+      "detail": "litlfred/folio-assistant: Folio bookmarks and pinned blocks: pin any graph-kind block to the folio glass (handover bean)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-ftpc",
+      "detail": "litlfred/folio-assistant: dth-pc: drop flattened step/risks table text from prose pages"
     },
     {
       "kind": "untriaged",
@@ -127,13 +157,18 @@
     },
     {
       "kind": "untriaged",
-      "bean": "folio-assistant-llxa",
-      "detail": "litlfred/folio-assistant: cat-harness CRDM skills: cite PHII and PATH CRDM as the method they adapt"
+      "bean": "folio-assistant-gzgh",
+      "detail": "litlfred/folio-assistant: Phase 4: watch owned harness PRs land and close paired issues"
     },
     {
       "kind": "untriaged",
-      "bean": "folio-assistant-ls3t",
-      "detail": "litlfred/folio-assistant: dth-l1-to-l2-ingest skill: add the lessons from dth-sc, dth-pc and dth-phc as rules"
+      "bean": "folio-assistant-lgwt",
+      "detail": "litlfred/folio-assistant: Review-log watcher: standing rules, how to watch, current state (handover bean)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-llxa",
+      "detail": "litlfred/folio-assistant: cat-harness CRDM skills: cite PHII and PATH CRDM as the method they adapt"
     },
     {
       "kind": "untriaged",
@@ -152,8 +187,8 @@
     },
     {
       "kind": "untriaged",
-      "bean": "folio-assistant-p7mb",
-      "detail": "litlfred/folio-assistant: Whole-repo-derived artefacts still committed go stale on main after concurrent merges: build them at publish (owner option 1, 2026-10-23)"
+      "bean": "folio-assistant-pbv1",
+      "detail": "litlfred/folio-assistant: BEANS BY PROCESS: processed-beans and processed-bean visualiser pages (BPMN with bean markers, filters, stalled search)"
     },
     {
       "kind": "untriaged",
@@ -164,6 +199,21 @@
       "kind": "untriaged",
       "bean": "folio-assistant-r29x",
       "detail": "litlfred/folio-assistant: R29 (PAUSED by owner): todos and sticky notes reference things across KG libraries, as one merged kind"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-rbib",
+      "detail": "litlfred/folio-assistant: dpi-h-ra: footnote citations to KG bibliography (smart-ra#232, handover bean)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-rpc6",
+      "detail": "litlfred/folio-assistant: MVP Phase 4: re-pin the layers on the 11 site PRs, bottom-up"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-sbpn",
+      "detail": "litlfred/folio-assistant: smart-ra block panel: left-gutter 📣, greyed section 🔗, filtered public comments (handover bean)"
     },
     {
       "kind": "untriaged",
