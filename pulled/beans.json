@@ -14,8 +14,8 @@
       "state": "ok",
       "branch": "cat/cat-harness/beans",
       "path": "beans/defs",
-      "commit": "09d945b8f17067bd3e5cbbc08e7dfa8b4ad73d67",
-      "count": 1386
+      "commit": "2ae698cd4c0fa72e6ea8515d5abbd645fb15d63e",
+      "count": 1387
     },
     {
       "repo": "litlfred/bootstrap",
@@ -47,22 +47,22 @@
       "state": "ok",
       "branch": "main",
       "path": "beans/defs",
-      "commit": "365e1cfc6bdae802d711a5fb53fe5a840dbb4da0",
-      "count": 319
+      "commit": "584bb09c4193b4ba51b17d37dfcb36085fe3abfa",
+      "count": 320
     },
     {
       "repo": "litlfred/folio-assistant-core",
       "state": "ok",
       "branch": "main",
       "path": "beans/defs",
-      "commit": "87d2bc34363d45fccdc15c7d348c2edd9567dec8",
+      "commit": "ca3ea61905ebfbfa179eae32d65fd0d291049b76",
       "count": 203
     },
     {
       "repo": "litlfred/folio-assistant-sci",
       "state": "no-store",
       "branch": "main",
-      "commit": "830bbefc8ddaea81629db7f72fde311dbab4125d",
+      "commit": "6b1cb2e125ac02167b4c1c37c2d5bece65b80bcb",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -70,7 +70,7 @@
       "repo": "litlfred/fhir-harness",
       "state": "no-store",
       "branch": "main",
-      "commit": "c702c345824ce1e883609be8e9b9533e90b51d53",
+      "commit": "01b7edb92e7119d5a34d6754788a4abdeb5d0ae8",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -78,7 +78,7 @@
       "repo": "litlfred/who-iris",
       "state": "no-store",
       "branch": "main",
-      "commit": "5f377c56e4027f8d94018bea016ff5fabca79c9b",
+      "commit": "c9865ed3901d6f108f38fc5cabecc6da2e87d88a",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -94,7 +94,7 @@
       "repo": "litlfred/dth-hrh",
       "state": "no-store",
       "branch": "cat/dth-hrh/beans",
-      "commit": "c190bb7f4ee1b59f2ef418d62f2966b453def052",
+      "commit": "4bb72c8f53cd5aa0fbe1635a8f686ab4da46d349",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     }
@@ -20609,7 +20609,7 @@
       "repo": "litlfred/folio-assistant",
       "id": "folio-assistant-4j43",
       "title": "Harness drain 2026-11-02: cat-harness, cat-harness-tools, fhir-harness",
-      "status": "completed",
+      "status": "in-progress",
       "type": "epic",
       "priority": "high",
       "parent": "folio-assistant-rwmf",
@@ -20619,7 +20619,7 @@
         "harness-drain-2026-11-02"
       ],
       "archived": false,
-      "updated_at": "2026-11-03T00:41:16Z",
+      "updated_at": "2026-11-03T07:13:38Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-4j43--harness-drain-2026-11-02-cat-harness-tools-fhir-harness.md"
     },
     {
@@ -20861,6 +20861,24 @@
     },
     {
       "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-djj5",
+      "title": "IG bibliographies derived from library/, not a hand-kept references/ directory",
+      "status": "in-progress",
+      "type": "epic",
+      "priority": "normal",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "references",
+        "library",
+        "smart-base"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-03T16:13:41Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-djj5--ig-bibliography-derived-from-library.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
       "id": "folio-assistant-drnh",
       "title": "Merge-window drain to 2026-11-03 00:40Z: PRs, re-pin train, open cards (handover bean)",
       "status": "in-progress",
@@ -20875,7 +20893,7 @@
         "handover"
       ],
       "archived": false,
-      "updated_at": "2026-11-03T05:02:05Z",
+      "updated_at": "2026-11-03T08:49:58Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-drnh--merge-window-drain-handover-2026-11-02.md"
     },
     {
@@ -21654,6 +21672,24 @@
       "archived": false,
       "updated_at": "2026-10-31T08:50:00Z",
       "url": "https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/cat-tools-d3vq--dependency-advisories-29-in-the-tools-lockfile-8-high.md"
+    },
+    {
+      "repo": "litlfred/cat-harness-tools",
+      "id": "cat-tools-d5j0",
+      "title": "subgraph:jsonld drops the `bootstrap` prefix from cat-harness's ns/subgraph/v1.jsonld when the checkout holding cat-harness does not hold bootstrap, so the committed file reads as stale",
+      "status": "todo",
+      "type": "bug",
+      "priority": "normal",
+      "parent": "folio-assistant-1xhc",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "ci",
+        "jsonld"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-03T07:15:45Z",
+      "url": "https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/cat-tools-d5j0--subgraph-context-drops-a-needed-prefix-when-the-ch.md"
     },
     {
       "repo": "litlfred/cat-harness-tools",

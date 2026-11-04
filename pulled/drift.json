@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-03",
+  "checked": "2026-11-04",
   "summary": {
     "bean-done": 1,
     "bean-scrapped": 0,
@@ -7,7 +7,7 @@
     "broken-link": 0,
     "orphaned": 0,
     "bean-changed": 14,
-    "untriaged": 25
+    "untriaged": 28
   },
   "findings": [
     {
@@ -107,6 +107,11 @@
     },
     {
       "kind": "untriaged",
+      "bean": "folio-assistant-4j43",
+      "detail": "litlfred/folio-assistant: Harness drain 2026-11-02: cat-harness, cat-harness-tools, fhir-harness"
+    },
+    {
+      "kind": "untriaged",
       "bean": "folio-assistant-65aj",
       "detail": "litlfred/folio-assistant: Paste Stub.gs into each review log"
     },
@@ -129,6 +134,11 @@
       "kind": "untriaged",
       "bean": "folio-assistant-cysv",
       "detail": "litlfred/folio-assistant: One DTH scaffold and seed tool in the platform (dth init), replacing per-repo copies"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-djj5",
+      "detail": "litlfred/folio-assistant: IG bibliographies derived from library/, not a hand-kept references/ directory"
     },
     {
       "kind": "untriaged",
@@ -219,6 +229,11 @@
       "kind": "untriaged",
       "bean": "note",
       "detail": "litlfred/cat-harness: folio-assistant-0lj4--2026-10-04--claude-gracious-mendel-du6nn8"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "cat-tools-d5j0",
+      "detail": "litlfred/cat-harness-tools: subgraph:jsonld drops the `bootstrap` prefix from cat-harness's ns/subgraph/v1.jsonld when the checkout holding cat-harness does not hold bootstrap, so the committed file reads as stale"
     },
     {
       "kind": "untriaged",
