@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-04",
+  "checked": "2026-11-05",
   "summary": {
     "bean-done": 1,
     "bean-scrapped": 0,
@@ -142,6 +142,11 @@
     },
     {
       "kind": "untriaged",
+      "bean": "folio-assistant-dkqd",
+      "detail": "litlfred/folio-assistant: Say 'work item', not 'bean', in prose; generate a glossary of node kinds and harnesses"
+    },
+    {
+      "kind": "untriaged",
       "bean": "folio-assistant-drnh",
       "detail": "litlfred/folio-assistant: Merge-window drain to 2026-11-03 00:40Z: PRs, re-pin train, open cards (handover bean)"
     },
@@ -229,11 +234,6 @@
       "kind": "untriaged",
       "bean": "note",
       "detail": "litlfred/cat-harness: folio-assistant-0lj4--2026-10-04--claude-gracious-mendel-du6nn8"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "cat-tools-d5j0",
-      "detail": "litlfred/cat-harness-tools: subgraph:jsonld drops the `bootstrap` prefix from cat-harness's ns/subgraph/v1.jsonld when the checkout holding cat-harness does not hold bootstrap, so the committed file reads as stale"
     },
     {
       "kind": "untriaged",

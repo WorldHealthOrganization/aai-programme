@@ -1,6 +1,6 @@
 # Bean drift
 
-Checked 2026-11-04: 33 programme issue(s) carrying 35 bean link(s), against 1938 beans from 12 stores. **Bean completed, issue still open: 1; Bean changed since the issue was last touched: 14; Open beans nobody has triaged: 28.**
+Checked 2026-11-05: 33 programme issue(s) carrying 35 bean link(s), against 1941 beans from 12 stores. **Bean completed, issue still open: 1; Bean changed since the issue was last touched: 14; Open beans nobody has triaged: 28.**
 
 Each finding is for a person to act on: change the issue, or record a triage decision in `docs/beans-triage.json`. Nothing here is changed automatically. Run it again by commenting `/check-drift` on any issue.
 
@@ -41,6 +41,7 @@ Each finding is for a person to act on: change the issue, or record a triage dec
 | [folio-assistant-bsd1](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-bsd1--bean-store-behind-any-tool-and-agent-dispatch.md) | litlfred/folio-assistant: BEAN STORE BEHIND ANY TOOL + STATE MACHINE STARTS ANY MODEL'S AGENT: proposal (WHO Assured AI / Gemini benchmarking context) |
 | [folio-assistant-cysv](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-cysv--one-dth-scaffold-and-seed-tool-in-the-platform-dth.md) | litlfred/folio-assistant: One DTH scaffold and seed tool in the platform (dth init), replacing per-repo copies |
 | [folio-assistant-djj5](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-djj5--ig-bibliography-derived-from-library.md) | litlfred/folio-assistant: IG bibliographies derived from library/, not a hand-kept references/ directory |
+| [folio-assistant-dkqd](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-dkqd--say-work-item-not-bean-in-prose-generate-a-glossar.md) | litlfred/folio-assistant: Say 'work item', not 'bean', in prose; generate a glossary of node kinds and harnesses |
 | [folio-assistant-drnh](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-drnh--merge-window-drain-handover-2026-11-02.md) | litlfred/folio-assistant: Merge-window drain to 2026-11-03 00:40Z: PRs, re-pin train, open cards (handover bean) |
 | [folio-assistant-dthl](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-dthl--dth-handbooks-as-l2-documents-on-smart-ra-hrh-phc-sc-pc.md) | litlfred/folio-assistant: DTH handbooks as L2 documents on smart-ra (HRH pilot, PHC, SC, PC, SFP) |
 | [folio-assistant-fbmk](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-fbmk--folio-bookmarks-and-pinned-blocks-handover.md) | litlfred/folio-assistant: Folio bookmarks and pinned blocks: pin any graph-kind block to the folio glass (handover bean) |
@@ -59,6 +60,5 @@ Each finding is for a person to act on: change the issue, or record a triage dec
 | [folio-assistant-rpc6](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-rpc6--mvp-layer-re-pin-cascade.md) | litlfred/folio-assistant: MVP Phase 4: re-pin the layers on the 11 site PRs, bottom-up |
 | [folio-assistant-sbpn](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-sbpn--smart-ra-block-panel-handover.md) | litlfred/folio-assistant: smart-ra block panel: left-gutter 📣, greyed section 🔗, filtered public comments (handover bean) |
 | [note](https://github.com/litlfred/cat-harness/blob/cat/cat-harness/beans/beans/notes/folio-assistant-0lj4--2026-10-04--claude-gracious-mendel-du6nn8.md) | litlfred/cat-harness: folio-assistant-0lj4--2026-10-04--claude-gracious-mendel-du6nn8 |
-| [cat-tools-d5j0](https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/cat-tools-d5j0--subgraph-context-drops-a-needed-prefix-when-the-ch.md) | litlfred/cat-harness-tools: subgraph:jsonld drops the `bootstrap` prefix from cat-harness's ns/subgraph/v1.jsonld when the checkout holding cat-harness does not hold bootstrap, so the committed file reads as stale |
 | [folio-assistant-pvq4](https://github.com/litlfred/folio-assistant-core/blob/main/beans/defs/folio-assistant-pvq4--review-the-agent-drafted-block-summaries-confirm.md) | litlfred/folio-assistant-core: REVIEW: a person confirms or rejects the agent-drafted block summaries |
 

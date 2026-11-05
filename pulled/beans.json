@@ -14,14 +14,14 @@
       "state": "ok",
       "branch": "cat/cat-harness/beans",
       "path": "beans/defs",
-      "commit": "2ae698cd4c0fa72e6ea8515d5abbd645fb15d63e",
-      "count": 1387
+      "commit": "93dd285521bce74a95ae95fbb54edb6c30139d10",
+      "count": 1388
     },
     {
       "repo": "litlfred/bootstrap",
       "state": "no-store",
       "branch": "main",
-      "commit": "c90ef456067a874fd7017a370232908ba62e9fcd",
+      "commit": "12fa6d57dfad06ae73e234f116145dfc8d77ad50",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -29,7 +29,7 @@
       "repo": "litlfred/bootstrap-tools",
       "state": "no-store",
       "branch": "main",
-      "commit": "aa25987a2e637838be02baf4ed239d58086551a3",
+      "commit": "f22b2490ff8b6930c55d1b6fe9605fc5f9f9a743",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -47,22 +47,22 @@
       "state": "ok",
       "branch": "main",
       "path": "beans/defs",
-      "commit": "584bb09c4193b4ba51b17d37dfcb36085fe3abfa",
-      "count": 320
+      "commit": "c807dc956661f9b93d1200b374b069e43d2b903a",
+      "count": 321
     },
     {
       "repo": "litlfred/folio-assistant-core",
       "state": "ok",
       "branch": "main",
       "path": "beans/defs",
-      "commit": "ca3ea61905ebfbfa179eae32d65fd0d291049b76",
-      "count": 203
+      "commit": "ade280d2531f0216c36c79f584fc2ed5d8d85c09",
+      "count": 204
     },
     {
       "repo": "litlfred/folio-assistant-sci",
       "state": "no-store",
       "branch": "main",
-      "commit": "6b1cb2e125ac02167b4c1c37c2d5bece65b80bcb",
+      "commit": "741d4fd6c0099067ca5051879dd231e777f6e5b2",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -70,7 +70,7 @@
       "repo": "litlfred/fhir-harness",
       "state": "no-store",
       "branch": "main",
-      "commit": "01b7edb92e7119d5a34d6754788a4abdeb5d0ae8",
+      "commit": "ca32a2e32fde62c39b3b9691d629104768fcd552",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -78,7 +78,7 @@
       "repo": "litlfred/who-iris",
       "state": "no-store",
       "branch": "main",
-      "commit": "c9865ed3901d6f108f38fc5cabecc6da2e87d88a",
+      "commit": "1e5c01c9737a025905ba4e82e968695cf6c2f411",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -20874,8 +20874,26 @@
         "smart-base"
       ],
       "archived": false,
-      "updated_at": "2026-11-03T16:13:41Z",
+      "updated_at": "2026-11-04T07:03:12Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-djj5--ig-bibliography-derived-from-library.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-dkqd",
+      "title": "Say 'work item', not 'bean', in prose; generate a glossary of node kinds and harnesses",
+      "status": "in-progress",
+      "type": "feature",
+      "priority": "normal",
+      "parent": "folio-assistant-yj32",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "vocabulary",
+        "glossary"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-04T21:08:39Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-dkqd--say-work-item-not-bean-in-prose-generate-a-glossar.md"
     },
     {
       "repo": "litlfred/folio-assistant",
@@ -20893,7 +20911,7 @@
         "handover"
       ],
       "archived": false,
-      "updated_at": "2026-11-03T08:49:58Z",
+      "updated_at": "2026-11-04T20:57:30Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-drnh--merge-window-drain-handover-2026-11-02.md"
     },
     {
@@ -21275,7 +21293,7 @@
       "blocked_by": [],
       "tags": [],
       "archived": false,
-      "updated_at": "2026-11-02T07:15:00Z",
+      "updated_at": "2026-11-04T12:00:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-p7mb--whole-repo-derived-artefacts-still-committed-go-sta.md"
     },
     {
@@ -21600,6 +21618,20 @@
     },
     {
       "repo": "litlfred/cat-harness-tools",
+      "id": "cat-tools-36e6",
+      "title": "Docs QA: cut provenance, history and repetition from reader docs",
+      "status": "completed",
+      "type": "task",
+      "priority": "normal",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [],
+      "archived": false,
+      "updated_at": "2026-11-04T13:10:16Z",
+      "url": "https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/cat-tools-36e6--docs-qa-cut-provenance-history-and-repetition-from.md"
+    },
+    {
+      "repo": "litlfred/cat-harness-tools",
       "id": "cat-tools-5jij",
       "title": "qa-axis-summary reads a JSON shape qa-sweep never emits, so every axis reports \"criteria run: 0\"",
       "status": "completed",
@@ -21677,7 +21709,7 @@
       "repo": "litlfred/cat-harness-tools",
       "id": "cat-tools-d5j0",
       "title": "subgraph:jsonld drops the `bootstrap` prefix from cat-harness's ns/subgraph/v1.jsonld when the checkout holding cat-harness does not hold bootstrap, so the committed file reads as stale",
-      "status": "todo",
+      "status": "completed",
       "type": "bug",
       "priority": "normal",
       "parent": "folio-assistant-1xhc",
@@ -21688,7 +21720,7 @@
         "jsonld"
       ],
       "archived": false,
-      "updated_at": "2026-11-03T07:15:45Z",
+      "updated_at": "2026-11-04T06:54:25Z",
       "url": "https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/cat-tools-d5j0--subgraph-context-drops-a-needed-prefix-when-the-ch.md"
     },
     {
@@ -29463,6 +29495,23 @@
       "archived": false,
       "updated_at": "2026-10-20T18:55:00Z",
       "url": "https://github.com/litlfred/folio-assistant-core/blob/main/beans/defs/folio-core-2mb0--adjudicate-the-68-round-trip-findings-on-who-iriss.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant-core",
+      "id": "folio-core-2pbr",
+      "title": "Docs QA: cut provenance, history and repetition from reader docs",
+      "status": "completed",
+      "type": "task",
+      "priority": "normal",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "docs",
+        "docs-qa"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-04T08:00:00Z",
+      "url": "https://github.com/litlfred/folio-assistant-core/blob/main/beans/defs/folio-core-2pbr--docs-qa-cut-provenance-history-and-repetition-fro.md"
     },
     {
       "repo": "litlfred/folio-assistant-core",
