@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-05",
+  "checked": "2026-11-06",
   "summary": {
     "bean-done": 1,
     "bean-scrapped": 0,
@@ -7,7 +7,7 @@
     "broken-link": 0,
     "orphaned": 0,
     "bean-changed": 14,
-    "untriaged": 28
+    "untriaged": 51
   },
   "findings": [
     {
@@ -107,13 +107,58 @@
     },
     {
       "kind": "untriaged",
+      "bean": "folio-assistant-3v2t",
+      "detail": "litlfred/folio-assistant: Cross-layer derived files are built at publish, not committed in one layer (owner option b, 2026-11-05)"
+    },
+    {
+      "kind": "untriaged",
       "bean": "folio-assistant-4j43",
       "detail": "litlfred/folio-assistant: Harness drain 2026-11-02: cat-harness, cat-harness-tools, fhir-harness"
     },
     {
       "kind": "untriaged",
+      "bean": "folio-assistant-55ka",
+      "detail": "litlfred/folio-assistant: Siblings asked the owner in prose without cards on 2026-11-05; make interaction-modality part of every sibling brief, and check that it's followed"
+    },
+    {
+      "kind": "untriaged",
       "bean": "folio-assistant-65aj",
       "detail": "litlfred/folio-assistant: Paste Stub.gs into each review log"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-69lr",
+      "detail": "litlfred/folio-assistant: CI speed II (c3): publish-time QA witnesses stamp the commit, so main never reuses a PR's pages"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-6h4p",
+      "detail": "litlfred/folio-assistant: CI speed II (a): merge-main restarts full CI on every labelled clean PR when main moves"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-70hd",
+      "detail": "litlfred/folio-assistant: cat-harness-file checks run only in the repo that commits the files (owner ruling 2026-11-05)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-9ml4",
+      "detail": "litlfred/folio-assistant: Cache-first CI: one cached-step primitive, derived keys, trust classes, budget, hit-rate report"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-asq1",
+      "detail": "litlfred/folio-assistant: Run the dangling-link and retired-word checks before each push to the work-plan store"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-audl",
+      "detail": "litlfred/folio-assistant: cat-harness: French translation of the rewritten docs/guides/agent-onboarding.md"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-ay33",
+      "detail": "litlfred/folio-assistant: CI image: prepared container image replaces per-job setup"
     },
     {
       "kind": "untriaged",
@@ -132,6 +177,11 @@
     },
     {
       "kind": "untriaged",
+      "bean": "folio-assistant-bx4c",
+      "detail": "litlfred/folio-assistant: mount:remote re-render writes into mounted instances, breaking mount:lock:check"
+    },
+    {
+      "kind": "untriaged",
       "bean": "folio-assistant-cysv",
       "detail": "litlfred/folio-assistant: One DTH scaffold and seed tool in the platform (dth init), replacing per-repo copies"
     },
@@ -139,11 +189,6 @@
       "kind": "untriaged",
       "bean": "folio-assistant-djj5",
       "detail": "litlfred/folio-assistant: IG bibliographies derived from library/, not a hand-kept references/ directory"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-dkqd",
-      "detail": "litlfred/folio-assistant: Say 'work item', not 'bean', in prose; generate a glossary of node kinds and harnesses"
     },
     {
       "kind": "untriaged",
@@ -157,8 +202,23 @@
     },
     {
       "kind": "untriaged",
+      "bean": "folio-assistant-evtx",
+      "detail": "litlfred/folio-assistant: Re-pin train 20261106-0425 has five new failures: Process_Cache skills and summary, stale checklists, cache kind unjudged"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-f1nc",
+      "detail": "litlfred/folio-assistant: Library chain: library/ becomes a named sub-graph (tools#1479, cat-harness#1032, core#639)"
+    },
+    {
+      "kind": "untriaged",
       "bean": "folio-assistant-fbmk",
       "detail": "litlfred/folio-assistant: Folio bookmarks and pinned blocks: pin any graph-kind block to the folio glass (handover bean)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-fn8q",
+      "detail": "litlfred/folio-assistant: CI speed II (e): gates before push (pre-push, agent hook, tree-keyed record)"
     },
     {
       "kind": "untriaged",
@@ -172,8 +232,18 @@
     },
     {
       "kind": "untriaged",
-      "bean": "folio-assistant-gzgh",
-      "detail": "litlfred/folio-assistant: Phase 4: watch owned harness PRs land and close paired issues"
+      "bean": "folio-assistant-hd58",
+      "detail": "litlfred/folio-assistant: CI speed II (h): merge train — batch opted-in PRs, CI once, bisect on red (linear compute in # PRs merged)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-k2sg",
+      "detail": "litlfred/folio-assistant: CI speed II (f): fewer runner requests (schedules, writer-records, watchdog churn)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-k3vv",
+      "detail": "litlfred/folio-assistant: CI speed II (2026-11-05): restarts on main moves, red-main cycle, setup duplication"
     },
     {
       "kind": "untriaged",
@@ -192,6 +262,11 @@
     },
     {
       "kind": "untriaged",
+      "bean": "folio-assistant-mbd8",
+      "detail": "litlfred/folio-assistant: Cut node-kind-index.ts → src/auth/gateway.ts static import (move what it needs into schemas/)"
+    },
+    {
+      "kind": "untriaged",
       "bean": "folio-assistant-nbp9",
       "detail": "litlfred/folio-assistant: Move the deploy-folio secrets into the production environment, with a required reviewer"
     },
@@ -199,11 +274,6 @@
       "kind": "untriaged",
       "bean": "folio-assistant-nvhg",
       "detail": "litlfred/folio-assistant: TERMINOLOGY / adjudication leg 2: two judges disagree about a mapping (from 2i5f)"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-pbv1",
-      "detail": "litlfred/folio-assistant: BEANS BY PROCESS: processed-beans and processed-bean visualiser pages (BPMN with bean markers, filters, stalled search)"
     },
     {
       "kind": "untriaged",
@@ -217,23 +287,68 @@
     },
     {
       "kind": "untriaged",
-      "bean": "folio-assistant-rbib",
-      "detail": "litlfred/folio-assistant: dpi-h-ra: footnote citations to KG bibliography (smart-ra#232, handover bean)"
+      "bean": "folio-assistant-rwhr",
+      "detail": "litlfred/folio-assistant: A process declares whether it starts from a work plan; workflow_start says so when one is missing"
     },
     {
       "kind": "untriaged",
-      "bean": "folio-assistant-rpc6",
-      "detail": "litlfred/folio-assistant: MVP Phase 4: re-pin the layers on the 11 site PRs, bottom-up"
+      "bean": "folio-assistant-tsh9",
+      "detail": "litlfred/folio-assistant: CI speed II (b): red-main cycle from a layer rename; two-phase move rule"
     },
     {
       "kind": "untriaged",
-      "bean": "folio-assistant-sbpn",
-      "detail": "litlfred/folio-assistant: smart-ra block panel: left-gutter 📣, greyed section 🔗, filtered public comments (handover bean)"
+      "bean": "folio-assistant-tv20",
+      "detail": "litlfred/folio-assistant: CI speed II (c2): Feature Staging still builds its own site (cis4, closed undone)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-uldr",
+      "detail": "litlfred/folio-assistant: Replace the hand-listed state:visualizer (53) and glossary:page (36) builtAtPublish entries with rules (plan, awaiting owner approval)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-v29t",
+      "detail": "litlfred/folio-assistant: CI site publish has no pandoc/LibreOffice, so site:export fails every CI publish of dth-hrh"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-veb9",
+      "detail": "litlfred/folio-assistant: cat-harness-tools: adversarial-backfill.ts resolveSidecarPath still uses the pre-#1014 path"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-vgfp",
+      "detail": "litlfred/folio-assistant: Derived imports closures: resolve computed-import verdicts (kind-validator, harness-config tables) from the declarations at fingerprint time, instead of static globs"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-x35i",
+      "detail": "litlfred/folio-assistant: CI speed II (c): Code-quality gates setup duplication (no bun cache, smart:pages x17, ig-index x10)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-x38u",
+      "detail": "litlfred/folio-assistant: state:mount rewrites the .gitignore block from stale layer mounts without --id"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-xaa8",
+      "detail": "litlfred/folio-assistant: CI speed II (g): owner decision: move the repo under a free GitHub organization for the real merge queue"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-y4pw",
+      "detail": "litlfred/folio-assistant: Freeze-set content calls: four site-re-pin reds that need an author, not a regen"
     },
     {
       "kind": "untriaged",
       "bean": "note",
       "detail": "litlfred/cat-harness: folio-assistant-0lj4--2026-10-04--claude-gracious-mendel-du6nn8"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "cat-tools-pp9g",
+      "detail": "litlfred/cat-harness-tools: Pre-push: the fast gates run on the committer's machine, and a tree-keyed record CI can honour with deferred verification"
     },
     {
       "kind": "untriaged",
