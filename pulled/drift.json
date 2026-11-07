@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-06",
+  "checked": "2026-11-07",
   "summary": {
     "bean-done": 1,
     "bean-scrapped": 0,
@@ -7,7 +7,7 @@
     "broken-link": 0,
     "orphaned": 0,
     "bean-changed": 14,
-    "untriaged": 51
+    "untriaged": 47
   },
   "findings": [
     {
@@ -117,11 +117,6 @@
     },
     {
       "kind": "untriaged",
-      "bean": "folio-assistant-55ka",
-      "detail": "litlfred/folio-assistant: Siblings asked the owner in prose without cards on 2026-11-05; make interaction-modality part of every sibling brief, and check that it's followed"
-    },
-    {
-      "kind": "untriaged",
       "bean": "folio-assistant-65aj",
       "detail": "litlfred/folio-assistant: Paste Stub.gs into each review log"
     },
@@ -142,18 +137,13 @@
     },
     {
       "kind": "untriaged",
+      "bean": "folio-assistant-724x",
+      "detail": "litlfred/folio-assistant: Every test has a Gherkin: @test:<name> Scenario per executable test, test-has-gherkin criterion, check:test-gherkin"
+    },
+    {
+      "kind": "untriaged",
       "bean": "folio-assistant-9ml4",
       "detail": "litlfred/folio-assistant: Cache-first CI: one cached-step primitive, derived keys, trust classes, budget, hit-rate report"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-asq1",
-      "detail": "litlfred/folio-assistant: Run the dangling-link and retired-word checks before each push to the work-plan store"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-audl",
-      "detail": "litlfred/folio-assistant: cat-harness: French translation of the rewritten docs/guides/agent-onboarding.md"
     },
     {
       "kind": "untriaged",
@@ -164,11 +154,6 @@
       "kind": "untriaged",
       "bean": "folio-assistant-bmat",
       "detail": "litlfred/folio-assistant: Document back matter: Glossary (Terms, then Acronyms) at the end of every document (handover bean)"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-bpnl",
-      "detail": "litlfred/folio-assistant: Fix overlapping harness BPMN layouts (nice-BPMN criteria)"
     },
     {
       "kind": "untriaged",
@@ -212,16 +197,6 @@
     },
     {
       "kind": "untriaged",
-      "bean": "folio-assistant-fbmk",
-      "detail": "litlfred/folio-assistant: Folio bookmarks and pinned blocks: pin any graph-kind block to the folio glass (handover bean)"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-fn8q",
-      "detail": "litlfred/folio-assistant: CI speed II (e): gates before push (pre-push, agent hook, tree-keyed record)"
-    },
-    {
-      "kind": "untriaged",
       "bean": "folio-assistant-ftpc",
       "detail": "litlfred/folio-assistant: dth-pc: drop flattened step/risks table text from prose pages"
     },
@@ -247,18 +222,13 @@
     },
     {
       "kind": "untriaged",
+      "bean": "folio-assistant-k6dz",
+      "detail": "litlfred/folio-assistant: Split the 23 oversized harness BPMN diagrams into phases"
+    },
+    {
+      "kind": "untriaged",
       "bean": "folio-assistant-lgwt",
       "detail": "litlfred/folio-assistant: Review-log watcher: standing rules, how to watch, current state (handover bean)"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-llxa",
-      "detail": "litlfred/folio-assistant: cat-harness CRDM skills: cite PHII and PATH CRDM as the method they adapt"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-max2",
-      "detail": "litlfred/folio-assistant: cat-harness library: ingest the CRDM sources (PHII 2023 web page, PATH 2012 common requirements)"
     },
     {
       "kind": "untriaged",
@@ -272,8 +242,18 @@
     },
     {
       "kind": "untriaged",
+      "bean": "folio-assistant-npx2",
+      "detail": "litlfred/folio-assistant: Layer mains out of step: cat-harness process pages link assets/img/workflows/*.svg, but cat-harness-tools #1504 draws diagrams beside each .bpmn"
+    },
+    {
+      "kind": "untriaged",
       "bean": "folio-assistant-nvhg",
       "detail": "litlfred/folio-assistant: TERMINOLOGY / adjudication leg 2: two judges disagree about a mapping (from 2i5f)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-pdsq",
+      "detail": "litlfred/folio-assistant: Re-pin trains: fix the 3 standing blockers (owner 2026-11-06)"
     },
     {
       "kind": "untriaged",
@@ -282,13 +262,13 @@
     },
     {
       "kind": "untriaged",
-      "bean": "folio-assistant-r29x",
-      "detail": "litlfred/folio-assistant: R29 (PAUSED by owner): todos and sticky notes reference things across KG libraries, as one merged kind"
+      "bean": "folio-assistant-pqlh",
+      "detail": "litlfred/folio-assistant: Re-pin trains: keep bootstrap checklists in step with the train's bootstrap pin"
     },
     {
       "kind": "untriaged",
-      "bean": "folio-assistant-rwhr",
-      "detail": "litlfred/folio-assistant: A process declares whether it starts from a work plan; workflow_start says so when one is missing"
+      "bean": "folio-assistant-r29x",
+      "detail": "litlfred/folio-assistant: R29 (PAUSED by owner): todos and sticky notes reference things across KG libraries, as one merged kind"
     },
     {
       "kind": "untriaged",
@@ -304,16 +284,6 @@
       "kind": "untriaged",
       "bean": "folio-assistant-uldr",
       "detail": "litlfred/folio-assistant: Replace the hand-listed state:visualizer (53) and glossary:page (36) builtAtPublish entries with rules (plan, awaiting owner approval)"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-v29t",
-      "detail": "litlfred/folio-assistant: CI site publish has no pandoc/LibreOffice, so site:export fails every CI publish of dth-hrh"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-veb9",
-      "detail": "litlfred/folio-assistant: cat-harness-tools: adversarial-backfill.ts resolveSidecarPath still uses the pre-#1014 path"
     },
     {
       "kind": "untriaged",
@@ -347,8 +317,18 @@
     },
     {
       "kind": "untriaged",
+      "bean": "cat-tools-5fmc",
+      "detail": "litlfred/cat-harness-tools: SCRATCH TREES LEAK: publish-check and ig-index:build leave multi-GB trees in os.tmpdir() when they fail or are cancelled"
+    },
+    {
+      "kind": "untriaged",
       "bean": "cat-tools-pp9g",
       "detail": "litlfred/cat-harness-tools: Pre-push: the fast gates run on the committer's machine, and a tree-keyed record CI can honour with deferred verification"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "cat-tools-sm8r",
+      "detail": "litlfred/cat-harness-tools: A local gate run reddens every later state:mount: its own steps write into the mounted layers"
     },
     {
       "kind": "untriaged",
