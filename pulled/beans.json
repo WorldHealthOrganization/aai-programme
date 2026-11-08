@@ -14,14 +14,14 @@
       "state": "ok",
       "branch": "cat/cat-harness/beans",
       "path": "beans/defs",
-      "commit": "471be38623f66f628523441411d15004f65407dc",
+      "commit": "10d68498592dca1f2aebcd24f22201efb42b6293",
       "count": 1432
     },
     {
       "repo": "litlfred/bootstrap",
       "state": "no-store",
       "branch": "main",
-      "commit": "12fa6d57dfad06ae73e234f116145dfc8d77ad50",
+      "commit": "6efa90e5ec6fb0f9dd3391cd7a75e7345f7be774",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -29,7 +29,7 @@
       "repo": "litlfred/bootstrap-tools",
       "state": "no-store",
       "branch": "main",
-      "commit": "9f478d4d9fcd87842e9a4f5b886232ec806e657e",
+      "commit": "30c4585d5dfbf6960e3ecca86b18d131d6cd3921",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -47,7 +47,7 @@
       "state": "ok",
       "branch": "main",
       "path": "beans/defs",
-      "commit": "ee9f4b2447a2e18be6e47af054b55ae9e7df1d83",
+      "commit": "d2e4e7ccccacd44ea3cd9540d2e5df3b43d93ddd",
       "count": 324
     },
     {
@@ -55,14 +55,14 @@
       "state": "ok",
       "branch": "main",
       "path": "beans/defs",
-      "commit": "cf44248605b087debd1d9145ffa588604f9e15b3",
+      "commit": "35c942502a162e24b65669f8230f915da271b9bc",
       "count": 204
     },
     {
       "repo": "litlfred/folio-assistant-sci",
       "state": "no-store",
       "branch": "main",
-      "commit": "90909a7402330ce225bed46237e6300d4fca84cb",
+      "commit": "3245236450db4c281990028db9b0657be68152c4",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -70,7 +70,7 @@
       "repo": "litlfred/fhir-harness",
       "state": "no-store",
       "branch": "main",
-      "commit": "961679a369975afb6320647dde23d8e335bd84b5",
+      "commit": "96921adfc8138dbb32dac8bf2b8c717a3f18bf6a",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -78,7 +78,7 @@
       "repo": "litlfred/who-iris",
       "state": "no-store",
       "branch": "main",
-      "commit": "9929b1f49bdd761bf1d269e505ae354c045860df",
+      "commit": "091424083b9044732236c4fded1eb471d0740a82",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -20797,7 +20797,7 @@
         "stalled-pickup-2026-11-05"
       ],
       "archived": false,
-      "updated_at": "2026-11-06T06:20:00Z",
+      "updated_at": "2026-11-07T17:33:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-70hd--cat-harness-file-checks-run-only-in-the-repo-that.md"
     },
     {
@@ -20826,6 +20826,7 @@
       "blocking": [],
       "blocked_by": [],
       "tags": [],
+      "issue": "3006",
       "archived": false,
       "updated_at": "2026-11-06T09:57:23Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-724x--every-test-has-a-gherkin-testname-scenario-per-exe.md"
@@ -21325,7 +21326,7 @@
         "extraction-fix"
       ],
       "archived": false,
-      "updated_at": "2026-11-06T08:35:45Z",
+      "updated_at": "2026-11-07T16:20:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-ftpc--dth-pc-flattened-table-prose-cleanup.md"
     },
     {
@@ -21870,7 +21871,7 @@
         "handover"
       ],
       "archived": false,
-      "updated_at": "2026-11-05T13:45:30Z",
+      "updated_at": "2026-11-07T16:06:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-rbib--dpi-h-ra-bibliography-handover.md"
     },
     {
@@ -21899,6 +21900,7 @@
       "blocking": [],
       "blocked_by": [],
       "tags": [],
+      "issue": "litlfred/cat-harness-tools#1586",
       "archived": false,
       "updated_at": "2026-11-06T09:53:20Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-rwhr--a-process-declares-whether-it-starts-from-a-work-p.md"

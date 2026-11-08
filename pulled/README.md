@@ -9,12 +9,12 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 | Repository | Store | In progress | To do | Draft | Completed | Scrapped | Open without issue |
 |---|---|--:|--:|--:|--:|--:|--:|
 | [aai-platform](https://github.com/litlfred/aai-platform) | `cat/aai-platform/beans` @ `cebfd0f` | 2 | 21 | 0 | 2 | 0 | 0 |
-| [folio-assistant](https://github.com/litlfred/folio-assistant) | `cat/cat-harness/beans` @ `471be38` | 31 | 17 | 0 | 1353 | 31 | 47 |
+| [folio-assistant](https://github.com/litlfred/folio-assistant) | `cat/cat-harness/beans` @ `10d6849` | 31 | 17 | 0 | 1353 | 31 | 46 |
 | [bootstrap](https://github.com/litlfred/bootstrap) | no beans yet | – | – | – | – | – | – |
 | [bootstrap-tools](https://github.com/litlfred/bootstrap-tools) | no beans yet | – | – | – | – | – | – |
 | [cat-harness](https://github.com/litlfred/cat-harness) | `cat/cat-harness/beans` @ `1e2c870` (67 bean(s) also kept, more recently, in another store) | 0 | 1 | 0 | 0 | 0 | 1 |
-| [cat-harness-tools](https://github.com/litlfred/cat-harness-tools) | `main` @ `ee9f4b2` | 7 | 1 | 1 | 310 | 5 | 8 |
-| [folio-assistant-core](https://github.com/litlfred/folio-assistant-core) | `main` @ `cf44248` | 0 | 2 | 0 | 195 | 7 | 2 |
+| [cat-harness-tools](https://github.com/litlfred/cat-harness-tools) | `main` @ `d2e4e7c` | 7 | 1 | 1 | 310 | 5 | 8 |
+| [folio-assistant-core](https://github.com/litlfred/folio-assistant-core) | `main` @ `35c9425` | 0 | 2 | 0 | 195 | 7 | 2 |
 | [folio-assistant-sci](https://github.com/litlfred/folio-assistant-sci) | no beans yet | – | – | – | – | – | – |
 | [fhir-harness](https://github.com/litlfred/fhir-harness) | no beans yet | – | – | – | – | – | – |
 | [who-iris](https://github.com/litlfred/who-iris) | no beans yet | – | – | – | – | – | – |
@@ -82,7 +82,7 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 | [folio-assistant-tsh9](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-tsh9--ci-speed-ii-b-red-main-cycle-from-a-layer-rename-t.md) | in-progress | high | task | CI speed II (b): red-main cycle from a layer rename; two-phase move rule |  |
 | [folio-assistant-x35i](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-x35i--ci-speed-ii-c-code-quality-gates-setup-duplication.md) | in-progress | high | feature | CI speed II (c): Code-quality gates setup duplication (no bun cache, smart:pages x17, ig-index x10) |  |
 | [folio-assistant-69lr](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-69lr--ci-speed-ii-c3-publish-time-qa-witnesses-stamp-the.md) | in-progress | normal | task | CI speed II (c3): publish-time QA witnesses stamp the commit, so main never reuses a PR's pages |  |
-| [folio-assistant-724x](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-724x--every-test-has-a-gherkin-testname-scenario-per-exe.md) | in-progress | normal | feature | Every test has a Gherkin: @test:<name> Scenario per executable test, test-has-gherkin criterion, check:test-gherkin |  |
+| [folio-assistant-724x](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-724x--every-test-has-a-gherkin-testname-scenario-per-exe.md) | in-progress | normal | feature | Every test has a Gherkin: @test:<name> Scenario per executable test, test-has-gherkin criterion, check:test-gherkin | [#3006](https://github.com/litlfred/folio-assistant/issues/3006) |
 | [folio-assistant-bmat](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-bmat--document-back-matter-glossary-acronyms.md) | in-progress | normal | task | Document back matter: Glossary (Terms, then Acronyms) at the end of every document (handover bean) |  |
 | [folio-assistant-bsd1](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-bsd1--bean-store-behind-any-tool-and-agent-dispatch.md) | in-progress | normal | feature | BEAN STORE BEHIND ANY TOOL + STATE MACHINE STARTS ANY MODEL'S AGENT: proposal (WHO Assured AI / Gemini benchmarking context) | [cat-harness#991](https://github.com/litlfred/cat-harness/issues/991) |
 | [folio-assistant-bx4c](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-bx4c--mountremote-re-render-writes-into-mounted-instance.md) | in-progress | normal | bug | mount:remote re-render writes into mounted instances, breaking mount:lock:check |  |
