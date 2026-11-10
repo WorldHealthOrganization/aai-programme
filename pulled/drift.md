@@ -1,6 +1,6 @@
 # Bean drift
 
-Checked 2026-11-09: 33 programme issue(s) carrying 35 bean link(s), against 1990 beans from 12 stores. **Bean completed, issue still open: 1; Bean changed since the issue was last touched: 13; Open beans nobody has triaged: 23.**
+Checked 2026-11-10: 33 programme issue(s) carrying 35 bean link(s), against 1990 beans from 12 stores. **Bean completed, issue still open: 1; Bean changed since the issue was last touched: 13; Open beans nobody has triaged: 21.**
 
 Each finding is for a person to act on: change the issue, or record a triage decision in `docs/beans-triage.json`. Nothing here is changed automatically. Run it again by commenting `/check-drift` on any issue.
 
@@ -28,7 +28,7 @@ Each finding is for a person to act on: change the issue, or record a triage dec
 | [#24](https://github.com/litlfred/aai-programme/issues/24) | [folio-assistant-63q4](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/archive/folio-assistant-63q4--bibliography-reference-nodes-viewer-and-exports.md) | the bean changed (2026-10-30) after the issue was last touched (2026-10-26) |
 | [#22](https://github.com/litlfred/aai-programme/issues/22) | [folio-assistant-0lde](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/archive/folio-assistant-0lde--l1-evidence-ingest-the-external-evidence-an-l1-gui.md) | the bean changed (2026-10-26) after the issue was last touched (2026-10-26) |
 
-## Open beans nobody has triaged (23)
+## Open beans nobody has triaged (21)
 
 | Bean | Repository and title |
 |---|---|
@@ -48,11 +48,9 @@ Each finding is for a person to act on: change the issue, or record a triage dec
 | [folio-assistant-nvhg](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-nvhg--terminology-adjudication-leg-2-two-judges-disagree.md) | litlfred/folio-assistant: TERMINOLOGY / adjudication leg 2: two judges disagree about a mapping (from 2i5f) |
 | [folio-assistant-pga6](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-pga6--separation-phase-iii-and-architecture-doc.md) | litlfred/folio-assistant: Separation Phase III: L4/L5 Content, Tool and Test repos on the harness, plus current and future architecture write-up |
 | [folio-assistant-r29x](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-r29x--r29-todos-and-sticky-notes-reference-across-kg-l.md) | litlfred/folio-assistant: R29 (PAUSED by owner): todos and sticky notes reference things across KG libraries, as one merged kind |
-| [folio-assistant-tv20](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-tv20--ci-speed-ii-c2-feature-staging-still-builds-its-ow.md) | litlfred/folio-assistant: CI speed II (c2): Feature Staging still builds its own site (cis4, closed undone) |
 | [folio-assistant-xaa8](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-xaa8--ci-speed-ii-g-owner-decision-move-the-repo-under-a.md) | litlfred/folio-assistant: CI speed II (g): owner decision: move the repo under a free GitHub organization for the real merge queue |
 | [folio-assistant-y4pw](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-y4pw--freeze-set-content-calls.md) | litlfred/folio-assistant: Freeze-set content calls: four site-re-pin reds that need an author, not a regen |
 | [note](https://github.com/litlfred/cat-harness/blob/cat/cat-harness/beans/beans/notes/folio-assistant-0lj4--2026-10-04--claude-gracious-mendel-du6nn8.md) | litlfred/cat-harness: folio-assistant-0lj4--2026-10-04--claude-gracious-mendel-du6nn8 |
 | [cat-tools-sm8r](https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/cat-tools-sm8r--a-local-gate-run-reddens-every-later-statemount.md) | litlfred/cat-harness-tools: A local gate run reddens every later state:mount: its own steps write into the mounted layers |
 | [folio-assistant-pvq4](https://github.com/litlfred/folio-assistant-core/blob/main/beans/defs/folio-assistant-pvq4--review-the-agent-drafted-block-summaries-confirm.md) | litlfred/folio-assistant-core: REVIEW: a person confirms or rejects the agent-drafted block summaries |
-| [folio-core-knsj](https://github.com/litlfred/folio-assistant-core/blob/main/beans/defs/folio-core-knsj--content-split-re-add-diff-in-core-after-cat-harnes.md) | litlfred/folio-assistant-core: Content split: re-add diff in core after cat-harness drops it |
 

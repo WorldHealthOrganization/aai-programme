@@ -14,7 +14,7 @@
       "state": "ok",
       "branch": "cat/cat-harness/beans",
       "path": "beans/defs",
-      "commit": "8c7b7bb2a6446d2481a4d644e02049bb9e76ddd7",
+      "commit": "70c0446ca98e18ec7df1eed44e3d5efee966d4e5",
       "count": 1432
     },
     {
@@ -47,7 +47,7 @@
       "state": "ok",
       "branch": "main",
       "path": "beans/defs",
-      "commit": "1c1632a9764cf1dbedb2ad1df461c006d385bd6c",
+      "commit": "21e99640407c925a6e1f68b5a4a908f5130e8b73",
       "count": 324
     },
     {
@@ -55,14 +55,14 @@
       "state": "ok",
       "branch": "main",
       "path": "beans/defs",
-      "commit": "afeebc71d537bddd5d0e97b60ceb5cd1db984603",
+      "commit": "12a75b892f50ebe48fc241d7c061bde577a86604",
       "count": 206
     },
     {
       "repo": "litlfred/folio-assistant-sci",
       "state": "no-store",
       "branch": "main",
-      "commit": "f87ed19d81bf789515fa59146c25c73c0912f02b",
+      "commit": "c4bc9460b73e0e0d9dfc9d4ab3d0dce49340664d",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -70,7 +70,7 @@
       "repo": "litlfred/fhir-harness",
       "state": "no-store",
       "branch": "main",
-      "commit": "281c1682748aac55ec3b5f16f70081cd003637ff",
+      "commit": "cbeaa16f016db8123b3fd2e62f06c7aac6e705b9",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -20911,7 +20911,7 @@
         "ci-speed-ii"
       ],
       "archived": false,
-      "updated_at": "2026-11-08T12:04:00Z",
+      "updated_at": "2026-11-09T14:20:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-9ml4--cache-first-ci-one-cached-step-primitive-derived-k.md"
     },
     {
@@ -21191,7 +21191,7 @@
         "handover"
       ],
       "archived": false,
-      "updated_at": "2026-11-08T13:45:00Z",
+      "updated_at": "2026-11-09T14:20:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-drnh--merge-window-drain-handover-2026-11-02.md"
     },
     {
@@ -21356,7 +21356,7 @@
       "blocked_by": [],
       "tags": [],
       "archived": false,
-      "updated_at": "2026-11-02T19:53:09Z",
+      "updated_at": "2026-11-09T14:20:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-fwtz--docs-site-must-rebuild-when-the-bean-branch-moves.md"
     },
     {
@@ -21529,7 +21529,7 @@
         "ci-speed-ii"
       ],
       "archived": false,
-      "updated_at": "2026-11-08T08:35:00Z",
+      "updated_at": "2026-11-09T14:20:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-k3vv--ci-speed-ii-2026-11-05-restarts-on-main-moves-red.md"
     },
     {
@@ -21546,7 +21546,7 @@
         "bpmn-layout"
       ],
       "archived": false,
-      "updated_at": "2026-11-08T08:41:00Z",
+      "updated_at": "2026-11-09T14:20:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-k6dz--split-oversized-bpmn-diagrams.md"
     },
     {
@@ -21976,7 +21976,7 @@
       "repo": "litlfred/folio-assistant",
       "id": "folio-assistant-tv20",
       "title": "CI speed II (c2): Feature Staging still builds its own site (cis4, closed undone)",
-      "status": "in-progress",
+      "status": "completed",
       "type": "task",
       "priority": "normal",
       "parent": "folio-assistant-k3vv",
@@ -21986,7 +21986,7 @@
         "ci-speed-ii"
       ],
       "archived": false,
-      "updated_at": "2026-11-05T08:33:40Z",
+      "updated_at": "2026-11-09T14:20:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-tv20--ci-speed-ii-c2-feature-staging-still-builds-its-ow.md"
     },
     {
@@ -30375,14 +30375,15 @@
       "repo": "litlfred/folio-assistant-core",
       "id": "folio-core-knsj",
       "title": "Content split: re-add diff in core after cat-harness drops it",
-      "status": "todo",
+      "status": "completed",
       "type": "task",
       "priority": "normal",
+      "parent": "folio-assistant-vuip",
       "blocking": [],
       "blocked_by": [],
       "tags": [],
       "archived": false,
-      "updated_at": "2026-11-08T09:15:25Z",
+      "updated_at": "2026-11-08T14:35:00Z",
       "url": "https://github.com/litlfred/folio-assistant-core/blob/main/beans/defs/folio-core-knsj--content-split-re-add-diff-in-core-after-cat-harnes.md"
     },
     {

@@ -9,12 +9,12 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 | Repository | Store | In progress | To do | Draft | Completed | Scrapped | Open without issue |
 |---|---|--:|--:|--:|--:|--:|--:|
 | [aai-platform](https://github.com/litlfred/aai-platform) | `cat/aai-platform/beans` @ `cebfd0f` | 2 | 21 | 0 | 2 | 0 | 0 |
-| [folio-assistant](https://github.com/litlfred/folio-assistant) | `cat/cat-harness/beans` @ `8c7b7bb` | 13 | 12 | 0 | 1376 | 31 | 24 |
+| [folio-assistant](https://github.com/litlfred/folio-assistant) | `cat/cat-harness/beans` @ `70c0446` | 12 | 12 | 0 | 1377 | 31 | 23 |
 | [bootstrap](https://github.com/litlfred/bootstrap) | no beans yet | – | – | – | – | – | – |
 | [bootstrap-tools](https://github.com/litlfred/bootstrap-tools) | no beans yet | – | – | – | – | – | – |
 | [cat-harness](https://github.com/litlfred/cat-harness) | `cat/cat-harness/beans` @ `1e2c870` (67 bean(s) also kept, more recently, in another store) | 0 | 1 | 0 | 0 | 0 | 1 |
-| [cat-harness-tools](https://github.com/litlfred/cat-harness-tools) | `main` @ `1c1632a` | 6 | 0 | 1 | 312 | 5 | 6 |
-| [folio-assistant-core](https://github.com/litlfred/folio-assistant-core) | `main` @ `afeebc7` | 0 | 3 | 0 | 196 | 7 | 3 |
+| [cat-harness-tools](https://github.com/litlfred/cat-harness-tools) | `main` @ `21e9964` | 6 | 0 | 1 | 312 | 5 | 6 |
+| [folio-assistant-core](https://github.com/litlfred/folio-assistant-core) | `main` @ `12a75b8` | 0 | 2 | 0 | 197 | 7 | 2 |
 | [folio-assistant-sci](https://github.com/litlfred/folio-assistant-sci) | no beans yet | – | – | – | – | – | – |
 | [fhir-harness](https://github.com/litlfred/fhir-harness) | no beans yet | – | – | – | – | – | – |
 | [who-iris](https://github.com/litlfred/who-iris) | no beans yet | – | – | – | – | – | – |
@@ -65,7 +65,7 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 | [aai-platform-wfvg](https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-wfvg--review-the-project-110-items-with-ritika-after-the.md) | todo | normal | task | Review the project 110 items with Ritika after the pilot | [folio-assistant#2605](https://github.com/litlfred/folio-assistant/issues/2605) |
 | [aai-platform-wyr6](https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-wyr6--step-1-pre-flight-check-of-the-who-organisation.md) | todo | normal | task | Step 1: pre-flight check of the WHO organisation | [folio-assistant#2605](https://github.com/litlfred/folio-assistant/issues/2605) |
 
-### folio-assistant (25 open)
+### folio-assistant (24 open)
 
 | Bean | Status | Priority | Type | Title | Issue |
 |---|---|---|---|---|---|
@@ -79,7 +79,6 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 | [folio-assistant-dthl](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-dthl--dth-handbooks-as-l2-documents-on-smart-ra-hrh-phc-sc-pc.md) | in-progress | normal | epic | DTH handbooks as L2 documents on smart-ra (HRH pilot, PHC, SC, PC, SFP) |  |
 | [folio-assistant-fwtz](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-fwtz--docs-site-must-rebuild-when-the-bean-branch-moves.md) | in-progress | normal | task | docs-site must rebuild when the bean branch moves (ref + concurrency) |  |
 | [folio-assistant-k6dz](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-k6dz--split-oversized-bpmn-diagrams.md) | in-progress | normal | task | Split the 23 oversized harness BPMN diagrams into phases |  |
-| [folio-assistant-tv20](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-tv20--ci-speed-ii-c2-feature-staging-still-builds-its-ow.md) | in-progress | normal | task | CI speed II (c2): Feature Staging still builds its own site (cis4, closed undone) |  |
 | [folio-assistant-y4pw](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-y4pw--freeze-set-content-calls.md) | in-progress | normal | task | Freeze-set content calls: four site-re-pin reds that need an author, not a regen |  |
 | [folio-assistant-yj32](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-yj32--harness-as-interface-a-harness-instances-default-r.md) | in-progress | normal | epic | HARNESS AS INTERFACE: a harness instance's default rendering is LHS + docs/ + a themed folio board, and it is a KG-DS management system |  |
 | [folio-assistant-17iw](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-17iw--migration-public-health-and-health-system-process.md) | todo | normal | task | MIGRATION: public-health and health-system process catalogues move from smart-base to WHO/who-iris once it is live |  |
@@ -112,13 +111,12 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 | [folio-assistant-7mwa](https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/folio-assistant-7mwa--retire-qaresolve-conflicts-and-the-testresults-git.md) | in-progress | normal | task | Retire qa:resolve-conflicts and the test/results .gitattributes entries; move the 14 per-instance test/results dirs and the folio_init template |  |
 | [folio-assistant-g196](https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/folio-assistant-g196--every-preview-stores-a-full-copy-of-the-site-becau.md) | in-progress | normal | feature | Every preview stores a full copy of the site because per-preview facts are baked into every page |  |
 
-### folio-assistant-core (3 open)
+### folio-assistant-core (2 open)
 
 | Bean | Status | Priority | Type | Title | Issue |
 |---|---|---|---|---|---|
 | [folio-assistant-pvq4](https://github.com/litlfred/folio-assistant-core/blob/main/beans/defs/folio-assistant-pvq4--review-the-agent-drafted-block-summaries-confirm.md) | todo | normal | task | REVIEW: a person confirms or rejects the agent-drafted block summaries |  |
 | [folio-assistant-supn](https://github.com/litlfred/folio-assistant-core/blob/main/beans/defs/folio-assistant-supn--harness-cards-become-todos-outstanding-work-a-next.md) | todo | normal | task | HARNESS CARDS BECOME TODOS: outstanding work, a next-action recommendation from initialisation state, and health badges |  |
-| [folio-core-knsj](https://github.com/litlfred/folio-assistant-core/blob/main/beans/defs/folio-core-knsj--content-split-re-add-diff-in-core-after-cat-harnes.md) | todo | normal | task | Content split: re-add diff in core after cat-harness drops it |  |
 
 ### smart-ra (1 open)
 

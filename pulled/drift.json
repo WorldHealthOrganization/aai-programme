@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-09",
+  "checked": "2026-11-10",
   "summary": {
     "bean-done": 1,
     "bean-scrapped": 0,
@@ -7,7 +7,7 @@
     "broken-link": 0,
     "orphaned": 0,
     "bean-changed": 13,
-    "untriaged": 23
+    "untriaged": 21
   },
   "findings": [
     {
@@ -176,11 +176,6 @@
     },
     {
       "kind": "untriaged",
-      "bean": "folio-assistant-tv20",
-      "detail": "litlfred/folio-assistant: CI speed II (c2): Feature Staging still builds its own site (cis4, closed undone)"
-    },
-    {
-      "kind": "untriaged",
       "bean": "folio-assistant-xaa8",
       "detail": "litlfred/folio-assistant: CI speed II (g): owner decision: move the repo under a free GitHub organization for the real merge queue"
     },
@@ -203,11 +198,6 @@
       "kind": "untriaged",
       "bean": "folio-assistant-pvq4",
       "detail": "litlfred/folio-assistant-core: REVIEW: a person confirms or rejects the agent-drafted block summaries"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-core-knsj",
-      "detail": "litlfred/folio-assistant-core: Content split: re-add diff in core after cat-harness drops it"
     }
   ]
 }
