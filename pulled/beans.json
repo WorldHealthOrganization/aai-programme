@@ -14,14 +14,14 @@
       "state": "ok",
       "branch": "cat/cat-harness/beans",
       "path": "beans/defs",
-      "commit": "70c0446ca98e18ec7df1eed44e3d5efee966d4e5",
+      "commit": "cec613f3d4c876fda125cbf9147904a34f2af297",
       "count": 1432
     },
     {
       "repo": "litlfred/bootstrap",
       "state": "no-store",
       "branch": "main",
-      "commit": "9435037232a09950ffe442bb4b00cb7da54b5985",
+      "commit": "1c36aef5ab70d7e95ee6026124cd004cab0c0990",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -47,7 +47,7 @@
       "state": "ok",
       "branch": "main",
       "path": "beans/defs",
-      "commit": "21e99640407c925a6e1f68b5a4a908f5130e8b73",
+      "commit": "99d6991d3bf9957e1ee112a2b4a50d4c3e11ee98",
       "count": 324
     },
     {
@@ -55,14 +55,14 @@
       "state": "ok",
       "branch": "main",
       "path": "beans/defs",
-      "commit": "12a75b892f50ebe48fc241d7c061bde577a86604",
+      "commit": "166c60d48e4cb2dcc3efa33489608556b382c8c7",
       "count": 206
     },
     {
       "repo": "litlfred/folio-assistant-sci",
       "state": "no-store",
       "branch": "main",
-      "commit": "c4bc9460b73e0e0d9dfc9d4ab3d0dce49340664d",
+      "commit": "3ca370946e02c4d887551d220268f9416e2ecf69",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -70,7 +70,7 @@
       "repo": "litlfred/fhir-harness",
       "state": "no-store",
       "branch": "main",
-      "commit": "cbeaa16f016db8123b3fd2e62f06c7aac6e705b9",
+      "commit": "55ead965bc0f0fb543831e9f4a8e94d6c4e58da9",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -78,7 +78,7 @@
       "repo": "litlfred/who-iris",
       "state": "no-store",
       "branch": "main",
-      "commit": "48a2ecddc32b48b6c30bce1e0b3108cd62db9c2f",
+      "commit": "d9978060f997a1b1bd55eae1ae7e49115854e648",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -21047,7 +21047,7 @@
         "handover"
       ],
       "archived": false,
-      "updated_at": "2026-11-08T07:10:00Z",
+      "updated_at": "2026-11-10T16:40:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-bmat--document-back-matter-glossary-acronyms.md"
     },
     {
@@ -21128,7 +21128,7 @@
       "repo": "litlfred/folio-assistant",
       "id": "folio-assistant-cysv",
       "title": "One DTH scaffold and seed tool in the platform (dth init), replacing per-repo copies",
-      "status": "todo",
+      "status": "in-progress",
       "type": "task",
       "priority": "normal",
       "parent": "folio-assistant-dthl",
@@ -21136,7 +21136,7 @@
       "blocked_by": [],
       "tags": [],
       "archived": false,
-      "updated_at": "2026-10-31T20:35:18Z",
+      "updated_at": "2026-11-10T16:51:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-cysv--one-dth-scaffold-and-seed-tool-in-the-platform-dth.md"
     },
     {
@@ -21191,7 +21191,7 @@
         "handover"
       ],
       "archived": false,
-      "updated_at": "2026-11-09T14:20:00Z",
+      "updated_at": "2026-11-10T16:40:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-drnh--merge-window-drain-handover-2026-11-02.md"
     },
     {
@@ -21529,7 +21529,7 @@
         "ci-speed-ii"
       ],
       "archived": false,
-      "updated_at": "2026-11-09T14:20:00Z",
+      "updated_at": "2026-11-10T18:10:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-k3vv--ci-speed-ii-2026-11-05-restarts-on-main-moves-red.md"
     },
     {
@@ -22204,7 +22204,7 @@
         "repin-freeze-2026-11-05"
       ],
       "archived": false,
-      "updated_at": "2026-11-08T16:20:00Z",
+      "updated_at": "2026-11-10T20:04:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-y4pw--freeze-set-content-calls.md"
     },
     {

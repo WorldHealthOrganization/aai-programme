@@ -9,12 +9,12 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 | Repository | Store | In progress | To do | Draft | Completed | Scrapped | Open without issue |
 |---|---|--:|--:|--:|--:|--:|--:|
 | [aai-platform](https://github.com/litlfred/aai-platform) | `cat/aai-platform/beans` @ `cebfd0f` | 2 | 21 | 0 | 2 | 0 | 0 |
-| [folio-assistant](https://github.com/litlfred/folio-assistant) | `cat/cat-harness/beans` @ `70c0446` | 12 | 12 | 0 | 1377 | 31 | 23 |
+| [folio-assistant](https://github.com/litlfred/folio-assistant) | `cat/cat-harness/beans` @ `cec613f` | 13 | 11 | 0 | 1377 | 31 | 23 |
 | [bootstrap](https://github.com/litlfred/bootstrap) | no beans yet | – | – | – | – | – | – |
 | [bootstrap-tools](https://github.com/litlfred/bootstrap-tools) | no beans yet | – | – | – | – | – | – |
 | [cat-harness](https://github.com/litlfred/cat-harness) | `cat/cat-harness/beans` @ `1e2c870` (67 bean(s) also kept, more recently, in another store) | 0 | 1 | 0 | 0 | 0 | 1 |
-| [cat-harness-tools](https://github.com/litlfred/cat-harness-tools) | `main` @ `21e9964` | 6 | 0 | 1 | 312 | 5 | 6 |
-| [folio-assistant-core](https://github.com/litlfred/folio-assistant-core) | `main` @ `12a75b8` | 0 | 2 | 0 | 197 | 7 | 2 |
+| [cat-harness-tools](https://github.com/litlfred/cat-harness-tools) | `main` @ `99d6991` | 6 | 0 | 1 | 312 | 5 | 6 |
+| [folio-assistant-core](https://github.com/litlfred/folio-assistant-core) | `main` @ `166c60d` | 0 | 2 | 0 | 197 | 7 | 2 |
 | [folio-assistant-sci](https://github.com/litlfred/folio-assistant-sci) | no beans yet | – | – | – | – | – | – |
 | [fhir-harness](https://github.com/litlfred/fhir-harness) | no beans yet | – | – | – | – | – | – |
 | [who-iris](https://github.com/litlfred/who-iris) | no beans yet | – | – | – | – | – | – |
@@ -76,6 +76,7 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 | [folio-assistant-rwmf](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-rwmf--goal-4-platform-the-harnesss-own-reliability-gates.md) | in-progress | high | milestone | GOAL 4 / PLATFORM: the harness's own reliability — gates, process, QA, merge pipeline, deployment — which every GOAL stands on |  |
 | [folio-assistant-bmat](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-bmat--document-back-matter-glossary-acronyms.md) | in-progress | normal | task | Document back matter: Glossary (Terms, then Acronyms) at the end of every document (handover bean) |  |
 | [folio-assistant-bsd1](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-bsd1--bean-store-behind-any-tool-and-agent-dispatch.md) | in-progress | normal | feature | BEAN STORE BEHIND ANY TOOL + STATE MACHINE STARTS ANY MODEL'S AGENT: proposal (WHO Assured AI / Gemini benchmarking context) | [cat-harness#991](https://github.com/litlfred/cat-harness/issues/991) |
+| [folio-assistant-cysv](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-cysv--one-dth-scaffold-and-seed-tool-in-the-platform-dth.md) | in-progress | normal | task | One DTH scaffold and seed tool in the platform (dth init), replacing per-repo copies |  |
 | [folio-assistant-dthl](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-dthl--dth-handbooks-as-l2-documents-on-smart-ra-hrh-phc-sc-pc.md) | in-progress | normal | epic | DTH handbooks as L2 documents on smart-ra (HRH pilot, PHC, SC, PC, SFP) |  |
 | [folio-assistant-fwtz](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-fwtz--docs-site-must-rebuild-when-the-bean-branch-moves.md) | in-progress | normal | task | docs-site must rebuild when the bean branch moves (ref + concurrency) |  |
 | [folio-assistant-k6dz](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-k6dz--split-oversized-bpmn-diagrams.md) | in-progress | normal | task | Split the 23 oversized harness BPMN diagrams into phases |  |
@@ -85,7 +86,6 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 | [folio-assistant-65aj](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-65aj--paste-stub-gs-into-each-review-log.md) | todo | normal | task | Paste Stub.gs into each review log |  |
 | [folio-assistant-9hxd](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-9hxd--credentials-iii-credentials-declaration-needs-prof.md) | todo | normal | task | CREDENTIALS (iii): credentials/ declaration (needs, profile, registry) for bootstrap-tools and folio-assistant |  |
 | [folio-assistant-amom](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-amom--mode-testswarm-a-stack-of-models-over-shared-or-in.md) | todo | normal | feature | MODE: test/swarm — a stack of models over shared or independent work queues |  |
-| [folio-assistant-cysv](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-cysv--one-dth-scaffold-and-seed-tool-in-the-platform-dth.md) | todo | normal | task | One DTH scaffold and seed tool in the platform (dth init), replacing per-repo copies |  |
 | [folio-assistant-nbp9](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-nbp9--move-deploy-folio-secrets-into-the-production-environment.md) | todo | normal | task | Move the deploy-folio secrets into the production environment, with a required reviewer |  |
 | [folio-assistant-nvhg](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-nvhg--terminology-adjudication-leg-2-two-judges-disagree.md) | todo | normal | task | TERMINOLOGY / adjudication leg 2: two judges disagree about a mapping (from 2i5f) |  |
 | [folio-assistant-oz9e](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-oz9e--benchmark-outcome-evaluation-of-harness-runs-acros.md) | todo | normal | feature | BENCHMARK: outcome evaluation of harness runs across models (close B8 — accuracy, not only structure) |  |
