@@ -14,14 +14,14 @@
       "state": "ok",
       "branch": "cat/cat-harness/beans",
       "path": "beans/defs",
-      "commit": "cec613f3d4c876fda125cbf9147904a34f2af297",
+      "commit": "f23b45709ffec2f7cf451fc7c0a78ed1b929a0d2",
       "count": 1432
     },
     {
       "repo": "litlfred/bootstrap",
       "state": "no-store",
       "branch": "main",
-      "commit": "1c36aef5ab70d7e95ee6026124cd004cab0c0990",
+      "commit": "fdc84b22c30ace4b9476e56fa1cac2117e5aaf0a",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -29,7 +29,7 @@
       "repo": "litlfred/bootstrap-tools",
       "state": "no-store",
       "branch": "main",
-      "commit": "30c4585d5dfbf6960e3ecca86b18d131d6cd3921",
+      "commit": "b31c5346b0b2803354423511b6d18b599b7bdc41",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -47,7 +47,7 @@
       "state": "ok",
       "branch": "main",
       "path": "beans/defs",
-      "commit": "99d6991d3bf9957e1ee112a2b4a50d4c3e11ee98",
+      "commit": "5fd3192292698c30f065c2ae70e96d6a748f614e",
       "count": 324
     },
     {
@@ -55,14 +55,14 @@
       "state": "ok",
       "branch": "main",
       "path": "beans/defs",
-      "commit": "166c60d48e4cb2dcc3efa33489608556b382c8c7",
+      "commit": "fe82de48efa3a636e11fccbdf4eecf72816c79c2",
       "count": 206
     },
     {
       "repo": "litlfred/folio-assistant-sci",
       "state": "no-store",
       "branch": "main",
-      "commit": "3ca370946e02c4d887551d220268f9416e2ecf69",
+      "commit": "ab7b84963e4c0152e4e1b90f7a62ce6c1e0f6ef2",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -70,7 +70,7 @@
       "repo": "litlfred/fhir-harness",
       "state": "no-store",
       "branch": "main",
-      "commit": "55ead965bc0f0fb543831e9f4a8e94d6c4e58da9",
+      "commit": "59befeb02da5b7207d36237353f9bf793ca8e8d5",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -78,7 +78,7 @@
       "repo": "litlfred/who-iris",
       "state": "no-store",
       "branch": "main",
-      "commit": "d9978060f997a1b1bd55eae1ae7e49115854e648",
+      "commit": "2868ff44a3a2d28fa7c88f40668986c01df90f0f",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -21546,7 +21546,7 @@
         "bpmn-layout"
       ],
       "archived": false,
-      "updated_at": "2026-11-09T14:20:00Z",
+      "updated_at": "2026-11-11T14:33:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-k6dz--split-oversized-bpmn-diagrams.md"
     },
     {
@@ -22194,7 +22194,7 @@
       "repo": "litlfred/folio-assistant",
       "id": "folio-assistant-y4pw",
       "title": "Freeze-set content calls: four site-re-pin reds that need an author, not a regen",
-      "status": "in-progress",
+      "status": "completed",
       "type": "task",
       "priority": "normal",
       "parent": "folio-assistant-rwmf",
@@ -22204,7 +22204,7 @@
         "repin-freeze-2026-11-05"
       ],
       "archived": false,
-      "updated_at": "2026-11-10T20:04:00Z",
+      "updated_at": "2026-11-11T14:33:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-y4pw--freeze-set-content-calls.md"
     },
     {

@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-11",
+  "checked": "2026-11-12",
   "summary": {
     "bean-done": 1,
     "bean-scrapped": 0,
@@ -7,7 +7,7 @@
     "broken-link": 0,
     "orphaned": 0,
     "bean-changed": 13,
-    "untriaged": 21
+    "untriaged": 20
   },
   "findings": [
     {
@@ -178,11 +178,6 @@
       "kind": "untriaged",
       "bean": "folio-assistant-xaa8",
       "detail": "litlfred/folio-assistant: CI speed II (g): owner decision: move the repo under a free GitHub organization for the real merge queue"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-y4pw",
-      "detail": "litlfred/folio-assistant: Freeze-set content calls: four site-re-pin reds that need an author, not a regen"
     },
     {
       "kind": "untriaged",
