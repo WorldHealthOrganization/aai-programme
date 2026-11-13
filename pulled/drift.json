@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-12",
+  "checked": "2026-11-13",
   "summary": {
     "bean-done": 1,
     "bean-scrapped": 0,
@@ -7,7 +7,7 @@
     "broken-link": 0,
     "orphaned": 0,
     "bean-changed": 13,
-    "untriaged": 20
+    "untriaged": 31
   },
   "findings": [
     {
@@ -101,8 +101,23 @@
     },
     {
       "kind": "untriaged",
+      "bean": "folio-assistant-1b7t",
+      "detail": "litlfred/folio-assistant: Decision cards: open and answered"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-34c1",
+      "detail": "litlfred/folio-assistant: Open owner questions at handover: Q-GLD-4, Q-L1T-1, Q-TODO-1, Q-DTH-REC-1"
+    },
+    {
+      "kind": "untriaged",
       "bean": "folio-assistant-65aj",
       "detail": "litlfred/folio-assistant: Paste Stub.gs into each review log"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-98p4",
+      "detail": "litlfred/folio-assistant: Owner to-do: per IG repo, Allow auto-merge + REPIN_TOKEN secret"
     },
     {
       "kind": "untriaged",
@@ -136,6 +151,11 @@
     },
     {
       "kind": "untriaged",
+      "bean": "folio-assistant-f7ph",
+      "detail": "litlfred/folio-assistant: Project thread directory (thread ids)"
+    },
+    {
+      "kind": "untriaged",
       "bean": "folio-assistant-fvec",
       "detail": "litlfred/folio-assistant: PUBLISH: Cloudflare R2 + CDN in front of the WHO L1 corpus (future; owner 2026-10-24)"
     },
@@ -146,13 +166,13 @@
     },
     {
       "kind": "untriaged",
-      "bean": "folio-assistant-k6dz",
-      "detail": "litlfred/folio-assistant: Split the 23 oversized harness BPMN diagrams into phases"
+      "bean": "folio-assistant-lgwt",
+      "detail": "litlfred/folio-assistant: Review-log watcher: standing rules, how to watch, current state (handover bean)"
     },
     {
       "kind": "untriaged",
-      "bean": "folio-assistant-lgwt",
-      "detail": "litlfred/folio-assistant: Review-log watcher: standing rules, how to watch, current state (handover bean)"
+      "bean": "folio-assistant-n6ny",
+      "detail": "litlfred/folio-assistant: Project memory: owner rules, facts, to-dos, cards and threads (read first)"
     },
     {
       "kind": "untriaged",
@@ -161,8 +181,18 @@
     },
     {
       "kind": "untriaged",
+      "bean": "folio-assistant-no51",
+      "detail": "litlfred/folio-assistant: Owner to-do list (things only litlfred can do)"
+    },
+    {
+      "kind": "untriaged",
       "bean": "folio-assistant-nvhg",
       "detail": "litlfred/folio-assistant: TERMINOLOGY / adjudication leg 2: two judges disagree about a mapping (from 2i5f)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-oiah",
+      "detail": "litlfred/folio-assistant: Biblio nav: standing 6-hourly re-pin per IG (Q-BIBNAV-2 = B)"
     },
     {
       "kind": "untriaged",
@@ -171,8 +201,33 @@
     },
     {
       "kind": "untriaged",
+      "bean": "folio-assistant-php1",
+      "detail": "litlfred/folio-assistant: Owner standing rules (moved from project memory 2026-11-12)"
+    },
+    {
+      "kind": "untriaged",
       "bean": "folio-assistant-r29x",
       "detail": "litlfred/folio-assistant: R29 (PAUSED by owner): todos and sticky notes reference things across KG libraries, as one merged kind"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-rk1e",
+      "detail": "litlfred/folio-assistant: ArchiMate links back to smart-ra: merge the PR chain (owner C, OK to merge)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-um0y",
+      "detail": "litlfred/folio-assistant: Merge manager: re-pin cascade core#761 → smart-base → who-iris/smart-ra → dth-hrh"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-v8bg",
+      "detail": "litlfred/folio-assistant: Handover 2026-11-12 09:32Z: open workstreams"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-wl48",
+      "detail": "litlfred/folio-assistant: Facts and references (moved from project memory 2026-11-12)"
     },
     {
       "kind": "untriaged",
