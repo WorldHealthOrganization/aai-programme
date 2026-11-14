@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-13",
+  "checked": "2026-11-14",
   "summary": {
     "bean-done": 1,
     "bean-scrapped": 0,
@@ -7,7 +7,7 @@
     "broken-link": 0,
     "orphaned": 0,
     "bean-changed": 13,
-    "untriaged": 31
+    "untriaged": 35
   },
   "findings": [
     {
@@ -96,6 +96,11 @@
     },
     {
       "kind": "untriaged",
+      "bean": "folio-assistant-14un",
+      "detail": "litlfred/folio-assistant: smart-base: move the scripts, validators and qa-checkers behind L* tool nodes into their subgraph"
+    },
+    {
+      "kind": "untriaged",
       "bean": "folio-assistant-17iw",
       "detail": "litlfred/folio-assistant: MIGRATION: public-health and health-system process catalogues move from smart-base to WHO/who-iris once it is live"
     },
@@ -113,6 +118,16 @@
       "kind": "untriaged",
       "bean": "folio-assistant-65aj",
       "detail": "litlfred/folio-assistant: Paste Stub.gs into each review log"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-6gnn",
+      "detail": "litlfred/folio-assistant: WorldHealthOrganization/smart-base: port the .github/skills clean-up and the BPMN validator fixes upstream"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-95e7",
+      "detail": "litlfred/folio-assistant: smart-base: move skill/tool source out of .github/ and the root dirs into the KG subgraphs; .github/ keeps only generated links"
     },
     {
       "kind": "untriaged",
@@ -243,6 +258,11 @@
       "kind": "untriaged",
       "bean": "cat-tools-sm8r",
       "detail": "litlfred/cat-harness-tools: A local gate run reddens every later state:mount: its own steps write into the mounted layers"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "cat-tools-st4q",
+      "detail": "litlfred/cat-harness-tools: Skill I/O contracts resolved by reference, not pinned to <root>/schemas/skills/ — so a subgraph can keep its own"
     },
     {
       "kind": "untriaged",

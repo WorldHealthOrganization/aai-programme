@@ -9,12 +9,12 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 | Repository | Store | In progress | To do | Draft | Completed | Scrapped | Open without issue |
 |---|---|--:|--:|--:|--:|--:|--:|
 | [aai-platform](https://github.com/litlfred/aai-platform) | `cat/aai-platform/beans` @ `cebfd0f` | 2 | 21 | 0 | 2 | 0 | 0 |
-| [folio-assistant](https://github.com/litlfred/folio-assistant) | `cat/cat-harness/beans` @ `1273e5d` | 20 | 14 | 0 | 1643 | 31 | 33 |
+| [folio-assistant](https://github.com/litlfred/folio-assistant) | `cat/cat-harness/beans` @ `37a7e38` | 22 | 15 | 0 | 1647 | 31 | 36 |
 | [bootstrap](https://github.com/litlfred/bootstrap) | no beans yet | – | – | – | – | – | – |
 | [bootstrap-tools](https://github.com/litlfred/bootstrap-tools) | no beans yet | – | – | – | – | – | – |
 | [cat-harness](https://github.com/litlfred/cat-harness) | `cat/cat-harness/beans` @ `1e2c870` (67 bean(s) also kept, more recently, in another store) | 0 | 1 | 0 | 0 | 0 | 1 |
-| [cat-harness-tools](https://github.com/litlfred/cat-harness-tools) | `main` @ `e80af67` | 6 | 0 | 1 | 312 | 5 | 6 |
-| [folio-assistant-core](https://github.com/litlfred/folio-assistant-core) | `main` @ `b2cec25` | 0 | 2 | 0 | 197 | 7 | 2 |
+| [cat-harness-tools](https://github.com/litlfred/cat-harness-tools) | `main` @ `03bcf88` | 6 | 1 | 1 | 312 | 5 | 7 |
+| [folio-assistant-core](https://github.com/litlfred/folio-assistant-core) | `main` @ `9d2388d` | 0 | 2 | 0 | 197 | 7 | 2 |
 | [folio-assistant-sci](https://github.com/litlfred/folio-assistant-sci) | no beans yet | – | – | – | – | – | – |
 | [fhir-harness](https://github.com/litlfred/fhir-harness) | no beans yet | – | – | – | – | – | – |
 | [who-iris](https://github.com/litlfred/who-iris) | no beans yet | – | – | – | – | – | – |
@@ -65,13 +65,14 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 | [aai-platform-wfvg](https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-wfvg--review-the-project-110-items-with-ritika-after-the.md) | todo | normal | task | Review the project 110 items with Ritika after the pilot | [folio-assistant#2605](https://github.com/litlfred/folio-assistant/issues/2605) |
 | [aai-platform-wyr6](https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-wyr6--step-1-pre-flight-check-of-the-who-organisation.md) | todo | normal | task | Step 1: pre-flight check of the WHO organisation | [folio-assistant#2605](https://github.com/litlfred/folio-assistant/issues/2605) |
 
-### folio-assistant (34 open)
+### folio-assistant (37 open)
 
 | Bean | Status | Priority | Type | Title | Issue |
 |---|---|---|---|---|---|
 | [folio-assistant-n6ny](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-n6ny--project-memory-owner-rules-facts-to-dos-cards-and.md) | in-progress | critical | epic | Project memory: owner rules, facts, to-dos, cards and threads (read first) |  |
 | [folio-assistant-php1](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-php1--owner-standing-rules-moved-from-project-memory-202.md) | in-progress | critical | task | Owner standing rules (moved from project memory 2026-11-12) |  |
 | [folio-assistant-1b7t](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-1b7t--decision-cards-open-and-answered.md) | in-progress | high | task | Decision cards: open and answered |  |
+| [folio-assistant-95e7](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-95e7--smart-base-move-skill-tool-source-out-of-github-an.md) | in-progress | high | epic | smart-base: move skill/tool source out of .github/ and the root dirs into the KG subgraphs; .github/ keeps only generated links |  |
 | [folio-assistant-9ml4](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-9ml4--cache-first-ci-one-cached-step-primitive-derived-k.md) | in-progress | high | feature | Cache-first CI: one cached-step primitive, derived keys, trust classes, budget, hit-rate report |  |
 | [folio-assistant-drnh](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-drnh--merge-window-drain-handover-2026-11-02.md) | in-progress | high | task | Merge-window drain to 2026-11-03 00:40Z: PRs, re-pin train, open cards (handover bean) |  |
 | [folio-assistant-k3vv](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-k3vv--ci-speed-ii-2026-11-05-restarts-on-main-moves-red.md) | in-progress | high | epic | CI speed II (2026-11-05): restarts on main moves, red-main cycle, setup duplication |  |
@@ -81,6 +82,7 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 | [folio-assistant-um0y](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-um0y--merge-manager-re-pin-cascade-core-761-smart-base-w.md) | in-progress | high | task | Merge manager: re-pin cascade core#761 → smart-base → who-iris/smart-ra → dth-hrh |  |
 | [folio-assistant-v8bg](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-v8bg--handover-2026-11-12-09-32z-open-workstreams.md) | in-progress | high | epic | Handover 2026-11-12 09:32Z: open workstreams |  |
 | [folio-assistant-wl48](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-wl48--facts-and-references-moved-from-project-memory-202.md) | in-progress | high | task | Facts and references (moved from project memory 2026-11-12) |  |
+| [folio-assistant-14un](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-14un--smart-base-move-the-scripts-validators-and-qa-chec.md) | in-progress | normal | task | smart-base: move the scripts, validators and qa-checkers behind L* tool nodes into their subgraph |  |
 | [folio-assistant-bmat](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-bmat--document-back-matter-glossary-acronyms.md) | in-progress | normal | task | Document back matter: Glossary (Terms, then Acronyms) at the end of every document (handover bean) |  |
 | [folio-assistant-bsd1](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-bsd1--bean-store-behind-any-tool-and-agent-dispatch.md) | in-progress | normal | feature | BEAN STORE BEHIND ANY TOOL + STATE MACHINE STARTS ANY MODEL'S AGENT: proposal (WHO Assured AI / Gemini benchmarking context) | [cat-harness#991](https://github.com/litlfred/cat-harness/issues/991) |
 | [folio-assistant-cysv](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-cysv--one-dth-scaffold-and-seed-tool-in-the-platform-dth.md) | in-progress | normal | task | One DTH scaffold and seed tool in the platform (dth init), replacing per-repo copies |  |
@@ -101,6 +103,7 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 | [folio-assistant-oz9e](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-oz9e--benchmark-outcome-evaluation-of-harness-runs-acros.md) | todo | normal | feature | BENCHMARK: outcome evaluation of harness runs across models (close B8 — accuracy, not only structure) |  |
 | [folio-assistant-r29x](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-r29x--r29-todos-and-sticky-notes-reference-across-kg-l.md) | todo | normal | task | R29 (PAUSED by owner): todos and sticky notes reference things across KG libraries, as one merged kind |  |
 | [folio-assistant-xaa8](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-xaa8--ci-speed-ii-g-owner-decision-move-the-repo-under-a.md) | todo | normal | task | CI speed II (g): owner decision: move the repo under a free GitHub organization for the real merge queue |  |
+| [folio-assistant-6gnn](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-6gnn--worldhealthorganization-smart-base-port-the-github.md) | todo | low | task | WorldHealthOrganization/smart-base: port the .github/skills clean-up and the BPMN validator fixes upstream |  |
 | [folio-assistant-fvec](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-fvec--publish-cloudflare-r2-cdn-in-front-of-the-who-l1-c.md) | todo | low | task | PUBLISH: Cloudflare R2 + CDN in front of the WHO L1 corpus (future; owner 2026-10-24) |  |
 | [folio-assistant-pga6](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-pga6--separation-phase-iii-and-architecture-doc.md) | todo | low | task | Separation Phase III: L4/L5 Content, Tool and Test repos on the harness, plus current and future architecture write-up |  |
 
@@ -110,7 +113,7 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 |---|---|---|---|---|---|
 | [note](https://github.com/litlfred/cat-harness/blob/cat/cat-harness/beans/beans/notes/folio-assistant-0lj4--2026-10-04--claude-gracious-mendel-du6nn8.md) | todo | normal | task | folio-assistant-0lj4--2026-10-04--claude-gracious-mendel-du6nn8 |  |
 
-### cat-harness-tools (6 open)
+### cat-harness-tools (7 open)
 
 | Bean | Status | Priority | Type | Title | Issue |
 |---|---|---|---|---|---|
@@ -120,6 +123,7 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 | [folio-assistant-1xhc](https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/folio-assistant-1xhc--ci-reliability-a-gate-that-does-not-fire-is-indist.md) | in-progress | normal | epic | CI RELIABILITY: a gate that does not fire is indistinguishable from one that passed |  |
 | [folio-assistant-7mwa](https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/folio-assistant-7mwa--retire-qaresolve-conflicts-and-the-testresults-git.md) | in-progress | normal | task | Retire qa:resolve-conflicts and the test/results .gitattributes entries; move the 14 per-instance test/results dirs and the folio_init template |  |
 | [folio-assistant-g196](https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/folio-assistant-g196--every-preview-stores-a-full-copy-of-the-site-becau.md) | in-progress | normal | feature | Every preview stores a full copy of the site because per-preview facts are baked into every page |  |
+| [cat-tools-st4q](https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/cat-tools-st4q--skill-i-o-contracts-resolved-by-reference-not-pinn.md) | todo | high | task | Skill I/O contracts resolved by reference, not pinned to <root>/schemas/skills/ — so a subgraph can keep its own |  |
 
 ### folio-assistant-core (2 open)
 

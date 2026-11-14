@@ -1,6 +1,6 @@
 # Bean drift
 
-Checked 2026-11-13: 33 programme issue(s) carrying 35 bean link(s), against 2266 beans from 12 stores. **Bean completed, issue still open: 1; Bean changed since the issue was last touched: 13; Open beans nobody has triaged: 31.**
+Checked 2026-11-14: 33 programme issue(s) carrying 35 bean link(s), against 2274 beans from 12 stores. **Bean completed, issue still open: 1; Bean changed since the issue was last touched: 13; Open beans nobody has triaged: 35.**
 
 Each finding is for a person to act on: change the issue, or record a triage decision in `docs/beans-triage.json`. Nothing here is changed automatically. Run it again by commenting `/check-drift` on any issue.
 
@@ -28,14 +28,17 @@ Each finding is for a person to act on: change the issue, or record a triage dec
 | [#24](https://github.com/litlfred/aai-programme/issues/24) | [folio-assistant-63q4](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/archive/folio-assistant-63q4--bibliography-reference-nodes-viewer-and-exports.md) | the bean changed (2026-10-30) after the issue was last touched (2026-10-26) |
 | [#22](https://github.com/litlfred/aai-programme/issues/22) | [folio-assistant-0lde](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/archive/folio-assistant-0lde--l1-evidence-ingest-the-external-evidence-an-l1-gui.md) | the bean changed (2026-10-26) after the issue was last touched (2026-10-26) |
 
-## Open beans nobody has triaged (31)
+## Open beans nobody has triaged (35)
 
 | Bean | Repository and title |
 |---|---|
+| [folio-assistant-14un](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-14un--smart-base-move-the-scripts-validators-and-qa-chec.md) | litlfred/folio-assistant: smart-base: move the scripts, validators and qa-checkers behind L* tool nodes into their subgraph |
 | [folio-assistant-17iw](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-17iw--migration-public-health-and-health-system-process.md) | litlfred/folio-assistant: MIGRATION: public-health and health-system process catalogues move from smart-base to WHO/who-iris once it is live |
 | [folio-assistant-1b7t](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-1b7t--decision-cards-open-and-answered.md) | litlfred/folio-assistant: Decision cards: open and answered |
 | [folio-assistant-34c1](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-34c1--open-owner-questions-at-handover-q-gld-4-q-l1t-1-q.md) | litlfred/folio-assistant: Open owner questions at handover: Q-GLD-4, Q-L1T-1, Q-TODO-1, Q-DTH-REC-1 |
 | [folio-assistant-65aj](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-65aj--paste-stub-gs-into-each-review-log.md) | litlfred/folio-assistant: Paste Stub.gs into each review log |
+| [folio-assistant-6gnn](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-6gnn--worldhealthorganization-smart-base-port-the-github.md) | litlfred/folio-assistant: WorldHealthOrganization/smart-base: port the .github/skills clean-up and the BPMN validator fixes upstream |
+| [folio-assistant-95e7](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-95e7--smart-base-move-skill-tool-source-out-of-github-an.md) | litlfred/folio-assistant: smart-base: move skill/tool source out of .github/ and the root dirs into the KG subgraphs; .github/ keeps only generated links |
 | [folio-assistant-98p4](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-98p4--owner-to-do-per-ig-repo-allow-auto-merge-repin-tok.md) | litlfred/folio-assistant: Owner to-do: per IG repo, Allow auto-merge + REPIN_TOKEN secret |
 | [folio-assistant-9ml4](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-9ml4--cache-first-ci-one-cached-step-primitive-derived-k.md) | litlfred/folio-assistant: Cache-first CI: one cached-step primitive, derived keys, trust classes, budget, hit-rate report |
 | [folio-assistant-bmat](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-bmat--document-back-matter-glossary-acronyms.md) | litlfred/folio-assistant: Document back matter: Glossary (Terms, then Acronyms) at the end of every document (handover bean) |
@@ -62,5 +65,6 @@ Each finding is for a person to act on: change the issue, or record a triage dec
 | [folio-assistant-xaa8](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-xaa8--ci-speed-ii-g-owner-decision-move-the-repo-under-a.md) | litlfred/folio-assistant: CI speed II (g): owner decision: move the repo under a free GitHub organization for the real merge queue |
 | [note](https://github.com/litlfred/cat-harness/blob/cat/cat-harness/beans/beans/notes/folio-assistant-0lj4--2026-10-04--claude-gracious-mendel-du6nn8.md) | litlfred/cat-harness: folio-assistant-0lj4--2026-10-04--claude-gracious-mendel-du6nn8 |
 | [cat-tools-sm8r](https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/cat-tools-sm8r--a-local-gate-run-reddens-every-later-statemount.md) | litlfred/cat-harness-tools: A local gate run reddens every later state:mount: its own steps write into the mounted layers |
+| [cat-tools-st4q](https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/cat-tools-st4q--skill-i-o-contracts-resolved-by-reference-not-pinn.md) | litlfred/cat-harness-tools: Skill I/O contracts resolved by reference, not pinned to <root>/schemas/skills/ — so a subgraph can keep its own |
 | [folio-assistant-pvq4](https://github.com/litlfred/folio-assistant-core/blob/main/beans/defs/folio-assistant-pvq4--review-the-agent-drafted-block-summaries-confirm.md) | litlfred/folio-assistant-core: REVIEW: a person confirms or rejects the agent-drafted block summaries |
 

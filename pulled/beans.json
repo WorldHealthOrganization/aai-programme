@@ -14,8 +14,8 @@
       "state": "ok",
       "branch": "cat/cat-harness/beans",
       "path": "beans/defs",
-      "commit": "1273e5d8856e7ce246786f4a1ea79ac0e23aaa4a",
-      "count": 1708
+      "commit": "37a7e38c600cd3d604c30efd930744914babc40a",
+      "count": 1715
     },
     {
       "repo": "litlfred/bootstrap",
@@ -29,7 +29,7 @@
       "repo": "litlfred/bootstrap-tools",
       "state": "no-store",
       "branch": "main",
-      "commit": "bbdaffb757007bf0c4fe0ce4d21018491df308a9",
+      "commit": "b653e0577a1649969319196ec738353fe2068793",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -47,22 +47,22 @@
       "state": "ok",
       "branch": "main",
       "path": "beans/defs",
-      "commit": "e80af6728be412a250c06b00ef0ea93223a6c19e",
-      "count": 324
+      "commit": "03bcf884cb2d355e513e039665a415479f93f7b4",
+      "count": 325
     },
     {
       "repo": "litlfred/folio-assistant-core",
       "state": "ok",
       "branch": "main",
       "path": "beans/defs",
-      "commit": "b2cec2562a7e3a5de3e8702813cf706537814996",
+      "commit": "9d2388dba8d4fe4727b40067470fa5c543c7166c",
       "count": 206
     },
     {
       "repo": "litlfred/folio-assistant-sci",
       "state": "no-store",
       "branch": "main",
-      "commit": "ab7b84963e4c0152e4e1b90f7a62ce6c1e0f6ef2",
+      "commit": "0dc4bc71de181c250a8b20f0690175fb0c71e042",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -70,7 +70,7 @@
       "repo": "litlfred/fhir-harness",
       "state": "no-store",
       "branch": "main",
-      "commit": "091bd49ca6363135f6200cdfe05c1b791f731d04",
+      "commit": "9c04b6fa237c2ab5f6217ffcb42c760f3783b2f3",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -78,7 +78,7 @@
       "repo": "litlfred/who-iris",
       "state": "no-store",
       "branch": "main",
-      "commit": "60687101a7f707dbc491a2f1aaacb03e4387936b",
+      "commit": "3be9ddb3a2ffb9ddafd4aaabe32829469a82416f",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -25043,6 +25043,24 @@
     },
     {
       "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-14un",
+      "title": "smart-base: move the scripts, validators and qa-checkers behind L* tool nodes into their subgraph",
+      "status": "in-progress",
+      "type": "task",
+      "priority": "normal",
+      "parent": "folio-assistant-95e7",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "smart-base",
+        "subgraphs"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-13T23:40:00Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-14un--smart-base-move-the-scripts-validators-and-qa-chec.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
       "id": "folio-assistant-17iw",
       "title": "MIGRATION: public-health and health-system process catalogues move from smart-base to WHO/who-iris once it is live",
       "status": "todo",
@@ -25256,6 +25274,25 @@
     },
     {
       "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-6gnn",
+      "title": "WorldHealthOrganization/smart-base: port the .github/skills clean-up and the BPMN validator fixes upstream",
+      "status": "todo",
+      "type": "task",
+      "priority": "low",
+      "parent": "folio-assistant-95e7",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "smart-base",
+        "github-skills",
+        "upstream"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-13T12:07:20Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-6gnn--worldhealthorganization-smart-base-port-the-github.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
       "id": "folio-assistant-6h4p",
       "title": "CI speed II (a): merge-main restarts full CI on every labelled clean PR when main moves",
       "status": "completed",
@@ -25350,6 +25387,24 @@
       "archived": false,
       "updated_at": "2026-11-02T11:02:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-8bm7--fhir-harness-main-finish-one-green-run.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-95e7",
+      "title": "smart-base: move skill/tool source out of .github/ and the root dirs into the KG subgraphs; .github/ keeps only generated links",
+      "status": "in-progress",
+      "type": "epic",
+      "priority": "high",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "smart-base",
+        "subgraphs",
+        "github-skills"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-14T00:26:00Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-95e7--smart-base-move-skill-tool-source-out-of-github-an.md"
     },
     {
       "repo": "litlfred/folio-assistant",
@@ -25702,6 +25757,25 @@
     },
     {
       "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-dtda",
+      "title": "smart-base: .github/skills and .claude/skills generated by install-skills only; gate hand-written files there",
+      "status": "completed",
+      "type": "task",
+      "priority": "normal",
+      "parent": "folio-assistant-95e7",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "smart-base",
+        "github-skills",
+        "skills"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-14T00:50:00Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-dtda--smart-base-github-skills-and-claude-skills-generat.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
       "id": "folio-assistant-dthl",
       "title": "DTH handbooks as L2 documents on smart-ra (HRH pilot, PHC, SC, PC, SFP)",
       "status": "in-progress",
@@ -25936,6 +26010,24 @@
     },
     {
       "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-hhkw",
+      "title": "smart-base: delete the dead parts of .github/skills/ and repair or remove the workflows that cannot fire",
+      "status": "completed",
+      "type": "task",
+      "priority": "normal",
+      "parent": "folio-assistant-95e7",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "smart-base",
+        "github-skills"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-13T22:15:00Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-hhkw--smart-base-delete-the-dead-parts-of-github-skills.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
       "id": "folio-assistant-i15r",
       "title": "merge-main ran the PR branch's scripts while holding the bot token (held B-H1)",
       "status": "completed",
@@ -26071,6 +26163,25 @@
       "archived": false,
       "updated_at": "2026-11-12T09:58:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-k6dz--split-oversized-bpmn-diagrams.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-kjea",
+      "title": "smart-base: move 21 skill I/O contracts from schemas/skills/ into their L1..L4 subgraphs",
+      "status": "completed",
+      "type": "task",
+      "priority": "normal",
+      "parent": "folio-assistant-95e7",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "smart-base",
+        "subgraphs",
+        "skill-contracts"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-13T22:31:00Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-kjea--smart-base-move-21-skill-i-o-contracts-from-schema.md"
     },
     {
       "repo": "litlfred/folio-assistant",
@@ -26430,7 +26541,7 @@
         "project-memory"
       ],
       "archived": false,
-      "updated_at": "2026-11-12T10:55:00Z",
+      "updated_at": "2026-11-13T20:49:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-php1--owner-standing-rules-moved-from-project-memory-202.md"
     },
     {
@@ -26599,6 +26710,26 @@
     },
     {
       "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-tgaj",
+      "title": "smart-base: one BPMN swimlane/actor validator in L2-bpmn/tools/, replacing four",
+      "status": "completed",
+      "type": "task",
+      "priority": "normal",
+      "parent": "folio-assistant-95e7",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "smart-base",
+        "subgraphs",
+        "bpmn",
+        "github-skills"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-13T23:40:00Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-tgaj--smart-base-one-bpmn-swimlane-actor-validator-in-l2.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
       "id": "folio-assistant-tsh9",
       "title": "CI speed II (b): red-main cycle from a layer rename; two-phase move rule",
       "status": "completed",
@@ -26678,7 +26809,7 @@
         "merge-window"
       ],
       "archived": false,
-      "updated_at": "2026-11-12T19:47:00Z",
+      "updated_at": "2026-11-13T20:49:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-um0y--merge-manager-re-pin-cascade-core-761-smart-base-w.md"
     },
     {
@@ -26711,7 +26842,7 @@
         "handover-2026-11-12"
       ],
       "archived": false,
-      "updated_at": "2026-11-12T19:47:00Z",
+      "updated_at": "2026-11-13T20:49:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-v8bg--handover-2026-11-12-09-32z-open-workstreams.md"
     },
     {
@@ -27377,7 +27508,7 @@
         "pp9g"
       ],
       "archived": false,
-      "updated_at": "2026-11-08T14:35:00Z",
+      "updated_at": "2026-11-13T22:00:00Z",
       "url": "https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/cat-tools-sm8r--a-local-gate-run-reddens-every-later-statemount.md"
     },
     {
@@ -27394,6 +27525,25 @@
       "archived": false,
       "updated_at": "2026-11-01T21:05:00Z",
       "url": "https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/cat-tools-sr31--security-review-2026-10-31-every-harnessed-layer.md"
+    },
+    {
+      "repo": "litlfred/cat-harness-tools",
+      "id": "cat-tools-st4q",
+      "title": "Skill I/O contracts resolved by reference, not pinned to <root>/schemas/skills/ — so a subgraph can keep its own",
+      "status": "todo",
+      "type": "task",
+      "priority": "high",
+      "parent": "folio-assistant-95e7",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "smart-base",
+        "subgraphs",
+        "skill-contracts"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-13T12:07:20Z",
+      "url": "https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/cat-tools-st4q--skill-i-o-contracts-resolved-by-reference-not-pinn.md"
     },
     {
       "repo": "litlfred/cat-harness-tools",
