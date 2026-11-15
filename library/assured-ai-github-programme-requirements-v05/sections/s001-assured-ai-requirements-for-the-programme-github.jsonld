@@ -13,7 +13,7 @@
   "contains": [
     "library/assured-ai-github-programme-requirements-v05/blocks/prose-s001-assured-ai-requirements-for-the-programme-github"
   ],
-  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/assured-ai-github-programme-requirements-v05/manifest.jsonld",
-  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/assured-ai-github-programme-requirements-v05/manifest.jsonld",
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/source/assured-ai-github-programme-requirements-v05",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/source/assured-ai-github-programme-requirements-v05",
   "provenance": "ingested"
 }

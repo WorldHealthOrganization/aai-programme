@@ -13,7 +13,7 @@
   "contains": [
     "library/assured-ai-github-programme-requirements-v041/blocks/prose-s003-1-1-terms-used-in-this-document"
   ],
-  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/assured-ai-github-programme-requirements-v041/manifest.jsonld",
-  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/assured-ai-github-programme-requirements-v041/manifest.jsonld",
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/source/assured-ai-github-programme-requirements-v041",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/source/assured-ai-github-programme-requirements-v041",
   "provenance": "ingested"
 }
