@@ -67,7 +67,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "812a3df087858864cd0f188b9c00b636373c3ba4",
+          "ref": "aceae1937c9af784c8c0af6a60a1d7192cdd5e2a",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -83,9 +83,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-20",
-              "ref": "812a3df087858864cd0f188b9c00b636373c3ba4",
-              "evidence": "Owner litlfred, 2026-10-21, in a Claude Code session: \"please fix propoerly and according to KG\" (the library node schemas, cat-harness#402 and cat-harness-tools#534), following \"merge when green and repin aai-programme\". Repinned to the layer's main at that time."
+              "on": "2026-11-15",
+              "ref": "aceae1937c9af784c8c0af6a60a1d7192cdd5e2a",
+              "evidence": "litlfred, 2026-11-15 12:12Z, project thread chat: 'make sure revisions are aligned with current deciisons and infra' (reviving the opt-in collab enable drafts, after card 'A. Revive, close, ask', 12:09Z): hand re-pin of every layer to main, Claude Code session https://claude.ai/code/session_01Qmmkt9PKt17La22a63e6zg"
             }
           }
         }
@@ -96,7 +96,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "b2d6919a5b2bede23886f5b4b7054a967397b013",
+          "ref": "2e959408e5a8167460fb9566933be299a17f0d8d",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -112,9 +112,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-20",
-              "ref": "b2d6919a5b2bede23886f5b4b7054a967397b013",
-              "evidence": "Owner litlfred, 2026-10-21, in a Claude Code session: \"please fix propoerly and according to KG\" (the library node schemas, cat-harness#402 and cat-harness-tools#534), following \"merge when green and repin aai-programme\". Repinned to the layer's main at that time."
+              "on": "2026-11-15",
+              "ref": "2e959408e5a8167460fb9566933be299a17f0d8d",
+              "evidence": "litlfred, 2026-11-15 12:12Z, project thread chat: 'make sure revisions are aligned with current deciisons and infra' (reviving the opt-in collab enable drafts, after card 'A. Revive, close, ask', 12:09Z): hand re-pin of every layer to main, Claude Code session https://claude.ai/code/session_01Qmmkt9PKt17La22a63e6zg"
             }
           }
         }
@@ -125,7 +125,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "0c21d168f37de8cb7341a5c2d99794ba1f7cd990",
+          "ref": "39ee6af57dc09d2f25d1caf89ee4484d3df24327",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -138,9 +138,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-20",
-              "ref": "0c21d168f37de8cb7341a5c2d99794ba1f7cd990",
-              "evidence": "Owner litlfred, 2026-10-21, in a Claude Code session: \"please fix propoerly and according to KG\" (the library node schemas, cat-harness#402 and cat-harness-tools#534), following \"merge when green and repin aai-programme\". Repinned to the layer's main at that time."
+              "on": "2026-11-15",
+              "ref": "39ee6af57dc09d2f25d1caf89ee4484d3df24327",
+              "evidence": "litlfred, 2026-11-15 12:12Z, project thread chat: 'make sure revisions are aligned with current deciisons and infra' (reviving the opt-in collab enable drafts, after card 'A. Revive, close, ask', 12:09Z): hand re-pin of every layer to main, Claude Code session https://claude.ai/code/session_01Qmmkt9PKt17La22a63e6zg"
             }
           }
         }
@@ -151,7 +151,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap",
-          "ref": "c71b96a3f2e8caf143b78bcf3ab6bb80060c82c2",
+          "ref": "7db8457701ebb9b99284d639128f3c82ad4fc6ea",
           "overrides": {
             "bootstrap": {
               "whole": true
@@ -161,9 +161,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-20",
-              "ref": "c71b96a3f2e8caf143b78bcf3ab6bb80060c82c2",
-              "evidence": "Owner litlfred, 2026-10-21, in a Claude Code session: \"merge when green and repin aai-programme\" (after cat-harness#397 and cat-harness-tools#523 merged). Repinned to the layer's main at that time."
+              "on": "2026-11-15",
+              "ref": "7db8457701ebb9b99284d639128f3c82ad4fc6ea",
+              "evidence": "litlfred, 2026-11-15 12:12Z, project thread chat: 'make sure revisions are aligned with current deciisons and infra' (reviving the opt-in collab enable drafts, after card 'A. Revive, close, ask', 12:09Z): hand re-pin of every layer to main, Claude Code session https://claude.ai/code/session_01Qmmkt9PKt17La22a63e6zg"
             }
           }
         }
@@ -174,7 +174,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap-tools",
-          "ref": "dc87778aa5dc1be1ae233a131c313b0308d355bd",
+          "ref": "174a567db34db10b007a45b13f960f218a6b04f5",
           "overrides": {
             "bootstrap-tools": {
               "whole": true
@@ -187,9 +187,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-20",
-              "ref": "dc87778aa5dc1be1ae233a131c313b0308d355bd",
-              "evidence": "Owner litlfred, 2026-10-21, in a Claude Code session: \"please fix propoerly and according to KG\" (the library node schemas, cat-harness#402 and cat-harness-tools#534), following \"merge when green and repin aai-programme\". Repinned to the layer's main at that time."
+              "on": "2026-11-15",
+              "ref": "174a567db34db10b007a45b13f960f218a6b04f5",
+              "evidence": "litlfred, 2026-11-15 12:12Z, project thread chat: 'make sure revisions are aligned with current deciisons and infra' (reviving the opt-in collab enable drafts, after card 'A. Revive, close, ask', 12:09Z): hand re-pin of every layer to main, Claude Code session https://claude.ai/code/session_01Qmmkt9PKt17La22a63e6zg"
             }
           }
         }
