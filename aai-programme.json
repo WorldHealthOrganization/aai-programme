@@ -56,5 +56,8 @@
   "needs": [
     "cat-harness",
     "cat-harness-tools"
+  ],
+  "enableSubgraphs": [
+    "folio-assistant-core.collab"
   ]
 }
