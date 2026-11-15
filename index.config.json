@@ -67,7 +67,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "aceae1937c9af784c8c0af6a60a1d7192cdd5e2a",
+          "ref": "7d175a59dcfc25e755fdc5e47327b82fd5f4a40d",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -84,7 +84,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-15",
-              "ref": "aceae1937c9af784c8c0af6a60a1d7192cdd5e2a",
+              "ref": "7d175a59dcfc25e755fdc5e47327b82fd5f4a40d",
               "evidence": "litlfred, 2026-11-15 12:12Z, project thread chat: 'make sure revisions are aligned with current deciisons and infra' (reviving the opt-in collab enable drafts, after card 'A. Revive, close, ask', 12:09Z): hand re-pin of every layer to main, Claude Code session https://claude.ai/code/session_01Qmmkt9PKt17La22a63e6zg"
             }
           }
@@ -96,7 +96,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "2e959408e5a8167460fb9566933be299a17f0d8d",
+          "ref": "d41ff7ce9916b863c30c61c5a5c7744c968793cc",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -113,7 +113,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-15",
-              "ref": "2e959408e5a8167460fb9566933be299a17f0d8d",
+              "ref": "d41ff7ce9916b863c30c61c5a5c7744c968793cc",
               "evidence": "litlfred, 2026-11-15 12:12Z, project thread chat: 'make sure revisions are aligned with current deciisons and infra' (reviving the opt-in collab enable drafts, after card 'A. Revive, close, ask', 12:09Z): hand re-pin of every layer to main, Claude Code session https://claude.ai/code/session_01Qmmkt9PKt17La22a63e6zg"
             }
           }
@@ -125,7 +125,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "39ee6af57dc09d2f25d1caf89ee4484d3df24327",
+          "ref": "372b94986d9cf04a60e3e9eafaaefbf7017c65a1",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -139,7 +139,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-15",
-              "ref": "39ee6af57dc09d2f25d1caf89ee4484d3df24327",
+              "ref": "372b94986d9cf04a60e3e9eafaaefbf7017c65a1",
               "evidence": "litlfred, 2026-11-15 12:12Z, project thread chat: 'make sure revisions are aligned with current deciisons and infra' (reviving the opt-in collab enable drafts, after card 'A. Revive, close, ask', 12:09Z): hand re-pin of every layer to main, Claude Code session https://claude.ai/code/session_01Qmmkt9PKt17La22a63e6zg"
             }
           }
