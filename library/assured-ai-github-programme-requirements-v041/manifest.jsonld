@@ -5,7 +5,7 @@
       "@base": "https://litlfred.github.io/folio/"
     }
   ],
-  "@id": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/assured-ai-github-programme-requirements-v041/manifest.jsonld",
+  "@id": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/source/assured-ai-github-programme-requirements-v041",
   "@type": [
     "cat-harness:SourceDocument"
   ],
@@ -43,7 +43,7 @@
     "library/assured-ai-github-programme-requirements-v041/sections/s030-18-out-of-scope"
   ],
   "provenance": "ingested",
-  "inSubgraph": "https://litlfred.github.io/folio-assistant/aai-programme/aai-programme.jsonld#directory/library",
+  "inSubgraph": "https://litlfred.github.io/folio-assistant/aai-programme/directory/library",
   "meta": {
     "doc_id": "assured-ai-github-programme-requirements-v041",
     "title_source": "text-heading",
