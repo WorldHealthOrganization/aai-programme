@@ -12,6 +12,6 @@ permissions:
   contents: write
 jobs:
   publish:
-    uses: litlfred/cat-harness-tools/.github/workflows/layer-publish-context.yml@39ee6af57dc09d2f25d1caf89ee4484d3df24327 # index.lock.json
+    uses: litlfred/cat-harness-tools/.github/workflows/layer-publish-context.yml@372b94986d9cf04a60e3e9eafaaefbf7017c65a1 # index.lock.json
     with:
       instance: aai-programme
