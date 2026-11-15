@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-14",
+  "checked": "2026-11-15",
   "summary": {
     "bean-done": 1,
     "bean-scrapped": 0,
@@ -7,7 +7,7 @@
     "broken-link": 0,
     "orphaned": 0,
     "bean-changed": 13,
-    "untriaged": 35
+    "untriaged": 37
   },
   "findings": [
     {
@@ -113,6 +113,11 @@
       "kind": "untriaged",
       "bean": "folio-assistant-34c1",
       "detail": "litlfred/folio-assistant: Open owner questions at handover: Q-GLD-4, Q-L1T-1, Q-TODO-1, Q-DTH-REC-1"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-3bk1",
+      "detail": "litlfred/folio-assistant: IG publish-on-push rollout: re-pins after the cascade, and the smart-trust injection gate"
     },
     {
       "kind": "untriaged",
@@ -263,6 +268,11 @@
       "kind": "untriaged",
       "bean": "cat-tools-st4q",
       "detail": "litlfred/cat-harness-tools: Skill I/O contracts resolved by reference, not pinned to <root>/schemas/skills/ — so a subgraph can keep its own"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "cat-tools-t6fz",
+      "detail": "litlfred/cat-harness-tools: SCHEMA VIEWER: FHIR profiles drawn over their base, FHIR core types from fhir-harness"
     },
     {
       "kind": "untriaged",

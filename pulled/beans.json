@@ -14,14 +14,14 @@
       "state": "ok",
       "branch": "cat/cat-harness/beans",
       "path": "beans/defs",
-      "commit": "37a7e38c600cd3d604c30efd930744914babc40a",
-      "count": 1715
+      "commit": "bdf79313c2948f52a4558f8beb551006fbd59093",
+      "count": 1716
     },
     {
       "repo": "litlfred/bootstrap",
       "state": "no-store",
       "branch": "main",
-      "commit": "17204fe9ed49e87b165bf0a8b626b6c69329a2a6",
+      "commit": "7db8457701ebb9b99284d639128f3c82ad4fc6ea",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -29,7 +29,7 @@
       "repo": "litlfred/bootstrap-tools",
       "state": "no-store",
       "branch": "main",
-      "commit": "b653e0577a1649969319196ec738353fe2068793",
+      "commit": "174a567db34db10b007a45b13f960f218a6b04f5",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -47,22 +47,22 @@
       "state": "ok",
       "branch": "main",
       "path": "beans/defs",
-      "commit": "03bcf884cb2d355e513e039665a415479f93f7b4",
-      "count": 325
+      "commit": "4b8978c2ef7ed1abcf1a69379f6f1a89ade57cd4",
+      "count": 329
     },
     {
       "repo": "litlfred/folio-assistant-core",
       "state": "ok",
       "branch": "main",
       "path": "beans/defs",
-      "commit": "9d2388dba8d4fe4727b40067470fa5c543c7166c",
+      "commit": "ca2a63cf44985fc0dfc4981fd3e570a4f462ef05",
       "count": 206
     },
     {
       "repo": "litlfred/folio-assistant-sci",
       "state": "no-store",
       "branch": "main",
-      "commit": "0dc4bc71de181c250a8b20f0690175fb0c71e042",
+      "commit": "50d10304b4ef5fda803535d39f85e924e3c48b90",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -70,7 +70,7 @@
       "repo": "litlfred/fhir-harness",
       "state": "no-store",
       "branch": "main",
-      "commit": "9c04b6fa237c2ab5f6217ffcb42c760f3783b2f3",
+      "commit": "5bf5ff9576650c132fb541e3d477e1feab447159",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -78,7 +78,7 @@
       "repo": "litlfred/who-iris",
       "state": "no-store",
       "branch": "main",
-      "commit": "3be9ddb3a2ffb9ddafd4aaabe32829469a82416f",
+      "commit": "94a15b9d29b817c9d59fd4d0cc2baff7f0286112",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -25157,6 +25157,24 @@
     },
     {
       "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-3bk1",
+      "title": "IG publish-on-push rollout: re-pins after the cascade, and the smart-trust injection gate",
+      "status": "in-progress",
+      "type": "task",
+      "priority": "high",
+      "parent": "folio-assistant-v8bg",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "handover-2026-11-12",
+        "merge-window"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-14T16:30:00Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-3bk1--ig-publish-on-push-rollout-re-pins-and-smart-trust-injection-gate.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
       "id": "folio-assistant-3v2t",
       "title": "Cross-layer derived files are built at publish, not committed in one layer (owner option b, 2026-11-05)",
       "status": "completed",
@@ -26607,7 +26625,7 @@
         "handover-2026-11-12"
       ],
       "archived": false,
-      "updated_at": "2026-11-12T12:50:00Z",
+      "updated_at": "2026-11-14T17:08:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-rk1e--archimate-links-back-to-smart-ra-merge-the-pr-chai.md"
     },
     {
@@ -27181,6 +27199,20 @@
     },
     {
       "repo": "litlfred/cat-harness-tools",
+      "id": "cat-tools-4xq6",
+      "title": "SCHEMA VIEWER: one class model for Zod, JSON Schema and FHIR logical models, drawn by schema:viz",
+      "status": "completed",
+      "type": "feature",
+      "priority": "normal",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [],
+      "archived": false,
+      "updated_at": "2026-11-14T12:15:53Z",
+      "url": "https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/cat-tools-4xq6--schema-viewer-one-class-model-for-zod-json-schema.md"
+    },
+    {
+      "repo": "litlfred/cat-harness-tools",
       "id": "cat-tools-5fmc",
       "title": "SCRATCH TREES LEAK: publish-check and ig-index:build leave multi-GB trees in os.tmpdir() when they fail or are cancelled",
       "status": "completed",
@@ -27366,6 +27398,21 @@
     },
     {
       "repo": "litlfred/cat-harness-tools",
+      "id": "cat-tools-gc21",
+      "title": "translate-pot: a real OPUS-MT run on a sample locale to verify model outputs",
+      "status": "completed",
+      "type": "task",
+      "priority": "normal",
+      "parent": "folio-assistant-bzyu",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [],
+      "archived": false,
+      "updated_at": "2026-11-14T10:48:00Z",
+      "url": "https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/cat-tools-gc21--translate-pot-a-real-opus-mt-run-on-a-sample-local.md"
+    },
+    {
+      "repo": "litlfred/cat-harness-tools",
       "id": "cat-tools-j4sh",
       "title": "JSON.stringify IS NOT SHELL QUOTING: build-instance-site builds bash -c strings with JSON-quoted paths and excludes, where $( ) and backticks still expand",
       "status": "completed",
@@ -27442,6 +27489,21 @@
       "archived": false,
       "updated_at": "2026-10-31T04:21:00Z",
       "url": "https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/cat-tools-p4tr--mcp-tool-paths-not-contained.md"
+    },
+    {
+      "repo": "litlfred/cat-harness-tools",
+      "id": "cat-tools-ph0s",
+      "title": "translate-pot.ts: __PH<n>__ placeholder sentinel triggers OPUS-MT underscore/hyphen hallucinations, 36/64 placeholder refusals, and silent single-underscore leaks",
+      "status": "completed",
+      "type": "bug",
+      "priority": "high",
+      "parent": "folio-assistant-bzyu",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [],
+      "archived": false,
+      "updated_at": "2026-11-14T20:30:00Z",
+      "url": "https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/cat-tools-ph0s--translate-pot-ph-sentinel-corrupted-by-opus-mt.md"
     },
     {
       "repo": "litlfred/cat-harness-tools",
@@ -27561,6 +27623,20 @@
       "archived": false,
       "updated_at": "2026-10-23T09:30:00Z",
       "url": "https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/cat-tools-sthf--url-space-rendered-assets-mirror-the-instantiation.md"
+    },
+    {
+      "repo": "litlfred/cat-harness-tools",
+      "id": "cat-tools-t6fz",
+      "title": "SCHEMA VIEWER: FHIR profiles drawn over their base, FHIR core types from fhir-harness",
+      "status": "in-progress",
+      "type": "feature",
+      "priority": "normal",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [],
+      "archived": false,
+      "updated_at": "2026-11-14T12:15:57Z",
+      "url": "https://github.com/litlfred/cat-harness-tools/blob/main/beans/defs/cat-tools-t6fz--schema-viewer-fhir-profiles-drawn-over-their-base.md"
     },
     {
       "repo": "litlfred/cat-harness-tools",
