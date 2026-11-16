@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "summary": {
     "bean-done": 1,
     "bean-scrapped": 0,
@@ -7,7 +7,7 @@
     "broken-link": 0,
     "orphaned": 0,
     "bean-changed": 13,
-    "untriaged": 37
+    "untriaged": 35
   },
   "findings": [
     {
@@ -62,7 +62,7 @@
       "kind": "bean-changed",
       "issue": 33,
       "bean": "folio-assistant-oz9e",
-      "detail": "the bean changed (2026-10-30) after the issue was last touched (2026-10-30)"
+      "detail": "the bean changed (2026-11-15) after the issue was last touched (2026-10-30)"
     },
     {
       "kind": "bean-changed",
@@ -96,11 +96,6 @@
     },
     {
       "kind": "untriaged",
-      "bean": "folio-assistant-14un",
-      "detail": "litlfred/folio-assistant: smart-base: move the scripts, validators and qa-checkers behind L* tool nodes into their subgraph"
-    },
-    {
-      "kind": "untriaged",
       "bean": "folio-assistant-17iw",
       "detail": "litlfred/folio-assistant: MIGRATION: public-health and health-system process catalogues move from smart-base to WHO/who-iris once it is live"
     },
@@ -108,16 +103,6 @@
       "kind": "untriaged",
       "bean": "folio-assistant-1b7t",
       "detail": "litlfred/folio-assistant: Decision cards: open and answered"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-34c1",
-      "detail": "litlfred/folio-assistant: Open owner questions at handover: Q-GLD-4, Q-L1T-1, Q-TODO-1, Q-DTH-REC-1"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-3bk1",
-      "detail": "litlfred/folio-assistant: IG publish-on-push rollout: re-pins after the cascade, and the smart-trust injection gate"
     },
     {
       "kind": "untriaged",
@@ -138,16 +123,6 @@
       "kind": "untriaged",
       "bean": "folio-assistant-98p4",
       "detail": "litlfred/folio-assistant: Owner to-do: per IG repo, Allow auto-merge + REPIN_TOKEN secret"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-9ml4",
-      "detail": "litlfred/folio-assistant: Cache-first CI: one cached-step primitive, derived keys, trust classes, budget, hit-rate report"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-bmat",
-      "detail": "litlfred/folio-assistant: Document back matter: Glossary (Terms, then Acronyms) at the end of every document (handover bean)"
     },
     {
       "kind": "untriaged",
@@ -181,6 +156,16 @@
     },
     {
       "kind": "untriaged",
+      "bean": "folio-assistant-g4rf",
+      "detail": "litlfred/folio-assistant: G4 red-fix: single code PRs with real new failures (2026-11-15)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-hrfr",
+      "detail": "litlfred/folio-assistant: DPI-H public-comment log watcher: state at the 2026-11-15 owner check-in"
+    },
+    {
+      "kind": "untriaged",
       "bean": "folio-assistant-k3vv",
       "detail": "litlfred/folio-assistant: CI speed II (2026-11-05): restarts on main moves, red-main cycle, setup duplication"
     },
@@ -188,6 +173,11 @@
       "kind": "untriaged",
       "bean": "folio-assistant-lgwt",
       "detail": "litlfred/folio-assistant: Review-log watcher: standing rules, how to watch, current state (handover bean)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-mm15",
+      "detail": "litlfred/folio-assistant: Merge manager handover 2026-11-15 06:35Z"
     },
     {
       "kind": "untriaged",
@@ -216,6 +206,11 @@
     },
     {
       "kind": "untriaged",
+      "bean": "folio-assistant-pb15",
+      "detail": "litlfred/folio-assistant: Harness PR backlog plan 2026-11-15"
+    },
+    {
+      "kind": "untriaged",
       "bean": "folio-assistant-pga6",
       "detail": "litlfred/folio-assistant: Separation Phase III: L4/L5 Content, Tool and Test repos on the harness, plus current and future architecture write-up"
     },
@@ -226,18 +221,13 @@
     },
     {
       "kind": "untriaged",
+      "bean": "folio-assistant-qc15",
+      "detail": "litlfred/folio-assistant: qou coordinator handover 2026-11-15 (tracker qou#7735)"
+    },
+    {
+      "kind": "untriaged",
       "bean": "folio-assistant-r29x",
       "detail": "litlfred/folio-assistant: R29 (PAUSED by owner): todos and sticky notes reference things across KG libraries, as one merged kind"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-rk1e",
-      "detail": "litlfred/folio-assistant: ArchiMate links back to smart-ra: merge the PR chain (owner C, OK to merge)"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-um0y",
-      "detail": "litlfred/folio-assistant: Merge manager: re-pin cascade core#761 → smart-base → who-iris/smart-ra → dth-hrh"
     },
     {
       "kind": "untriaged",
@@ -251,6 +241,11 @@
     },
     {
       "kind": "untriaged",
+      "bean": "folio-assistant-wt3x",
+      "detail": "litlfred/folio-assistant: WHO move T3: same-owner pins, derived owner, publishing profile (code PRs)"
+    },
+    {
+      "kind": "untriaged",
       "bean": "folio-assistant-xaa8",
       "detail": "litlfred/folio-assistant: CI speed II (g): owner decision: move the repo under a free GitHub organization for the real merge queue"
     },
@@ -261,18 +256,13 @@
     },
     {
       "kind": "untriaged",
-      "bean": "cat-tools-sm8r",
-      "detail": "litlfred/cat-harness-tools: A local gate run reddens every later state:mount: its own steps write into the mounted layers"
+      "bean": "cat-tools-fc0r",
+      "detail": "litlfred/cat-harness-tools: FHIR core definitions are materialised by hand; the publish step does not build them"
     },
     {
       "kind": "untriaged",
-      "bean": "cat-tools-st4q",
-      "detail": "litlfred/cat-harness-tools: Skill I/O contracts resolved by reference, not pinned to <root>/schemas/skills/ — so a subgraph can keep its own"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "cat-tools-t6fz",
-      "detail": "litlfred/cat-harness-tools: SCHEMA VIEWER: FHIR profiles drawn over their base, FHIR core types from fhir-harness"
+      "bean": "cat-tools-pfng",
+      "detail": "litlfred/cat-harness-tools: Fill the smart-* and dth-* translations with open MT candidates, blind round-trip and glossary review"
     },
     {
       "kind": "untriaged",
