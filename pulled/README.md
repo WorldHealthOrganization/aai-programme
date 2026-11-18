@@ -9,17 +9,17 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 | Repository | Store | In progress | To do | Draft | Completed | Scrapped | Open without issue |
 |---|---|--:|--:|--:|--:|--:|--:|
 | [aai-programme](https://github.com/WorldHealthOrganization/aai-programme) | `cat/aai-platform/beans` @ `befe225` | 3 | 22 | 0 | 0 | 0 | 0 |
-| [folio-assistant](https://github.com/litlfred/folio-assistant) | `cat/cat-harness/beans` @ `1ca0254` | 23 | 14 | 0 | 1659 | 31 | 36 |
+| [folio-assistant](https://github.com/litlfred/folio-assistant) | `cat/cat-harness/beans` @ `161c733` | 23 | 14 | 0 | 1659 | 31 | 36 |
 | [bootstrap](https://github.com/litlfred/bootstrap) | no beans yet | – | – | – | – | – | – |
 | [bootstrap-tools](https://github.com/litlfred/bootstrap-tools) | no beans yet | – | – | – | – | – | – |
 | [cat-harness](https://github.com/litlfred/cat-harness) | `cat/cat-harness/beans` @ `df413d1` (67 bean(s) also kept, more recently, in another store) | 0 | 1 | 0 | 0 | 0 | 1 |
-| [cat-harness-tools](https://github.com/litlfred/cat-harness-tools) | `main` @ `95d4ebf` | 2 | 2 | 1 | 322 | 5 | 4 |
-| [folio-assistant-core](https://github.com/litlfred/folio-assistant-core) | `main` @ `b699993` | 0 | 2 | 0 | 197 | 7 | 2 |
+| [cat-harness-tools](https://github.com/litlfred/cat-harness-tools) | `main` @ `7be5df6` | 2 | 2 | 1 | 322 | 5 | 4 |
+| [folio-assistant-core](https://github.com/litlfred/folio-assistant-core) | `main` @ `1fa2a09` | 0 | 2 | 0 | 197 | 7 | 2 |
 | [folio-assistant-sci](https://github.com/litlfred/folio-assistant-sci) | no beans yet | – | – | – | – | – | – |
 | [fhir-harness](https://github.com/litlfred/fhir-harness) | no beans yet | – | – | – | – | – | – |
 | [who-iris](https://github.com/litlfred/who-iris) | no beans yet | – | – | – | – | – | – |
 | [smart-ra](https://github.com/litlfred/smart-ra) | `cat/dpi-h-ra/beans` @ `50838e6` | 1 | 0 | 0 | 1 | 0 | 1 |
-| [dth-hrh](https://github.com/litlfred/dth-hrh) | no beans yet | – | – | – | – | – | – |
+| [dth-hrh](https://github.com/litlfred/dth-hrh) | `cat/dth-hrh/beans` @ `0443a1b` | 0 | 0 | 0 | 1 | 0 | 0 |
 
 ## Blocked
 
@@ -136,4 +136,8 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 | Bean | Status | Priority | Type | Title | Issue |
 |---|---|---|---|---|---|
 | [dpi-h-ra-szj8](https://github.com/litlfred/smart-ra/blob/cat/dpi-h-ra/beans/beans/dpi-h-ra-szj8--dpi-h-ra-public-review-intake-adjudication-and-pub.md) | in-progress | normal | epic | DPI-H RA public review: intake, adjudication and publication of the revised guidance |  |
+
+### dth-hrh (0 open)
+
+Nothing open.
 
