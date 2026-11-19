@@ -1,0 +1,283 @@
+{
+  "checked": "2026-11-19",
+  "summary": {
+    "bean-done": 1,
+    "bean-scrapped": 0,
+    "issue-closed": 0,
+    "broken-link": 0,
+    "orphaned": 0,
+    "bean-changed": 13,
+    "untriaged": 37
+  },
+  "findings": [
+    {
+      "kind": "bean-changed",
+      "issue": 49,
+      "bean": "folio-assistant-cz17",
+      "detail": "the bean changed (2026-10-30) after the issue was last touched (2026-10-26)"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 47,
+      "bean": "folio-assistant-4y2i",
+      "detail": "the bean changed (2026-10-26) after the issue was last touched (2026-10-26)"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 47,
+      "bean": "folio-assistant-61tg",
+      "detail": "the bean changed (2026-10-30) after the issue was last touched (2026-10-26)"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 44,
+      "bean": "folio-assistant-zzmr",
+      "detail": "the bean changed (2026-10-31) after the issue was last touched (2026-10-26)"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 43,
+      "bean": "folio-assistant-3sbm",
+      "detail": "the bean changed (2026-10-26) after the issue was last touched (2026-10-26)"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 39,
+      "bean": "folio-assistant-5a3l",
+      "detail": "the bean changed (2026-11-01) after the issue was last touched (2026-10-26)"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 35,
+      "bean": "folio-assistant-vm6m",
+      "detail": "the bean changed (2026-10-26) after the issue was last touched (2026-10-26)"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 34,
+      "bean": "folio-assistant-vljz",
+      "detail": "the bean changed (2026-10-26) after the issue was last touched (2026-10-26)"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 33,
+      "bean": "folio-assistant-oz9e",
+      "detail": "the bean changed (2026-11-15) after the issue was last touched (2026-10-30)"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 32,
+      "bean": "folio-assistant-q4jm",
+      "detail": "the bean changed (2026-10-26) after the issue was last touched (2026-10-26)"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 25,
+      "bean": "folio-assistant-qvxh",
+      "detail": "the bean changed (2026-10-26) after the issue was last touched (2026-10-26)"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 24,
+      "bean": "folio-assistant-63q4",
+      "detail": "the bean changed (2026-10-30) after the issue was last touched (2026-10-26)"
+    },
+    {
+      "kind": "bean-changed",
+      "issue": 22,
+      "bean": "folio-assistant-0lde",
+      "detail": "the bean changed (2026-10-26) after the issue was last touched (2026-10-26)"
+    },
+    {
+      "kind": "bean-done",
+      "issue": 21,
+      "bean": "folio-assistant-slw1",
+      "detail": "the bean is completed; close the issue as completed?"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-17iw",
+      "detail": "litlfred/folio-assistant: MIGRATION: public-health and health-system process catalogues move from smart-base to WHO/who-iris once it is live"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-1b7t",
+      "detail": "litlfred/folio-assistant: Decision cards: open and answered"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-65aj",
+      "detail": "litlfred/folio-assistant: Paste Stub.gs into each review log"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-6gnn",
+      "detail": "litlfred/folio-assistant: WorldHealthOrganization/smart-base: port the .github/skills clean-up and the BPMN validator fixes upstream"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-95e7",
+      "detail": "litlfred/folio-assistant: smart-base: move skill/tool source out of .github/ and the root dirs into the KG subgraphs; .github/ keeps only generated links"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-98p4",
+      "detail": "litlfred/folio-assistant: Owner to-do: per IG repo, Allow auto-merge + REPIN_TOKEN secret"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-bsd1",
+      "detail": "litlfred/folio-assistant: BEAN STORE BEHIND ANY TOOL + STATE MACHINE STARTS ANY MODEL'S AGENT: proposal (WHO Assured AI / Gemini benchmarking context)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-cysv",
+      "detail": "litlfred/folio-assistant: One DTH scaffold and seed tool in the platform (dth init), replacing per-repo copies"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-dkin",
+      "detail": "litlfred/folio-assistant: who-iris: L1-ingest the remaining DAKs (TB, HIV, CHUD, PNC, SRV, SMBP, STI) with their per-task annotations"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-drnh",
+      "detail": "litlfred/folio-assistant: Merge-window drain to 2026-11-03 00:40Z: PRs, re-pin train, open cards (handover bean)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-dthl",
+      "detail": "litlfred/folio-assistant: DTH handbooks as L2 documents on smart-ra (HRH pilot, PHC, SC, PC, SFP)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-f7ph",
+      "detail": "litlfred/folio-assistant: Project thread directory (thread ids)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-fvec",
+      "detail": "litlfred/folio-assistant: PUBLISH: Cloudflare R2 + CDN in front of the WHO L1 corpus (future; owner 2026-10-24)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-g4rf",
+      "detail": "litlfred/folio-assistant: G4 red-fix: single code PRs with real new failures (2026-11-15)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-hrfr",
+      "detail": "litlfred/folio-assistant: DPI-H public-comment log watcher: state at the 2026-11-15 owner check-in"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-k3vv",
+      "detail": "litlfred/folio-assistant: CI speed II (2026-11-05): restarts on main moves, red-main cycle, setup duplication"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-lgwt",
+      "detail": "litlfred/folio-assistant: Review-log watcher: standing rules, how to watch, current state (handover bean)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-mm15",
+      "detail": "litlfred/folio-assistant: Merge manager handover 2026-11-15 06:35Z"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-n6ny",
+      "detail": "litlfred/folio-assistant: Project memory: owner rules, facts, to-dos, cards and threads (read first)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-nbp9",
+      "detail": "litlfred/folio-assistant: Move the deploy-folio secrets into the production environment, with a required reviewer"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-no51",
+      "detail": "litlfred/folio-assistant: Owner to-do list (things only litlfred can do)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-nvhg",
+      "detail": "litlfred/folio-assistant: TERMINOLOGY / adjudication leg 2: two judges disagree about a mapping (from 2i5f)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-oiah",
+      "detail": "litlfred/folio-assistant: Biblio nav: standing 6-hourly re-pin per IG (Q-BIBNAV-2 = B)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-pb15",
+      "detail": "litlfred/folio-assistant: Harness PR backlog plan 2026-11-15"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-pga6",
+      "detail": "litlfred/folio-assistant: Separation Phase III: L4/L5 Content, Tool and Test repos on the harness, plus current and future architecture write-up"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-php1",
+      "detail": "litlfred/folio-assistant: Owner standing rules (moved from project memory 2026-11-12)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-qc15",
+      "detail": "litlfred/folio-assistant: qou coordinator handover 2026-11-15 (tracker qou#7735)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-r29x",
+      "detail": "litlfred/folio-assistant: R29 (PAUSED by owner): todos and sticky notes reference things across KG libraries, as one merged kind"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-untm",
+      "detail": "litlfred/folio-assistant: UNTERM: official UN terminology as translation candidates and glossary QA terms"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-v8bg",
+      "detail": "litlfred/folio-assistant: Handover 2026-11-12 09:32Z: open workstreams"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-wl48",
+      "detail": "litlfred/folio-assistant: Facts and references (moved from project memory 2026-11-12)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-wt3x",
+      "detail": "litlfred/folio-assistant: WHO move T3: same-owner pins, derived owner, publishing profile (code PRs)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-xaa8",
+      "detail": "litlfred/folio-assistant: CI speed II (g): owner decision: move the repo under a free GitHub organization for the real merge queue"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "note",
+      "detail": "litlfred/cat-harness: folio-assistant-0lj4--2026-10-04--claude-gracious-mendel-du6nn8"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "cat-tools-fc0r",
+      "detail": "litlfred/cat-harness-tools: FHIR core definitions are materialised by hand; the publish step does not build them"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "cat-tools-pfng",
+      "detail": "litlfred/cat-harness-tools: Fill the smart-* and dth-* translations with open MT candidates, blind round-trip and glossary review"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-pvq4",
+      "detail": "litlfred/folio-assistant-core: REVIEW: a person confirms or rejects the agent-drafted block summaries"
+    }
+  ]
+}

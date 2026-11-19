@@ -1,0 +1,12 @@
+{
+  "$schema": "state-manifest/v1",
+  "authoritative": true,
+  "subgraph": "board",
+  "keyedBy": "tip",
+  "graphs": [
+    {
+      "path": "pulled"
+    }
+  ],
+  "note": "The combined beans board and bean-drift report of the aai-programme instance, kept off main (owner, 2026-11-19: \"Bot writes to a state branch\"). Seeded from litlfred/aai-programme main at 754135fa, whose pulled/ already held WHO main's."
+}
