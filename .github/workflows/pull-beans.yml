@@ -2,8 +2,11 @@ name: Pull beans
 
 # Rebuilds pulled/ from the repositories in beans-sources.json, then checks
 # the programme issues against those beans (bean drift, pulled/drift.md).
-# Every source is public, so the default token only needs to write this
-# repository and read its issues. Run by hand: Actions -> Pull beans -> Run
+# pulled/ is the `board` state graph (aai-programme.json): it is mounted from
+# the branch cat/aai-programme/board and spliced back with state:push, so
+# main never takes a bot commit (owner, 2026-11-19). Every source is public,
+# so the default token only needs to write this repository's branch and read
+# its issues. Run by hand: Actions -> Pull beans -> Run
 # workflow, or comment `/check-drift` on any issue (check-drift.yml).
 on:
   schedule:
@@ -25,21 +28,17 @@ jobs:
       - uses: actions/checkout@v4
       - uses: oven-sh/setup-bun@v2
         with:
-          bun-version: 1.4.2
+          bun-version: 1.4.4  # the platform CI version: state:mount runs the mounted layers
+      - name: Mount the board from its state branch
+        run: bun run cat state:mount --id board
       - name: Pull beans
         run: bun run scripts/pull-beans.ts
       - name: Check the programme issues against the beans
         env:
           GH_TOKEN: ${{ github.token }}
         run: bun run scripts/programme/bean-drift.ts --out pulled
-      - name: Commit the board if it changed
+      - name: Push the board to its state branch
         run: |
-          if git diff --quiet -- pulled; then
-            echo "board unchanged"
-            exit 0
-          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add pulled
-          git commit -m "Pull beans and check drift"
-          git push
+          bun run cat state:push --id board -m "Pull beans and check drift"

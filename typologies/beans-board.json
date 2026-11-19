@@ -1,0 +1,12 @@
+{
+  "$schema": "folio-graph-typology/v1",
+  "kind": "beans-board",
+  "title": "Combined beans board",
+  "renderable": false,
+  "holds": "state",
+  "recordsWork": false,
+  "serialised": false,
+  "summary": "The combined work-plan board: a daily snapshot of the beans of every repository in `beans-sources.json` (`beans.json`, `README.md`) and the bean-drift report (`drift.json`, `drift.md`). Written by the Pull beans bot and kept on a state branch, never on main.",
+  "rationale": "`state`, not `derived`: the bot writes it every day from other repositories' beans branches, which move without a commit here, so a copy on main is stale the moment it lands, and two copies of this repository (litlfred and WHO) committing it to their own main drifted apart daily (owner, 2026-11-19: \"Bot writes to a state branch\"). `recordsWork: false`: it is a reading of other repositories' work plans, and the work is counted on their beans.",
+  "description": "the combined beans board and the bean-drift report, written by scripts/pull-beans.ts and scripts/programme/bean-drift.ts. A snapshot that the bot replaces each day, never edited by hand."
+}
