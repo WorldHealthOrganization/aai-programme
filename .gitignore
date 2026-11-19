@@ -24,10 +24,13 @@ node_modules/
 /beans/**
 /cat-harness-tools/beans/marks/**
 /cat-harness-tools/health/**
-/cat-harness/test/health/results/**
+/cat-harness/subscribed-harnesses/**
 /folio-assistant-core/test/health/results/**
 /fsh-guts/**
 /issue-marks/**
+/merge-reviews/**
+/pulled/**
+/test/health/results/**
 /todos/**
 # END state mounts
 # Kept on cat/aai-platform/beans; mounted here by state:mount, never committed to main

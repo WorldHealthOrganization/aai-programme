@@ -1,7 +1,7 @@
 {
   "$comment": "The repositories whose beans the Platform board pulls in. Add or remove a repo here; nothing else needs to change. `store` is optional: leave it out and the script finds the store itself (a `cat/*/beans` branch if the repo has one, otherwise the folder named in the repo's `.beans.yml` on its default branch). `deny` lists repos that must never be pulled, whatever `sources` says.",
   "sources": [
-    { "repo": "litlfred/aai-platform", "store": { "branch": "cat/aai-platform/beans", "path": "beans/defs" }, "$note": "Work runs off the litlfred fork for now (owner, 2026-10-20). When the fork is synced to WorldHealthOrganization/aai-platform, push the beans branch there first, then switch this entry to the WHO repo." },
+    { "repo": "WorldHealthOrganization/aai-programme", "store": { "branch": "cat/aai-platform/beans", "path": "beans/defs" }, "$note": "The programme lives in the WHO repository (aai-programme#57), so its beans are read from there. The branch keeps its pre-rename name until bean aai-platform-6o0v renames it." },
     { "repo": "litlfred/folio-assistant" },
     { "repo": "litlfred/bootstrap" },
     { "repo": "litlfred/bootstrap-tools" },
