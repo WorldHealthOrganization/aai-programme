@@ -1,5 +1,7 @@
 {
   "$schema": "folio-index-config/v1",
+  "title": "aai-programme",
+  "description": "The Assured AI programme coordination instance, and the knowledge graphs whose work plans it reviews.",
   "instances": [
     {
       "name": "aai-programme",
@@ -69,7 +71,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "7d175a59dcfc25e755fdc5e47327b82fd5f4a40d",
+          "ref": "419d59505a971a36d7e2e0162705be1828296188",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -85,9 +87,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-15",
-              "ref": "7d175a59dcfc25e755fdc5e47327b82fd5f4a40d",
-              "evidence": "litlfred, 2026-11-15 12:12Z, project thread chat: 'make sure revisions are aligned with current deciisons and infra' (reviving the opt-in collab enable drafts, after card 'A. Revive, close, ask', 12:09Z): hand re-pin of every layer to main, Claude Code session https://claude.ai/code/session_01Qmmkt9PKt17La22a63e6zg"
+              "on": "2026-11-19",
+              "ref": "419d59505a971a36d7e2e0162705be1828296188",
+              "evidence": "Merge manager session https://claude.ai/code/session_01EucfRnjwjC8CPYgVnsFuHS, 2026-11-19: re-pin every layer to main, cat-harness-tools at 35bad4c2 or later (cat-harness-tools#2464, state:mount Duplicate header Authorization), Claude Code session https://claude.ai/code/session_01EucfRoh8qBngyRo55QVczZ"
             }
           }
         }
@@ -98,7 +100,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "d41ff7ce9916b863c30c61c5a5c7744c968793cc",
+          "ref": "44f3c050ce5565cab593436a2450004e6dc7a4bb",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -114,9 +116,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-15",
-              "ref": "d41ff7ce9916b863c30c61c5a5c7744c968793cc",
-              "evidence": "litlfred, 2026-11-15 12:12Z, project thread chat: 'make sure revisions are aligned with current deciisons and infra' (reviving the opt-in collab enable drafts, after card 'A. Revive, close, ask', 12:09Z): hand re-pin of every layer to main, Claude Code session https://claude.ai/code/session_01Qmmkt9PKt17La22a63e6zg"
+              "on": "2026-11-19",
+              "ref": "44f3c050ce5565cab593436a2450004e6dc7a4bb",
+              "evidence": "Merge manager session https://claude.ai/code/session_01EucfRnjwjC8CPYgVnsFuHS, 2026-11-19: re-pin every layer to main, cat-harness-tools at 35bad4c2 or later (cat-harness-tools#2464, state:mount Duplicate header Authorization), Claude Code session https://claude.ai/code/session_01EucfRoh8qBngyRo55QVczZ"
             }
           }
         }
@@ -127,7 +129,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "372b94986d9cf04a60e3e9eafaaefbf7017c65a1",
+          "ref": "35bad4c2cb31cb2b41e759b0abddd0961a973f3b",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -140,9 +142,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-15",
-              "ref": "372b94986d9cf04a60e3e9eafaaefbf7017c65a1",
-              "evidence": "litlfred, 2026-11-15 12:12Z, project thread chat: 'make sure revisions are aligned with current deciisons and infra' (reviving the opt-in collab enable drafts, after card 'A. Revive, close, ask', 12:09Z): hand re-pin of every layer to main, Claude Code session https://claude.ai/code/session_01Qmmkt9PKt17La22a63e6zg"
+              "on": "2026-11-19",
+              "ref": "35bad4c2cb31cb2b41e759b0abddd0961a973f3b",
+              "evidence": "Merge manager session https://claude.ai/code/session_01EucfRnjwjC8CPYgVnsFuHS, 2026-11-19: re-pin every layer to main, cat-harness-tools at 35bad4c2 or later (cat-harness-tools#2464, state:mount Duplicate header Authorization), Claude Code session https://claude.ai/code/session_01EucfRoh8qBngyRo55QVczZ"
             }
           }
         }
@@ -153,7 +155,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap",
-          "ref": "7db8457701ebb9b99284d639128f3c82ad4fc6ea",
+          "ref": "417192bef3ca2b9d6f3481b41c39f1f747cae57f",
           "overrides": {
             "bootstrap": {
               "whole": true
@@ -163,9 +165,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-15",
-              "ref": "7db8457701ebb9b99284d639128f3c82ad4fc6ea",
-              "evidence": "litlfred, 2026-11-15 12:12Z, project thread chat: 'make sure revisions are aligned with current deciisons and infra' (reviving the opt-in collab enable drafts, after card 'A. Revive, close, ask', 12:09Z): hand re-pin of every layer to main, Claude Code session https://claude.ai/code/session_01Qmmkt9PKt17La22a63e6zg"
+              "on": "2026-11-19",
+              "ref": "417192bef3ca2b9d6f3481b41c39f1f747cae57f",
+              "evidence": "Merge manager session https://claude.ai/code/session_01EucfRnjwjC8CPYgVnsFuHS, 2026-11-19: re-pin every layer to main, cat-harness-tools at 35bad4c2 or later (cat-harness-tools#2464, state:mount Duplicate header Authorization), Claude Code session https://claude.ai/code/session_01EucfRoh8qBngyRo55QVczZ"
             }
           }
         }
@@ -176,7 +178,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap-tools",
-          "ref": "174a567db34db10b007a45b13f960f218a6b04f5",
+          "ref": "60e5ffc23b88137c0d9eaef00601da89237df094",
           "overrides": {
             "bootstrap-tools": {
               "whole": true
@@ -189,17 +191,15 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-15",
-              "ref": "174a567db34db10b007a45b13f960f218a6b04f5",
-              "evidence": "litlfred, 2026-11-15 12:12Z, project thread chat: 'make sure revisions are aligned with current deciisons and infra' (reviving the opt-in collab enable drafts, after card 'A. Revive, close, ask', 12:09Z): hand re-pin of every layer to main, Claude Code session https://claude.ai/code/session_01Qmmkt9PKt17La22a63e6zg"
+              "on": "2026-11-19",
+              "ref": "60e5ffc23b88137c0d9eaef00601da89237df094",
+              "evidence": "Merge manager session https://claude.ai/code/session_01EucfRnjwjC8CPYgVnsFuHS, 2026-11-19: re-pin every layer to main, cat-harness-tools at 35bad4c2 or later (cat-harness-tools#2464, state:mount Duplicate header Authorization), Claude Code session https://claude.ai/code/session_01EucfRoh8qBngyRo55QVczZ"
             }
           }
         }
       }
     }
   ],
-  "title": "aai-programme",
-  "description": "The Assured AI programme coordination instance, and the knowledge graphs whose work plans it reviews.",
   "site": {
     "landing": "aai-programme",
     "agentRun": true
