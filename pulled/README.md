@@ -9,17 +9,17 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 | Repository | Store | In progress | To do | Draft | Completed | Scrapped | Open without issue |
 |---|---|--:|--:|--:|--:|--:|--:|
 | [aai-platform](https://github.com/litlfred/aai-platform) | `cat/aai-platform/beans` @ `cebfd0f` | 2 | 21 | 0 | 2 | 0 | 0 |
-| [folio-assistant](https://github.com/litlfred/folio-assistant) | `cat/cat-harness/beans` @ `161c733` | 23 | 14 | 0 | 1659 | 31 | 36 |
+| [folio-assistant](https://github.com/litlfred/folio-assistant) | `cat/cat-harness/beans` @ `b266a69` | 23 | 16 | 0 | 1659 | 31 | 38 |
 | [bootstrap](https://github.com/litlfred/bootstrap) | no beans yet | – | – | – | – | – | – |
 | [bootstrap-tools](https://github.com/litlfred/bootstrap-tools) | no beans yet | – | – | – | – | – | – |
 | [cat-harness](https://github.com/litlfred/cat-harness) | `cat/cat-harness/beans` @ `df413d1` (67 bean(s) also kept, more recently, in another store) | 0 | 1 | 0 | 0 | 0 | 1 |
-| [cat-harness-tools](https://github.com/litlfred/cat-harness-tools) | `main` @ `7be5df6` | 2 | 2 | 1 | 322 | 5 | 4 |
-| [folio-assistant-core](https://github.com/litlfred/folio-assistant-core) | `main` @ `1fa2a09` | 0 | 2 | 0 | 197 | 7 | 2 |
+| [cat-harness-tools](https://github.com/litlfred/cat-harness-tools) | `main` @ `6dd108f` | 2 | 2 | 1 | 322 | 5 | 4 |
+| [folio-assistant-core](https://github.com/litlfred/folio-assistant-core) | `main` @ `419d595` | 0 | 2 | 0 | 197 | 7 | 2 |
 | [folio-assistant-sci](https://github.com/litlfred/folio-assistant-sci) | no beans yet | – | – | – | – | – | – |
 | [fhir-harness](https://github.com/litlfred/fhir-harness) | no beans yet | – | – | – | – | – | – |
 | [who-iris](https://github.com/litlfred/who-iris) | no beans yet | – | – | – | – | – | – |
 | [smart-ra](https://github.com/litlfred/smart-ra) | `cat/dpi-h-ra/beans` @ `50838e6` | 1 | 0 | 0 | 1 | 0 | 1 |
-| [dth-hrh](https://github.com/litlfred/dth-hrh) | `cat/dth-hrh/beans` @ `0443a1b` | 0 | 0 | 0 | 1 | 0 | 0 |
+| [dth-hrh](https://github.com/litlfred/dth-hrh) | `cat/dth-hrh/beans` @ `73e2ea0` | 0 | 0 | 0 | 3 | 0 | 0 |
 
 ## Blocked
 
@@ -65,7 +65,7 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 | [aai-platform-wfvg](https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-wfvg--review-the-project-110-items-with-ritika-after-the.md) | todo | normal | task | Review the project 110 items with Ritika after the pilot | [folio-assistant#2605](https://github.com/litlfred/folio-assistant/issues/2605) |
 | [aai-platform-wyr6](https://github.com/litlfred/aai-platform/blob/cat/aai-platform/beans/beans/defs/aai-platform-wyr6--step-1-pre-flight-check-of-the-who-organisation.md) | todo | normal | task | Step 1: pre-flight check of the WHO organisation | [folio-assistant#2605](https://github.com/litlfred/folio-assistant/issues/2605) |
 
-### folio-assistant (37 open)
+### folio-assistant (39 open)
 
 | Bean | Status | Priority | Type | Title | Issue |
 |---|---|---|---|---|---|
@@ -93,6 +93,7 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 | [folio-assistant-oiah](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-oiah--biblio-nav-standing-6-hourly-re-pin-per-ig-q-bibna.md) | in-progress | normal | task | Biblio nav: standing 6-hourly re-pin per IG (Q-BIBNAV-2 = B) |  |
 | [folio-assistant-yj32](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-yj32--harness-as-interface-a-harness-instances-default-r.md) | in-progress | normal | epic | HARNESS AS INTERFACE: a harness instance's default rendering is LHS + docs/ + a themed folio board, and it is a KG-DS management system |  |
 | [folio-assistant-98p4](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-98p4--owner-to-do-per-ig-repo-allow-auto-merge-repin-tok.md) | todo | high | task | Owner to-do: per IG repo, Allow auto-merge + REPIN_TOKEN secret |  |
+| [folio-assistant-dkin](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-dkin--who-iris-l1-ingest-the-remaining-daks-tb-hiv-chud-pnc.md) | todo | high | task | who-iris: L1-ingest the remaining DAKs (TB, HIV, CHUD, PNC, SRV, SMBP, STI) with their per-task annotations |  |
 | [folio-assistant-no51](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-no51--owner-to-do-list-things-only-litlfred-can-do.md) | todo | high | task | Owner to-do list (things only litlfred can do) |  |
 | [folio-assistant-17iw](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-17iw--migration-public-health-and-health-system-process.md) | todo | normal | task | MIGRATION: public-health and health-system process catalogues move from smart-base to WHO/who-iris once it is live |  |
 | [folio-assistant-65aj](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-65aj--paste-stub-gs-into-each-review-log.md) | todo | normal | task | Paste Stub.gs into each review log |  |
@@ -102,6 +103,7 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 | [folio-assistant-nvhg](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-nvhg--terminology-adjudication-leg-2-two-judges-disagree.md) | todo | normal | task | TERMINOLOGY / adjudication leg 2: two judges disagree about a mapping (from 2i5f) |  |
 | [folio-assistant-oz9e](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-oz9e--benchmark-outcome-evaluation-of-harness-runs-acros.md) | todo | normal | feature | BENCHMARK: outcome evaluation of harness runs across models (close B8 — accuracy, not only structure) |  |
 | [folio-assistant-r29x](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-r29x--r29-todos-and-sticky-notes-reference-across-kg-l.md) | todo | normal | task | R29 (PAUSED by owner): todos and sticky notes reference things across KG libraries, as one merged kind |  |
+| [folio-assistant-untm](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-untm--unterm-official-un-terminology-as-translation-candid.md) | todo | normal | task | UNTERM: official UN terminology as translation candidates and glossary QA terms |  |
 | [folio-assistant-xaa8](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-xaa8--ci-speed-ii-g-owner-decision-move-the-repo-under-a.md) | todo | normal | task | CI speed II (g): owner decision: move the repo under a free GitHub organization for the real merge queue |  |
 | [folio-assistant-6gnn](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-6gnn--worldhealthorganization-smart-base-port-the-github.md) | todo | low | task | WorldHealthOrganization/smart-base: port the .github/skills clean-up and the BPMN validator fixes upstream |  |
 | [folio-assistant-fvec](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-fvec--publish-cloudflare-r2-cdn-in-front-of-the-who-l1-c.md) | todo | low | task | PUBLISH: Cloudflare R2 + CDN in front of the WHO L1 corpus (future; owner 2026-10-24) |  |

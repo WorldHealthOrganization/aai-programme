@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-18",
+  "checked": "2026-11-19",
   "summary": {
     "bean-done": 1,
     "bean-scrapped": 0,
@@ -7,7 +7,7 @@
     "broken-link": 0,
     "orphaned": 0,
     "bean-changed": 13,
-    "untriaged": 35
+    "untriaged": 37
   },
   "findings": [
     {
@@ -136,6 +136,11 @@
     },
     {
       "kind": "untriaged",
+      "bean": "folio-assistant-dkin",
+      "detail": "litlfred/folio-assistant: who-iris: L1-ingest the remaining DAKs (TB, HIV, CHUD, PNC, SRV, SMBP, STI) with their per-task annotations"
+    },
+    {
+      "kind": "untriaged",
       "bean": "folio-assistant-drnh",
       "detail": "litlfred/folio-assistant: Merge-window drain to 2026-11-03 00:40Z: PRs, re-pin train, open cards (handover bean)"
     },
@@ -228,6 +233,11 @@
       "kind": "untriaged",
       "bean": "folio-assistant-r29x",
       "detail": "litlfred/folio-assistant: R29 (PAUSED by owner): todos and sticky notes reference things across KG libraries, as one merged kind"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-untm",
+      "detail": "litlfred/folio-assistant: UNTERM: official UN terminology as translation candidates and glossary QA terms"
     },
     {
       "kind": "untriaged",
