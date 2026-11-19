@@ -70,10 +70,10 @@
         <dc:Bounds x="302" y="147" width="36" height="36" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_A_Ready_AAI_Validation" bpmnElement="A_Ready">
-        <dc:Bounds x="410" y="125" width="120" height="80" />
+        <dc:Bounds x="410" y="105" width="120" height="120" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_A_Check_AAI_Validation" bpmnElement="A_Check">
-        <dc:Bounds x="560" y="295" width="120" height="80" />
+        <dc:Bounds x="560" y="275" width="120" height="120" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_GW_Valid_AAI_Validation" bpmnElement="GW_Valid" isMarkerVisible="true">
         <dc:Bounds x="745" y="310" width="50" height="50" />
@@ -82,7 +82,7 @@
         <dc:Bounds x="842" y="372" width="36" height="36" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_A_Confirm_AAI_Validation" bpmnElement="A_Confirm">
-        <dc:Bounds x="950" y="295" width="120" height="80" />
+        <dc:Bounds x="950" y="275" width="120" height="120" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_End_AAI_Validation_AAI_Validation" bpmnElement="End_AAI_Validation">
         <dc:Bounds x="1142" y="317" width="36" height="36" />

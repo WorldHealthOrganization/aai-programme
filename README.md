@@ -58,7 +58,7 @@ Whose confirmation counts for AUTO-10 (owner, 2026-10-20): the repository's own 
 
 ## Programme issues and beans
 
-How a bean becomes a programme issue, and how the two are kept from drifting, is in the knowledge graph as two processes: [triage a bean](https://litlfred.github.io/aai-programme/en/cat-harness/processes/bean-triage.html) ([bpmn](processes/process/bean-triage.bpmn)) and [act on bean drift](https://litlfred.github.io/aai-programme/en/cat-harness/processes/bean-drift.html) ([bpmn](processes/process/bean-drift.bpmn)). Run the check on demand by commenting `/check-drift` on any issue; the report is [`pulled/drift.md`](pulled/drift.md) and the board's [Bean drift](https://litlfred.github.io/aai-programme/programme/drift.html) page.
+How a bean becomes a programme issue, and how the two are kept from drifting, is in the knowledge graph as two processes: [triage a bean](https://litlfred.github.io/aai-programme/en/cat-harness/processes/bean-triage.html) ([bpmn](processes/process/bean-triage.bpmn)) and [act on bean drift](https://litlfred.github.io/aai-programme/en/cat-harness/processes/bean-drift.html) ([bpmn](processes/process/bean-drift.bpmn)). Run the check on demand by commenting `/check-drift` on any issue; the report is [`pulled/drift.md`](../../blob/cat/aai-programme/board/pulled/drift.md) on the board's state branch and the board's [Bean drift](https://litlfred.github.io/aai-programme/programme/drift.html) page.
 
 ## Labels
 
@@ -81,8 +81,10 @@ The `gates:` labels, one per Gates output, are added once the PM supplies the Ga
 Beans are the agents' work plan: one Markdown file per work item, read by the [`beans`](https://github.com/hmans/beans) CLI.
 
 - **This repository's beans** live on the branch [`cat/aai-platform/beans`](../../tree/cat/aai-platform/beans). `bun run cat state:mount` puts it at `beans/`.
-- **The combined board**, [`pulled/README.md`](pulled/README.md), lists the beans of every repository in [`beans-sources.json`](beans-sources.json). To add or remove a repository, edit that file. Repositories on its `deny` list are refused.
+- **The combined board**, [`pulled/README.md`](../../blob/cat/aai-programme/board/pulled/README.md), lists the beans of every repository in [`beans-sources.json`](beans-sources.json). To add or remove a repository, edit that file. Repositories on its `deny` list are refused.
 - A bean that tracks programme work carries `issue:` with the URL of its GitHub issue. The issue is the source of truth; the board counts open beans without one.
+
+The combined board is kept on the state branch [`cat/aai-programme/board`](../../tree/cat/aai-programme/board), never on main: `bun run cat state:mount --id board` puts it at `pulled/`, and `bun run cat state:push --id board` sends a change back.
 
 ```sh
 bun run scripts/pull-beans.ts            # rebuild pulled/
@@ -90,4 +92,4 @@ bun run scripts/pull-beans.ts --dry-run  # print the summary only
 bun run scripts/pull-beans.ts --check    # fail if pulled/ is out of date
 ```
 
-The `Pull beans` workflow rebuilds the board every day and on demand.
+The `Pull beans` workflow rebuilds the board every day and on demand, and pushes it to the state branch.

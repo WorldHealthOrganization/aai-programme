@@ -6,6 +6,11 @@
  *   bun run scripts/pull-beans.ts --dry-run  print the summary, write nothing
  *   bun run scripts/pull-beans.ts --check    fail if the files on disk are out of date
  *
+ * pulled/ is the `board` state graph, kept on the branch cat/aai-programme/board
+ * and never committed to main: mount it first (`bun run cat state:mount --id
+ * board`) and send a change with `bun run cat state:push --id board`, as the
+ * Pull beans workflow does.
+ *
  * Read-only towards every source: it fetches with plain git over HTTPS, so public
  * repositories need no token. Output carries the source commit of each store
  * instead of a timestamp, so running it twice on unchanged sources changes nothing.

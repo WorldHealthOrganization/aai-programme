@@ -13,7 +13,7 @@
   "contains": [
     "library/assured-ai-github-programme-requirements-v042/blocks/prose-s019-8-1-assured-ai-programme-views"
   ],
-  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/assured-ai-github-programme-requirements-v042/manifest.jsonld",
-  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/assured-ai-github-programme-requirements-v042/manifest.jsonld",
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/source/assured-ai-github-programme-requirements-v042",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/source/assured-ai-github-programme-requirements-v042",
   "provenance": "ingested"
 }

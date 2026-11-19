@@ -74,18 +74,21 @@
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_GW_Matters_AAI_BeanTriage" bpmnElement="GW_Matters" isMarkerVisible="true">
         <dc:Bounds x="445" y="140" width="50" height="50" />
+        <bpmndi:BPMNLabel><dc:Bounds x="402.5" y="82" width="135" height="54" /></bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_End_StopBean_AAI_BeanTriage" bpmnElement="End_StopBean">
         <dc:Bounds x="542" y="202" width="36" height="36" />
+        <bpmndi:BPMNLabel><dc:Bounds x="582" y="167" width="90" height="71" /></bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_GW_Epic_AAI_BeanTriage" bpmnElement="GW_Epic" isMarkerVisible="true">
         <dc:Bounds x="685" y="140" width="50" height="50" />
+        <bpmndi:BPMNLabel><dc:Bounds x="642.5" y="82" width="135" height="54" /></bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_Call_Propose_AAI_BeanTriage" bpmnElement="Call_Propose">
-        <dc:Bounds x="800" y="295" width="120" height="80" />
+        <dc:Bounds x="800" y="275" width="120" height="120" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_A_Issue_AAI_BeanTriage" bpmnElement="A_Issue">
-        <dc:Bounds x="950" y="125" width="120" height="80" />
+        <dc:Bounds x="950" y="105" width="120" height="120" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_End_AAI_BeanTriage_AAI_BeanTriage" bpmnElement="End_AAI_BeanTriage">
         <dc:Bounds x="1142" y="147" width="36" height="36" />
@@ -113,6 +116,7 @@
         <di:waypoint x="767" y="165" />
         <di:waypoint x="767" y="335" />
         <di:waypoint x="800" y="335" />
+        <bpmndi:BPMNLabel><dc:Bounds x="741" y="145" width="90" height="17" /></bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Edge_SF_AAI_BeanTriage_6" bpmnElement="SF_AAI_BeanTriage_6">
         <di:waypoint x="920" y="335" />

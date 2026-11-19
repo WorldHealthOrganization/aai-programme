@@ -73,24 +73,26 @@
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_Start_AAI_BeanDrift_AAI_BeanDrift" bpmnElement="Start_AAI_BeanDrift">
         <dc:Bounds x="302" y="147" width="36" height="36" />
+        <bpmndi:BPMNLabel><dc:Bounds x="252.5" y="187" width="135" height="54" /></bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_A_Pull_AAI_BeanDrift" bpmnElement="A_Pull">
-        <dc:Bounds x="410" y="125" width="120" height="80" />
+        <dc:Bounds x="410" y="105" width="120" height="120" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_A_Check_AAI_BeanDrift" bpmnElement="A_Check">
-        <dc:Bounds x="560" y="125" width="120" height="80" />
+        <dc:Bounds x="560" y="105" width="120" height="120" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_GW_Flags_AAI_BeanDrift" bpmnElement="GW_Flags" isMarkerVisible="true">
         <dc:Bounds x="745" y="140" width="50" height="50" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_End_StopClean_AAI_BeanDrift" bpmnElement="End_StopClean">
         <dc:Bounds x="842" y="202" width="36" height="36" />
+        <bpmndi:BPMNLabel><dc:Bounds x="882" y="211.5" width="90" height="17" /></bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_A_Review_AAI_BeanDrift" bpmnElement="A_Review">
-        <dc:Bounds x="860" y="295" width="120" height="80" />
+        <dc:Bounds x="860" y="275" width="120" height="120" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_Call_Triage_AAI_BeanDrift" bpmnElement="Call_Triage">
-        <dc:Bounds x="1010" y="295" width="120" height="80" />
+        <dc:Bounds x="1010" y="275" width="120" height="120" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_End_AAI_BeanDrift_AAI_BeanDrift" bpmnElement="End_AAI_BeanDrift">
         <dc:Bounds x="1202" y="317" width="36" height="36" />
@@ -118,6 +120,7 @@
         <di:waypoint x="827" y="165" />
         <di:waypoint x="827" y="335" />
         <di:waypoint x="860" y="335" />
+        <bpmndi:BPMNLabel><dc:Bounds x="801" y="144" width="90" height="18" /></bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Edge_SF_AAI_BeanDrift_6" bpmnElement="SF_AAI_BeanDrift_6">
         <di:waypoint x="980" y="335" />

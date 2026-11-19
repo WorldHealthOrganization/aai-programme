@@ -104,19 +104,19 @@
         <dc:Bounds x="302" y="487" width="36" height="36" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_A_Account_AAI_Pilot" bpmnElement="A_Account">
-        <dc:Bounds x="410" y="295" width="120" height="80" />
+        <dc:Bounds x="410" y="275" width="120" height="120" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_A_Set_AAI_Pilot" bpmnElement="A_Set">
-        <dc:Bounds x="560" y="465" width="120" height="80" />
+        <dc:Bounds x="560" y="445" width="120" height="120" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_A_Tests_AAI_Pilot" bpmnElement="A_Tests">
-        <dc:Bounds x="710" y="465" width="120" height="80" />
+        <dc:Bounds x="710" y="445" width="120" height="120" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_A_Partner_AAI_Pilot" bpmnElement="A_Partner">
-        <dc:Bounds x="860" y="465" width="120" height="80" />
+        <dc:Bounds x="860" y="445" width="120" height="120" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_A_Confirm_AAI_Pilot" bpmnElement="A_Confirm">
-        <dc:Bounds x="1010" y="635" width="120" height="80" />
+        <dc:Bounds x="1010" y="615" width="120" height="120" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_GW_Passed_AAI_Pilot" bpmnElement="GW_Passed" isMarkerVisible="true">
         <dc:Bounds x="1195" y="480" width="50" height="50" />
@@ -128,7 +128,7 @@
         <dc:Bounds x="1310" y="465" width="120" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_A_Agree_AAI_Pilot" bpmnElement="A_Agree">
-        <dc:Bounds x="1460" y="125" width="120" height="80" />
+        <dc:Bounds x="1460" y="105" width="120" height="120" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_End_AAI_Pilot_AAI_Pilot" bpmnElement="End_AAI_Pilot">
         <dc:Bounds x="1652" y="147" width="36" height="36" />

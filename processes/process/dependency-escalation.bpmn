@@ -97,28 +97,31 @@
         <dc:Bounds x="302" y="147" width="36" height="36" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_A_Native_AAI_Dependency" bpmnElement="A_Native">
-        <dc:Bounds x="410" y="125" width="120" height="80" />
+        <dc:Bounds x="410" y="105" width="120" height="120" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_GW_Significant_AAI_Dependency" bpmnElement="GW_Significant" isMarkerVisible="true">
         <dc:Bounds x="595" y="310" width="50" height="50" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_End_StopLocal_AAI_Dependency" bpmnElement="End_StopLocal">
         <dc:Bounds x="692" y="372" width="36" height="36" />
+        <bpmndi:BPMNLabel><dc:Bounds x="732" y="363.5" width="90" height="53" /></bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_A_Raise_AAI_Dependency" bpmnElement="A_Raise">
-        <dc:Bounds x="860" y="295" width="120" height="80" />
+        <dc:Bounds x="860" y="275" width="120" height="120" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_A_DNumber_AAI_Dependency" bpmnElement="A_DNumber">
-        <dc:Bounds x="1010" y="465" width="120" height="80" />
+        <dc:Bounds x="1010" y="445" width="120" height="120" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_A_Next_AAI_Dependency" bpmnElement="A_Next">
-        <dc:Bounds x="1160" y="465" width="120" height="80" />
+        <dc:Bounds x="1160" y="445" width="120" height="120" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_GW_Epic_AAI_Dependency" bpmnElement="GW_Epic" isMarkerVisible="true">
         <dc:Bounds x="1345" y="480" width="50" height="50" />
+        <bpmndi:BPMNLabel><dc:Bounds x="1280" y="422" width="180" height="54" /></bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_End_StopNoLink_AAI_Dependency" bpmnElement="End_StopNoLink">
         <dc:Bounds x="1442" y="542" width="36" height="36" />
+        <bpmndi:BPMNLabel><dc:Bounds x="1482" y="543" width="90" height="35" /></bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_A_EpicLink_AAI_Dependency" bpmnElement="A_EpicLink">
         <dc:Bounds x="1460" y="465" width="120" height="80" />

@@ -81,22 +81,22 @@
         <dc:Bounds x="302" y="147" width="36" height="36" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_A_Propose_AAI_Epic" bpmnElement="A_Propose">
-        <dc:Bounds x="410" y="125" width="120" height="80" />
+        <dc:Bounds x="410" y="105" width="120" height="120" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_A_Review_AAI_Epic" bpmnElement="A_Review">
-        <dc:Bounds x="560" y="295" width="120" height="80" />
+        <dc:Bounds x="560" y="275" width="120" height="120" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_GW_Decision_AAI_Epic" bpmnElement="GW_Decision" isMarkerVisible="true">
         <dc:Bounds x="745" y="310" width="50" height="50" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_A_Revise_AAI_Epic" bpmnElement="A_Revise">
-        <dc:Bounds x="710" y="125" width="120" height="80" />
+        <dc:Bounds x="710" y="105" width="120" height="120" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_A_Create_AAI_Epic" bpmnElement="A_Create">
-        <dc:Bounds x="950" y="295" width="120" height="80" />
+        <dc:Bounds x="950" y="275" width="120" height="120" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_A_Features_AAI_Epic" bpmnElement="A_Features">
-        <dc:Bounds x="1100" y="125" width="120" height="80" />
+        <dc:Bounds x="1100" y="105" width="120" height="120" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Shape_End_AAI_Epic_AAI_Epic" bpmnElement="End_AAI_Epic">
         <dc:Bounds x="1292" y="147" width="36" height="36" />
@@ -121,6 +121,7 @@
       <bpmndi:BPMNEdge id="Edge_SF_AAI_Epic_4" bpmnElement="SF_AAI_Epic_4">
         <di:waypoint x="770" y="310" />
         <di:waypoint x="770" y="205" />
+        <bpmndi:BPMNLabel><dc:Bounds x="774" y="249" width="90" height="17" /></bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Edge_SF_AAI_Epic_5" bpmnElement="SF_AAI_Epic_5">
         <di:waypoint x="770" y="205" />
@@ -147,6 +148,7 @@
         <di:waypoint x="818" y="335" />
         <di:waypoint x="818" y="390" />
         <di:waypoint x="842" y="390" />
+        <bpmndi:BPMNLabel><dc:Bounds x="822" y="354" width="90" height="17" /></bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>

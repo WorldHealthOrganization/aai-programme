@@ -13,7 +13,7 @@
   "contains": [
     "library/assured-ai-github-programme-requirements-v036/blocks/prose-s011-6-information-classification"
   ],
-  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/assured-ai-github-programme-requirements-v036/manifest.jsonld",
-  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/assured-ai-github-programme-requirements-v036/manifest.jsonld",
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/source/assured-ai-github-programme-requirements-v036",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/aai-programme/source/assured-ai-github-programme-requirements-v036",
   "provenance": "ingested"
 }
