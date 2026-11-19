@@ -1,6 +1,7 @@
 /**
  * A site source step: put the combined beans board (`pulled/README.md`, built
- * by `pull-beans.ts`) on the site at `board/`.
+ * by `pull-beans.ts`) on the site at `board/`. pulled/ is mounted from its
+ * state branch, cat/aai-programme/board, by the `site:mount-board` pre step.
  *
  * The platform's `beans` visualiser publishes a downstream's work plan only on
  * cat-harness's own site, so without this the board this repository builds

@@ -8,7 +8,8 @@
  *   bun run scripts/programme/bean-drift.ts --site <dir>       # write the board's drift and workstream pages
  *   bun run scripts/programme/bean-drift.ts --comment <issue>  # reply on that issue with the summary
  *
- * Reads: pulled/beans.json (the beans snapshot pull-beans.ts refreshes), the
+ * Reads: pulled/beans.json (the beans snapshot pull-beans.ts refreshes, kept on
+ * the state branch cat/aai-programme/board: `bun run cat state:mount --id board`), the
  * triage record (docs/beans-analysis.json, the beans reviewed on 2026-10-20,
  * and docs/beans-triage.json, every later decision), and this repository's
  * issues, whose `<!-- bean: owner/repo/id -->` lines are the links. Needs
@@ -133,7 +134,7 @@ if (site) {
 const commentOn = arg("--comment");
 if (commentOn) {
   rest(`repos/${REPO}/issues/${commentOn}/comments`, "POST", {
-    body: `**Bean drift, ${today}:** ${summary}.\n\n${counts.filter(([, n]) => n).map(([l, n]) => `- ${l}: ${n}`).join("\n") || "- nothing found"}\n\nThe full report: [pulled/drift.md](https://github.com/${REPO}/blob/main/pulled/drift.md), and on the board after the next publish.`,
+    body: `**Bean drift, ${today}:** ${summary}.\n\n${counts.filter(([, n]) => n).map(([l, n]) => `- ${l}: ${n}`).join("\n") || "- nothing found"}\n\nThe full report: [pulled/drift.md](https://github.com/${REPO}/blob/cat/aai-programme/board/pulled/drift.md) on the board's state branch, and on the board after the next publish.`,
   });
   console.log(`replied on #${commentOn}`);
 }

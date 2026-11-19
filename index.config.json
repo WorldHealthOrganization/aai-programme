@@ -39,6 +39,7 @@
         "build": {
           "home": "site/home.md",
           "pre": [
+            "site:mount-board",
             "site:check-origin",
             "site:check-library-jsonld",
             "site:render-bpmn"
@@ -59,6 +60,7 @@
           "coverage": "report"
         }
       },
+      "_mount_board_comment": "site:mount-board puts the board (pulled/, the `board` graph) on disk from its state branch cat/aai-programme/board before site:board and site:drift read it. The bot writes the board there, never to main (owner, 2026-11-19).",
       "_site_comment": "Built and published by an agent with cat-harness-tools/scripts/build-instance-site.ts, never by a workflow (owner, 2026-10-10, bean n3h9). `keep`: `ns`, the JSON-LD context publish-instance-context writes onto gh-pages.",
       "_coverage_comment": "`coverage: report`, not refuse: the cat-harness `beans` visualiser asks for one page per instance, and its state-viewer has no per-instance renderer for beans (\"has no per-instance renderer\", build log 2026-10-20), so a site that mounts layers holding beans can never satisfy it. The combined page en/cat-harness/beans/ is built. Return to refuse once the platform writes those pages."
     },
