@@ -1,0 +1,14 @@
+{
+ "$schema": "site-link-report/v1",
+ "pages": 861,
+ "unresolved": [
+  {
+   "page": "en/folio-assistant-core/folio-reference/index.html",
+   "href": "../bibliography/"
+  }
+ ],
+ "selfAddress": [],
+ "content": [],
+ "diagrams": 11,
+ "inDiagrams": []
+}

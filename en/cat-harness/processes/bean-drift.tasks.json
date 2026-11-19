@@ -1,0 +1,102 @@
+{
+ "$schema": "process-task-panel/v1",
+ "process": "Process_AAI_BeanDrift",
+ "markers": [
+  {
+   "id": "A_Pull",
+   "name": "Refresh the beans snapshot",
+   "left": 30.74,
+   "top": 8.57,
+   "box": {
+    "left": 24.8,
+    "top": 35.71,
+    "width": 1.97,
+    "height": 6.86
+   }
+  },
+  {
+   "id": "A_Check",
+   "name": "Check every linked issue against its beans",
+   "left": 43.03,
+   "top": 8.57,
+   "box": {
+    "left": 37.09,
+    "top": 35.71,
+    "width": 1.97,
+    "height": 6.86
+   }
+  },
+  {
+   "id": "A_Review",
+   "name": "Review each flag",
+   "left": 67.62,
+   "top": 57.14,
+   "box": {
+    "left": 61.68,
+    "top": 84.29,
+    "width": 1.97,
+    "height": 6.86
+   }
+  },
+  {
+   "id": "Call_Triage",
+   "name": "Triage the untriaged beans",
+   "left": 79.92,
+   "top": 57.14,
+   "box": {
+    "left": 73.98,
+    "top": 84.29,
+    "width": 1.97,
+    "height": 6.86
+   }
+  }
+ ],
+ "processHref": "bean-drift.html",
+ "tasks": {
+  "A_Pull": {
+   "id": "A_Pull",
+   "name": "Refresh the beans snapshot",
+   "type": "bpmn:Task",
+   "stepHref": "bean-drift.html#step-A_Pull",
+   "lane": "Programme automation",
+   "laneHref": "bean-drift.html#lane-Lane_Auto",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "A_Check": {
+   "id": "A_Check",
+   "name": "Check every linked issue against its beans",
+   "type": "bpmn:Task",
+   "stepHref": "bean-drift.html#step-A_Check",
+   "lane": "Programme automation",
+   "laneHref": "bean-drift.html#lane-Lane_Auto",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "A_Review": {
+   "id": "A_Review",
+   "name": "Review each flag",
+   "type": "bpmn:Task",
+   "stepHref": "bean-drift.html#step-A_Review",
+   "lane": "Workstream lead",
+   "laneHref": "bean-drift.html#lane-Lane_Lead",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Call_Triage": {
+   "id": "Call_Triage",
+   "name": "Triage the untriaged beans",
+   "type": "bpmn:CallActivity",
+   "stepHref": "bean-drift.html#step-Call_Triage",
+   "lane": "Workstream lead",
+   "laneHref": "bean-drift.html#lane-Lane_Lead",
+   "skills": [],
+   "calls": {
+    "name": "Assured AI programme: triage a bean",
+    "href": "bean-triage.html",
+    "diagram": "bean-triage.html"
+   },
+   "binding": "dangling"
+  }
+ }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "folio-search-manifest/v1",
+  "source": {
+    "path": "assets/js/search-data.json",
+    "sha256": "3fe860a35b5c8537fedec148865ec739b5504b4fdb1e3d9074cc278313459ad3",
+    "entries": 212,
+    "bytes": 167543
+  },
+  "scopes": [
+    {
+      "id": "_platform",
+      "kind": "platform",
+      "path": "assets/js/search/_platform.json",
+      "entries": 212,
+      "bytes": 161321
+    }
+  ],
+  "layers": [
+    "bootstrap",
+    "bootstrap-tools",
+    "cat-harness",
+    "cat-harness-tools",
+    "folio-assistant-core"
+  ],
+  "kgSearch": "slices/search.html?slice=kg"
+}

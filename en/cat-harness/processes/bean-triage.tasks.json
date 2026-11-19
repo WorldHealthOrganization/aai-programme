@@ -1,0 +1,58 @@
+{
+ "$schema": "process-task-panel/v1",
+ "process": "Process_AAI_BeanTriage",
+ "markers": [
+  {
+   "id": "Call_Propose",
+   "name": "Propose an epic",
+   "left": 65.95,
+   "top": 57.14,
+   "box": {
+    "left": 59.7,
+    "top": 84.29,
+    "width": 2.07,
+    "height": 6.86
+   }
+  },
+  {
+   "id": "A_Issue",
+   "name": "Open the issue with its bean line",
+   "left": 78.88,
+   "top": 8.57,
+   "box": {
+    "left": 72.63,
+    "top": 35.71,
+    "width": 2.07,
+    "height": 6.86
+   }
+  }
+ ],
+ "processHref": "bean-triage.html",
+ "tasks": {
+  "Call_Propose": {
+   "id": "Call_Propose",
+   "name": "Propose an epic",
+   "type": "bpmn:CallActivity",
+   "stepHref": "bean-triage.html#step-Call_Propose",
+   "lane": "PM & Architecture Integration",
+   "laneHref": "bean-triage.html#lane-Lane_PM",
+   "skills": [],
+   "calls": {
+    "name": "Assured AI programme: propose a new or changed epic",
+    "href": "epic-proposal.html",
+    "diagram": "epic-proposal.html"
+   },
+   "binding": "dangling"
+  },
+  "A_Issue": {
+   "id": "A_Issue",
+   "name": "Open the issue with its bean line",
+   "type": "bpmn:Task",
+   "stepHref": "bean-triage.html#step-A_Issue",
+   "lane": "Workstream lead",
+   "laneHref": "bean-triage.html#lane-Lane_Lead",
+   "skills": [],
+   "binding": "dangling"
+  }
+ }
+}

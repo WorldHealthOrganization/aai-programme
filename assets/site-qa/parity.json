@@ -1,0 +1,85 @@
+{
+ "$schema": "site-parity-report/v1",
+ "outcome": "carries-everything",
+ "shortfall": [],
+ "droppedByRuling": [],
+ "current": {
+  "pages": 1,
+  "counts": {
+   "siteNav": 0,
+   "search": 0,
+   "navbarRow": 0,
+   "rail": 0,
+   "translationMeta": 0
+  },
+  "dirs": [],
+  "index": []
+ },
+ "candidate": {
+  "pages": 861,
+  "counts": {
+   "siteNav": 0,
+   "search": 87,
+   "navbarRow": 87,
+   "rail": 808,
+   "translationMeta": 73
+  },
+  "dirs": [
+   "assets",
+   "board",
+   "cat-harness",
+   "docs",
+   "en",
+   "folio-assistant-core",
+   "id-lookup",
+   "library",
+   "payload",
+   "processes",
+   "programme",
+   "pulled",
+   "qa",
+   "slices"
+  ],
+  "index": [
+   "search",
+   "navbarRow",
+   "rail",
+   "translationMeta"
+  ]
+ },
+ "baseline": {
+  "features": {
+   "pages": 861,
+   "counts": {
+    "siteNav": 0,
+    "search": 87,
+    "navbarRow": 87,
+    "rail": 808,
+    "translationMeta": 73
+   },
+   "dirs": [
+    "assets",
+    "board",
+    "cat-harness",
+    "docs",
+    "en",
+    "folio-assistant-core",
+    "id-lookup",
+    "library",
+    "payload",
+    "processes",
+    "programme",
+    "pulled",
+    "qa",
+    "slices"
+   ],
+   "index": [
+    "search",
+    "navbarRow",
+    "rail",
+    "translationMeta"
+   ]
+  },
+  "from": "8fbb007069ab"
+ }
+}

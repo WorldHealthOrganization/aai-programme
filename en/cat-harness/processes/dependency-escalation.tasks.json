@@ -1,0 +1,119 @@
+{
+ "$schema": "process-task-panel/v1",
+ "process": "Process_AAI_Dependency",
+ "markers": [
+  {
+   "id": "A_Native",
+   "name": "Link the issues with \"blocked by\"",
+   "left": 22.46,
+   "top": 5.77,
+   "box": {
+    "left": 18.11,
+    "top": 24.04,
+    "width": 1.44,
+    "height": 4.62
+   }
+  },
+  {
+   "id": "A_Raise",
+   "name": "Raise it with the PM",
+   "left": 49.4,
+   "top": 38.46,
+   "box": {
+    "left": 45.06,
+    "top": 56.73,
+    "width": 1.44,
+    "height": 4.62
+   }
+  },
+  {
+   "id": "A_DNumber",
+   "name": "Create the D-number issue",
+   "left": 58.38,
+   "top": 71.15,
+   "box": {
+    "left": 54.04,
+    "top": 89.42,
+    "width": 1.44,
+    "height": 4.62
+   }
+  },
+  {
+   "id": "A_Next",
+   "name": "Write the Next action",
+   "left": 67.37,
+   "top": 71.15,
+   "box": {
+    "left": 63.02,
+    "top": 89.42,
+    "width": 1.44,
+    "height": 4.62
+   }
+  },
+  {
+   "id": "A_EpicLink",
+   "name": "Link the two epics with \"blocked by\"",
+   "left": 85.33,
+   "top": 75,
+   "box": {
+    "left": 80.99,
+    "top": 85.58,
+    "width": 1.44,
+    "height": 4.62
+   }
+  }
+ ],
+ "processHref": "dependency-escalation.html",
+ "tasks": {
+  "A_Native": {
+   "id": "A_Native",
+   "name": "Link the issues with \"blocked by\"",
+   "type": "bpmn:Task",
+   "stepHref": "dependency-escalation.html#step-A_Native",
+   "lane": "Workstream team",
+   "laneHref": "dependency-escalation.html#lane-Lane_Team",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "A_Raise": {
+   "id": "A_Raise",
+   "name": "Raise it with the PM",
+   "type": "bpmn:Task",
+   "stepHref": "dependency-escalation.html#step-A_Raise",
+   "lane": "Workstream lead",
+   "laneHref": "dependency-escalation.html#lane-Lane_Lead",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "A_DNumber": {
+   "id": "A_DNumber",
+   "name": "Create the D-number issue",
+   "type": "bpmn:Task",
+   "stepHref": "dependency-escalation.html#step-A_DNumber",
+   "lane": "PM & Architecture Integration",
+   "laneHref": "dependency-escalation.html#lane-Lane_PM",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "A_Next": {
+   "id": "A_Next",
+   "name": "Write the Next action",
+   "type": "bpmn:Task",
+   "stepHref": "dependency-escalation.html#step-A_Next",
+   "lane": "PM & Architecture Integration",
+   "laneHref": "dependency-escalation.html#lane-Lane_PM",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "A_EpicLink": {
+   "id": "A_EpicLink",
+   "name": "Link the two epics with \"blocked by\"",
+   "type": "bpmn:Task",
+   "stepHref": "dependency-escalation.html#step-A_EpicLink",
+   "lane": "PM & Architecture Integration",
+   "laneHref": "dependency-escalation.html#lane-Lane_PM",
+   "skills": [],
+   "binding": "dangling"
+  }
+ }
+}

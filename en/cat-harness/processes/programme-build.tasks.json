@@ -1,0 +1,278 @@
+{
+ "$schema": "process-task-panel/v1",
+ "process": "Process_AAI_Build",
+ "markers": [
+  {
+   "id": "A_Preflight",
+   "name": "Step 1: pre-flight",
+   "left": 14.59,
+   "top": 28.99,
+   "box": {
+    "left": 11.77,
+    "top": 42.75,
+    "width": 0.93,
+    "height": 3.48
+   }
+  },
+  {
+   "id": "A_Decide",
+   "name": "Answer the open BD decisions",
+   "left": 20.43,
+   "top": 53.62,
+   "box": {
+    "left": 17.61,
+    "top": 67.39,
+    "width": 0.93,
+    "height": 3.48
+   }
+  },
+  {
+   "id": "A_OrgSetup",
+   "name": "Step 2: create or reuse issue types and fields",
+   "left": 26.26,
+   "top": 53.62,
+   "box": {
+    "left": 23.44,
+    "top": 67.39,
+    "width": 0.93,
+    "height": 3.48
+   }
+  },
+  {
+   "id": "A_Repos",
+   "name": "Step 3: repositories, roles and labels",
+   "left": 32.1,
+   "top": 28.99,
+   "box": {
+    "left": 29.28,
+    "top": 42.75,
+    "width": 0.93,
+    "height": 3.48
+   }
+  },
+  {
+   "id": "A_Projects",
+   "name": "Step 4: programme project and template",
+   "left": 37.94,
+   "top": 28.99,
+   "box": {
+    "left": 35.12,
+    "top": 42.75,
+    "width": 0.93,
+    "height": 3.48
+   }
+  },
+  {
+   "id": "A_Readmes",
+   "name": "Step 5: READMEs and directory",
+   "left": 43.77,
+   "top": 28.99,
+   "box": {
+    "left": 40.95,
+    "top": 42.75,
+    "width": 0.93,
+    "height": 3.48
+   }
+  },
+  {
+   "id": "A_Automations",
+   "name": "Step 6: automations AUTO-01 to AUTO-11",
+   "left": 55.45,
+   "top": 31.88,
+   "box": {
+    "left": 52.63,
+    "top": 39.86,
+    "width": 0.93,
+    "height": 3.48
+   }
+  },
+  {
+   "id": "Call_Pilot",
+   "name": "Step 7: the pilot",
+   "left": 61.28,
+   "top": 28.99,
+   "box": {
+    "left": 58.46,
+    "top": 42.75,
+    "width": 0.93,
+    "height": 3.48
+   }
+  },
+  {
+   "id": "A_Inputs",
+   "name": "Provide the section 14 inputs",
+   "left": 72.96,
+   "top": 4.35,
+   "box": {
+    "left": 70.14,
+    "top": 18.12,
+    "width": 0.93,
+    "height": 3.48
+   }
+  },
+  {
+   "id": "A_Import",
+   "name": "Step 8: bulk import and backfill",
+   "left": 78.79,
+   "top": 28.99,
+   "box": {
+    "left": 75.97,
+    "top": 42.75,
+    "width": 0.93,
+    "height": 3.48
+   }
+  },
+  {
+   "id": "A_Charts",
+   "name": "Step 9: charts and acceptance checks",
+   "left": 84.63,
+   "top": 28.99,
+   "box": {
+    "left": 81.81,
+    "top": 42.75,
+    "width": 0.93,
+    "height": 3.48
+   }
+  },
+  {
+   "id": "A_Report",
+   "name": "Step 10: build report",
+   "left": 90.47,
+   "top": 28.99,
+   "box": {
+    "left": 87.65,
+    "top": 42.75,
+    "width": 0.93,
+    "height": 3.48
+   }
+  }
+ ],
+ "processHref": "programme-build.html",
+ "tasks": {
+  "A_Preflight": {
+   "id": "A_Preflight",
+   "name": "Step 1: pre-flight",
+   "type": "bpmn:Task",
+   "stepHref": "programme-build.html#step-A_Preflight",
+   "lane": "Build agent",
+   "laneHref": "programme-build.html#lane-Lane_Agent",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "A_Decide": {
+   "id": "A_Decide",
+   "name": "Answer the open BD decisions",
+   "type": "bpmn:Task",
+   "stepHref": "programme-build.html#step-A_Decide",
+   "lane": "WHO GitHub owner",
+   "laneHref": "programme-build.html#lane-Lane_Owner",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "A_OrgSetup": {
+   "id": "A_OrgSetup",
+   "name": "Step 2: create or reuse issue types and fields",
+   "type": "bpmn:Task",
+   "stepHref": "programme-build.html#step-A_OrgSetup",
+   "lane": "WHO GitHub owner",
+   "laneHref": "programme-build.html#lane-Lane_Owner",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "A_Repos": {
+   "id": "A_Repos",
+   "name": "Step 3: repositories, roles and labels",
+   "type": "bpmn:Task",
+   "stepHref": "programme-build.html#step-A_Repos",
+   "lane": "Build agent",
+   "laneHref": "programme-build.html#lane-Lane_Agent",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "A_Projects": {
+   "id": "A_Projects",
+   "name": "Step 4: programme project and template",
+   "type": "bpmn:Task",
+   "stepHref": "programme-build.html#step-A_Projects",
+   "lane": "Build agent",
+   "laneHref": "programme-build.html#lane-Lane_Agent",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "A_Readmes": {
+   "id": "A_Readmes",
+   "name": "Step 5: READMEs and directory",
+   "type": "bpmn:Task",
+   "stepHref": "programme-build.html#step-A_Readmes",
+   "lane": "Build agent",
+   "laneHref": "programme-build.html#lane-Lane_Agent",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "A_Automations": {
+   "id": "A_Automations",
+   "name": "Step 6: automations AUTO-01 to AUTO-11",
+   "type": "bpmn:Task",
+   "stepHref": "programme-build.html#step-A_Automations",
+   "lane": "Build agent",
+   "laneHref": "programme-build.html#lane-Lane_Agent",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "Call_Pilot": {
+   "id": "Call_Pilot",
+   "name": "Step 7: the pilot",
+   "type": "bpmn:CallActivity",
+   "stepHref": "programme-build.html#step-Call_Pilot",
+   "lane": "Build agent",
+   "laneHref": "programme-build.html#lane-Lane_Agent",
+   "skills": [],
+   "calls": {
+    "name": "Assured AI programme: the pilot",
+    "href": "programme-pilot.html",
+    "diagram": "programme-pilot.html"
+   },
+   "binding": "dangling"
+  },
+  "A_Inputs": {
+   "id": "A_Inputs",
+   "name": "Provide the section 14 inputs",
+   "type": "bpmn:Task",
+   "stepHref": "programme-build.html#step-A_Inputs",
+   "lane": "PM & Architecture Integration",
+   "laneHref": "programme-build.html#lane-Lane_PM",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "A_Import": {
+   "id": "A_Import",
+   "name": "Step 8: bulk import and backfill",
+   "type": "bpmn:Task",
+   "stepHref": "programme-build.html#step-A_Import",
+   "lane": "Build agent",
+   "laneHref": "programme-build.html#lane-Lane_Agent",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "A_Charts": {
+   "id": "A_Charts",
+   "name": "Step 9: charts and acceptance checks",
+   "type": "bpmn:Task",
+   "stepHref": "programme-build.html#step-A_Charts",
+   "lane": "Build agent",
+   "laneHref": "programme-build.html#lane-Lane_Agent",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "A_Report": {
+   "id": "A_Report",
+   "name": "Step 10: build report",
+   "type": "bpmn:Task",
+   "stepHref": "programme-build.html#step-A_Report",
+   "lane": "Build agent",
+   "laneHref": "programme-build.html#lane-Lane_Agent",
+   "skills": [],
+   "binding": "dangling"
+  }
+ }
+}

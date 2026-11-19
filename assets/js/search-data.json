@@ -1,0 +1,1486 @@
+{"0": {
+    "doc": "Assured AI programme: acceptance criteria",
+    "title": "Acceptance criteria",
+    "content": "What the finished build is checked against (section 15). Generated from requirements v0.5 by scripts/gen-requirements.ts; do not edit by hand. Cite one as req:aai-acceptance#&lt;ID&gt;. | ID | Level | Requirement | . | AC-01 | SHALL | The programme project and the template exist in the agreed organisation, with the agreed access for partners, Gates Foundation contacts and WHO staff | . | AC-02 | SHALL | Every view in section 8.1 exists and shows the intended items | . | AC-03 | SHALL | The section 7.1 fields are organisation issue fields, and no project field duplicates them (unless the section 7.4 fallback was used) | . | AC-04 | SHALL | Every epic from the CSV appears once in V1 | . | AC-05 | SHALL | Every Gates output has exactly one milestone issue and one saved filter in V3 | . | AC-06 | SHALL | All seven research questions exist, and every epic has a Primary research question, which may be None | . | AC-07 | SHALL | Every D-number from the register exists once in aai-programme and links to the waiting epic and what it waits on; native “blocked by” relationships exist only where DEP-03 calls for them | . | AC-08 | SHALL NOT | Nothing section 6 keeps off GitHub appears in any repository, issue, comment, commit or attachment | . | AC-09 | SHALL NOT | No automation sets readiness, approval, risk category, impact, a decision or risk acceptance | . | AC-10 | SHALL | The READMEs explain each field, how items enter the project, who owns what, what is kept off GitHub and why, and how the projects link | . | AC-11 | SHALL | All pilot tests PIL-01 to PIL-11 passed before the bulk import | . | AC-12 | SHALL NOT | No aai-ws5 repository or WS5 project exists. Every workstream repository created so far exists in the WHO organisation with the agreed roles, and none was created before its lead was confirmed; no issue from an external repository has been added to the programme project | . | AC-13 | SHALL | WS5 Governance and stewardship is not represented as the final sequential pipeline stage; cross-cutting items use Pipeline stage = Cross-cutting / N/A where appropriate | . | AC-14 | SHALL | Every D-number and DEC-number issue title starts with its number | . | AC-15 | SHALL | Organisation issue-field headroom and every project’s total field count are within GitHub limits, and both are recorded in the build report | . | AC-16 | SHALL | Every item with a Gates output value also carries the matching gates: label | . | AC-17 | SHALL | Every item with a Primary research question other than None also carries the matching rq: label | . | AC-18 | SHALL | Charts M1 to M5 exist, or the report records which cannot be built natively | . | AC-19 | SHALL | Every pilot item in V10 carries a “Next action” line in its issue body | . ",
+    "url": "/aai-programme/docs/requirements/aai-acceptance.html#acceptance-criteria",
+    
+    "relUrl": "/docs/requirements/aai-acceptance.html#acceptance-criteria"
+  },"1": {
+    "doc": "Assured AI programme: acceptance criteria",
+    "title": "Assured AI programme: acceptance criteria",
+    "content": " ",
+    "url": "/aai-programme/docs/requirements/aai-acceptance.html",
+    
+    "relUrl": "/docs/requirements/aai-acceptance.html"
+  },"2": {
+    "doc": "Assured AI programme: automation",
+    "title": "Automation",
+    "content": "What the automations do, and what they never do (section 11). Generated from requirements v0.5 by scripts/gen-requirements.ts; do not edit by hand. Cite one as req:aai-automation#&lt;ID&gt;. | ID | Level | Requirement | . | AUTO-01 | SHALL | Auto-add to the programme project: aai-programme issues of type Epic, Milestone, Research question, Dependency, Decision or Assumption, and workstream issues (including WS5 items in aai-programme) labelled thin-slice, sprint-demo, blocked or at-risk. Other WS5 items stay off the board and still roll up into their epics through sub-issues. The pilot confirms that the auto-add filter can select by issue type; if it cannot, use a GitHub Action and record this. GitHub limits the number of auto-add workflows per project depending on the plan. If the limit is reached, use a GitHub Action instead and record this. | . | AUTO-03 | SHALL | A GitHub Action, using the BD-08 credentials. When a programme epic, milestone, research question, dependency or decision issue is created, set Programme status to Not started unless a value was supplied. When a programme-tracked issue is closed as completed, set Done. When it is closed as not planned, set Cancelled. When it is reopened, set In progress. Built-in project workflows can only set a project’s own Status field, so they cannot do this. | . | AUTO-04 | SHALL | Delivery health roll-up. A scheduled Action finds blocked or at-risk labels on sub-issues and sets Delivery health on the parent epic to the worst signal found, in the order Blocked, then At risk, then On track. It never lowers or clears Delivery health; the epic’s owner does that. The PM has approved this rule. | . | AUTO-05 | SHALL NOT | No automation sets Integration readiness, Review status, Risk category, Impact, a decision or risk acceptance. | . | AUTO-06 | SHALL | Where a saved view or chart can do the job, use it instead of an Action. | . | AUTO-07 | SHALL | Document every automation in the programme project README: what triggers it, what it does, its scope and who owns it. | . | AUTO-08 | SHALL | All scripts are safe to rerun without creating duplicates and have a --dry-run mode. They live in aai-programme/scripts. | . | AUTO-09 | SHALL | If an automation needs a token or raised permissions, stop before creating the secret and report exactly what permission is needed. The BD-08 credentials are expected; any others are not. | . | AUTO-10 | SHALL | Validation check. The Technical Integration Lead confirms validation by adding a comment to the item that starts with Validation confirmed: followed by a short note or evidence link. A scheduled Action checks every item whose Integration readiness is Validated. If there is no confirmation comment from the Technical Integration Lead, it adds the validation-exception label and one comment explaining why. It is idempotent: it never adds a second comment for the same exception. When the confirmation comment appears, or the value moves off Validated, it removes the label. It never changes Integration readiness. The Technical Integration Lead’s GitHub username is a setting in aai-programme/scripts, not hard-coded. | . | AUTO-11 | SHALL | Backfill. Auto-add workflows only catch items created or updated after they are switched on. A one-off script, run in build step 8, adds existing qualifying items to the programme project. | . | AUTO-12 | MAY | Optional. A weekly script calculates M6 (average age of blocked items) from the issue timelines and posts it as a comment on a pinned “Programme metrics” issue in aai-programme. Not part of the pilot. Build it only after the pilot passes, and only if there is capacity; M1 to M5 are enough to start with. | . ",
+    "url": "/aai-programme/docs/requirements/aai-automation.html#automation",
+    
+    "relUrl": "/docs/requirements/aai-automation.html#automation"
+  },"3": {
+    "doc": "Assured AI programme: automation",
+    "title": "Assured AI programme: automation",
+    "content": " ",
+    "url": "/aai-programme/docs/requirements/aai-automation.html",
+    
+    "relUrl": "/docs/requirements/aai-automation.html"
+  },"4": {
+    "doc": "Assured AI programme: decisions needed before the build",
+    "title": "Decisions needed before the build",
+    "content": "What must be decided, and by whom, before the build goes past pre-flight (section 3). Each statement is the decision and its recommended default. Generated from requirements v0.5 by scripts/gen-requirements.ts; do not edit by hand. Cite one as req:aai-decisions#&lt;ID&gt;. | ID | Level | Requirement | . | BD-01 | SHALL | GitHub organisation. Default: Decided: the existing World Health Organization organisation, shared with other WHO teams. Login: WorldHealthOrganization (https://github.com/WorldHealthOrganization) | . | BD-01a | SHALL | Shared organisation safeguards: (1) the current base permission for members. If it is anything other than “No permission”, partners invited as members could read other WHO teams’ repositories, and the build must not change it (SEC-05); (2) how many of the 25 organisation issue fields are already used by other teams; (3) which issue types already exist; (4) whether the owners will allow project-specific issue types, and pinning fields to them; (5) that the agent works through a named account with delegated rights, never a shared login. Default: WHO GitHub owner to confirm before step 2. If (1) cannot be met, partners join as outside collaborators instead (see BD-03) | . | BD-02 | SHALL | All Assured AI coordination repositories (programme and workstream repositories holding issues, features, stories and spikes) sit in that organisation. Default: Decided: yes | . | BD-02a | SHALL | Partner source-code repositories, models and other technical assets may stay in partners’ own GitHub organisations. Default: Decided: yes, where partners need it | . | BD-02b | SHALL | How each workstream will link external technical assets, if any, to its WHO-hosted coordination issues. Default: Workstream lead to confirm before bulk import | . | BD-03 | SHALL | Partners join as organisation members. Default: Decided: members, subject to BD-01a(1) and the checks in BD-03a. If the base permission cannot be “No permission”, fall back to outside collaborators with access granted per repository. Whichever model is used for partners and for Gates Foundation contacts is recorded in the build report and the programme README | . | BD-03a | SHALL | Checks before partners are invited: (1) whether the organisation uses SAML single sign-on or Enterprise Managed Users, and if so how partners get WHO identities; (2) seat cost per partner member; (3) base permission for members set to “No permission”; (4) members cannot create repositories or change visibility. Default: WHO GitHub owner and WHO IT to confirm | . | BD-03b | SHALL | A test account with partner-level access for the pilot. Default: WHO GitHub owner to provide one test account, removed after the build | . | BD-04 | SHALL | Repository roles. Default: Partners: Read on aai-programme; Maintain for the workstream lead and Write for the team on their own workstream repository; Triage on other workstream repositories where they contribute. Gates Foundation contacts: Read on aai-programme and the workstream repositories, and read access to the programme project | . | BD-05 | SHALL | Organisation owners willing to create issue fields and issue types. Default: One named WHO owner to run step 2 of section 13 | . | BD-05a | SHALL | Inspect the organisation’s existing issue fields before creating any new ones. Default: Reuse compatible existing fields; do not duplicate them | . | BD-06 | SHALL | Issue fields available on WHO’s GitHub plan and permitted by WHO enterprise policy. Default: Check and confirm | . | BD-07 | SHALL | Gates Foundation contacts have access to the programme project. Default: Decided: yes. They see everything that is shared, including delivery health and review status | . | BD-08 | SHALL | Credentials for the GitHub Actions in section 11. Default: Prefer a GitHub App with least-privilege permissions where WHO policy supports it; otherwise an approved fine-grained token. A WHO GitHub owner creates it and stores it as an organisation secret available only to the repository that holds the scripts | . ",
+    "url": "/aai-programme/docs/requirements/aai-decisions.html#decisions-needed-before-the-build",
+    
+    "relUrl": "/docs/requirements/aai-decisions.html#decisions-needed-before-the-build"
+  },"5": {
+    "doc": "Assured AI programme: decisions needed before the build",
+    "title": "Assured AI programme: decisions needed before the build",
+    "content": " ",
+    "url": "/aai-programme/docs/requirements/aai-decisions.html",
+    
+    "relUrl": "/docs/requirements/aai-decisions.html"
+  },"6": {
+    "doc": "Assured AI programme: dependencies",
+    "title": "Dependencies",
+    "content": "How dependencies are recorded (section 9). Generated from requirements v0.5 by scripts/gen-requirements.ts; do not edit by hand. Cite one as req:aai-dependencies#&lt;ID&gt;. | ID | Level | Requirement | . | DEP-01 | SHALL | Ordinary technical dependencies use GitHub’s native “blocked by” and “blocking” relationships between the issues concerned. Workstream teams create these themselves. | . | DEP-02 | SHALL | A dependency becomes a D-number issue in aai-programme if it is programme-significant: it crosses workstreams or partners and needs a deadline, negotiation, escalation or an assessment of consequences. | . | DEP-03 | SHALL | Each D-number issue links to the waiting epic and to what it waits on. Where that is another epic and the relationship is a true blocking dependency, the agent also creates a native “blocked by” relationship between the two epics. Where the dependency is on a review, an external decision or a shared platform item, no native relationship is created. | . | DEP-04 | SHALL | The agent imports the existing dependency register (D01 to D29) as D-number issues in aai-programme. | . | DEP-05 | SHALL NOT | Do not create extra fields for waiting epic, epic waited on or needed-by date. Each D-number issue uses Workstream (the waiting workstream), Target date (the needed-by date), Delivery health, Risk category, Impact and Assignee. Its issue body follows this template: | . ",
+    "url": "/aai-programme/docs/requirements/aai-dependencies.html#dependencies",
+    
+    "relUrl": "/docs/requirements/aai-dependencies.html#dependencies"
+  },"7": {
+    "doc": "Assured AI programme: dependencies",
+    "title": "Assured AI programme: dependencies",
+    "content": " ",
+    "url": "/aai-programme/docs/requirements/aai-dependencies.html",
+    
+    "relUrl": "/docs/requirements/aai-dependencies.html"
+  },"8": {
+    "doc": "Assured AI programme: design principles",
+    "title": "Design principles",
+    "content": "The principles every part of the build follows (section 2). Generated from requirements v0.5 by scripts/gen-requirements.ts; do not edit by hand. Cite one as req:aai-design-principles#&lt;ID&gt;. | ID | Level | Requirement | . | DP-01 | SHALL | Create once, show many times. One issue can appear in several projects. Never clone an issue to report its status somewhere else. | . | DP-02 | SHALL | Workstream leads own their delivery. The agent creates programme epics and the workstream template. It does not create features or stories in workstream repositories. | . | DP-03 | SHALL | Programme work is not sprint work. Sprints are managed inside the workstream projects. The programme project tracks dates, milestones, delivery health and readiness, not sprints. | . | DP-04 | SHALL | Open by default, and public. Everything on GitHub is public. What must not be public (section 6) is not put on GitHub. | . | DP-05 | SHALL | Technical integration judgements sit with the Technical Integration Lead. The Technical Integration Lead owns technical integration readiness and validation, working with the relevant workstream leads and subject-matter experts. The role is currently held by the WHO WS1 lead, but the authority comes from the role, not from WS1. The PM manages sequencing, dates, dependencies, evidence and escalation, and does not make technical readiness judgements. | . | DP-06 | SHALL | Automation must not make judgements. Automation may make deterministic administrative updates, such as adding items, lifecycle status changes and flags raised from labels. It never makes readiness, approval, risk-acceptance or decision judgements. | . | DP-07 | SHALL | Keep it simple. Delivery health, risk category, impact and dates only. No probability or impact scoring model. | . | DP-08 | SHALL | Prove it small before building it big. A pilot build (section 12) must pass before any bulk import. | . | DP-09 | SHALL | Plain language. All titles, field options, view names and READMEs use plain, simple English. Use the role name “PM &amp; Architecture Integration” exactly as written. | . ",
+    "url": "/aai-programme/docs/requirements/aai-design-principles.html#design-principles",
+    
+    "relUrl": "/docs/requirements/aai-design-principles.html#design-principles"
+  },"9": {
+    "doc": "Assured AI programme: design principles",
+    "title": "Assured AI programme: design principles",
+    "content": " ",
+    "url": "/aai-programme/docs/requirements/aai-design-principles.html",
+    
+    "relUrl": "/docs/requirements/aai-design-principles.html"
+  },"10": {
+    "doc": "Assured AI programme: information classification",
+    "title": "Information classification",
+    "content": "What may be on GitHub, which is public, and what never is (section 6). Generated from requirements v0.5 by scripts/gen-requirements.ts; do not edit by hand. Cite one as req:aai-information#&lt;ID&gt;. | ID | Level | Requirement | . | SEC-01 | SHALL | Treat everything on GitHub as public: title, body, comments, labels, issue fields, relationships, commit messages and attachments. | . | SEC-02 | SHALL | When an item has a note that is kept off GitHub, the issue may say so in neutral words, for example “A note is held by the PM”, and nothing more: no title, summary or link that hints at its content. | . | SEC-03 | SHALL | Write on the assumption that every partner, the funder and the public will read it. State facts and the next action, not blame. For example, “Blocked: waiting for the HIV graph schema from WS1, due 20 Nov” rather than an opinion on why. | . | SEC-04 | SHALL | Every repository and project the build creates is public. Before anything is imported, the PM removes from it what section 6 keeps off GitHub. | . | SEC-05 | SHALL NOT | Never weaken repository or project permissions beyond what BD-04 sets, and never change organisation-wide security settings. | . ",
+    "url": "/aai-programme/docs/requirements/aai-information.html#information-classification",
+    
+    "relUrl": "/docs/requirements/aai-information.html#information-classification"
+  },"11": {
+    "doc": "Assured AI programme: information classification",
+    "title": "Assured AI programme: information classification",
+    "content": " ",
+    "url": "/aai-programme/docs/requirements/aai-information.html",
+    
+    "relUrl": "/docs/requirements/aai-information.html"
+  },"12": {
+    "doc": "Assured AI programme: linking to workstream projects",
+    "title": "Linking to workstream projects",
+    "content": "How the programme project and the workstream projects link (section 10). Generated from requirements v0.5 by scripts/gen-requirements.ts; do not edit by hand. Cite one as req:aai-linking#&lt;ID&gt;. | ID | Level | Requirement | . | LINK-01 | SHALL | Create a pinned issue in aai-programme titled “Workstream directory”. For each workstream it lists the lead, the repository and the project URL. Leave entries blank until leads supply them. | . | LINK-02 | SHALL | The programme project README links to the directory issue and to the Roadmap view (V2). Do not add a separate static roadmap or Gantt chart to the README; V2 is the roadmap, kept current from the epic dates. | . | LINK-03 | SHALL | The template README tells leads to link back to Assured AI Programme. | . | LINK-04 | SHALL | Workstream features and stories are sub-issues of the relevant epic, so sub-issue progress shows in V1. The pilot must confirm that sub-issues from another repository roll up correctly. | . | LINK-05 | SHALL | A workstream item, including a WS5 feature or task in aai-programme, enters the programme project only if it is labelled thin-slice or sprint-demo, has Delivery health At risk or Blocked, or is a cross-workstream deliverable. Anything else stays in its workstream project. | . | LINK-06 | SHALL | Every item in the programme project must have a Workstream value. | . | LINK-07 | SHALL | Epics are programme-level and owned by the PM. A workstream lead who needs a new or changed epic opens an issue in aai-programme proposing it; the PM accepts or declines it. Leads create features, stories and spikes under epics freely. The programme README explains this. | . ",
+    "url": "/aai-programme/docs/requirements/aai-linking.html#linking-to-workstream-projects",
+    
+    "relUrl": "/docs/requirements/aai-linking.html#linking-to-workstream-projects"
+  },"13": {
+    "doc": "Assured AI programme: linking to workstream projects",
+    "title": "Assured AI programme: linking to workstream projects",
+    "content": " ",
+    "url": "/aai-programme/docs/requirements/aai-linking.html",
+    
+    "relUrl": "/docs/requirements/aai-linking.html"
+  },"14": {
+    "doc": "Assured AI programme: metrics",
+    "title": "Metrics",
+    "content": "The programme’s simple metrics, from the project’s built-in charts (section 8.2). Generated from requirements v0.5 by scripts/gen-requirements.ts; do not edit by hand. Cite one as req:aai-metrics#&lt;ID&gt;. | ID | Level | Requirement | . | M1 | SHALL | Share of epics On track, At risk and Blocked, built from Delivery health, epics only. | . | M2 | SHALL | Blocked items by workstream, built from Delivery health = Blocked, grouped by Workstream. | . | M3 | SHALL | At-risk or blocked dependencies, built from Dependency issues with Delivery health At risk or Blocked. | . | M4 | SHALL | Overdue deliverables, built from Same filter as V13. | . | M5 | SHALL | Integration readiness by pipeline stage, built from Integration readiness, grouped by Pipeline stage. | . | M6 | SHALL | Average age of blocked items (optional), built from A script (AUTO-12) reads the issue timeline to find when Delivery health became Blocked. | . ",
+    "url": "/aai-programme/docs/requirements/aai-metrics.html#metrics",
+    
+    "relUrl": "/docs/requirements/aai-metrics.html#metrics"
+  },"15": {
+    "doc": "Assured AI programme: metrics",
+    "title": "Assured AI programme: metrics",
+    "content": " ",
+    "url": "/aai-programme/docs/requirements/aai-metrics.html",
+    
+    "relUrl": "/docs/requirements/aai-metrics.html"
+  },"16": {
+    "doc": "Assured AI programme: pilot tests",
+    "title": "Pilot tests",
+    "content": "What the pilot build must prove before any bulk import (section 12). Generated from requirements v0.5 by scripts/gen-requirements.ts; do not edit by hand. Cite one as req:aai-pilot#&lt;ID&gt;. | ID | Level | Requirement | . | PIL-01 | SHALL | An organisation issue field changed on a thin-slice workstream item shows the same value in its workstream project and the programme project | . | PIL-02 | SHALL | Sub-issue progress from two repositories rolls up into the epic in V1 | . | PIL-03 | SHALL | an issue with a note kept off GitHub says so in neutral words only (SEC-02) | . | PIL-05 | SHALL | A blocked label on a feature sets Delivery health to Blocked on the epic within one run of the Action, and the epic appears in V10 | . | PIL-06 | SHALL | Every view in section 8.1 returns the right pilot items | . | PIL-07 | SHALL | The test partner account sets Integration readiness to Validated on a pilot item with no confirmation comment. AUTO-10 adds the validation-exception label and one comment. Running it again adds nothing more. When the Technical Integration Lead adds the confirmation comment, the label is removed | . | PIL-08 | SHALL | Closing a pilot epic as completed sets Programme status to Done through AUTO-03 | . | PIL-09 | SHALL | Closing a pilot item as not planned sets Programme status to Cancelled, and reopening it sets In progress | . | PIL-10 | SHALL | The pinned fields in section 5.3 appear on the issue form for each pilot issue type | . | PIL-11 | SHALL | Charts M1 to M5 show the pilot items correctly, or the report records which cannot be built natively | . ",
+    "url": "/aai-programme/docs/requirements/aai-pilot.html#pilot-tests",
+    
+    "relUrl": "/docs/requirements/aai-pilot.html#pilot-tests"
+  },"17": {
+    "doc": "Assured AI programme: pilot tests",
+    "title": "Assured AI programme: pilot tests",
+    "content": " ",
+    "url": "/aai-programme/docs/requirements/aai-pilot.html",
+    
+    "relUrl": "/docs/requirements/aai-pilot.html"
+  },"18": {
+    "doc": "Assured AI programme: programme project views",
+    "title": "Programme project views",
+    "content": "The views of the Assured AI Programme project (section 8.1). Generated from requirements v0.5 by scripts/gen-requirements.ts; do not edit by hand. Cite one as req:aai-views#&lt;ID&gt;. | ID | Level | Requirement | . | V1 | SHALL | The view “Master programme”: layout Table; items: Epics; Group by Workstream; sort by Start date; columns: Title, Programme status, Delivery health, Pipeline stage, Start date, Target date, Gates output, Primary research question, sub-issue progress. | . | V2 | SHALL | The view “Roadmap”: layout Roadmap; items: Epics and milestone issues with dates; Group by Workstream; zoom to quarter; columns: Start date, Target date, Programme status, Delivery health. | . | V3 | SHALL | The view “Milestones”: layout Table; items: Milestone issues, plus items with any gates: label; Group by Gates output; sort by Target date. One saved filter per Gates output on its gates: label, which shows both primary and secondary contributions; columns: Title, Workstream, Programme status, Delivery health, Target date. | . | V4 | SHALL | The view “Research questions”: layout Table; items: Research question issues, plus items with any rq: label; Group by Primary research question. One saved filter per research question on its rq: label; columns: Title, Workstream, Programme status, rq: and route: labels. | . | V5 | SHALL | The view “Pipeline stages”: layout Board; items: Epics, plus anything labelled thin-slice; Columns by Pipeline stage, L1 through LOC, with Cross-cutting / N/A shown separately. Saved filter for label:thin-slice; columns: Title, Workstream, Programme status, Delivery health. | . | V6 | SHALL | The view “Integration readiness”: layout Table; items: Items labelled thin-slice, and epics with Integration readiness other than Not assessed; Group by Pipeline stage; sort by Target date. Saved filter “Awaiting validation”: Integration readiness is Ready to integrate; columns: Title, Workstream, Integration readiness, assignee, Target date, sub-issue progress. | . | V7 | SHALL | The view “Sprint review”: layout Table; items: Items labelled sprint-demo; Group by Workstream; columns: Title, Workstream, Programme status, linked epic. | . | V8 | SHALL | The view “Next 30 days”: layout Table; items: Open epics, milestones, dependencies and cross-workstream deliverables with Target date in the next 30 days; Group by Workstream; sort by Target date; columns: Title, Workstream, Programme status, Delivery health, assignee, Target date. | . | V9 | SHALL | The view “Dependencies”: layout Table; items: Dependency issues; Group by Workstream (the waiting workstream); sort by Target date; columns: Title (starts with D-number), Workstream, Delivery health, Impact, Target date, assignee. | . | V10 | SHALL | The view “Blocked and at risk”: layout Table; items: Delivery health At risk or Blocked, or label blocked, at-risk or validation-exception; Group by Delivery health, then Workstream; sort by Impact, then Target date; columns: Title, Workstream, Risk category, Impact, Target date, assignee. | . | V11 | SHALL | The view “WHO review”: layout Board; items: Items with Review type other than Not needed; Columns by Review status; sort by Target date; columns: Title, Workstream, Review type, Target date. | . | V12 | SHALL | The view “Decisions”: layout Table; items: Decision issues; Group by open or closed; sort by Target date; columns: Title (starts with DEC-number), Workstream, Programme status, Target date. | . | V13 | SHALL | The view “Overdue”: layout Table; items: Target date before today and Programme status not Done or Cancelled; Group by Workstream; columns: Title, Target date, Delivery health, assignee. | . ",
+    "url": "/aai-programme/docs/requirements/aai-views.html#programme-project-views",
+    
+    "relUrl": "/docs/requirements/aai-views.html#programme-project-views"
+  },"19": {
+    "doc": "Assured AI programme: programme project views",
+    "title": "Assured AI programme: programme project views",
+    "content": " ",
+    "url": "/aai-programme/docs/requirements/aai-views.html",
+    
+    "relUrl": "/docs/requirements/aai-views.html"
+  },"20": {
+    "doc": "Assured AI programme: act on bean drift",
+    "title": "Assured AI programme: act on bean drift",
+    "content": "Process_AAI_BeanDrift · strict (defaulted) · 4 step(s) . Keep the programme issues and the beans they carry from drifting apart. The issue owns the programme fields, dates, review and epic; the bean owns the steps and their execution; neither copies the other. The drift check compares them and flags; a person decides what changes (req:aai-design-principles#DP-06). i i i i ",
+    "url": "/aai-programme/en/cat-harness/processes/bean-drift.html#assured-ai-programme-act-on-bean-drift",
+    
+    "relUrl": "/en/cat-harness/processes/bean-drift.html#assured-ai-programme-act-on-bean-drift"
+  },"21": {
+    "doc": "Assured AI programme: act on bean drift",
+    "title": "How it connects",
+    "content": ". | Called by: no call activity names this process | Calls: Assured AI programme: triage a bean | Presented on: no docs page section shows this diagram | Running instances: none recorded | . ",
+    "url": "/aai-programme/en/cat-harness/processes/bean-drift.html#how-it-connects",
+    
+    "relUrl": "/en/cat-harness/processes/bean-drift.html#how-it-connects"
+  },"22": {
+    "doc": "Assured AI programme: act on bean drift",
+    "title": "Lanes — who acts",
+    "content": "| lane | role | what it does here | . | Programme automation | programme-automation | The bean drift check (scripts/programme/bean-drift.ts): runs daily in the Pull beans workflow and on a /check-drift comment. It reports; it never changes an issue (req:aai-design-principles#DP-06). | . | Workstream lead | workstream-lead | Decides what a bean is to the programme, and keeps the issue that carries it current. An agent may act in this lane and propose; the lead decides. | . ",
+    "url": "/aai-programme/en/cat-harness/processes/bean-drift.html#lanes--who-acts",
+    
+    "relUrl": "/en/cat-harness/processes/bean-drift.html#lanes--who-acts"
+  },"23": {
+    "doc": "Assured AI programme: act on bean drift",
+    "title": "Steps",
+    "content": "Every one of the 4 step(s) is documented. | step | lane | skill / sub-process | what it does | . | Refresh the beans snapshotA_Pull | Programme automation | — | scripts/pull-beans.ts reads every store in beans-sources.json into pulled/beans.json. | . | Check every linked issue against its beansA_Check | Programme automation | — | scripts/programme/bean-drift.ts: bean completed or scrapped while the issue is open; issue closed while the bean is open; a link to a bean not found; a bean changed since the issue was last touched; an open feature under a closed epic or proposal; open beans nobody has triaged. It writes pulled/drift.md, and replies to a /check-drift comment. | . | Review each flagA_Review | Workstream lead | — | On the board’s Bean drift page. For each: close the issue (completed or not planned), reopen it, fix or replace its bean line, move it to another epic, or, for an untriaged bean, triage it. | . | Triage the untriaged beansCall_Triage | Workstream lead | calls Assured AI programme: triage a bean | Each untriaged bean goes through the bean-triage process. | . ",
+    "url": "/aai-programme/en/cat-harness/processes/bean-drift.html#steps",
+    
+    "relUrl": "/en/cat-harness/processes/bean-drift.html#steps"
+  },"24": {
+    "doc": "Assured AI programme: act on bean drift",
+    "title": "Decisions",
+    "content": "Every one of the 1 decision(s) is documented. | decision | what decides it | branches | . | Any flags?GW_Flags | Answered by the report. | no → No driftyes → Review each flag | . ",
+    "url": "/aai-programme/en/cat-harness/processes/bean-drift.html#decisions",
+    
+    "relUrl": "/en/cat-harness/processes/bean-drift.html#decisions"
+  },"25": {
+    "doc": "Assured AI programme: act on bean drift",
+    "title": "Assured AI programme: act on bean drift",
+    "content": "Generated from processes/process/bean-drift.bpmn by gen-processes-viz.ts — do not edit here. All processes · aai-programme processes . ",
+    "url": "/aai-programme/en/cat-harness/processes/bean-drift.html",
+    
+    "relUrl": "/en/cat-harness/processes/bean-drift.html"
+  },"26": {
+    "doc": "Assured AI programme: triage a bean",
+    "title": "Assured AI programme: triage a bean",
+    "content": "Process_AAI_BeanTriage · strict (defaulted) · 2 step(s) . Decide what an open bean is to the programme. Beans are how work is done, in whichever repository does it; programme issues are how the programme sees it. A bean gets an issue when it delivers part of an epic, changes a date, creates or clears a cross-workstream dependency, or needs a human review or decision. Otherwise it stays a bean. The issue is the record of the link, by a hidden line in its body, &lt;!-- bean: owner/repo/id --&gt;; nothing in the bean’s repository is written. i i ",
+    "url": "/aai-programme/en/cat-harness/processes/bean-triage.html#assured-ai-programme-triage-a-bean",
+    
+    "relUrl": "/en/cat-harness/processes/bean-triage.html#assured-ai-programme-triage-a-bean"
+  },"27": {
+    "doc": "Assured AI programme: triage a bean",
+    "title": "How it connects",
+    "content": ". | Called by: Assured AI programme: act on bean drift | Calls: Assured AI programme: propose a new or changed epic | Presented on: no docs page section shows this diagram | Running instances: none recorded | . ",
+    "url": "/aai-programme/en/cat-harness/processes/bean-triage.html#how-it-connects",
+    
+    "relUrl": "/en/cat-harness/processes/bean-triage.html#how-it-connects"
+  },"28": {
+    "doc": "Assured AI programme: triage a bean",
+    "title": "Lanes — who acts",
+    "content": "| lane | role | what it does here | . | Workstream lead | workstream-lead | Decides what a bean is to the programme, and keeps the issue that carries it current. An agent may act in this lane and propose; the lead decides. | . | PM &amp; Architecture Integration | pm-architecture-integration | Owns epics: accepts, amends or declines a proposal (req:aai-linking#LINK-07). | . ",
+    "url": "/aai-programme/en/cat-harness/processes/bean-triage.html#lanes--who-acts",
+    
+    "relUrl": "/en/cat-harness/processes/bean-triage.html#lanes--who-acts"
+  },"29": {
+    "doc": "Assured AI programme: triage a bean",
+    "title": "Steps",
+    "content": "Every one of the 2 step(s) is documented. | step | lane | skill / sub-process | what it does | . | Propose an epicCall_Propose | PM &amp; Architecture Integration | calls Assured AI programme: propose a new or changed epic | There is none: propose one (the epic-proposal process); the issue goes under it. | . | Open the issue with its bean lineA_Issue | Workstream lead | — | Under the epic or proposal, as a sub-issue: its type:, ws: and stage: labels, a Programme fields table, and one &lt;!-- bean: owner/repo/id --&gt; line per bean it carries. A decision or a dependency is a type:decision or type:dependency issue instead (req:aai-dependencies#DEP-02). | . ",
+    "url": "/aai-programme/en/cat-harness/processes/bean-triage.html#steps",
+    
+    "relUrl": "/en/cat-harness/processes/bean-triage.html#steps"
+  },"30": {
+    "doc": "Assured AI programme: triage a bean",
+    "title": "Decisions",
+    "content": "Every one of the 2 decision(s) is documented. | decision | what decides it | branches | . | Does the programme need to see it?GW_Matters | Answered by the rule: does it deliver part of an epic, change a date, create or clear a cross-workstream dependency, or need a human review or decision? no covers a step under a bean an issue already carries, and work outside the programme. | no → Stays a bean: decision recordedyes → Is there an epic or proposal for it? | . | Is there an epic or proposal for it?GW_Epic | Answered from the board’s Workstreams page: does an open epic or epic proposal of its workstream cover it? | yes → Open the issue with its bean lineno → Propose an epic | . ",
+    "url": "/aai-programme/en/cat-harness/processes/bean-triage.html#decisions",
+    
+    "relUrl": "/en/cat-harness/processes/bean-triage.html#decisions"
+  },"31": {
+    "doc": "Assured AI programme: triage a bean",
+    "title": "Assured AI programme: triage a bean",
+    "content": "Generated from processes/process/bean-triage.bpmn by gen-processes-viz.ts — do not edit here. All processes · aai-programme processes . ",
+    "url": "/aai-programme/en/cat-harness/processes/bean-triage.html",
+    
+    "relUrl": "/en/cat-harness/processes/bean-triage.html"
+  },"32": {
+    "doc": "Assured AI programme: record and escalate a dependency",
+    "title": "Assured AI programme: record and escalate a dependency",
+    "content": "Process_AAI_Dependency · strict (defaulted) · 5 step(s) . A dependency starts as a native “blocked by” link in the workstream (req:aai-dependencies#DEP-01). It becomes a D-number issue in aai-programme only when it is programme-significant: it crosses workstreams or partners and needs a deadline, negotiation, escalation or an assessment of consequences (req:aai-dependencies#DEP-02). i i i i i ",
+    "url": "/aai-programme/en/cat-harness/processes/dependency-escalation.html#assured-ai-programme-record-and-escalate-a-dependency",
+    
+    "relUrl": "/en/cat-harness/processes/dependency-escalation.html#assured-ai-programme-record-and-escalate-a-dependency"
+  },"33": {
+    "doc": "Assured AI programme: record and escalate a dependency",
+    "title": "How it connects",
+    "content": ". | Called by: no call activity names this process | Calls: none | Presented on: no docs page section shows this diagram | Running instances: none recorded | . ",
+    "url": "/aai-programme/en/cat-harness/processes/dependency-escalation.html#how-it-connects",
+    
+    "relUrl": "/en/cat-harness/processes/dependency-escalation.html#how-it-connects"
+  },"34": {
+    "doc": "Assured AI programme: record and escalate a dependency",
+    "title": "Lanes — who acts",
+    "content": "| lane | role | what it does here | . | Workstream team | workstream-team | The people delivering a workstream’s features, stories and spikes, in its own repository. | . | Workstream lead | workstream-lead | Owns the workstream’s delivery and its project (req:aai-design-principles#DP-02). Proposes epics; never creates them. | . | PM &amp; Architecture Integration | pm-architecture-integration | Owns sequencing, dates, dependencies, evidence and escalation. Does not make technical readiness judgements (req:aai-design-principles#DP-05). | . ",
+    "url": "/aai-programme/en/cat-harness/processes/dependency-escalation.html#lanes--who-acts",
+    
+    "relUrl": "/en/cat-harness/processes/dependency-escalation.html#lanes--who-acts"
+  },"35": {
+    "doc": "Assured AI programme: record and escalate a dependency",
+    "title": "Steps",
+    "content": "Every one of the 5 step(s) is documented. | step | lane | skill / sub-process | what it does | . | Link the issues with “blocked by”A_Native | Workstream team | — | GitHub’s native relationship between the two issues (req:aai-dependencies#DEP-01). | . | Raise it with the PMA_Raise | Workstream lead | — | Name the waiting epic, what it waits on, when it is needed by and the consequence if late. | . | Create the D-number issueA_DNumber | PM &amp; Architecture Integration | — | In aai-programme, its title starting with the D-number (req:aai-acceptance#AC-14), its body following the DEP-05 template, with Workstream (the waiting one), Target date (needed by), Delivery health, Risk category, Impact and assignee (req:aai-dependencies#DEP-05). | . | Write the Next actionA_Next | PM &amp; Architecture Integration | — | When it is At risk or Blocked: what will happen, who will do it, and by when, in the issue body. It then shows in V9 and V10 (req:aai-views#V9, #V10). | . | Link the two epics with “blocked by”A_EpicLink | PM &amp; Architecture Integration | — | Only for a true blocking dependency between epics (req:aai-dependencies#DEP-03). | . ",
+    "url": "/aai-programme/en/cat-harness/processes/dependency-escalation.html#steps",
+    
+    "relUrl": "/en/cat-harness/processes/dependency-escalation.html#steps"
+  },"36": {
+    "doc": "Assured AI programme: record and escalate a dependency",
+    "title": "Decisions",
+    "content": "Every one of the 2 decision(s) is documented. | decision | what decides it | branches | . | Programme-significant?GW_Significant | Answered by the lead against DEP-02: does it cross workstreams or partners, and need a deadline, negotiation, escalation or an assessment of consequences? | no → Handled in the workstreamyes → Raise it with the PM | . | A true blocking dependency between epics?GW_Epic | Answered by the PM (req:aai-dependencies#DEP-03): is it a true blocking dependency on another epic, rather than on a review, an external decision or a shared platform item? | no → Tracked in V9 and V10yes → Link the two epics with “blocked by” | . ",
+    "url": "/aai-programme/en/cat-harness/processes/dependency-escalation.html#decisions",
+    
+    "relUrl": "/en/cat-harness/processes/dependency-escalation.html#decisions"
+  },"37": {
+    "doc": "Assured AI programme: record and escalate a dependency",
+    "title": "Assured AI programme: record and escalate a dependency",
+    "content": "Generated from processes/process/dependency-escalation.bpmn by gen-processes-viz.ts — do not edit here. All processes · aai-programme processes . ",
+    "url": "/aai-programme/en/cat-harness/processes/dependency-escalation.html",
+    
+    "relUrl": "/en/cat-harness/processes/dependency-escalation.html"
+  },"38": {
+    "doc": "Bean drift",
+    "title": "Bean drift",
+    "content": "Checked 2026-11-19: 33 programme issue(s) carrying 35 bean link(s), against 2298 beans from 12 stores. Bean completed, issue still open: 1; Bean changed since the issue was last touched: 13; Open beans nobody has triaged: 37. Each finding is for a person to act on: change the issue, or record a triage decision in docs/beans-triage.json. Nothing here is changed automatically. Run it again by commenting /check-drift on any issue. ",
+    "url": "/aai-programme/programme/drift.html#bean-drift",
+    
+    "relUrl": "/programme/drift.html#bean-drift"
+  },"39": {
+    "doc": "Bean drift",
+    "title": "Bean completed, issue still open (1)",
+    "content": "| Issue | Bean | What | . | #21 | folio-assistant-slw1 | the bean is completed; close the issue as completed? | . ",
+    "url": "/aai-programme/programme/drift.html#bean-completed-issue-still-open-1",
+    
+    "relUrl": "/programme/drift.html#bean-completed-issue-still-open-1"
+  },"40": {
+    "doc": "Bean drift",
+    "title": "Bean changed since the issue was last touched (13)",
+    "content": "| Issue | Bean | What | . | #49 | folio-assistant-cz17 | the bean changed (2026-10-30) after the issue was last touched (2026-10-26) | . | #47 | folio-assistant-4y2i | the bean changed (2026-10-26) after the issue was last touched (2026-10-26) | . | #47 | folio-assistant-61tg | the bean changed (2026-10-30) after the issue was last touched (2026-10-26) | . | #44 | folio-assistant-zzmr | the bean changed (2026-10-31) after the issue was last touched (2026-10-26) | . | #43 | folio-assistant-3sbm | the bean changed (2026-10-26) after the issue was last touched (2026-10-26) | . | #39 | folio-assistant-5a3l | the bean changed (2026-11-01) after the issue was last touched (2026-10-26) | . | #35 | folio-assistant-vm6m | the bean changed (2026-10-26) after the issue was last touched (2026-10-26) | . | #34 | folio-assistant-vljz | the bean changed (2026-10-26) after the issue was last touched (2026-10-26) | . | #33 | folio-assistant-oz9e | the bean changed (2026-11-15) after the issue was last touched (2026-10-30) | . | #32 | folio-assistant-q4jm | the bean changed (2026-10-26) after the issue was last touched (2026-10-26) | . | #25 | folio-assistant-qvxh | the bean changed (2026-10-26) after the issue was last touched (2026-10-26) | . | #24 | folio-assistant-63q4 | the bean changed (2026-10-30) after the issue was last touched (2026-10-26) | . | #22 | folio-assistant-0lde | the bean changed (2026-10-26) after the issue was last touched (2026-10-26) | . ",
+    "url": "/aai-programme/programme/drift.html#bean-changed-since-the-issue-was-last-touched-13",
+    
+    "relUrl": "/programme/drift.html#bean-changed-since-the-issue-was-last-touched-13"
+  },"41": {
+    "doc": "Bean drift",
+    "title": "Open beans nobody has triaged (37)",
+    "content": "| Bean | Repository and title | . | folio-assistant-17iw | litlfred/folio-assistant: MIGRATION: public-health and health-system process catalogues move from smart-base to WHO/who-iris once it is live | . | folio-assistant-1b7t | litlfred/folio-assistant: Decision cards: open and answered | . | folio-assistant-65aj | litlfred/folio-assistant: Paste Stub.gs into each review log | . | folio-assistant-6gnn | litlfred/folio-assistant: WorldHealthOrganization/smart-base: port the .github/skills clean-up and the BPMN validator fixes upstream | . | folio-assistant-95e7 | litlfred/folio-assistant: smart-base: move skill/tool source out of .github/ and the root dirs into the KG subgraphs; .github/ keeps only generated links | . | folio-assistant-98p4 | litlfred/folio-assistant: Owner to-do: per IG repo, Allow auto-merge + REPIN_TOKEN secret | . | folio-assistant-bsd1 | litlfred/folio-assistant: BEAN STORE BEHIND ANY TOOL + STATE MACHINE STARTS ANY MODEL’S AGENT: proposal (WHO Assured AI / Gemini benchmarking context) | . | folio-assistant-cysv | litlfred/folio-assistant: One DTH scaffold and seed tool in the platform (dth init), replacing per-repo copies | . | folio-assistant-dkin | litlfred/folio-assistant: who-iris: L1-ingest the remaining DAKs (TB, HIV, CHUD, PNC, SRV, SMBP, STI) with their per-task annotations | . | folio-assistant-drnh | litlfred/folio-assistant: Merge-window drain to 2026-11-03 00:40Z: PRs, re-pin train, open cards (handover bean) | . | folio-assistant-dthl | litlfred/folio-assistant: DTH handbooks as L2 documents on smart-ra (HRH pilot, PHC, SC, PC, SFP) | . | folio-assistant-f7ph | litlfred/folio-assistant: Project thread directory (thread ids) | . | folio-assistant-fvec | litlfred/folio-assistant: PUBLISH: Cloudflare R2 + CDN in front of the WHO L1 corpus (future; owner 2026-10-24) | . | folio-assistant-g4rf | litlfred/folio-assistant: G4 red-fix: single code PRs with real new failures (2026-11-15) | . | folio-assistant-hrfr | litlfred/folio-assistant: DPI-H public-comment log watcher: state at the 2026-11-15 owner check-in | . | folio-assistant-k3vv | litlfred/folio-assistant: CI speed II (2026-11-05): restarts on main moves, red-main cycle, setup duplication | . | folio-assistant-lgwt | litlfred/folio-assistant: Review-log watcher: standing rules, how to watch, current state (handover bean) | . | folio-assistant-mm15 | litlfred/folio-assistant: Merge manager handover 2026-11-15 06:35Z | . | folio-assistant-n6ny | litlfred/folio-assistant: Project memory: owner rules, facts, to-dos, cards and threads (read first) | . | folio-assistant-nbp9 | litlfred/folio-assistant: Move the deploy-folio secrets into the production environment, with a required reviewer | . | folio-assistant-no51 | litlfred/folio-assistant: Owner to-do list (things only litlfred can do) | . | folio-assistant-nvhg | litlfred/folio-assistant: TERMINOLOGY / adjudication leg 2: two judges disagree about a mapping (from 2i5f) | . | folio-assistant-oiah | litlfred/folio-assistant: Biblio nav: standing 6-hourly re-pin per IG (Q-BIBNAV-2 = B) | . | folio-assistant-pb15 | litlfred/folio-assistant: Harness PR backlog plan 2026-11-15 | . | folio-assistant-pga6 | litlfred/folio-assistant: Separation Phase III: L4/L5 Content, Tool and Test repos on the harness, plus current and future architecture write-up | . | folio-assistant-php1 | litlfred/folio-assistant: Owner standing rules (moved from project memory 2026-11-12) | . | folio-assistant-qc15 | litlfred/folio-assistant: qou coordinator handover 2026-11-15 (tracker qou#7735) | . | folio-assistant-r29x | litlfred/folio-assistant: R29 (PAUSED by owner): todos and sticky notes reference things across KG libraries, as one merged kind | . | folio-assistant-untm | litlfred/folio-assistant: UNTERM: official UN terminology as translation candidates and glossary QA terms | . | folio-assistant-v8bg | litlfred/folio-assistant: Handover 2026-11-12 09:32Z: open workstreams | . | folio-assistant-wl48 | litlfred/folio-assistant: Facts and references (moved from project memory 2026-11-12) | . | folio-assistant-wt3x | litlfred/folio-assistant: WHO move T3: same-owner pins, derived owner, publishing profile (code PRs) | . | folio-assistant-xaa8 | litlfred/folio-assistant: CI speed II (g): owner decision: move the repo under a free GitHub organization for the real merge queue | . | note | litlfred/cat-harness: folio-assistant-0lj4–2026-10-04–claude-gracious-mendel-du6nn8 | . | cat-tools-fc0r | litlfred/cat-harness-tools: FHIR core definitions are materialised by hand; the publish step does not build them | . | cat-tools-pfng | litlfred/cat-harness-tools: Fill the smart-* and dth-* translations with open MT candidates, blind round-trip and glossary review | . | folio-assistant-pvq4 | litlfred/folio-assistant-core: REVIEW: a person confirms or rejects the agent-drafted block summaries | . ",
+    "url": "/aai-programme/programme/drift.html#open-beans-nobody-has-triaged-37",
+    
+    "relUrl": "/programme/drift.html#open-beans-nobody-has-triaged-37"
+  },"42": {
+    "doc": "Bean drift",
+    "title": "Bean drift",
+    "content": "Board . ",
+    "url": "/aai-programme/programme/drift.html",
+    
+    "relUrl": "/programme/drift.html"
+  },"43": {
+    "doc": "Assured AI programme: propose a new or changed epic",
+    "title": "Assured AI programme: propose a new or changed epic",
+    "content": "Process_AAI_Epic · strict (defaulted) · 5 step(s) . Epics are programme-level and owned by the PM. A workstream lead who needs a new or changed epic opens an issue in aai-programme proposing it; the PM accepts or declines it. Leads create features, stories and spikes under epics freely (req:aai-linking#LINK-07). i i i i i ",
+    "url": "/aai-programme/en/cat-harness/processes/epic-proposal.html#assured-ai-programme-propose-a-new-or-changed-epic",
+    
+    "relUrl": "/en/cat-harness/processes/epic-proposal.html#assured-ai-programme-propose-a-new-or-changed-epic"
+  },"44": {
+    "doc": "Assured AI programme: propose a new or changed epic",
+    "title": "How it connects",
+    "content": ". | Called by: Assured AI programme: triage a bean | Calls: none | Presented on: no docs page section shows this diagram | Running instances: none recorded | . ",
+    "url": "/aai-programme/en/cat-harness/processes/epic-proposal.html#how-it-connects",
+    
+    "relUrl": "/en/cat-harness/processes/epic-proposal.html#how-it-connects"
+  },"45": {
+    "doc": "Assured AI programme: propose a new or changed epic",
+    "title": "Lanes — who acts",
+    "content": "| lane | role | what it does here | . | Workstream lead | workstream-lead | Owns the workstream’s delivery and its project (req:aai-design-principles#DP-02). Proposes epics; never creates them. | . | PM &amp; Architecture Integration | pm-architecture-integration | Owns sequencing, dates, dependencies, evidence and escalation. Does not make technical readiness judgements (req:aai-design-principles#DP-05). | . ",
+    "url": "/aai-programme/en/cat-harness/processes/epic-proposal.html#lanes--who-acts",
+    
+    "relUrl": "/en/cat-harness/processes/epic-proposal.html#lanes--who-acts"
+  },"46": {
+    "doc": "Assured AI programme: propose a new or changed epic",
+    "title": "Steps",
+    "content": "Every one of the 5 step(s) is documented. | step | lane | skill / sub-process | what it does | . | Open a proposal issue in aai-programmeA_Propose | Workstream lead | — | Say what the epic delivers, its workstream, its dates, its Gates outputs and research questions, and why the existing epics do not cover it. | . | Review the proposalA_Review | PM &amp; Architecture Integration | — | Against the programme plan, the Gates outputs and the other workstreams’ epics. | . | Revise the proposalA_Revise | Workstream lead | — | Answer the PM’s points on the same issue. | . | Create or change the epicA_Create | PM &amp; Architecture Integration | — | The epic issue with its fields (Workstream, dates, Gates output, Primary research question, Backlog ref). It then appears in V1 and V2 (req:aai-views#V1, #V2). | . | Add features under the epicA_Features | Workstream lead | — | As sub-issues in the workstream repository, so their progress rolls up into V1 (req:aai-linking#LINK-04). | . ",
+    "url": "/aai-programme/en/cat-harness/processes/epic-proposal.html#steps",
+    
+    "relUrl": "/en/cat-harness/processes/epic-proposal.html#steps"
+  },"47": {
+    "doc": "Assured AI programme: propose a new or changed epic",
+    "title": "Decisions",
+    "content": "Every one of the 1 decision(s) is documented. | decision | what decides it | branches | . | Accept, amend or decline?GW_Decision | The PM’s decision, recorded on the proposal issue. | amend → Revise the proposalaccept → Create or change the epicdecline → Declined, with the reason | . ",
+    "url": "/aai-programme/en/cat-harness/processes/epic-proposal.html#decisions",
+    
+    "relUrl": "/en/cat-harness/processes/epic-proposal.html#decisions"
+  },"48": {
+    "doc": "Assured AI programme: propose a new or changed epic",
+    "title": "Assured AI programme: propose a new or changed epic",
+    "content": "Generated from processes/process/epic-proposal.bpmn by gen-processes-viz.ts — do not edit here. All processes · aai-programme processes . ",
+    "url": "/aai-programme/en/cat-harness/processes/epic-proposal.html",
+    
+    "relUrl": "/en/cat-harness/processes/epic-proposal.html"
+  },"49": {
+    "doc": "Block kinds",
+    "title": "Block kinds",
+    "content": "One page per instance in this checkout holding a directory of this kind. ",
+    "url": "/aai-programme/en/cat-harness/block-kinds/#block-kinds",
+    
+    "relUrl": "/en/cat-harness/block-kinds/#block-kinds"
+  },"50": {
+    "doc": "Block kinds",
+    "title": "Block kinds",
+    "content": " ",
+    "url": "/aai-programme/en/cat-harness/block-kinds/",
+    
+    "relUrl": "/en/cat-harness/block-kinds/"
+  },"51": {
+    "doc": "Validators",
+    "title": "Validators",
+    "content": "One page per instance in this checkout holding a directory of this kind. ",
+    "url": "/aai-programme/en/cat-harness/validators/#validators",
+    
+    "relUrl": "/en/cat-harness/validators/#validators"
+  },"52": {
+    "doc": "Validators",
+    "title": "Validators",
+    "content": " ",
+    "url": "/aai-programme/en/cat-harness/validators/",
+    
+    "relUrl": "/en/cat-harness/validators/"
+  },"53": {
+    "doc": "Test plans",
+    "title": "Test plans",
+    "content": "One page per instance in this checkout holding a directory of this kind. ",
+    "url": "/aai-programme/en/cat-harness/test-plans/#test-plans",
+    
+    "relUrl": "/en/cat-harness/test-plans/#test-plans"
+  },"54": {
+    "doc": "Test plans",
+    "title": "Test plans",
+    "content": " ",
+    "url": "/aai-programme/en/cat-harness/test-plans/",
+    
+    "relUrl": "/en/cat-harness/test-plans/"
+  },"55": {
+    "doc": "Memory",
+    "title": "Memory",
+    "content": "One page per instance in this checkout holding a directory of this kind. ",
+    "url": "/aai-programme/en/cat-harness/memory/#memory",
+    
+    "relUrl": "/en/cat-harness/memory/#memory"
+  },"56": {
+    "doc": "Memory",
+    "title": "Memory",
+    "content": " ",
+    "url": "/aai-programme/en/cat-harness/memory/",
+    
+    "relUrl": "/en/cat-harness/memory/"
+  },"57": {
+    "doc": "Tool releases",
+    "title": "Tool releases",
+    "content": "One page per instance in this checkout holding a directory of this kind. ",
+    "url": "/aai-programme/en/cat-harness/tool-releases/#tool-releases",
+    
+    "relUrl": "/en/cat-harness/tool-releases/#tool-releases"
+  },"58": {
+    "doc": "Tool releases",
+    "title": "Tool releases",
+    "content": " ",
+    "url": "/aai-programme/en/cat-harness/tool-releases/",
+    
+    "relUrl": "/en/cat-harness/tool-releases/"
+  },"59": {
+    "doc": "aai-programme — Code",
+    "title": "Code: aai-programme",
+    "content": "aai-programme · 1 declared code directory · This instance is not a pinned mount here, so files are listed without links. scripts/ bootstrap-tools-scripts . The schema generator and drawn schema page; the vocabulary, graph and named-subgraph exporters; the README writers (each directory's README, the `kg:processes`, `kg:files`, `kg:roles` and `kg:toc` sections, and the one-page README book) with their Liquid templates; the Process renderer; the site stager, publisher and push status; initialization; the release-IRI sync and the term linker; and the checks: import closure, node identifiers, bootstrap's concepts, bootstrap's documents parsed against their Zod (`validate`), and the semver bump the published schemas require, computed from a diff (`semver`). 23 files . | check-origin.ts | check-requirements.ts | gen-requirements.ts | origin-repo.ts | pilot-items.ts | programme/auto-03-status.ts | programme/auto-04-health.ts | programme/auto-10-validation.ts | programme/bean-drift.ts | programme/board-model.ts | programme/board.ts | programme/config.json | programme/create-items.ts | programme/drift-rules.ts | programme/fields.ts | programme/lib.ts | programme/qa-validation.ts | programme/rules.test.ts | programme/rules.ts | pull-beans.ts | site-board.ts | site-redirects.ts | site-requirements.ts | . ",
+    "url": "/aai-programme/en/cat-harness/code/aai-programme/#code-aai-programme",
+    
+    "relUrl": "/en/cat-harness/code/aai-programme/#code-aai-programme"
+  },"60": {
+    "doc": "aai-programme — Code",
+    "title": "Instances holding code",
+    "content": ". | aai-programme | . ",
+    "url": "/aai-programme/en/cat-harness/code/aai-programme/",
+    
+    "relUrl": "/en/cat-harness/code/aai-programme/"
+  },"61": {
+    "doc": "aai-programme — Code",
+    "title": "aai-programme — Code",
+    "content": " ",
+    "url": "/aai-programme/en/cat-harness/code/aai-programme/",
+    
+    "relUrl": "/en/cat-harness/code/aai-programme/"
+  },"62": {
+    "doc": "Code",
+    "title": "Code",
+    "content": "One page per instance in this checkout holding a directory of this kind. | aai-programme · scripts/ | . ",
+    "url": "/aai-programme/en/cat-harness/code/#code",
+    
+    "relUrl": "/en/cat-harness/code/#code"
+  },"63": {
+    "doc": "Code",
+    "title": "Code",
+    "content": " ",
+    "url": "/aai-programme/en/cat-harness/code/",
+    
+    "relUrl": "/en/cat-harness/code/"
+  },"64": {
+    "doc": "Code lists",
+    "title": "Code lists",
+    "content": "One page per instance in this checkout holding a directory of this kind. ",
+    "url": "/aai-programme/en/cat-harness/code-lists/#code-lists",
+    
+    "relUrl": "/en/cat-harness/code-lists/#code-lists"
+  },"65": {
+    "doc": "Code lists",
+    "title": "Code lists",
+    "content": " ",
+    "url": "/aai-programme/en/cat-harness/code-lists/",
+    
+    "relUrl": "/en/cat-harness/code-lists/"
+  },"66": {
+    "doc": "health — state",
+    "title": "health",
+    "content": "test/health/results/ · health . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/health/cat-harness/index.html (not published by this site). The directory is test/health/results/. ",
+    "url": "/aai-programme/en/cat-harness/health/#health",
+    
+    "relUrl": "/en/cat-harness/health/#health"
+  },"67": {
+    "doc": "health — state",
+    "title": "State graphs this harness declares",
+    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | . ",
+    "url": "/aai-programme/en/cat-harness/health/",
+    
+    "relUrl": "/en/cat-harness/health/"
+  },"68": {
+    "doc": "health — state",
+    "title": "health — state",
+    "content": " ",
+    "url": "/aai-programme/en/cat-harness/health/",
+    
+    "relUrl": "/en/cat-harness/health/"
+  },"69": {
+    "doc": "aai-programme — Graph typologies",
+    "title": "Graph typologies: aai-programme",
+    "content": "aai-programme · typologies/ · every instance's Graph typologies . ",
+    "url": "/aai-programme/en/cat-harness/graph-typologies/aai-programme/#graph-typologies-aai-programme",
+    
+    "relUrl": "/en/cat-harness/graph-typologies/aai-programme/#graph-typologies-aai-programme"
+  },"70": {
+    "doc": "aai-programme — Graph typologies",
+    "title": "Families — 1, over 1 document(s)",
+    "content": "Documents are grouped by the $schema each one declares; there is no total across families. folio-graph-typology/v1 1 file . Declares no roll-up field, so this family has no counts to show. That is a property of the schema, not a count of zero. 0 document(s) carry no $schema (could not determine); 0 would not parse. ",
+    "url": "/aai-programme/en/cat-harness/graph-typologies/aai-programme/",
+    
+    "relUrl": "/en/cat-harness/graph-typologies/aai-programme/"
+  },"71": {
+    "doc": "aai-programme — Graph typologies",
+    "title": "Nodes — 1",
+    "content": "| id | title or summary | $schema | file | . | beans-board | Combined beans board | folio-graph-typology/v1 | beans-board.json | . ",
+    "url": "/aai-programme/en/cat-harness/graph-typologies/aai-programme/",
+    
+    "relUrl": "/en/cat-harness/graph-typologies/aai-programme/"
+  },"72": {
+    "doc": "aai-programme — Graph typologies",
+    "title": "Instances holding Graph typologies",
+    "content": ". | aai-programme | . ",
+    "url": "/aai-programme/en/cat-harness/graph-typologies/aai-programme/",
+    
+    "relUrl": "/en/cat-harness/graph-typologies/aai-programme/"
+  },"73": {
+    "doc": "aai-programme — Graph typologies",
+    "title": "aai-programme — Graph typologies",
+    "content": " ",
+    "url": "/aai-programme/en/cat-harness/graph-typologies/aai-programme/",
+    
+    "relUrl": "/en/cat-harness/graph-typologies/aai-programme/"
+  },"74": {
+    "doc": "Graph typologies",
+    "title": "Graph typologies",
+    "content": "One page per instance in this checkout holding a directory of this kind. | aai-programme · typologies/ | . ",
+    "url": "/aai-programme/en/cat-harness/graph-typologies/#graph-typologies",
+    
+    "relUrl": "/en/cat-harness/graph-typologies/#graph-typologies"
+  },"75": {
+    "doc": "Graph typologies",
+    "title": "Graph typologies",
+    "content": " ",
+    "url": "/aai-programme/en/cat-harness/graph-typologies/",
+    
+    "relUrl": "/en/cat-harness/graph-typologies/"
+  },"76": {
+    "doc": "Substrate snapshots",
+    "title": "Substrate snapshots",
+    "content": "One page per instance in this checkout holding a directory of this kind. ",
+    "url": "/aai-programme/en/cat-harness/substrate-snapshots/#substrate-snapshots",
+    
+    "relUrl": "/en/cat-harness/substrate-snapshots/#substrate-snapshots"
+  },"77": {
+    "doc": "Substrate snapshots",
+    "title": "Substrate snapshots",
+    "content": " ",
+    "url": "/aai-programme/en/cat-harness/substrate-snapshots/",
+    
+    "relUrl": "/en/cat-harness/substrate-snapshots/"
+  },"78": {
+    "doc": "aai-programme — library",
+    "title": "Library",
+    "content": "loading… . Listing Desktop ",
+    "url": "/aai-programme/en/cat-harness/library/aai-programme/#lib-title",
+    
+    "relUrl": "/en/cat-harness/library/aai-programme/#lib-title"
+  },"79": {
+    "doc": "aai-programme — library",
+    "title": "Source JSON-LD and assets",
+    "content": "The published files this page is a rendering of. | index.json library projection (JSON) | source/assured-ai-github-programme-requirements-v036.jsonld entry JSON-LD | source/assured-ai-github-programme-requirements-v041.jsonld entry JSON-LD | source/assured-ai-github-programme-requirements-v042.jsonld entry JSON-LD | source/assured-ai-github-programme-requirements-v05.jsonld entry JSON-LD | . This page loads its entries from the library projection; it needs JavaScript to draw them. ",
+    "url": "/aai-programme/en/cat-harness/library/aai-programme/",
+    
+    "relUrl": "/en/cat-harness/library/aai-programme/"
+  },"80": {
+    "doc": "aai-programme — library",
+    "title": "aai-programme — library",
+    "content": "| ",
+    "url": "/aai-programme/en/cat-harness/library/aai-programme/",
+    
+    "relUrl": "/en/cat-harness/library/aai-programme/"
+  },"81": {
+    "doc": "Library",
+    "title": "Library",
+    "content": "loading… . Listing Desktop ",
+    "url": "/aai-programme/en/cat-harness/library/#lib-title",
+    
+    "relUrl": "/en/cat-harness/library/#lib-title"
+  },"82": {
+    "doc": "Library",
+    "title": "Source JSON-LD and assets",
+    "content": "The published files this page is a rendering of. | index.json library projection (JSON) | . Library subgraphs in this checkout . | Instance | Entries | Library page | Subgraph JSON-LD | . | aai-programme | 4 | aai-programme | not published | . | cat-harness | 0 | — | not published | . This page loads its entries from the library projection; it needs JavaScript to draw them. ",
+    "url": "/aai-programme/en/cat-harness/library/",
+    
+    "relUrl": "/en/cat-harness/library/"
+  },"83": {
+    "doc": "Library",
+    "title": "Library",
+    "content": "| ",
+    "url": "/aai-programme/en/cat-harness/library/",
+    
+    "relUrl": "/en/cat-harness/library/"
+  },"84": {
+    "doc": "Scenarios",
+    "title": "Scenarios",
+    "content": "One page per instance in this checkout holding a directory of this kind. ",
+    "url": "/aai-programme/en/cat-harness/scenarios/#scenarios",
+    
+    "relUrl": "/en/cat-harness/scenarios/#scenarios"
+  },"85": {
+    "doc": "Scenarios",
+    "title": "Scenarios",
+    "content": " ",
+    "url": "/aai-programme/en/cat-harness/scenarios/",
+    
+    "relUrl": "/en/cat-harness/scenarios/"
+  },"86": {
+    "doc": "qa — state",
+    "title": "qa",
+    "content": "test/results/ · qa . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/lsi/index.html (not published by this site). The directory is test/results/. ",
+    "url": "/aai-programme/en/cat-harness/qa/#qa",
+    
+    "relUrl": "/en/cat-harness/qa/#qa"
+  },"87": {
+    "doc": "qa — state",
+    "title": "State graphs this harness declares",
+    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | . ",
+    "url": "/aai-programme/en/cat-harness/qa/",
+    
+    "relUrl": "/en/cat-harness/qa/"
+  },"88": {
+    "doc": "qa — state",
+    "title": "qa — state",
+    "content": " ",
+    "url": "/aai-programme/en/cat-harness/qa/",
+    
+    "relUrl": "/en/cat-harness/qa/"
+  },"89": {
+    "doc": "Pipeline plugins",
+    "title": "Pipeline plugins",
+    "content": "One page per instance in this checkout holding a directory of this kind. ",
+    "url": "/aai-programme/en/cat-harness/pipeline-plugins/#pipeline-plugins",
+    
+    "relUrl": "/en/cat-harness/pipeline-plugins/#pipeline-plugins"
+  },"90": {
+    "doc": "Pipeline plugins",
+    "title": "Pipeline plugins",
+    "content": " ",
+    "url": "/aai-programme/en/cat-harness/pipeline-plugins/",
+    
+    "relUrl": "/en/cat-harness/pipeline-plugins/"
+  },"91": {
+    "doc": "swimlane-glossary — state",
+    "title": "swimlane-glossary",
+    "content": "glossary/ · swimlane-glossary . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/swimlane-glossary/index.html (not published by this site). The directory is glossary/. ",
+    "url": "/aai-programme/en/cat-harness/swimlane-glossary/#swimlane-glossary",
+    
+    "relUrl": "/en/cat-harness/swimlane-glossary/#swimlane-glossary"
+  },"92": {
+    "doc": "swimlane-glossary — state",
+    "title": "State graphs this harness declares",
+    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | . ",
+    "url": "/aai-programme/en/cat-harness/swimlane-glossary/",
+    
+    "relUrl": "/en/cat-harness/swimlane-glossary/"
+  },"93": {
+    "doc": "swimlane-glossary — state",
+    "title": "swimlane-glossary — state",
+    "content": " ",
+    "url": "/aai-programme/en/cat-harness/swimlane-glossary/",
+    
+    "relUrl": "/en/cat-harness/swimlane-glossary/"
+  },"94": {
+    "doc": "Merge reviews",
+    "title": "Merge reviews",
+    "content": "merge-reviews/ · merge-reviews . merge-reviews/ is not mounted in this build, so its verdicts are unknown, not none. bun run cat state:mount mounts it. ",
+    "url": "/aai-programme/en/cat-harness/merge-reviews/#merge-reviews",
+    
+    "relUrl": "/en/cat-harness/merge-reviews/#merge-reviews"
+  },"95": {
+    "doc": "Merge reviews",
+    "title": "State graphs this harness declares",
+    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | . ",
+    "url": "/aai-programme/en/cat-harness/merge-reviews/",
+    
+    "relUrl": "/en/cat-harness/merge-reviews/"
+  },"96": {
+    "doc": "Merge reviews",
+    "title": "Merge reviews",
+    "content": " ",
+    "url": "/aai-programme/en/cat-harness/merge-reviews/",
+    
+    "relUrl": "/en/cat-harness/merge-reviews/"
+  },"97": {
+    "doc": "Content adapters",
+    "title": "Content adapters",
+    "content": "One page per instance in this checkout holding a directory of this kind. ",
+    "url": "/aai-programme/en/cat-harness/content-adapters/#content-adapters",
+    
+    "relUrl": "/en/cat-harness/content-adapters/#content-adapters"
+  },"98": {
+    "doc": "Content adapters",
+    "title": "Content adapters",
+    "content": " ",
+    "url": "/aai-programme/en/cat-harness/content-adapters/",
+    
+    "relUrl": "/en/cat-harness/content-adapters/"
+  },"99": {
+    "doc": "todos — state",
+    "title": "todos",
+    "content": "todos/ · todos . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/todos/index.html (not published by this site). The directory is todos/. ",
+    "url": "/aai-programme/en/cat-harness/todos/#todos",
+    
+    "relUrl": "/en/cat-harness/todos/#todos"
+  },"100": {
+    "doc": "todos — state",
+    "title": "State graphs this harness declares",
+    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | . ",
+    "url": "/aai-programme/en/cat-harness/todos/",
+    
+    "relUrl": "/en/cat-harness/todos/"
+  },"101": {
+    "doc": "todos — state",
+    "title": "todos — state",
+    "content": " ",
+    "url": "/aai-programme/en/cat-harness/todos/",
+    
+    "relUrl": "/en/cat-harness/todos/"
+  },"102": {
+    "doc": "Policies",
+    "title": "Policies",
+    "content": "One page per instance in this checkout holding a directory of this kind. ",
+    "url": "/aai-programme/en/cat-harness/policies/#policies",
+    
+    "relUrl": "/en/cat-harness/policies/#policies"
+  },"103": {
+    "doc": "Policies",
+    "title": "Policies",
+    "content": " ",
+    "url": "/aai-programme/en/cat-harness/policies/",
+    
+    "relUrl": "/en/cat-harness/policies/"
+  },"104": {
+    "doc": "issue-marks — state",
+    "title": "issue-marks",
+    "content": "issue-marks/ · issue-marks . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/issue-marks/index.html (not published by this site). The directory is issue-marks/. ",
+    "url": "/aai-programme/en/cat-harness/issue-marks/#issue-marks",
+    
+    "relUrl": "/en/cat-harness/issue-marks/#issue-marks"
+  },"105": {
+    "doc": "issue-marks — state",
+    "title": "State graphs this harness declares",
+    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | . ",
+    "url": "/aai-programme/en/cat-harness/issue-marks/",
+    
+    "relUrl": "/en/cat-harness/issue-marks/"
+  },"106": {
+    "doc": "issue-marks — state",
+    "title": "issue-marks — state",
+    "content": " ",
+    "url": "/aai-programme/en/cat-harness/issue-marks/",
+    
+    "relUrl": "/en/cat-harness/issue-marks/"
+  },"107": {
+    "doc": "Vocab mappings",
+    "title": "Vocab mappings",
+    "content": "One page per instance in this checkout holding a directory of this kind. ",
+    "url": "/aai-programme/en/cat-harness/vocab-mappings/#vocab-mappings",
+    
+    "relUrl": "/en/cat-harness/vocab-mappings/#vocab-mappings"
+  },"108": {
+    "doc": "Vocab mappings",
+    "title": "Vocab mappings",
+    "content": " ",
+    "url": "/aai-programme/en/cat-harness/vocab-mappings/",
+    
+    "relUrl": "/en/cat-harness/vocab-mappings/"
+  },"109": {
+    "doc": "uploads — state",
+    "title": "uploads",
+    "content": "uploads/ · uploads . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/uploads/cat-harness/index.html (not published by this site). The directory is uploads/. ",
+    "url": "/aai-programme/en/cat-harness/uploads-queue/#uploads",
+    
+    "relUrl": "/en/cat-harness/uploads-queue/#uploads"
+  },"110": {
+    "doc": "uploads — state",
+    "title": "State graphs this harness declares",
+    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | . ",
+    "url": "/aai-programme/en/cat-harness/uploads-queue/",
+    
+    "relUrl": "/en/cat-harness/uploads-queue/"
+  },"111": {
+    "doc": "uploads — state",
+    "title": "uploads — state",
+    "content": " ",
+    "url": "/aai-programme/en/cat-harness/uploads-queue/",
+    
+    "relUrl": "/en/cat-harness/uploads-queue/"
+  },"112": {
+    "doc": "attestations — state",
+    "title": "attestations",
+    "content": "test/attestations/ · attestations . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/attestations/cat-harness/index.html (not published by this site). The directory is test/attestations/. ",
+    "url": "/aai-programme/en/cat-harness/attestations/#attestations",
+    
+    "relUrl": "/en/cat-harness/attestations/#attestations"
+  },"113": {
+    "doc": "attestations — state",
+    "title": "State graphs this harness declares",
+    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | . ",
+    "url": "/aai-programme/en/cat-harness/attestations/",
+    
+    "relUrl": "/en/cat-harness/attestations/"
+  },"114": {
+    "doc": "attestations — state",
+    "title": "attestations — state",
+    "content": " ",
+    "url": "/aai-programme/en/cat-harness/attestations/",
+    
+    "relUrl": "/en/cat-harness/attestations/"
+  },"115": {
+    "doc": "beans — state",
+    "title": "beans",
+    "content": "beans/ · beans . This graph is rendered elsewhere. Nothing publishes a projection at this generator's own path, but the declaration names a visualiser for it: cat-harness/docs/en/cat-harness/beans/index.html (not published by this site). The directory is beans/. ",
+    "url": "/aai-programme/en/cat-harness/beans/#beans",
+    
+    "relUrl": "/en/cat-harness/beans/#beans"
+  },"116": {
+    "doc": "beans — state",
+    "title": "State graphs this harness declares",
+    "content": ". | attestations elsewhere . The JUDGEMENT half of every QA verdict this layer carries across runs, split out of test/results/ by owner ruling D2 (a), 2026-10-01 (bean 2gst, arc 3fva): derived script verdicts move to the qa-reports branch; anything a reviewer judged stays HERE, on . | beans elsewhere . The work plan. | health elsewhere . Repository health reports — what the daily sweep under test/health/ wrote. | issue-marks elsewhere . How far an agent has read an issue: lastCommentId, lastUpdatedAt and checkedAt, one file per issue — the marks say what was seen, never the comments. | merge-reviews elsewhere . The adversarial review verdict on each pull request's head: &lt;head sha&gt;.json, one merge-review/v1 file per head. | qa elsewhere . Everything a QA process produced, in one declared tree. | swimlane-glossary elsewhere . The swimlane glossary's retirement ledger. | todos elsewhere . A PERSON's outstanding items — the human half of memory, as against beans/, which is the agent's workflow management. | uploads elsewhere . The incoming queue of the document-ingestion pipeline — raw files as dropped, before ingestion. | . ",
+    "url": "/aai-programme/en/cat-harness/beans/",
+    
+    "relUrl": "/en/cat-harness/beans/"
+  },"117": {
+    "doc": "beans — state",
+    "title": "beans — state",
+    "content": " ",
+    "url": "/aai-programme/en/cat-harness/beans/",
+    
+    "relUrl": "/en/cat-harness/beans/"
+  },"118": {
+    "doc": "QA checkers",
+    "title": "QA checkers",
+    "content": "One page per instance in this checkout holding a directory of this kind. ",
+    "url": "/aai-programme/en/cat-harness/qa-checkers/#qa-checkers",
+    
+    "relUrl": "/en/cat-harness/qa-checkers/#qa-checkers"
+  },"119": {
+    "doc": "QA checkers",
+    "title": "QA checkers",
+    "content": " ",
+    "url": "/aai-programme/en/cat-harness/qa-checkers/",
+    
+    "relUrl": "/en/cat-harness/qa-checkers/"
+  },"120": {
+    "doc": "Processes — aai-programme",
+    "title": "Processes — aai-programme",
+    "content": "The diagrams aai-programme holds in its declared processes directories — one sub-graph’s slice of every instance’s processes. The skills, lanes and findings below count these diagrams only. Generated by cat-harness-tools/scripts/gen-processes-viz.ts. Every number here is counted from the directory, never carried in prose — bpmn-processes’ own rule, and the bean that asked for this page had two different counts in its title and its body. 7 diagram(s), 7 parsed, 0 that would not load. | where | diagrams | . | processes/process/ | 7 | . ",
+    "url": "/aai-programme/en/cat-harness/processes/aai-programme/",
+    
+    "relUrl": "/en/cat-harness/processes/aai-programme/"
+  },"121": {
+    "doc": "Processes — aai-programme",
+    "title": "Every process — one page each",
+    "content": "Each page shows the diagram, what it is for, who acts in it, every step with the skill it runs, and which processes call it. kg:audit’s process-diagram-published fails a diagram no page shows — 45 of 62 were in that state before these pages existed (bean ooq3). Running instances links each workflow instance’s own page — the diagram with its token, its stuck states, its beans and todos — for every instance running this process or calling it as a subprocess. Links and counts only: where an instance IS lives in its file under beans/workflows/. | process | steps | undocumented steps | running instances | . | Assured AI programme: act on bean drift · IRI · JSON-LD | 4 | — | none recorded | . | Assured AI programme: triage a bean · IRI · JSON-LD | 2 | — | none recorded | . | Assured AI programme: record and escalate a dependency · IRI · JSON-LD | 5 | — | none recorded | . | Assured AI programme: propose a new or changed epic · IRI · JSON-LD | 5 | — | none recorded | . | Assured AI programme: confirm a component is ready to integrate · IRI · JSON-LD | 3 | — | none recorded | . | Assured AI programme: build the GitHub set-up · IRI · JSON-LD | 12 | — | none recorded | . | Assured AI programme: the pilot · IRI · JSON-LD | 7 | — | none recorded | . Instances of cat-harness could not be read in this build, so “none recorded” above does not cover them. ",
+    "url": "/aai-programme/en/cat-harness/processes/aai-programme/#every-process--one-page-each",
+    
+    "relUrl": "/en/cat-harness/processes/aai-programme/#every-process--one-page-each"
+  },"122": {
+    "doc": "Processes — aai-programme",
+    "title": "What runs this skill?",
+    "content": "The reverse of &lt;bootstrap.processes:skill ref&gt;, which is the join nothing else exposes: a skill says what to do, and until now nothing said which processes ask for it. 0 distinct skill(s) are named by an activity. No activity names a skill. Names an ⓘ task panel shows without a link are listed on Task panel links: QA. ",
+    "url": "/aai-programme/en/cat-harness/processes/aai-programme/#what-runs-this-skill",
+    
+    "relUrl": "/en/cat-harness/processes/aai-programme/#what-runs-this-skill"
+  },"123": {
+    "doc": "Processes — aai-programme",
+    "title": "Who appears in a process?",
+    "content": "A lane NAMES the Role its tasks are performed in; it is not itself a Role. The NAME is free text — process-model.ts notes that sixty lanes spell two dozen positions — so the lane’s partitionElementRef (or the legacy &lt;bootstrap.processes:role ref&gt;) is the join that does not depend on spelling, and it is reported separately below rather than merged into the name. 7 distinct lane name(s). | lane | in | . | PM &amp; Architecture Integration | 5 | . | Workstream lead | 5 | . | Technical Integration Lead | 3 | . | Build agent | 2 | . | WHO GitHub owner | 2 | . | Programme automation | 1 | . | Workstream team | 1 | . ",
+    "url": "/aai-programme/en/cat-harness/processes/aai-programme/#who-appears-in-a-process",
+    
+    "relUrl": "/en/cat-harness/processes/aai-programme/#who-appears-in-a-process"
+  },"124": {
+    "doc": "Processes — aai-programme",
+    "title": "Which steps touch the work plan?",
+    "content": "&lt;cat-harness.processes:bean op&gt; — the audit trail for who reserves and resolves work. No step names a bean op. ",
+    "url": "/aai-programme/en/cat-harness/processes/aai-programme/#which-steps-touch-the-work-plan",
+    
+    "relUrl": "/en/cat-harness/processes/aai-programme/#which-steps-touch-the-work-plan"
+  },"125": {
+    "doc": "Processes — aai-programme",
+    "title": "Strict, advisory — and nobody said",
+    "content": "Three states, not two. loadProcessModel reads an undeclared policy as strict, which is right for the engine — “a process that forgot to say is governed, not exempt” — and hides a fact a reader wants. Somebody chose strict and nobody said, so the engine assumed strict are different, and the second is 7 of 7 here. | enforcement | declared | defaulted | . | strict | 0 | 7 | . | advisory | 0 | 0 | . ",
+    "url": "/aai-programme/en/cat-harness/processes/aai-programme/#strict-advisory--and-nobody-said",
+    
+    "relUrl": "/en/cat-harness/processes/aai-programme/#strict-advisory--and-nobody-said"
+  },"126": {
+    "doc": "Processes — aai-programme",
+    "title": "Findings",
+    "content": "Every one of the 7 diagrams has a rendered SVG. Activities carrying no &lt;bootstrap.processes:skill ref&gt; — a census, not a gap list . 38 across 7 diagram(s). This section reported them as defects in its first version, and that was wrong: beans luke and uuhu worked this corpus from 90 down to this remainder and settled what is left. luke: “coverage is deliberately NOT gated — a human sign-off step has no skill”. uuhu added the call-activity exemption and recorded that its own remainder “are not gaps”. 3 are call activities, which delegate to a subprocess — the skill is named there, and naming it twice would be one fact in two places. The other 35 are listed by lane, because the lane is what says whether a person, a pipeline or an agent performs the step, and only the last of those has a skill to run. | lane | steps | . | Build agent | 12 | . | PM &amp; Architecture Integration | 7 | . | Workstream lead | 7 | . | Technical Integration Lead | 3 | . | WHO GitHub owner | 3 | . | Programme automation | 2 | . | Workstream team | 1 | . No verdict is offered on which of these is a gap, and that is the honest state rather than a hedge: distinguishing a person’s judgement step from an agent step somebody forgot needs the lane’s actor KIND, which a free-text lane name does not give — process-model.ts notes sixty lanes spell two dozen positions. The lane’s partitionElementRef is the join that would answer it, and it is present on 35 of these 35 steps — which is the measurement, not an impression. An earlier draft of this sentence said few of these and was counting whether the lane had a NAME, a different question with a different answer. ",
+    "url": "/aai-programme/en/cat-harness/processes/aai-programme/#findings",
+    
+    "relUrl": "/en/cat-harness/processes/aai-programme/#findings"
+  },"127": {
+    "doc": "Processes",
+    "title": "Processes — every executable diagram, searchable",
+    "content": "Generated by cat-harness-tools/scripts/gen-processes-viz.ts. Every number here is counted from the directory, never carried in prose — bpmn-processes’ own rule, and the bean that asked for this page had two different counts in its title and its body. 7 diagram(s), 7 parsed, 0 that would not load. | where | diagrams | . | processes/process/ | 7 | . ",
+    "url": "/aai-programme/en/cat-harness/processes/#processes--every-executable-diagram-searchable",
+    
+    "relUrl": "/en/cat-harness/processes/#processes--every-executable-diagram-searchable"
+  },"128": {
+    "doc": "Processes",
+    "title": "By subgraph",
+    "content": "Each instance that holds diagrams has its own page, listing only its processes. | subgraph | diagrams | . | aai-programme | 7 | . ",
+    "url": "/aai-programme/en/cat-harness/processes/#by-subgraph",
+    
+    "relUrl": "/en/cat-harness/processes/#by-subgraph"
+  },"129": {
+    "doc": "Processes",
+    "title": "Every process — one page each",
+    "content": "Each page shows the diagram, what it is for, who acts in it, every step with the skill it runs, and which processes call it. kg:audit’s process-diagram-published fails a diagram no page shows — 45 of 62 were in that state before these pages existed (bean ooq3). Running instances links each workflow instance’s own page — the diagram with its token, its stuck states, its beans and todos — for every instance running this process or calling it as a subprocess. Links and counts only: where an instance IS lives in its file under beans/workflows/. | process | steps | undocumented steps | running instances | . | Assured AI programme: act on bean drift · IRI · JSON-LD | 4 | — | none recorded | . | Assured AI programme: triage a bean · IRI · JSON-LD | 2 | — | none recorded | . | Assured AI programme: record and escalate a dependency · IRI · JSON-LD | 5 | — | none recorded | . | Assured AI programme: propose a new or changed epic · IRI · JSON-LD | 5 | — | none recorded | . | Assured AI programme: confirm a component is ready to integrate · IRI · JSON-LD | 3 | — | none recorded | . | Assured AI programme: build the GitHub set-up · IRI · JSON-LD | 12 | — | none recorded | . | Assured AI programme: the pilot · IRI · JSON-LD | 7 | — | none recorded | . Instances of cat-harness could not be read in this build, so “none recorded” above does not cover them. ",
+    "url": "/aai-programme/en/cat-harness/processes/#every-process--one-page-each",
+    
+    "relUrl": "/en/cat-harness/processes/#every-process--one-page-each"
+  },"130": {
+    "doc": "Processes",
+    "title": "What runs this skill?",
+    "content": "The reverse of &lt;bootstrap.processes:skill ref&gt;, which is the join nothing else exposes: a skill says what to do, and until now nothing said which processes ask for it. 0 distinct skill(s) are named by an activity. No activity names a skill. Names an ⓘ task panel shows without a link are listed on Task panel links: QA. ",
+    "url": "/aai-programme/en/cat-harness/processes/#what-runs-this-skill",
+    
+    "relUrl": "/en/cat-harness/processes/#what-runs-this-skill"
+  },"131": {
+    "doc": "Processes",
+    "title": "Who appears in a process?",
+    "content": "A lane NAMES the Role its tasks are performed in; it is not itself a Role. The NAME is free text — process-model.ts notes that sixty lanes spell two dozen positions — so the lane’s partitionElementRef (or the legacy &lt;bootstrap.processes:role ref&gt;) is the join that does not depend on spelling, and it is reported separately below rather than merged into the name. 7 distinct lane name(s). | lane | in | . | PM &amp; Architecture Integration | 5 | . | Workstream lead | 5 | . | Technical Integration Lead | 3 | . | Build agent | 2 | . | WHO GitHub owner | 2 | . | Programme automation | 1 | . | Workstream team | 1 | . ",
+    "url": "/aai-programme/en/cat-harness/processes/#who-appears-in-a-process",
+    
+    "relUrl": "/en/cat-harness/processes/#who-appears-in-a-process"
+  },"132": {
+    "doc": "Processes",
+    "title": "Which steps touch the work plan?",
+    "content": "&lt;cat-harness.processes:bean op&gt; — the audit trail for who reserves and resolves work. No step names a bean op. ",
+    "url": "/aai-programme/en/cat-harness/processes/#which-steps-touch-the-work-plan",
+    
+    "relUrl": "/en/cat-harness/processes/#which-steps-touch-the-work-plan"
+  },"133": {
+    "doc": "Processes",
+    "title": "Strict, advisory — and nobody said",
+    "content": "Three states, not two. loadProcessModel reads an undeclared policy as strict, which is right for the engine — “a process that forgot to say is governed, not exempt” — and hides a fact a reader wants. Somebody chose strict and nobody said, so the engine assumed strict are different, and the second is 7 of 7 here. | enforcement | declared | defaulted | . | strict | 0 | 7 | . | advisory | 0 | 0 | . ",
+    "url": "/aai-programme/en/cat-harness/processes/#strict-advisory--and-nobody-said",
+    
+    "relUrl": "/en/cat-harness/processes/#strict-advisory--and-nobody-said"
+  },"134": {
+    "doc": "Processes",
+    "title": "Findings",
+    "content": "Every one of the 7 diagrams has a rendered SVG. Activities carrying no &lt;bootstrap.processes:skill ref&gt; — a census, not a gap list . 38 across 7 diagram(s). This section reported them as defects in its first version, and that was wrong: beans luke and uuhu worked this corpus from 90 down to this remainder and settled what is left. luke: “coverage is deliberately NOT gated — a human sign-off step has no skill”. uuhu added the call-activity exemption and recorded that its own remainder “are not gaps”. 3 are call activities, which delegate to a subprocess — the skill is named there, and naming it twice would be one fact in two places. The other 35 are listed by lane, because the lane is what says whether a person, a pipeline or an agent performs the step, and only the last of those has a skill to run. | lane | steps | . | Build agent | 12 | . | PM &amp; Architecture Integration | 7 | . | Workstream lead | 7 | . | Technical Integration Lead | 3 | . | WHO GitHub owner | 3 | . | Programme automation | 2 | . | Workstream team | 1 | . No verdict is offered on which of these is a gap, and that is the honest state rather than a hedge: distinguishing a person’s judgement step from an agent step somebody forgot needs the lane’s actor KIND, which a free-text lane name does not give — process-model.ts notes sixty lanes spell two dozen positions. The lane’s partitionElementRef is the join that would answer it, and it is present on 35 of these 35 steps — which is the measurement, not an impression. An earlier draft of this sentence said few of these and was counting whether the lane had a NAME, a different question with a different answer. ",
+    "url": "/aai-programme/en/cat-harness/processes/#findings",
+    
+    "relUrl": "/en/cat-harness/processes/#findings"
+  },"135": {
+    "doc": "Processes",
+    "title": "Processes",
+    "content": " ",
+    "url": "/aai-programme/en/cat-harness/processes/",
+    
+    "relUrl": "/en/cat-harness/processes/"
+  },"136": {
+    "doc": "Requirement nodes",
+    "title": "Requirement nodes",
+    "content": "One statement per requirement ID, generated from the requirements document by scripts/gen-requirements.ts. Cite one as req:&lt;group&gt;#&lt;ID&gt;, for example req:aai-automation#AUTO-04. | Group | Id | Status | Statements | Range | . | acceptance criteria | req:aai-acceptance | proposed | 19 | AC-01 … AC-19 | . | automation | req:aai-automation | proposed | 11 | AUTO-01 … AUTO-12 | . | decisions needed before the build | req:aai-decisions | proposed | 14 | BD-01 … BD-08 | . | dependencies | req:aai-dependencies | proposed | 5 | DEP-01 … DEP-05 | . | design principles | req:aai-design-principles | proposed | 9 | DP-01 … DP-09 | . | information classification | req:aai-information | proposed | 5 | SEC-01 … SEC-05 | . | linking to workstream projects | req:aai-linking | proposed | 7 | LINK-01 … LINK-07 | . | metrics | req:aai-metrics | proposed | 6 | M1 … M6 | . | pilot tests | req:aai-pilot | proposed | 10 | PIL-01 … PIL-11 | . | programme project views | req:aai-views | proposed | 13 | V1 … V13 | . ",
+    "url": "/aai-programme/docs/requirements/",
+    
+    "relUrl": "/docs/requirements/"
+  },"137": {
+    "doc": "Requirement nodes",
+    "title": "Requirement sets",
+    "content": ". | Assured AI programme: requirements v0.5 (reqset:aai-programme-v0-5): stage proposed, 10 requirement(s). The document. | . ",
+    "url": "/aai-programme/docs/requirements/#requirement-sets",
+    
+    "relUrl": "/docs/requirements/#requirement-sets"
+  },"138": {
+    "doc": "Work plan board",
+    "title": "Platform beans board",
+    "content": "Generated by bun run scripts/pull-beans.ts from the repositories in beans-sources.json. Do not edit by hand. GitHub issues hold programme status. A bean links to its issue with issue:; open beans without one are counted below. ",
+    "url": "/aai-programme/board/#platform-beans-board",
+    
+    "relUrl": "/board/#platform-beans-board"
+  },"139": {
+    "doc": "Work plan board",
+    "title": "Stores",
+    "content": "| Repository | Store | In progress | To do | Draft | Completed | Scrapped | Open without issue | . | aai-programme | cat/aai-platform/beans @ befe225 | 3 | 22 | 0 | 0 | 0 | 0 | . | folio-assistant | cat/cat-harness/beans @ b266a69 | 23 | 16 | 0 | 1659 | 31 | 38 | . | bootstrap | no beans yet | – | – | – | – | – | – | . | bootstrap-tools | no beans yet | – | – | – | – | – | – | . | cat-harness | cat/cat-harness/beans @ df413d1 (67 bean(s) also kept, more recently, in another store) | 0 | 1 | 0 | 0 | 0 | 1 | . | cat-harness-tools | main @ 6dd108f | 2 | 2 | 1 | 322 | 5 | 4 | . | folio-assistant-core | main @ 419d595 | 0 | 2 | 0 | 197 | 7 | 2 | . | folio-assistant-sci | no beans yet | – | – | – | – | – | – | . | fhir-harness | no beans yet | – | – | – | – | – | – | . | who-iris | no beans yet | – | – | – | – | – | – | . | smart-ra | cat/dpi-h-ra/beans @ 50838e6 | 1 | 0 | 0 | 1 | 0 | 1 | . | dth-hrh | cat/dth-hrh/beans @ 73e2ea0 | 0 | 0 | 0 | 3 | 0 | 0 | . ",
+    "url": "/aai-programme/board/#stores",
+    
+    "relUrl": "/board/#stores"
+  },"140": {
+    "doc": "Work plan board",
+    "title": "Blocked",
+    "content": "| Bean | Repository | Title | Blocked by | Issue | . | aai-platform-12jf | aai-programme | Step 8: bulk import | aai-platform-55mk | folio-assistant#2605 | . | aai-platform-15r2 | aai-programme | Step 10: build report | aai-platform-se78 | folio-assistant#2605 | . | aai-platform-296c | aai-programme | Step 3: repositories, roles and labels | aai-platform-64nd | folio-assistant#2605 | . | aai-platform-55mk | aai-programme | Step 7: pilot build and tests PIL-01 to PIL-11 | aai-platform-ru5n, aai-platform-ci17, aai-platform-afe0 | folio-assistant#2605 | . | aai-platform-64nd | aai-programme | Step 2: create or reuse the issue types and issue fields | aai-platform-wyr6 | folio-assistant#2605 | . | aai-platform-ru5n | aai-programme | Step 4: programme project and workstream template | aai-platform-296c | folio-assistant#2605 | . | aai-platform-se78 | aai-programme | Step 9: charts M1 to M5 and acceptance criteria | aai-platform-12jf | folio-assistant#2605 | . | aai-platform-wfvg | aai-programme | Review the project 110 items with Ritika after the pilot | aai-platform-55mk | folio-assistant#2605 | . | aai-platform-wyr6 | aai-programme | Step 1: pre-flight check of the WHO organisation | aai-platform-afe0 | folio-assistant#2605 | . ",
+    "url": "/aai-programme/board/#blocked",
+    
+    "relUrl": "/board/#blocked"
+  },"141": {
+    "doc": "Work plan board",
+    "title": "Open beans",
+    "content": "aai-programme (25 open) . | Bean | Status | Priority | Type | Title | Issue | . | aai-platform-oqd4 | in-progress | normal | task | Make this repository a cat-harness instance | folio-assistant#2605 | . | aai-platform-p1bd | in-progress | normal | task | Pull beans from the platform repositories into one board | folio-assistant#2605 | . | aai-platform-r9vd | in-progress | normal | task | Write requirements v0.4.2 from the 2026-10-20 decisions | folio-assistant#2605 | . | aai-platform-12jf | todo | normal | task | Step 8: bulk import | folio-assistant#2605 | . | aai-platform-15r2 | todo | normal | task | Step 10: build report | folio-assistant#2605 | . | aai-platform-296c | todo | normal | task | Step 3: repositories, roles and labels | folio-assistant#2605 | . | aai-platform-4oyq | todo | normal | task | Agree the rule for when a bean becomes an issue | folio-assistant#2605 | . | aai-platform-55mk | todo | normal | task | Step 7: pilot build and tests PIL-01 to PIL-11 | folio-assistant#2605 | . | aai-platform-64nd | todo | normal | task | Step 2: create or reuse the issue types and issue fields | folio-assistant#2605 | . | aai-platform-6o0v | todo | normal | task | Rename aai-platform to aai-programme | folio-assistant#2605 | . | aai-platform-7aw2 | todo | normal | epic | Build the Assured AI programme GitHub set-up (requirements v0.4.2) | folio-assistant#2605 | . | aai-platform-7ba1 | todo | normal | task | Turn on issues in this repository | folio-assistant#2605 | . | aai-platform-afe0 | todo | normal | task | Get the BD decisions from the WHO GitHub owners | folio-assistant#2605 | . | aai-platform-b3vu | todo | normal | task | Get the section 17 open points from the PM | folio-assistant#2605 | . | aai-platform-ci17 | todo | normal | task | Step 6: automation scripts AUTO-01 to AUTO-11 | folio-assistant#2605 | . | aai-platform-g4tm | todo | normal | task | Add the gates: labels | folio-assistant#2605 | . | aai-platform-kaoz | todo | normal | task | Settle SEC-04 for a public aai-platform | folio-assistant#2605 | . | aai-platform-kv50 | todo | normal | task | Answer dgv21: cross-workstream marking as fields, not labels | folio-assistant#2605 | . | aai-platform-l2kn | todo | normal | task | Name the Platform lead and give them Maintain access | folio-assistant#2605 | . | aai-platform-ru5n | todo | normal | task | Step 4: programme project and workstream template | folio-assistant#2605 | . | aai-platform-s7wq | todo | normal | task | Sync the fork to the WHO repository | folio-assistant#2605 | . | aai-platform-se78 | todo | normal | task | Step 9: charts M1 to M5 and acceptance criteria | folio-assistant#2605 | . | aai-platform-uhe0 | todo | normal | task | Step 5: READMEs and the workstream directory issue | folio-assistant#2605 | . | aai-platform-wfvg | todo | normal | task | Review the project 110 items with Ritika after the pilot | folio-assistant#2605 | . | aai-platform-wyr6 | todo | normal | task | Step 1: pre-flight check of the WHO organisation | folio-assistant#2605 | . folio-assistant (39 open) . | Bean | Status | Priority | Type | Title | Issue | . | folio-assistant-n6ny | in-progress | critical | epic | Project memory: owner rules, facts, to-dos, cards and threads (read first) |   | . | folio-assistant-php1 | in-progress | critical | task | Owner standing rules (moved from project memory 2026-11-12) |   | . | folio-assistant-1b7t | in-progress | high | task | Decision cards: open and answered |   | . | folio-assistant-95e7 | in-progress | high | epic | smart-base: move skill/tool source out of .github/ and the root dirs into the KG subgraphs; .github/ keeps only generated links |   | . | folio-assistant-drnh | in-progress | high | task | Merge-window drain to 2026-11-03 00:40Z: PRs, re-pin train, open cards (handover bean) |   | . | folio-assistant-g4rf | in-progress | high | task | G4 red-fix: single code PRs with real new failures (2026-11-15) |   | . | folio-assistant-k3vv | in-progress | high | epic | CI speed II (2026-11-05): restarts on main moves, red-main cycle, setup duplication |   | . | folio-assistant-lgwt | in-progress | high | task | Review-log watcher: standing rules, how to watch, current state (handover bean) |   | . | folio-assistant-mm15 | in-progress | high | task | Merge manager handover 2026-11-15 06:35Z |   | . | folio-assistant-pb15 | in-progress | high | task | Harness PR backlog plan 2026-11-15 |   | . | folio-assistant-qc15 | in-progress | high | task | qou coordinator handover 2026-11-15 (tracker qou#7735) |   | . | folio-assistant-rwmf | in-progress | high | milestone | GOAL 4 / PLATFORM: the harness’s own reliability — gates, process, QA, merge pipeline, deployment — which every GOAL stands on |   | . | folio-assistant-v8bg | in-progress | high | epic | Handover 2026-11-12 09:32Z: open workstreams |   | . | folio-assistant-wl48 | in-progress | high | task | Facts and references (moved from project memory 2026-11-12) |   | . | folio-assistant-wt3x | in-progress | high | task | WHO move T3: same-owner pins, derived owner, publishing profile (code PRs) |   | . | folio-assistant-bsd1 | in-progress | normal | feature | BEAN STORE BEHIND ANY TOOL + STATE MACHINE STARTS ANY MODEL’S AGENT: proposal (WHO Assured AI / Gemini benchmarking context) | cat-harness#991 | . | folio-assistant-cysv | in-progress | normal | task | One DTH scaffold and seed tool in the platform (dth init), replacing per-repo copies |   | . | folio-assistant-dthl | in-progress | normal | epic | DTH handbooks as L2 documents on smart-ra (HRH pilot, PHC, SC, PC, SFP) |   | . | folio-assistant-f7ph | in-progress | normal | task | Project thread directory (thread ids) |   | . | folio-assistant-fwtz | in-progress | normal | task | docs-site must rebuild when the bean branch moves (ref + concurrency) |   | . | folio-assistant-hrfr | in-progress | normal | task | DPI-H public-comment log watcher: state at the 2026-11-15 owner check-in |   | . | folio-assistant-oiah | in-progress | normal | task | Biblio nav: standing 6-hourly re-pin per IG (Q-BIBNAV-2 = B) |   | . | folio-assistant-yj32 | in-progress | normal | epic | HARNESS AS INTERFACE: a harness instance’s default rendering is LHS + docs/ + a themed folio board, and it is a KG-DS management system |   | . | folio-assistant-98p4 | todo | high | task | Owner to-do: per IG repo, Allow auto-merge + REPIN_TOKEN secret |   | . | folio-assistant-dkin | todo | high | task | who-iris: L1-ingest the remaining DAKs (TB, HIV, CHUD, PNC, SRV, SMBP, STI) with their per-task annotations |   | . | folio-assistant-no51 | todo | high | task | Owner to-do list (things only litlfred can do) |   | . | folio-assistant-17iw | todo | normal | task | MIGRATION: public-health and health-system process catalogues move from smart-base to WHO/who-iris once it is live |   | . | folio-assistant-65aj | todo | normal | task | Paste Stub.gs into each review log |   | . | folio-assistant-9hxd | todo | normal | task | CREDENTIALS (iii): credentials/ declaration (needs, profile, registry) for bootstrap-tools and folio-assistant |   | . | folio-assistant-amom | todo | normal | feature | MODE: test/swarm — a stack of models over shared or independent work queues |   | . | folio-assistant-nbp9 | todo | normal | task | Move the deploy-folio secrets into the production environment, with a required reviewer |   | . | folio-assistant-nvhg | todo | normal | task | TERMINOLOGY / adjudication leg 2: two judges disagree about a mapping (from 2i5f) |   | . | folio-assistant-oz9e | todo | normal | feature | BENCHMARK: outcome evaluation of harness runs across models (close B8 — accuracy, not only structure) |   | . | folio-assistant-r29x | todo | normal | task | R29 (PAUSED by owner): todos and sticky notes reference things across KG libraries, as one merged kind |   | . | folio-assistant-untm | todo | normal | task | UNTERM: official UN terminology as translation candidates and glossary QA terms |   | . | folio-assistant-xaa8 | todo | normal | task | CI speed II (g): owner decision: move the repo under a free GitHub organization for the real merge queue |   | . | folio-assistant-6gnn | todo | low | task | WorldHealthOrganization/smart-base: port the .github/skills clean-up and the BPMN validator fixes upstream |   | . | folio-assistant-fvec | todo | low | task | PUBLISH: Cloudflare R2 + CDN in front of the WHO L1 corpus (future; owner 2026-10-24) |   | . | folio-assistant-pga6 | todo | low | task | Separation Phase III: L4/L5 Content, Tool and Test repos on the harness, plus current and future architecture write-up |   | . cat-harness (1 open) . | Bean | Status | Priority | Type | Title | Issue | . | note | todo | normal | task | folio-assistant-0lj4–2026-10-04–claude-gracious-mendel-du6nn8 |   | . cat-harness-tools (4 open) . | Bean | Status | Priority | Type | Title | Issue | . | folio-assistant-vuip | in-progress | high | milestone | GOAL 1: separation of repos into dir/repos, each harness instantiation with config and initiation steps skilled, tooled and tested |   | . | folio-assistant-1xhc | in-progress | normal | epic | CI RELIABILITY: a gate that does not fire is indistinguishable from one that passed |   | . | cat-tools-fc0r | todo | normal | task | FHIR core definitions are materialised by hand; the publish step does not build them |   | . | cat-tools-pfng | todo | normal | epic | Fill the smart-* and dth-* translations with open MT candidates, blind round-trip and glossary review |   | . folio-assistant-core (2 open) . | Bean | Status | Priority | Type | Title | Issue | . | folio-assistant-pvq4 | todo | normal | task | REVIEW: a person confirms or rejects the agent-drafted block summaries |   | . | folio-assistant-supn | todo | normal | task | HARNESS CARDS BECOME TODOS: outstanding work, a next-action recommendation from initialisation state, and health badges |   | . smart-ra (1 open) . | Bean | Status | Priority | Type | Title | Issue | . | dpi-h-ra-szj8 | in-progress | normal | epic | DPI-H RA public review: intake, adjudication and publication of the revised guidance |   | . dth-hrh (0 open) . Nothing open. ",
+    "url": "/aai-programme/board/#open-beans",
+    
+    "relUrl": "/board/#open-beans"
+  },"142": {
+    "doc": "Work plan board",
+    "title": "Work plan board",
+    "content": " ",
+    "url": "/aai-programme/board/",
+    
+    "relUrl": "/board/"
+  },"143": {
+    "doc": "Integration readiness: who did what",
+    "title": "Integration readiness: who did what",
+    "content": "Generated from the issues’ own history by scripts/programme/qa-validation.ts each time the site is published. With no named Technical Integration Lead, anyone with write access can confirm validation (AUTO-10, owner 2026-10-20); this report shows who did, so a confirmation by the same person who set Validated, or one without evidence, is visible. It flags; it never changes an item. 3 item(s) with a readiness label; 0 flagged. | Item | Workstream | Readiness | Validated set by | Confirmed by | Flags | . | aai-programme#7 | Platform | Not ready | – | – | ok | . | aai-programme#5 | WS1 Knowledge graph | Ready to integrate | – | – | ok | . | aai-programme#4 | Cross-workstream | Not assessed | – | – | ok | . ",
+    "url": "/aai-programme/qa/validation/",
+    
+    "relUrl": "/qa/validation/"
+  },"144": {
+    "doc": "Integration readiness: who did what",
+    "title": "Every readiness change",
+    "content": "| Item | Change | By | When (UTC) | . | aai-programme#7 | set readiness:Not ready | litlfred | 2026-10-20 17:26 | . | aai-programme#5 | set readiness:Ready to integrate | litlfred | 2026-10-20 17:26 | . | aai-programme#4 | set readiness:Not assessed | litlfred | 2026-10-20 17:26 | . ",
+    "url": "/aai-programme/qa/validation/#every-readiness-change",
+    
+    "relUrl": "/qa/validation/#every-readiness-change"
+  },"145": {
+    "doc": "Programme board",
+    "title": "Programme board",
+    "content": "The Assured AI programme’s views and metrics (section 8), built from the issues’ labels, with nothing kept by hand. The same issues show in project 110. Workstreams, epics and beans maps each workstream’s epics and proposals to their features and beans; Bean drift says where an issue and its bean disagree. ",
+    "url": "/aai-programme/programme/#programme-board",
+    
+    "relUrl": "/programme/#programme-board"
+  },"146": {
+    "doc": "Programme board",
+    "title": "Views",
+    "content": "| View | Shows | . | V1 Master programme | Epics, grouped by Workstream, sorted by Start date. | . | V2 Roadmap | Epics and milestones with dates, by Workstream. | . | V3 Milestones | Milestone issues, and items with any gates: label, by Gates output. | . | V4 Research questions | Research question issues, and every item contributing to one (its rq: labels). | . | V5 Pipeline stages | Epics and thin-slice items, in columns by Pipeline stage, L1 through LOC, with Cross-cutting / N/A separate. | . | V6 Integration readiness | thin-slice items, and epics assessed for readiness, by Pipeline stage. Awaiting validation is the Technical Integration Lead’s queue. | . | V7 Sprint review | Items labelled sprint-demo, by Workstream. | . | V8 Next 30 days | Open epics, milestones, dependencies and cross-workstream deliverables due in the next 30 days. | . | V9 Dependencies | Dependency issues, by the waiting Workstream. | . | V10 Blocked and at risk | Delivery health At risk or Blocked, or labelled blocked, at-risk or validation-exception. Every item here should carry a Next action line. | . | V11 WHO review | Items with a Review type other than Not needed, in columns by Review status. | . | V12 Decisions | Decision issues, open and closed. | . | V13 Overdue | Target date before today, and Programme status not Done or Cancelled. | . ",
+    "url": "/aai-programme/programme/#views",
+    
+    "relUrl": "/programme/#views"
+  },"147": {
+    "doc": "Programme board",
+    "title": "Metrics",
+    "content": "M1 Epics by Delivery health . |   | Count |   | . | On track | 0 | | . | At risk | 0 | | . | Blocked | 0 | | . M2 Blocked items by Workstream . | Count | |—|—|—| . M3 At-risk or blocked dependencies . |   | Count |   | . | At risk or Blocked | 0 | | . M4 Overdue deliverables . |   | Count |   | . | Overdue | 0 | | . M5 Integration readiness by Pipeline stage . | Pipeline stage | Not assessed | Not ready | Partly ready | Ready to integrate | Validated | . | KG Knowledge graph | 0 | 0 | 0 | 1 | 0 | . | L5 Health skills + MCP | 0 | 1 | 0 | 0 | 0 | . | Cross-cutting / N/A | 1 | 0 | 0 | 0 | 0 | . ",
+    "url": "/aai-programme/programme/#metrics",
+    
+    "relUrl": "/programme/#metrics"
+  },"148": {
+    "doc": "Programme board",
+    "title": "Proposals awaiting the PM",
+    "content": "Epics proposed by a workstream, for the PM &amp; Architecture Integration to accept, amend or decline (req:aai-linking#LINK-07). They join V1 once accepted. | Proposal | Workstream | Pipeline stage | Features | . | Epic proposal (WS5): programme governance and stewardship | WS5 Governance and stewardship | Cross-cutting / N/A | 1 | . | Epic proposal (Platform): deployment, publishing and the knowledge graph’s publication | Platform | Cross-cutting / N/A | 6 | . | Epic proposal (WS4): translated renders and their review | WS4 Localization | LOC Localization | 2 | . | Epic proposal (WS3): evaluate outputs across models and routes | WS3 Evaluation | EVAL Evaluation | 4 | . | Epic proposal (WS2): L1 and DAK authoring on the SMART stack | WS2 Authoring | L2 Operational (DAK) | 8 | . | Epic proposal (WS1): WHO guidance into the L1 knowledge graph | WS1 Knowledge graph | KG Knowledge graph | 7 | . ",
+    "url": "/aai-programme/programme/#proposals-awaiting-the-pm",
+    
+    "relUrl": "/programme/#proposals-awaiting-the-pm"
+  },"149": {
+    "doc": "Programme board",
+    "title": "Checks",
+    "content": ". | Every item has a Workstream (req:aai-linking#LINK-06): no — [Pilot] Milestone: thin slice demonstrated (closed), [Pilot] Research question R1 (closed). | Items on the board: 13 (AUTO-01’s rule; a WS5 task with none of its labels stays off). | . Built 2026-11-19 from the labels of 13 issue(s) in litlfred/aai-programme by scripts/programme/board.ts; as current as the last publish. Change a value by changing the issue’s label. ",
+    "url": "/aai-programme/programme/#checks",
+    
+    "relUrl": "/programme/#checks"
+  },"150": {
+    "doc": "Programme board",
+    "title": "Programme board",
+    "content": " ",
+    "url": "/aai-programme/programme/",
+    
+    "relUrl": "/programme/"
+  },"151": {
+    "doc": "Assured AI programme",
+    "title": "Assured AI programme",
+    "content": "Coordination for the WHO Assured AI programme, staged in litlfred/aai-programme until the owner syncs it to the WHO organisation. Programme status is held on GitHub issues: see the programme set-up request, litlfred/folio-assistant#2605. | Area | Where | . | Requirements | v0.5, current draft: all public, no private layer. Earlier: v0.4.2 · v0.4.1, as written by the PM &amp; Architecture Integration · v0.3.6, the original request (from litlfred/smart-ra#76). Each section is a JSON-LD node. | . | Requirement nodes | One statement per requirement ID, cited as req:&lt;group&gt;#&lt;ID&gt;, for example req:aai-automation#AUTO-04. | . | Programme board | The board: views V1 to V13 and metrics M1 to M5, built from the issues’ labels, grouped by Workstream. The same issues show in project 110 (set-up). | . | QA: integration readiness | Who set each readiness value and who confirmed validation, from the issues’ history: flags a confirmation by the same person who set Validated, or one without evidence. | . | Beans that apply | How the litlfred work items map to the workstreams, and the 37 issues they became: five epic proposals awaiting the PM, 27 features, three decisions, two dependencies. | . | Build process | The section 13 build sequence: who does each step, and where the build must stop. | . | Work plan | The combined board: this repository’s work items and those of the platform repositories it reviews. | . ",
+    "url": "/aai-programme/",
+    
+    "relUrl": "/"
+  },"152": {
+    "doc": "Assured AI programme",
+    "title": "What Platform is",
+    "content": "Platform is a cross-cutting technical delivery function that supports WS1 to WS5, not a sixth research workstream. Its lead is not yet confirmed. Until Platform has a repository of its own, its scope is recorded in the README. ",
+    "url": "/aai-programme/#what-platform-is",
+    
+    "relUrl": "/#what-platform-is"
+  },"153": {
+    "doc": "Assured AI programme: confirm a component is ready to integrate",
+    "title": "Assured AI programme: confirm a component is ready to integrate",
+    "content": "Process_AAI_Validation · strict (defaulted) · 3 step(s) . Integration readiness is proposed by the workstream lead and confirmed by the Technical Integration Lead with evidence (req:aai-design-principles#DP-05). The Validation confirmed: comment is the record; changing the field alone does not count, and no automation sets Validated (req:aai-automation#AUTO-05, #AUTO-10). i i i ",
+    "url": "/aai-programme/en/cat-harness/processes/integration-validation.html#assured-ai-programme-confirm-a-component-is-ready-to-integrate",
+    
+    "relUrl": "/en/cat-harness/processes/integration-validation.html#assured-ai-programme-confirm-a-component-is-ready-to-integrate"
+  },"154": {
+    "doc": "Assured AI programme: confirm a component is ready to integrate",
+    "title": "How it connects",
+    "content": ". | Called by: no call activity names this process | Calls: none | Presented on: no docs page section shows this diagram | Running instances: none recorded | . ",
+    "url": "/aai-programme/en/cat-harness/processes/integration-validation.html#how-it-connects",
+    
+    "relUrl": "/en/cat-harness/processes/integration-validation.html#how-it-connects"
+  },"155": {
+    "doc": "Assured AI programme: confirm a component is ready to integrate",
+    "title": "Lanes — who acts",
+    "content": "| lane | role | what it does here | . | Workstream lead | workstream-lead | Owns the workstream’s delivery and its project (req:aai-design-principles#DP-02). Proposes epics; never creates them. | . | Technical Integration Lead | technical-integration-lead | Confirms validation with a comment starting Validation confirmed: and the evidence (req:aai-design-principles#DP-05, req:aai-automation#AUTO-10). | . ",
+    "url": "/aai-programme/en/cat-harness/processes/integration-validation.html#lanes--who-acts",
+    
+    "relUrl": "/en/cat-harness/processes/integration-validation.html#lanes--who-acts"
+  },"156": {
+    "doc": "Assured AI programme: confirm a component is ready to integrate",
+    "title": "Steps",
+    "content": "Every one of the 3 step(s) is documented. | step | lane | skill / sub-process | what it does | . | Set Integration readiness to Ready to integrateA_Ready | Workstream lead | — | With the evidence linked in the issue. The item then appears in V6’s “Awaiting validation” filter, the Technical Integration Lead’s queue (req:aai-views#V6). | . | Check the evidenceA_Check | Technical Integration Lead | — | With the relevant workstream leads and subject-matter experts. | . | Post Validation confirmed: and set ValidatedA_Confirm | Technical Integration Lead | — | A comment starting Validation confirmed: with a short note or evidence link, then Integration readiness = Validated (req:aai-automation#AUTO-10). | . ",
+    "url": "/aai-programme/en/cat-harness/processes/integration-validation.html#steps",
+    
+    "relUrl": "/en/cat-harness/processes/integration-validation.html#steps"
+  },"157": {
+    "doc": "Assured AI programme: confirm a component is ready to integrate",
+    "title": "Decisions",
+    "content": "Every one of the 1 decision(s) is documented. | decision | what decides it | branches | . | Validated?GW_Valid | The Technical Integration Lead’s judgement, never inferred from closed sub-issues. | no → Not yet: back with the workstreamyes → Post Validation confirmed: and set Validated | . ",
+    "url": "/aai-programme/en/cat-harness/processes/integration-validation.html#decisions",
+    
+    "relUrl": "/en/cat-harness/processes/integration-validation.html#decisions"
+  },"158": {
+    "doc": "Assured AI programme: confirm a component is ready to integrate",
+    "title": "Assured AI programme: confirm a component is ready to integrate",
+    "content": "Generated from processes/process/integration-validation.bpmn by gen-processes-viz.ts — do not edit here. All processes · aai-programme processes . ",
+    "url": "/aai-programme/en/cat-harness/processes/integration-validation.html",
+    
+    "relUrl": "/en/cat-harness/processes/integration-validation.html"
+  },"159": {
+    "doc": "Task panel links: QA",
+    "title": "Task panel links: QA",
+    "content": "Every name an ⓘ task panel shows as plain text, with the tooltip “no page for this one”, because nothing it could link to was found: no instruction page or source file for a skill, no page for a role, methodology, lane or step. Every name in every panel links to a page. ",
+    "url": "/aai-programme/en/cat-harness/processes/panel-links-qa.html#task-panel-links-qa",
+    
+    "relUrl": "/en/cat-harness/processes/panel-links-qa.html#task-panel-links-qa"
+  },"160": {
+    "doc": "Task panel links: QA",
+    "title": "Task panel links: QA",
+    "content": "Generated by gen-processes-viz.ts from the ⓘ task panels’ data — do not edit here. All processes . ",
+    "url": "/aai-programme/en/cat-harness/processes/panel-links-qa.html",
+    
+    "relUrl": "/en/cat-harness/processes/panel-links-qa.html"
+  },"161": {
+    "doc": "Assured AI programme: build the GitHub set-up",
+    "title": "Assured AI programme: build the GitHub set-up",
+    "content": "Process_AAI_Build · strict (defaulted) · 12 step(s) . Build the shared programme project, its repositories and automations in the order section 13 of the programme requirements sets, stopping wherever a decision, a credential or a pilot test is missing. Nothing past pre-flight is created until the decisions for that step are confirmed, and nothing is bulk-imported until every pilot test passes. i i i i i i i i i i i i ",
+    "url": "/aai-programme/en/cat-harness/processes/programme-build.html#assured-ai-programme-build-the-github-set-up",
+    
+    "relUrl": "/en/cat-harness/processes/programme-build.html#assured-ai-programme-build-the-github-set-up"
+  },"162": {
+    "doc": "Assured AI programme: build the GitHub set-up",
+    "title": "How it connects",
+    "content": ". | Called by: no call activity names this process | Calls: Assured AI programme: the pilot | Presented on: no docs page section shows this diagram | Running instances: none recorded | . ",
+    "url": "/aai-programme/en/cat-harness/processes/programme-build.html#how-it-connects",
+    
+    "relUrl": "/en/cat-harness/processes/programme-build.html#how-it-connects"
+  },"163": {
+    "doc": "Assured AI programme: build the GitHub set-up",
+    "title": "Lanes — who acts",
+    "content": "| lane | role | what it does here | . | PM &amp; Architecture Integration | pm-architecture-integration | Owns sequencing, dates, dependencies, evidence and escalation. Does not make technical readiness judgements (req:aai-design-principles#DP-05). | . | WHO GitHub owner | who-github-owner | Answers the section 3 decisions and makes the organisation-level changes only an owner can make (req:aai-decisions#BD-05, #BD-08). | . | Build agent | build-agent | Builds what the decisions allow and stops where the requirements say to stop. Never invents users, teams, repositories, dates or field values. | . | Technical Integration Lead | technical-integration-lead | Confirms validation with a comment starting Validation confirmed: and the evidence (req:aai-design-principles#DP-05, req:aai-automation#AUTO-10). | . ",
+    "url": "/aai-programme/en/cat-harness/processes/programme-build.html#lanes--who-acts",
+    
+    "relUrl": "/en/cat-harness/processes/programme-build.html#lanes--who-acts"
+  },"164": {
+    "doc": "Assured AI programme: build the GitHub set-up",
+    "title": "Steps",
+    "content": "Every one of the 12 step(s) is documented. | step | lane | skill / sub-process | what it does | . | Step 1: pre-flightA_Preflight | Build agent | — | Inspect the organisation read-only: issue types, issue fields and headroom, project field counts, projects, teams, repository policies, SSO or EMU, and permissions. Reuse compatible configuration; create nothing that duplicates it. | . | Answer the open BD decisionsA_Decide | WHO GitHub owner | — | BD-01a, BD-03a, BD-03b, BD-05, BD-06 and BD-08, each with its recommended default unless the owner says otherwise. The answers are recorded on the programme issue. | . | Step 2: create or reuse issue types and fieldsA_OrgSetup | WHO GitHub owner | — | Create or reuse the section 5.1 issue types and the section 7.1 issue fields, and pin them as section 5.3 says. If issue fields cannot be used, apply the section 7.4 fallback and record it. | . | Step 3: repositories, roles and labelsA_Repos | Build agent | — | Create aai-programme and the two workstream repositories the pilot needs, public, with the BD-04 roles and the section 7.3 labels (req:aai-information#SEC-04). | . | Step 4: programme project and templateA_Projects | Build agent | — | Create the programme project with views V1 to V13 in the listed order (req:aai-views), and the workstream template from section 8.3. | . | Step 5: READMEs and directoryA_Readmes | Build agent | — | Write the READMEs (req:aai-acceptance#AC-10, req:aai-automation#AUTO-07) and create the pinned Workstream directory issue (req:aai-linking#LINK-01). | . | Step 6: automations AUTO-01 to AUTO-11A_Automations | Build agent | — | Set up the automations (req:aai-automation). Every script reruns safely and has --dry-run. None makes a judgement (req:aai-automation#AUTO-05). | . | Step 7: the pilotCall_Pilot | Build agent | calls Assured AI programme: the pilot | Build and test the section 12 pilot set; see the pilot process. | . | Provide the section 14 inputsA_Inputs | PM &amp; Architecture Integration | — | The epics CSV reviewed by each lead, the Gates output list, R1 to R7, the dependency register with anything section 6 keeps off GitHub removed, the directory details, and the needed GitHub usernames. | . | Step 8: bulk import and backfillA_Import | Build agent | — | Import the inputs, leaving missing values empty and listing them, then run the AUTO-11 backfill. | . | Step 9: charts and acceptance checksA_Charts | Build agent | — | Build charts M1 to M5 (req:aai-metrics), or record which cannot be built natively, and check AC-01 to AC-19 (req:aai-acceptance). | . | Step 10: build reportA_Report | Build agent | — | Hand back the section 16 report. | . ",
+    "url": "/aai-programme/en/cat-harness/processes/programme-build.html#steps",
+    
+    "relUrl": "/en/cat-harness/processes/programme-build.html#steps"
+  },"165": {
+    "doc": "Assured AI programme: build the GitHub set-up",
+    "title": "Decisions",
+    "content": "Every one of the 3 decision(s) is documented. | decision | what decides it | branches | . | Decisions for the next step confirmed?GW_Decided | Answered from the section 3 decision record (req:aai-decisions): is every decision that step 2 onward depends on confirmed? no sends the open ones to the owner. | no → Answer the open BD decisionsyes → Step 2: create or reuse issue types and fields | . | Automation credentials in place?GW_Creds | Answered by whether the BD-08 credentials exist as an organisation secret. no stops and reports exactly which permission is needed (req:aai-automation#AUTO-09). | no → Stopped: credentials neededyes → Step 6: automations AUTO-01 to AUTO-11 | . | Every pilot test passed?GW_Pilot | Answered by the pilot’s results (req:aai-pilot). no stops the build and reports the failure; there is no bulk import after a failed pilot. | no → Stopped: a pilot test failedyes → Provide the section 14 inputs | . ",
+    "url": "/aai-programme/en/cat-harness/processes/programme-build.html#decisions",
+    
+    "relUrl": "/en/cat-harness/processes/programme-build.html#decisions"
+  },"166": {
+    "doc": "Assured AI programme: build the GitHub set-up",
+    "title": "Assured AI programme: build the GitHub set-up",
+    "content": "Generated from processes/process/programme-build.bpmn by gen-processes-viz.ts — do not edit here. All processes · aai-programme processes . ",
+    "url": "/aai-programme/en/cat-harness/processes/programme-build.html",
+    
+    "relUrl": "/en/cat-harness/processes/programme-build.html"
+  },"167": {
+    "doc": "Assured AI programme: the pilot",
+    "title": "Assured AI programme: the pilot",
+    "content": "Process_AAI_Pilot · strict (defaulted) · 7 step(s) . Prove the set-up small before building it big (req:aai-design-principles#DP-08): build the section 12 pilot set from representative Assured AI items, each marked as a pilot, run every pilot test, and stop on the first failure. No artificial dependencies, and no existing operational work moved to test the configuration. i i i i i i i ",
+    "url": "/aai-programme/en/cat-harness/processes/programme-pilot.html#assured-ai-programme-the-pilot",
+    
+    "relUrl": "/en/cat-harness/processes/programme-pilot.html#assured-ai-programme-the-pilot"
+  },"168": {
+    "doc": "Assured AI programme: the pilot",
+    "title": "How it connects",
+    "content": ". | Called by: Assured AI programme: build the GitHub set-up | Calls: none | Presented on: no docs page section shows this diagram | Running instances: none recorded | . ",
+    "url": "/aai-programme/en/cat-harness/processes/programme-pilot.html#how-it-connects",
+    
+    "relUrl": "/en/cat-harness/processes/programme-pilot.html#how-it-connects"
+  },"169": {
+    "doc": "Assured AI programme: the pilot",
+    "title": "Lanes — who acts",
+    "content": "| lane | role | what it does here | . | PM &amp; Architecture Integration | pm-architecture-integration | Owns sequencing, dates, dependencies, evidence and escalation. Does not make technical readiness judgements (req:aai-design-principles#DP-05). | . | WHO GitHub owner | who-github-owner | Answers the section 3 decisions and makes the organisation-level changes only an owner can make (req:aai-decisions#BD-05, #BD-08). | . | Build agent | build-agent | Builds what the decisions allow and stops where the requirements say to stop. Never invents users, teams, repositories, dates or field values. | . | Technical Integration Lead | technical-integration-lead | Confirms validation with a comment starting Validation confirmed: and the evidence (req:aai-design-principles#DP-05, req:aai-automation#AUTO-10). | . ",
+    "url": "/aai-programme/en/cat-harness/processes/programme-pilot.html#lanes--who-acts",
+    
+    "relUrl": "/en/cat-harness/processes/programme-pilot.html#lanes--who-acts"
+  },"170": {
+    "doc": "Assured AI programme: the pilot",
+    "title": "Steps",
+    "content": "Every one of the 7 step(s) is documented. | step | lane | skill / sub-process | what it does | . | Provide the test partner accountA_Account | WHO GitHub owner | — | One account with partner-level access, removed after the build (req:aai-decisions#BD-03b). | . | Create the pilot set, each item marked pilotA_Set | Build agent | — | One epic; two features in two workstream repositories as its sub-issues, one blocked by the other; a D-number, a decision, a research question and a milestone; one item with Review type set; one thin-slice and one sprint-demo item; one issue linking to an external partner repository. | . | Run the pilot testsA_Tests | Build agent | — | PIL-01, PIL-02, PIL-03, PIL-05, PIL-06 and PIL-08 to PIL-11 (req:aai-pilot), each recorded with its result. | . | Run PIL-07 as the test partnerA_Partner | Build agent | — | Set Integration readiness to Validated on a pilot item with no confirmation comment; AUTO-10 must add validation-exception and one comment, and nothing more when run again (req:aai-pilot#PIL-07). | . | Confirm validation on the pilot itemA_Confirm | Technical Integration Lead | — | Post Validation confirmed: with the evidence, so AUTO-10 removes the label (req:aai-automation#AUTO-10). | . | Report the results on the programme issueA_Report | Build agent | — | One line per pilot test with its result and evidence. | . | Agree to the bulk importA_Agree | PM &amp; Architecture Integration | — | The PM accepts the results before step 8 starts. | . ",
+    "url": "/aai-programme/en/cat-harness/processes/programme-pilot.html#steps",
+    
+    "relUrl": "/en/cat-harness/processes/programme-pilot.html#steps"
+  },"171": {
+    "doc": "Assured AI programme: the pilot",
+    "title": "Decisions",
+    "content": "Every one of the 1 decision(s) is documented. | decision | what decides it | branches | . | Every test passed?GW_Passed | Answered by the recorded results: does every pilot test pass? | no → Stopped: report the failureyes → Report the results on the programme issue | . ",
+    "url": "/aai-programme/en/cat-harness/processes/programme-pilot.html#decisions",
+    
+    "relUrl": "/en/cat-harness/processes/programme-pilot.html#decisions"
+  },"172": {
+    "doc": "Assured AI programme: the pilot",
+    "title": "Assured AI programme: the pilot",
+    "content": "Generated from processes/process/programme-pilot.bpmn by gen-processes-viz.ts — do not edit here. All processes · aai-programme processes . ",
+    "url": "/aai-programme/en/cat-harness/processes/programme-pilot.html",
+    
+    "relUrl": "/en/cat-harness/processes/programme-pilot.html"
+  },"173": {
+    "doc": "Project 110 as the programme board",
+    "title": "Project 110 as the programme board",
+    "content": "How to set up WorldHealthOrganization project 110 to show the Assured AI programme, by hand. Owner decisions of 20 October 2026: project 110 is the programme project (overriding “110 stays separate and is not changed”), and no tokens. ",
+    "url": "/aai-programme/docs/staging-project.html",
+    
+    "relUrl": "/docs/staging-project.html"
+  },"174": {
+    "doc": "Project 110 as the programme board",
+    "title": "How it fits together",
+    "content": ". | The issues hold the values. Each programme field (section 7.1) is a label on the issue: ws:WS1 Knowledge graph, status:In progress, health:Blocked, stage:KG Knowledge graph, readiness:Validated, review-type:SME sign-off, review:Submitted, risk:Dependency, impact:Medium. One label per field. Dates, the Backlog ref and the primary research question are in the issue body’s Programme fields table. The full list is scripts/programme/fields.ts. | The automations keep them current with the workflow’s own token (AUTO-03 status, AUTO-04 health, AUTO-10 validation). They write labels, never the project. | Project 110 shows the issues through label filters. A view that needs a board column, a roadmap or a date needs a real project field, which nobody can set automatically without a token, so it is set by hand. | Issue types are type: labels (type:epic, type:feature, …): the items live in litlfred/aai-programme, outside the WHO organisation, so WHO’s issue types and issue fields do not apply to them (BD-02). | . Ritika owns 110; tell her before changing it. ",
+    "url": "/aai-programme/docs/staging-project.html#how-it-fits-together",
+    
+    "relUrl": "/docs/staging-project.html#how-it-fits-together"
+  },"175": {
+    "doc": "Project 110 as the programme board",
+    "title": "1. Add the items",
+    "content": "Auto-add only reads repositories in WHO’s organisation, so items from litlfred/aai-programme are added by hand: in 110, + Add item at the bottom of a table → paste each issue’s URL. The pilot items are #4 to #12. Add any later programme item the same way (AUTO-01’s rule: type:epic, type:milestone, type:research-question, type:dependency, type:decision, type:assumption, or a workstream item labelled thin-slice, sprint-demo, blocked or at-risk). ",
+    "url": "/aai-programme/docs/staging-project.html#1-add-the-items",
+    
+    "relUrl": "/docs/staging-project.html#1-add-the-items"
+  },"176": {
+    "doc": "Project 110 as the programme board",
+    "title": "2. The views",
+    "content": "For each row: New view → the layout → the name → the filter → the grouping. Make sure the Labels field is shown, since that is where the values are. I could not test the filters or “Slice by Labels” from here; adjust any the filter bar rejects. | View | Name | Filter | Grouping | Needs a hand-set field | . | V1 | Master programme | label:type:epic | Slice by Labels, pick the ws: labels (stands in for “Group by Workstream”) | none | . | V2 | Roadmap | label:type:epic,type:milestone | Roadmap needs Start date and Target date | Start date, Target date (project date fields, set by hand from each body table) | . | V3 | Milestones | label:type:milestone | Group by Gates output | Gates output once the list exists | . | V4 | Research questions | label:type:research-question | Slice by Labels, pick the rq: labels | none | . | V5 | Pipeline stages | label:type:epic,thin-slice | Board columns by Pipeline stage | Pipeline stage (single select, set by hand from the stage: label) | . | V6 | Integration readiness | label:thin-slice,type:epic | Slice by Labels, pick the readiness: labels; saved filter “Awaiting validation”: label:\"readiness:Ready to integrate\" | none | . | V7 | Sprint review | label:sprint-demo | Slice by Labels, pick the ws: labels | none | . | V8 | Next 30 days | is:open | Needs Target date in the next 30 days | Target date | . | V9 | Dependencies | label:type:dependency | Slice by Labels, pick the ws: labels | none | . | V10 | Blocked and at risk | label:\"health:At risk\",health:Blocked,blocked,at-risk,validation-exception | Slice by Labels, pick the health: labels | none | . | V11 | WHO review | label:\"review-type:SME sign-off\",\"review-type:Validation packet adjudication\",\"review-type:Science Division publication clearance\" | Board columns by Review status | Review status (single select, set by hand from the review: label) | . | V12 | Decisions | label:type:decision | Group by open or closed (the built-in Status) | none | . | V13 | Overdue | is:open | Needs Target date before today | Target date | . Seven of the thirteen work from labels alone. The other six (V2, V3, V5, V8, V11 and V13) need a project field kept by hand in step with the issue, which is exactly the drift the requirements were written to avoid (DP-01). V3 needs its field only once the Gates output list exists. A board built from the labels, with nothing kept by hand, can show all thirteen. ",
+    "url": "/aai-programme/docs/staging-project.html#2-the-views",
+    
+    "relUrl": "/docs/staging-project.html#2-the-views"
+  },"177": {
+    "doc": "Project 110 as the programme board",
+    "title": "3. Charts (M1 to M5)",
+    "content": "Insights → New chart. M1 to M5 group by Delivery health, Workstream, Integration readiness and Pipeline stage, which are labels here; if Insights cannot group by a label prefix, record that rather than building a workaround (section 8.2). ",
+    "url": "/aai-programme/docs/staging-project.html#3-charts-m1-to-m5",
+    
+    "relUrl": "/docs/staging-project.html#3-charts-m1-to-m5"
+  },"178": {
+    "doc": "V1 Master programme",
+    "title": "V1 Master programme",
+    "content": "Epics, grouped by Workstream, sorted by Start date. (req:aai-views#V1) . Cross-workstream (1) . | Title | Programme status | Delivery health | Pipeline stage | Start | Target | Gates output | Primary RQ | Sub-issues | . | [Pilot] Epic: one WHO recommendation from source guidance to a health skill (closed) | Cancelled | Blocked | Cross-cutting / N/A | 2026-10-20 | 2026-12-04 | None | R1 | 4/4 | . Built 2026-11-19 from the labels of 13 issue(s) in litlfred/aai-programme by scripts/programme/board.ts; as current as the last publish. Change a value by changing the issue’s label. ",
+    "url": "/aai-programme/programme/v1.html#v1-master-programme",
+    
+    "relUrl": "/programme/v1.html#v1-master-programme"
+  },"179": {
+    "doc": "V1 Master programme",
+    "title": "V1 Master programme",
+    "content": "Board · Workstreams · Bean drift · V1 · V2 · V3 · V4 · V5 · V6 · V7 · V8 · V9 · V10 · V11 · V12 · V13 . ",
+    "url": "/aai-programme/programme/v1.html",
+    
+    "relUrl": "/programme/v1.html"
+  },"180": {
+    "doc": "V10 Blocked and at risk",
+    "title": "V10 Blocked and at risk",
+    "content": "Delivery health At risk or Blocked, or labelled blocked, at-risk or validation-exception. Every item here should carry a Next action line. (req:aai-views#V10) . Nothing here yet. Built 2026-11-19 from the labels of 13 issue(s) in litlfred/aai-programme by scripts/programme/board.ts; as current as the last publish. Change a value by changing the issue’s label. ",
+    "url": "/aai-programme/programme/v10.html#v10-blocked-and-at-risk",
+    
+    "relUrl": "/programme/v10.html#v10-blocked-and-at-risk"
+  },"181": {
+    "doc": "V10 Blocked and at risk",
+    "title": "V10 Blocked and at risk",
+    "content": "Board · Workstreams · Bean drift · V1 · V2 · V3 · V4 · V5 · V6 · V7 · V8 · V9 · V10 · V11 · V12 · V13 . ",
+    "url": "/aai-programme/programme/v10.html",
+    
+    "relUrl": "/programme/v10.html"
+  },"182": {
+    "doc": "V11 WHO review",
+    "title": "V11 WHO review",
+    "content": "Items with a Review type other than Not needed, in columns by Review status. (req:aai-views#V11) . Not submitted 1[Pilot] Feature (WS3): check the extracted graph against the sourceWS3 Evaluation · SME sign-off · due 2026-11-20Submitted 0Under WHO review 0Feedback issued 0Resubmitted 0Approved 0Closed 0 Built 2026-11-19 from the labels of 13 issue(s) in litlfred/aai-programme by scripts/programme/board.ts; as current as the last publish. Change a value by changing the issue’s label. ",
+    "url": "/aai-programme/programme/v11.html#v11-who-review",
+    
+    "relUrl": "/programme/v11.html#v11-who-review"
+  },"183": {
+    "doc": "V11 WHO review",
+    "title": "V11 WHO review",
+    "content": "Board · Workstreams · Bean drift · V1 · V2 · V3 · V4 · V5 · V6 · V7 · V8 · V9 · V10 · V11 · V12 · V13 . ",
+    "url": "/aai-programme/programme/v11.html",
+    
+    "relUrl": "/programme/v11.html"
+  },"184": {
+    "doc": "V12 Decisions",
+    "title": "V12 Decisions",
+    "content": "Decision issues, open and closed. (req:aai-views#V12) . Closed (4) . | Title | Workstream | Programme status | Target | . | DEC-P1: [Pilot] Which recommendation the thin slice uses (closed) | Cross-workstream | Cancelled | 2026-10-30 | . | DEC-B3: Review the sovereign and self-sovereign deployment proposals (closed) | Platform | Done | – | . | DEC-B2: Where SPDX licence identifiers are used (closed) | WS5 Governance and stewardship | Done | – | . | DEC-B1: Which CDN, if any, serves the WHO L1 corpus (closed) | Platform | Done | – | . Built 2026-11-19 from the labels of 13 issue(s) in litlfred/aai-programme by scripts/programme/board.ts; as current as the last publish. Change a value by changing the issue’s label. ",
+    "url": "/aai-programme/programme/v12.html#v12-decisions",
+    
+    "relUrl": "/programme/v12.html#v12-decisions"
+  },"185": {
+    "doc": "V12 Decisions",
+    "title": "V12 Decisions",
+    "content": "Board · Workstreams · Bean drift · V1 · V2 · V3 · V4 · V5 · V6 · V7 · V8 · V9 · V10 · V11 · V12 · V13 . ",
+    "url": "/aai-programme/programme/v12.html",
+    
+    "relUrl": "/programme/v12.html"
+  },"186": {
+    "doc": "V13 Overdue",
+    "title": "V13 Overdue",
+    "content": "Target date before today, and Programme status not Done or Cancelled. (req:aai-views#V13) . Nothing here yet. Built 2026-11-19 from the labels of 13 issue(s) in litlfred/aai-programme by scripts/programme/board.ts; as current as the last publish. Change a value by changing the issue’s label. ",
+    "url": "/aai-programme/programme/v13.html#v13-overdue",
+    
+    "relUrl": "/programme/v13.html#v13-overdue"
+  },"187": {
+    "doc": "V13 Overdue",
+    "title": "V13 Overdue",
+    "content": "Board · Workstreams · Bean drift · V1 · V2 · V3 · V4 · V5 · V6 · V7 · V8 · V9 · V10 · V11 · V12 · V13 . ",
+    "url": "/aai-programme/programme/v13.html",
+    
+    "relUrl": "/programme/v13.html"
+  },"188": {
+    "doc": "V2 Roadmap",
+    "title": "V2 Roadmap",
+    "content": "Epics and milestones with dates, by Workstream. (req:aai-views#V2) . 2026-10-20 to 2026-12-04 . [Pilot] Epic: one WHO recommendation from source guidance to a health skillCross-workstream[Pilot] Milestone: thin slice demonstrated– Built 2026-11-19 from the labels of 13 issue(s) in litlfred/aai-programme by scripts/programme/board.ts; as current as the last publish. Change a value by changing the issue’s label. ",
+    "url": "/aai-programme/programme/v2.html#v2-roadmap",
+    
+    "relUrl": "/programme/v2.html#v2-roadmap"
+  },"189": {
+    "doc": "V2 Roadmap",
+    "title": "V2 Roadmap",
+    "content": "Board · Workstreams · Bean drift · V1 · V2 · V3 · V4 · V5 · V6 · V7 · V8 · V9 · V10 · V11 · V12 · V13 . ",
+    "url": "/aai-programme/programme/v2.html",
+    
+    "relUrl": "/programme/v2.html"
+  },"190": {
+    "doc": "V3 Milestones",
+    "title": "V3 Milestones",
+    "content": "Milestone issues, and items with any gates: label, by Gates output. (req:aai-views#V3) . None (1) . | Title | Workstream | Programme status | Delivery health | Target | . | [Pilot] Milestone: thin slice demonstrated (closed) | – | Cancelled | On track | 2026-12-04 | . Built 2026-11-19 from the labels of 13 issue(s) in litlfred/aai-programme by scripts/programme/board.ts; as current as the last publish. Change a value by changing the issue’s label. ",
+    "url": "/aai-programme/programme/v3.html#v3-milestones",
+    
+    "relUrl": "/programme/v3.html#v3-milestones"
+  },"191": {
+    "doc": "V3 Milestones",
+    "title": "V3 Milestones",
+    "content": "Board · Workstreams · Bean drift · V1 · V2 · V3 · V4 · V5 · V6 · V7 · V8 · V9 · V10 · V11 · V12 · V13 . ",
+    "url": "/aai-programme/programme/v3.html",
+    
+    "relUrl": "/programme/v3.html"
+  },"192": {
+    "doc": "V4 Research questions",
+    "title": "V4 Research questions",
+    "content": "Research question issues, and every item contributing to one (its rq: labels). (req:aai-views#V4) . R1 . | Title | Workstream | Programme status | Routes | . | [Pilot] Research question R1 (closed) (the question) | – | Cancelled | – | . | [Pilot] Feature (WS3): check the extracted graph against the source (closed) | WS3 Evaluation | Cancelled | – | . | [Pilot] Feature (WS1): extract the recommendation’s tables into the knowledge graph (closed) | WS1 Knowledge graph | Cancelled | – | . | [Pilot] Epic: one WHO recommendation from source guidance to a health skill (closed) | Cross-workstream | Cancelled | route:b | . Built 2026-11-19 from the labels of 13 issue(s) in litlfred/aai-programme by scripts/programme/board.ts; as current as the last publish. Change a value by changing the issue’s label. ",
+    "url": "/aai-programme/programme/v4.html#v4-research-questions",
+    
+    "relUrl": "/programme/v4.html#v4-research-questions"
+  },"193": {
+    "doc": "V4 Research questions",
+    "title": "V4 Research questions",
+    "content": "Board · Workstreams · Bean drift · V1 · V2 · V3 · V4 · V5 · V6 · V7 · V8 · V9 · V10 · V11 · V12 · V13 . ",
+    "url": "/aai-programme/programme/v4.html",
+    
+    "relUrl": "/programme/v4.html"
+  },"194": {
+    "doc": "V5 Pipeline stages",
+    "title": "V5 Pipeline stages",
+    "content": "Epics and thin-slice items, in columns by Pipeline stage, L1 through LOC, with Cross-cutting / N/A separate. (req:aai-views#V5) . L1 Corpus 0KG Knowledge graph 0L2 Operational (DAK) 0L3 Computable (FHIR/CQL) 0L5 Health skills + MCP 0EVAL Evaluation 0LOC Localization 0Cross-cutting / N/A 1[Pilot] Epic: one WHO recommendation from source guidance to a health skillCross-workstream · Cancelled · Blocked Built 2026-11-19 from the labels of 13 issue(s) in litlfred/aai-programme by scripts/programme/board.ts; as current as the last publish. Change a value by changing the issue’s label. ",
+    "url": "/aai-programme/programme/v5.html#v5-pipeline-stages",
+    
+    "relUrl": "/programme/v5.html#v5-pipeline-stages"
+  },"195": {
+    "doc": "V5 Pipeline stages",
+    "title": "V5 Pipeline stages",
+    "content": "Board · Workstreams · Bean drift · V1 · V2 · V3 · V4 · V5 · V6 · V7 · V8 · V9 · V10 · V11 · V12 · V13 . ",
+    "url": "/aai-programme/programme/v5.html",
+    
+    "relUrl": "/programme/v5.html"
+  },"196": {
+    "doc": "V6 Integration readiness",
+    "title": "V6 Integration readiness",
+    "content": "thin-slice items, and epics assessed for readiness, by Pipeline stage. Awaiting validation is the Technical Integration Lead’s queue. (req:aai-views#V6) . Awaiting validation (1) . | Title | Workstream | Integration readiness | Assignee | Target | Sub-issues | . | [Pilot] Feature (WS1): extract the recommendation’s tables into the knowledge graph (closed) | WS1 Knowledge graph | Ready to integrate | – | 2026-11-06 | – | . Cross-cutting / N/A (1) . | Title | Workstream | Integration readiness | Assignee | Target | Sub-issues | . | [Pilot] Epic: one WHO recommendation from source guidance to a health skill (closed) | Cross-workstream | Not assessed | – | 2026-12-04 | 4/4 | . Built 2026-11-19 from the labels of 13 issue(s) in litlfred/aai-programme by scripts/programme/board.ts; as current as the last publish. Change a value by changing the issue’s label. ",
+    "url": "/aai-programme/programme/v6.html#v6-integration-readiness",
+    
+    "relUrl": "/programme/v6.html#v6-integration-readiness"
+  },"197": {
+    "doc": "V6 Integration readiness",
+    "title": "V6 Integration readiness",
+    "content": "Board · Workstreams · Bean drift · V1 · V2 · V3 · V4 · V5 · V6 · V7 · V8 · V9 · V10 · V11 · V12 · V13 . ",
+    "url": "/aai-programme/programme/v6.html",
+    
+    "relUrl": "/programme/v6.html"
+  },"198": {
+    "doc": "V7 Sprint review",
+    "title": "V7 Sprint review",
+    "content": "Items labelled sprint-demo, by Workstream. (req:aai-views#V7) . WS1 Knowledge graph (1) . | Title | Workstream | Programme status | Epic | . | [Pilot] Feature (WS1): extract the recommendation’s tables into the knowledge graph (closed) | WS1 Knowledge graph | Cancelled | [Pilot] Epic: one WHO recommendation from source guidance to a health skill (closed) | . Platform (1) . | Title | Workstream | Programme status | Epic | . | [Pilot] Feature (Platform): serve the thin slice’s health skill (closed) | Platform | Cancelled | [Pilot] Epic: one WHO recommendation from source guidance to a health skill (closed) | . Built 2026-11-19 from the labels of 13 issue(s) in litlfred/aai-programme by scripts/programme/board.ts; as current as the last publish. Change a value by changing the issue’s label. ",
+    "url": "/aai-programme/programme/v7.html#v7-sprint-review",
+    
+    "relUrl": "/programme/v7.html#v7-sprint-review"
+  },"199": {
+    "doc": "V7 Sprint review",
+    "title": "V7 Sprint review",
+    "content": "Board · Workstreams · Bean drift · V1 · V2 · V3 · V4 · V5 · V6 · V7 · V8 · V9 · V10 · V11 · V12 · V13 . ",
+    "url": "/aai-programme/programme/v7.html",
+    
+    "relUrl": "/programme/v7.html"
+  },"200": {
+    "doc": "V8 Next 30 days",
+    "title": "V8 Next 30 days",
+    "content": "Open epics, milestones, dependencies and cross-workstream deliverables due in the next 30 days. (req:aai-views#V8) . Nothing here yet. Built 2026-11-19 from the labels of 13 issue(s) in litlfred/aai-programme by scripts/programme/board.ts; as current as the last publish. Change a value by changing the issue’s label. ",
+    "url": "/aai-programme/programme/v8.html#v8-next-30-days",
+    
+    "relUrl": "/programme/v8.html#v8-next-30-days"
+  },"201": {
+    "doc": "V8 Next 30 days",
+    "title": "V8 Next 30 days",
+    "content": "Board · Workstreams · Bean drift · V1 · V2 · V3 · V4 · V5 · V6 · V7 · V8 · V9 · V10 · V11 · V12 · V13 . ",
+    "url": "/aai-programme/programme/v8.html",
+    
+    "relUrl": "/programme/v8.html"
+  },"202": {
+    "doc": "V9 Dependencies",
+    "title": "V9 Dependencies",
+    "content": "Dependency issues, by the waiting Workstream. (req:aai-views#V9) . WS1 Knowledge graph (1) . | Title | Workstream | Delivery health | Impact | Target | Assignee | . | D-B1: Fetching IRIS PDFs and FHIR packages that the agents’ environment cannot reach (closed) | WS1 Knowledge graph | At risk | High | – | – | . WS2 Authoring (1) . | Title | Workstream | Delivery health | Impact | Target | Assignee | . | D-B2: The DAK Logical Model, pending upstream (closed) | WS2 Authoring | At risk | Medium | – | – | . WS3 Evaluation (1) . | Title | Workstream | Delivery health | Impact | Target | Assignee | . | D-P1: [Pilot] WS3’s check waits on WS1’s extracted graph (closed) | WS3 Evaluation | At risk | Medium | 2026-11-09 | – | . Built 2026-11-19 from the labels of 13 issue(s) in litlfred/aai-programme by scripts/programme/board.ts; as current as the last publish. Change a value by changing the issue’s label. ",
+    "url": "/aai-programme/programme/v9.html#v9-dependencies",
+    
+    "relUrl": "/programme/v9.html#v9-dependencies"
+  },"203": {
+    "doc": "V9 Dependencies",
+    "title": "V9 Dependencies",
+    "content": "Board · Workstreams · Bean drift · V1 · V2 · V3 · V4 · V5 · V6 · V7 · V8 · V9 · V10 · V11 · V12 · V13 . ",
+    "url": "/aai-programme/programme/v9.html",
+    
+    "relUrl": "/programme/v9.html"
+  },"204": {
+    "doc": "Workstreams, epics and beans",
+    "title": "Workstreams, epics and beans",
+    "content": "Each workstream’s epics and epic proposals, their features, and the beans each feature carries, with the bean’s live status from the snapshot. A ⚑ marks a feature the drift check flagged. ",
+    "url": "/aai-programme/programme/workstreams.html#workstreams-epics-and-beans",
+    
+    "relUrl": "/programme/workstreams.html#workstreams-epics-and-beans"
+  },"205": {
+    "doc": "Workstreams, epics and beans",
+    "title": "WS1 Knowledge graph",
+    "content": "Epic proposal (WS1): WHO guidance into the L1 knowledge graph (proposal) . | Feature | State | Beans | . | ⚑ Bibliography as knowledge-graph reference nodes | closed | folio-assistant-63q4 completed | . | Check terminology against existing vocabularies, and adjudicate | closed | folio-assistant-5yhm completed | . | ⚑ Ingest the evidence behind a guideline (PICO, reviews, GRADE) | closed | folio-assistant-0lde completed | . | ⚑ One ingestion pipeline from uploaded sources to a complete L1 library | open | folio-assistant-slw1 completed | . | Tabular source data as CSVW, measured on real sources | closed | folio-core-urat completed | . | Extract L1 knowledge-graph nodes from guideline documents | closed | folio-assistant-8pzh completed | . | Immunizations L1 knowledge graph from DAK Component 1 | closed | folio-assistant-ioa4 completed | . ",
+    "url": "/aai-programme/programme/workstreams.html#ws1-knowledge-graph",
+    
+    "relUrl": "/programme/workstreams.html#ws1-knowledge-graph"
+  },"206": {
+    "doc": "Workstreams, epics and beans",
+    "title": "WS2 Authoring",
+    "content": "Epic proposal (WS2): L1 and DAK authoring on the SMART stack (proposal) . | Feature | State | Beans | . | ⚑ Review large documents such as a DAK | closed | folio-assistant-q4jm completed | . | Skills and processes for ontologists and terminologists | closed | folio-assistant-4nfs completed | . | Process catalogues: clinical, public health and health system | closed | folio-assistant-2ipj completed | . | Data dictionary as a web annex in the knowledge graph | closed | folio-assistant-fm9n completed | . | Link IG personas to BPMN swimlanes | closed | folio-assistant-cydz completed | . | Immunizations business processes as BPMN | closed | folio-assistant-96y4 completed | . | The DAK type, with its Logical Model | closed | folio-assistant-cz17 completed | . | ⚑ L1 and DAK as document kinds in smart-base | closed | folio-assistant-qvxh completed | . ",
+    "url": "/aai-programme/programme/workstreams.html#ws2-authoring",
+    
+    "relUrl": "/programme/workstreams.html#ws2-authoring"
+  },"207": {
+    "doc": "Workstreams, epics and beans",
+    "title": "WS3 Evaluation",
+    "content": "Epic proposal (WS3): evaluate outputs across models and routes (proposal) . | Feature | State | Beans | . | Experiment: a run forced along its process versus one that manages it | closed | folio-assistant-502c completed | . | ⚑ Fixed and generated test data sets | closed | folio-assistant-vm6m completed | . | ⚑ Test data for SME review of decision support and indicators | closed | folio-assistant-vljz completed | . | ⚑ Outcome evaluation of runs across models | open | folio-assistant-oz9e todo | . ",
+    "url": "/aai-programme/programme/workstreams.html#ws3-evaluation",
+    
+    "relUrl": "/programme/workstreams.html#ws3-evaluation"
+  },"208": {
+    "doc": "Workstreams, epics and beans",
+    "title": "WS4 Localization",
+    "content": "Epic proposal (WS4): translated renders and their review (proposal) . | Feature | State | Beans | . | Adjudicate the 68 round-trip translation findings | closed | folio-core-2mb0 completed | . | Author the 36 translation catalogues | closed | folio-assistant-m4s1 completed | . ",
+    "url": "/aai-programme/programme/workstreams.html#ws4-localization",
+    
+    "relUrl": "/programme/workstreams.html#ws4-localization"
+  },"209": {
+    "doc": "Workstreams, epics and beans",
+    "title": "WS5 Governance and stewardship",
+    "content": "Epic proposal (WS5): programme governance and stewardship (proposal) . | Feature | State | Beans | . | Programme progress as a burn-down for the board | closed | cat-tools-tk99 completed | . ",
+    "url": "/aai-programme/programme/workstreams.html#ws5-governance-and-stewardship",
+    
+    "relUrl": "/programme/workstreams.html#ws5-governance-and-stewardship"
+  },"210": {
+    "doc": "Workstreams, epics and beans",
+    "title": "Platform",
+    "content": "Epic proposal (Platform): deployment, publishing and the knowledge graph’s publication (proposal) . | Feature | State | Beans | . | ⚑ Publish the knowledge graph with a complete JSON-LD context | closed | folio-assistant-zzmr completed | . | ⚑ Named, versioned tool releases with provenance | closed | folio-assistant-3sbm completed | . | Tool contracts as published JSON Schema (the MCP surface) | closed | folio-assistant-tdir completed | . | Render SMART IG pages with the site’s own theme | closed | folio-assistant-jut3 completed | . | Agent-run publishing for the SMART IG repositories | closed | folio-assistant-n3h9 completed | . | ⚑ Deployment topologies and operating modes | closed | folio-assistant-5a3l completed | . ",
+    "url": "/aai-programme/programme/workstreams.html#platform",
+    
+    "relUrl": "/programme/workstreams.html#platform"
+  },"211": {
+    "doc": "Workstreams, epics and beans",
+    "title": "Workstreams, epics and beans",
+    "content": "Board · Bean drift . ",
+    "url": "/aai-programme/programme/workstreams.html",
+    
+    "relUrl": "/programme/workstreams.html"
+  }
+}

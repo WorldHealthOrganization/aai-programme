@@ -1,0 +1,119 @@
+{
+ "$schema": "process-task-panel/v1",
+ "process": "Process_AAI_Epic",
+ "markers": [
+  {
+   "id": "A_Propose",
+   "name": "Open a proposal issue in aai-programme",
+   "left": 28.63,
+   "top": 8.57,
+   "box": {
+    "left": 23.09,
+    "top": 35.71,
+    "width": 1.83,
+    "height": 6.86
+   }
+  },
+  {
+   "id": "A_Review",
+   "name": "Review the proposal",
+   "left": 40.08,
+   "top": 57.14,
+   "box": {
+    "left": 34.54,
+    "top": 84.29,
+    "width": 1.83,
+    "height": 6.86
+   }
+  },
+  {
+   "id": "A_Revise",
+   "name": "Revise the proposal",
+   "left": 51.53,
+   "top": 8.57,
+   "box": {
+    "left": 45.99,
+    "top": 35.71,
+    "width": 1.83,
+    "height": 6.86
+   }
+  },
+  {
+   "id": "A_Create",
+   "name": "Create or change the epic",
+   "left": 69.85,
+   "top": 57.14,
+   "box": {
+    "left": 64.31,
+    "top": 84.29,
+    "width": 1.83,
+    "height": 6.86
+   }
+  },
+  {
+   "id": "A_Features",
+   "name": "Add features under the epic",
+   "left": 81.3,
+   "top": 8.57,
+   "box": {
+    "left": 75.76,
+    "top": 35.71,
+    "width": 1.83,
+    "height": 6.86
+   }
+  }
+ ],
+ "processHref": "epic-proposal.html",
+ "tasks": {
+  "A_Propose": {
+   "id": "A_Propose",
+   "name": "Open a proposal issue in aai-programme",
+   "type": "bpmn:Task",
+   "stepHref": "epic-proposal.html#step-A_Propose",
+   "lane": "Workstream lead",
+   "laneHref": "epic-proposal.html#lane-Lane_Lead",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "A_Review": {
+   "id": "A_Review",
+   "name": "Review the proposal",
+   "type": "bpmn:Task",
+   "stepHref": "epic-proposal.html#step-A_Review",
+   "lane": "PM & Architecture Integration",
+   "laneHref": "epic-proposal.html#lane-Lane_PM",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "A_Revise": {
+   "id": "A_Revise",
+   "name": "Revise the proposal",
+   "type": "bpmn:Task",
+   "stepHref": "epic-proposal.html#step-A_Revise",
+   "lane": "Workstream lead",
+   "laneHref": "epic-proposal.html#lane-Lane_Lead",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "A_Create": {
+   "id": "A_Create",
+   "name": "Create or change the epic",
+   "type": "bpmn:Task",
+   "stepHref": "epic-proposal.html#step-A_Create",
+   "lane": "PM & Architecture Integration",
+   "laneHref": "epic-proposal.html#lane-Lane_PM",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "A_Features": {
+   "id": "A_Features",
+   "name": "Add features under the epic",
+   "type": "bpmn:Task",
+   "stepHref": "epic-proposal.html#step-A_Features",
+   "lane": "Workstream lead",
+   "laneHref": "epic-proposal.html#lane-Lane_Lead",
+   "skills": [],
+   "binding": "dangling"
+  }
+ }
+}

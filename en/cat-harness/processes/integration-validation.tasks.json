@@ -1,0 +1,75 @@
+{
+ "$schema": "process-task-panel/v1",
+ "process": "Process_AAI_Validation",
+ "markers": [
+  {
+   "id": "A_Ready",
+   "name": "Set Integration readiness to Ready to integrate",
+   "left": 32.35,
+   "top": 8.57,
+   "box": {
+    "left": 26.1,
+    "top": 35.71,
+    "width": 2.07,
+    "height": 6.86
+   }
+  },
+  {
+   "id": "A_Check",
+   "name": "Check the evidence",
+   "left": 45.28,
+   "top": 57.14,
+   "box": {
+    "left": 39.03,
+    "top": 84.29,
+    "width": 2.07,
+    "height": 6.86
+   }
+  },
+  {
+   "id": "A_Confirm",
+   "name": "Post Validation confirmed: and set Validated",
+   "left": 78.89,
+   "top": 57.14,
+   "box": {
+    "left": 72.64,
+    "top": 84.29,
+    "width": 2.07,
+    "height": 6.86
+   }
+  }
+ ],
+ "processHref": "integration-validation.html",
+ "tasks": {
+  "A_Ready": {
+   "id": "A_Ready",
+   "name": "Set Integration readiness to Ready to integrate",
+   "type": "bpmn:Task",
+   "stepHref": "integration-validation.html#step-A_Ready",
+   "lane": "Workstream lead",
+   "laneHref": "integration-validation.html#lane-Lane_Lead",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "A_Check": {
+   "id": "A_Check",
+   "name": "Check the evidence",
+   "type": "bpmn:Task",
+   "stepHref": "integration-validation.html#step-A_Check",
+   "lane": "Technical Integration Lead",
+   "laneHref": "integration-validation.html#lane-Lane_TIL",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "A_Confirm": {
+   "id": "A_Confirm",
+   "name": "Post Validation confirmed: and set Validated",
+   "type": "bpmn:Task",
+   "stepHref": "integration-validation.html#step-A_Confirm",
+   "lane": "Technical Integration Lead",
+   "laneHref": "integration-validation.html#lane-Lane_TIL",
+   "skills": [],
+   "binding": "dangling"
+  }
+ }
+}

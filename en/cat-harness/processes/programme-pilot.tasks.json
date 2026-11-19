@@ -1,0 +1,163 @@
+{
+ "$schema": "process-task-panel/v1",
+ "process": "Process_AAI_Pilot",
+ "markers": [
+  {
+   "id": "A_Account",
+   "name": "Provide the test partner account",
+   "left": 22.46,
+   "top": 28.99,
+   "box": {
+    "left": 18.11,
+    "top": 42.75,
+    "width": 1.44,
+    "height": 3.48
+   }
+  },
+  {
+   "id": "A_Set",
+   "name": "Create the pilot set, each item marked pilot",
+   "left": 31.44,
+   "top": 53.62,
+   "box": {
+    "left": 27.1,
+    "top": 67.39,
+    "width": 1.44,
+    "height": 3.48
+   }
+  },
+  {
+   "id": "A_Tests",
+   "name": "Run the pilot tests",
+   "left": 40.42,
+   "top": 53.62,
+   "box": {
+    "left": 36.08,
+    "top": 67.39,
+    "width": 1.44,
+    "height": 3.48
+   }
+  },
+  {
+   "id": "A_Partner",
+   "name": "Run PIL-07 as the test partner",
+   "left": 49.4,
+   "top": 53.62,
+   "box": {
+    "left": 45.06,
+    "top": 67.39,
+    "width": 1.44,
+    "height": 3.48
+   }
+  },
+  {
+   "id": "A_Confirm",
+   "name": "Confirm validation on the pilot item",
+   "left": 58.38,
+   "top": 78.26,
+   "box": {
+    "left": 54.04,
+    "top": 92.03,
+    "width": 1.44,
+    "height": 3.48
+   }
+  },
+  {
+   "id": "A_Report",
+   "name": "Report the results on the programme issue",
+   "left": 76.35,
+   "top": 56.52,
+   "box": {
+    "left": 72.01,
+    "top": 64.49,
+    "width": 1.44,
+    "height": 3.48
+   }
+  },
+  {
+   "id": "A_Agree",
+   "name": "Agree to the bulk import",
+   "left": 85.33,
+   "top": 4.35,
+   "box": {
+    "left": 80.99,
+    "top": 18.12,
+    "width": 1.44,
+    "height": 3.48
+   }
+  }
+ ],
+ "processHref": "programme-pilot.html",
+ "tasks": {
+  "A_Account": {
+   "id": "A_Account",
+   "name": "Provide the test partner account",
+   "type": "bpmn:Task",
+   "stepHref": "programme-pilot.html#step-A_Account",
+   "lane": "WHO GitHub owner",
+   "laneHref": "programme-pilot.html#lane-Lane_Owner",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "A_Set": {
+   "id": "A_Set",
+   "name": "Create the pilot set, each item marked pilot",
+   "type": "bpmn:Task",
+   "stepHref": "programme-pilot.html#step-A_Set",
+   "lane": "Build agent",
+   "laneHref": "programme-pilot.html#lane-Lane_Agent",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "A_Tests": {
+   "id": "A_Tests",
+   "name": "Run the pilot tests",
+   "type": "bpmn:Task",
+   "stepHref": "programme-pilot.html#step-A_Tests",
+   "lane": "Build agent",
+   "laneHref": "programme-pilot.html#lane-Lane_Agent",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "A_Partner": {
+   "id": "A_Partner",
+   "name": "Run PIL-07 as the test partner",
+   "type": "bpmn:Task",
+   "stepHref": "programme-pilot.html#step-A_Partner",
+   "lane": "Build agent",
+   "laneHref": "programme-pilot.html#lane-Lane_Agent",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "A_Confirm": {
+   "id": "A_Confirm",
+   "name": "Confirm validation on the pilot item",
+   "type": "bpmn:Task",
+   "stepHref": "programme-pilot.html#step-A_Confirm",
+   "lane": "Technical Integration Lead",
+   "laneHref": "programme-pilot.html#lane-Lane_TIL",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "A_Report": {
+   "id": "A_Report",
+   "name": "Report the results on the programme issue",
+   "type": "bpmn:Task",
+   "stepHref": "programme-pilot.html#step-A_Report",
+   "lane": "Build agent",
+   "laneHref": "programme-pilot.html#lane-Lane_Agent",
+   "skills": [],
+   "binding": "dangling"
+  },
+  "A_Agree": {
+   "id": "A_Agree",
+   "name": "Agree to the bulk import",
+   "type": "bpmn:Task",
+   "stepHref": "programme-pilot.html#step-A_Agree",
+   "lane": "PM & Architecture Integration",
+   "laneHref": "programme-pilot.html#lane-Lane_PM",
+   "skills": [],
+   "binding": "dangling"
+  }
+ }
+}
