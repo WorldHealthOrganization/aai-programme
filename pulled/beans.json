@@ -14,8 +14,8 @@
       "state": "ok",
       "branch": "cat/cat-harness/beans",
       "path": "beans/defs",
-      "commit": "161c733d033b0ddbf58552a27a731a779aa90bea",
-      "count": 1727
+      "commit": "b266a6912f78f4978bffcec11ed6d0d76354293c",
+      "count": 1729
     },
     {
       "repo": "litlfred/bootstrap",
@@ -47,7 +47,7 @@
       "state": "ok",
       "branch": "main",
       "path": "beans/defs",
-      "commit": "7be5df64a0e442c79773b9544cb09dd98e49ec00",
+      "commit": "6dd108f5cdb33eae9482a4b55f1f88b3f98ecb4b",
       "count": 332
     },
     {
@@ -55,7 +55,7 @@
       "state": "ok",
       "branch": "main",
       "path": "beans/defs",
-      "commit": "1fa2a0981023c550067fc9c6e24937d114e07d2e",
+      "commit": "419d59505a971a36d7e2e0162705be1828296188",
       "count": 206
     },
     {
@@ -78,7 +78,7 @@
       "repo": "litlfred/who-iris",
       "state": "no-store",
       "branch": "main",
-      "commit": "f7290776b30cf851a3174384917b1dcc3890991b",
+      "commit": "bc7e22c3f6ee56bcf59b4f9a24edfa34df8ab707",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -95,8 +95,8 @@
       "state": "ok",
       "branch": "cat/dth-hrh/beans",
       "path": "beans/defs",
-      "commit": "0443a1bf8521bd282df809d34ba35a17d321a7e3",
-      "count": 1
+      "commit": "73e2ea0bf2cc73cfb39320afb3698141316b7c0b",
+      "count": 3
     }
   ],
   "beans": [
@@ -25738,6 +25738,25 @@
     },
     {
       "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-dkin",
+      "title": "who-iris: L1-ingest the remaining DAKs (TB, HIV, CHUD, PNC, SRV, SMBP, STI) with their per-task annotations",
+      "status": "todo",
+      "type": "task",
+      "priority": "high",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "who-iris",
+        "dak",
+        "bpmn",
+        "needs-repo-access"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-18T08:40:00Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-dkin--who-iris-l1-ingest-the-remaining-daks-tb-hiv-chud-pnc.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
       "id": "folio-assistant-dkqd",
       "title": "Say 'work item', not 'bean', in prose; generate a glossary of node kinds and harnesses",
       "status": "completed",
@@ -26994,6 +27013,24 @@
       "archived": false,
       "updated_at": "2026-11-15T17:30:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-um0y--merge-manager-re-pin-cascade-core-761-smart-base-w.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-untm",
+      "title": "UNTERM: official UN terminology as translation candidates and glossary QA terms",
+      "status": "todo",
+      "type": "task",
+      "priority": "normal",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "translation",
+        "unterm",
+        "needs-network-access"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-18T08:40:00Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-untm--unterm-official-un-terminology-as-translation-candid.md"
     },
     {
       "repo": "litlfred/folio-assistant",
@@ -35690,6 +35727,35 @@
       "archived": false,
       "updated_at": "2026-11-17T16:40:30Z",
       "url": "https://github.com/litlfred/dth-hrh/blob/cat/dth-hrh/beans/beans/defs/dth-hrh-6xaq--plain-text-title-page-for-the-dth-hrh-draft-proset.md"
+    },
+    {
+      "repo": "litlfred/dth-hrh",
+      "id": "dth-hrh-p2xk",
+      "title": "Move dth-hrh IRIs onto the WHO site (owner option 2A, 2026-11-18)",
+      "status": "completed",
+      "type": "epic",
+      "priority": "normal",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [],
+      "archived": false,
+      "updated_at": "2026-11-18T21:36:22Z",
+      "url": "https://github.com/litlfred/dth-hrh/blob/cat/dth-hrh/beans/beans/defs/dth-hrh-p2xk--move-dth-hrh-iris-onto-the-who-site-owner-option-2.md"
+    },
+    {
+      "repo": "litlfred/dth-hrh",
+      "id": "dth-hrh-tl5a",
+      "title": "Rewrite dth-hrh IRIs onto the WHO site (dth-hrh#154)",
+      "status": "completed",
+      "type": "task",
+      "priority": "normal",
+      "parent": "dth-hrh-p2xk",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [],
+      "archived": false,
+      "updated_at": "2026-11-18T21:36:04Z",
+      "url": "https://github.com/litlfred/dth-hrh/blob/cat/dth-hrh/beans/beans/defs/dth-hrh-tl5a--iri-base-to-the-who-site-dth-hrh154.md"
     }
   ]
 }
