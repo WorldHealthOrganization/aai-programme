@@ -47,7 +47,7 @@
       "state": "ok",
       "branch": "main",
       "path": "beans/defs",
-      "commit": "6dd108f5cdb33eae9482a4b55f1f88b3f98ecb4b",
+      "commit": "faaa8b67f37d010d93b32bc83dcf1705ce3cc848",
       "count": 332
     },
     {
@@ -55,7 +55,7 @@
       "state": "ok",
       "branch": "main",
       "path": "beans/defs",
-      "commit": "419d59505a971a36d7e2e0162705be1828296188",
+      "commit": "97b3461c369edb0877d9be4ed8fdb63e0e8a3c2b",
       "count": 206
     },
     {
@@ -70,7 +70,7 @@
       "repo": "litlfred/fhir-harness",
       "state": "no-store",
       "branch": "main",
-      "commit": "d34ae7692a304983a495b20b62f37b8b98d3cb85",
+      "commit": "8075551c0541bc5ecb5bcb7d579fe1a889641e00",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
