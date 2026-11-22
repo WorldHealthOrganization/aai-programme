@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-21",
+  "checked": "2026-11-22",
   "summary": {
     "bean-done": 1,
     "bean-scrapped": 0,
@@ -7,7 +7,7 @@
     "broken-link": 0,
     "orphaned": 0,
     "bean-changed": 13,
-    "untriaged": 37
+    "untriaged": 38
   },
   "findings": [
     {
@@ -233,6 +233,11 @@
       "kind": "untriaged",
       "bean": "folio-assistant-r29x",
       "detail": "litlfred/folio-assistant: R29 (PAUSED by owner): todos and sticky notes reference things across KG libraries, as one merged kind"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-sp4k",
+      "detail": "litlfred/folio-assistant: Content sites: shared site build presets and a link check that refuses the publish"
     },
     {
       "kind": "untriaged",

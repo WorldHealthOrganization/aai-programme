@@ -14,8 +14,8 @@
       "state": "ok",
       "branch": "cat/cat-harness/beans",
       "path": "beans/defs",
-      "commit": "b266a6912f78f4978bffcec11ed6d0d76354293c",
-      "count": 1729
+      "commit": "35e461d6a12a065cdcbc4fae43ea986c3a950dcf",
+      "count": 1730
     },
     {
       "repo": "litlfred/bootstrap",
@@ -47,7 +47,7 @@
       "state": "ok",
       "branch": "main",
       "path": "beans/defs",
-      "commit": "faaa8b67f37d010d93b32bc83dcf1705ce3cc848",
+      "commit": "f4b3da87f6460d75e1bce09047b9a21b1fcb8dbc",
       "count": 332
     },
     {
@@ -55,14 +55,14 @@
       "state": "ok",
       "branch": "main",
       "path": "beans/defs",
-      "commit": "97b3461c369edb0877d9be4ed8fdb63e0e8a3c2b",
+      "commit": "0cdf04c4ca657da8e5423ef8061738ac4e6db9d7",
       "count": 206
     },
     {
       "repo": "litlfred/folio-assistant-sci",
       "state": "no-store",
       "branch": "main",
-      "commit": "5eb92786afaa472739a332c012e92501b9044504",
+      "commit": "a65a8cd9b999fa27f73d25ecf50e4435aa425509",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -70,7 +70,7 @@
       "repo": "litlfred/fhir-harness",
       "state": "no-store",
       "branch": "main",
-      "commit": "8075551c0541bc5ecb5bcb7d579fe1a889641e00",
+      "commit": "c58d29582aa06ffcebf19b6eda9a2778ceaaa088",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -25743,6 +25743,7 @@
       "status": "todo",
       "type": "task",
       "priority": "high",
+      "parent": "folio-assistant-v8bg",
       "blocking": [],
       "blocked_by": [],
       "tags": [
@@ -25752,7 +25753,7 @@
         "needs-repo-access"
       ],
       "archived": false,
-      "updated_at": "2026-11-18T08:40:00Z",
+      "updated_at": "2026-11-21T16:30:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-dkin--who-iris-l1-ingest-the-remaining-daks-tb-hiv-chud-pnc.md"
     },
     {
@@ -26064,7 +26065,7 @@
         "handover"
       ],
       "archived": false,
-      "updated_at": "2026-11-15T17:30:00Z",
+      "updated_at": "2026-11-16T08:45:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-gm5f--fix-gate-failures-on-platform-mains-2026-11-14.md"
     },
     {
@@ -26912,6 +26913,24 @@
     },
     {
       "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-sp4k",
+      "title": "Content sites: shared site build presets and a link check that refuses the publish",
+      "status": "in-progress",
+      "type": "task",
+      "priority": "high",
+      "parent": "folio-assistant-v8bg",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "site-publish",
+        "handover"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-21T16:49:35Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-sp4k--content-sites-shared-site-build-presets-and-refusing.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
       "id": "folio-assistant-tgaj",
       "title": "smart-base: one BPMN swimlane/actor validator in L2-bpmn/tools/, replacing four",
       "status": "completed",
@@ -27021,6 +27040,7 @@
       "status": "todo",
       "type": "task",
       "priority": "normal",
+      "parent": "folio-assistant-v8bg",
       "blocking": [],
       "blocked_by": [],
       "tags": [
@@ -27029,7 +27049,7 @@
         "needs-network-access"
       ],
       "archived": false,
-      "updated_at": "2026-11-18T08:40:00Z",
+      "updated_at": "2026-11-21T16:30:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-untm--unterm-official-un-terminology-as-translation-candid.md"
     },
     {
@@ -27178,13 +27198,14 @@
       "status": "in-progress",
       "type": "task",
       "priority": "high",
+      "parent": "folio-assistant-v8bg",
       "blocking": [],
       "blocked_by": [],
       "tags": [
         "who-migration"
       ],
       "archived": false,
-      "updated_at": "2026-11-15T19:40:00Z",
+      "updated_at": "2026-11-16T08:45:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-wt3x--who-move-t3-same-owner-pins-derived-owner-publishin.md"
     },
     {

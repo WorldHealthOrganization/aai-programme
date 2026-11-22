@@ -1,6 +1,6 @@
 # Bean drift
 
-Checked 2026-11-21: 33 programme issue(s) carrying 35 bean link(s), against 2298 beans from 12 stores. **Bean completed, issue still open: 1; Bean changed since the issue was last touched: 13; Open beans nobody has triaged: 37.**
+Checked 2026-11-22: 33 programme issue(s) carrying 35 bean link(s), against 2299 beans from 12 stores. **Bean completed, issue still open: 1; Bean changed since the issue was last touched: 13; Open beans nobody has triaged: 38.**
 
 Each finding is for a person to act on: change the issue, or record a triage decision in `docs/beans-triage.json`. Nothing here is changed automatically. Run it again by commenting `/check-drift` on any issue.
 
@@ -28,7 +28,7 @@ Each finding is for a person to act on: change the issue, or record a triage dec
 | [#24](https://github.com/litlfred/aai-programme/issues/24) | [folio-assistant-63q4](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/archive/folio-assistant-63q4--bibliography-reference-nodes-viewer-and-exports.md) | the bean changed (2026-10-30) after the issue was last touched (2026-10-26) |
 | [#22](https://github.com/litlfred/aai-programme/issues/22) | [folio-assistant-0lde](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/archive/folio-assistant-0lde--l1-evidence-ingest-the-external-evidence-an-l1-gui.md) | the bean changed (2026-10-26) after the issue was last touched (2026-10-26) |
 
-## Open beans nobody has triaged (37)
+## Open beans nobody has triaged (38)
 
 | Bean | Repository and title |
 |---|---|
@@ -60,6 +60,7 @@ Each finding is for a person to act on: change the issue, or record a triage dec
 | [folio-assistant-php1](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-php1--owner-standing-rules-moved-from-project-memory-202.md) | litlfred/folio-assistant: Owner standing rules (moved from project memory 2026-11-12) |
 | [folio-assistant-qc15](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-qc15--qou-coordinator-handover-2026-11-15.md) | litlfred/folio-assistant: qou coordinator handover 2026-11-15 (tracker qou#7735) |
 | [folio-assistant-r29x](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-r29x--r29-todos-and-sticky-notes-reference-across-kg-l.md) | litlfred/folio-assistant: R29 (PAUSED by owner): todos and sticky notes reference things across KG libraries, as one merged kind |
+| [folio-assistant-sp4k](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-sp4k--content-sites-shared-site-build-presets-and-refusing.md) | litlfred/folio-assistant: Content sites: shared site build presets and a link check that refuses the publish |
 | [folio-assistant-untm](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-untm--unterm-official-un-terminology-as-translation-candid.md) | litlfred/folio-assistant: UNTERM: official UN terminology as translation candidates and glossary QA terms |
 | [folio-assistant-v8bg](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-v8bg--handover-2026-11-12-09-32z-open-workstreams.md) | litlfred/folio-assistant: Handover 2026-11-12 09:32Z: open workstreams |
 | [folio-assistant-wl48](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-wl48--facts-and-references-moved-from-project-memory-202.md) | litlfred/folio-assistant: Facts and references (moved from project memory 2026-11-12) |
