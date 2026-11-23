@@ -47,7 +47,7 @@
       "state": "ok",
       "branch": "main",
       "path": "beans/defs",
-      "commit": "f4b3da87f6460d75e1bce09047b9a21b1fcb8dbc",
+      "commit": "4026199a2a73b0dd7c83114cdd706684c558b902",
       "count": 332
     },
     {
@@ -55,14 +55,14 @@
       "state": "ok",
       "branch": "main",
       "path": "beans/defs",
-      "commit": "0cdf04c4ca657da8e5423ef8061738ac4e6db9d7",
+      "commit": "efb863839b809b9f6c52a7b85d8c5fc337257a57",
       "count": 206
     },
     {
       "repo": "litlfred/folio-assistant-sci",
       "state": "no-store",
       "branch": "main",
-      "commit": "a65a8cd9b999fa27f73d25ecf50e4435aa425509",
+      "commit": "0d4b33197438f13a282e61117839828012271009",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
