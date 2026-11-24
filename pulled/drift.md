@@ -1,6 +1,6 @@
 # Bean drift
 
-Checked 2026-11-23: 33 programme issue(s) carrying 35 bean link(s), against 2299 beans from 12 stores. **Bean completed, issue still open: 1; Bean changed since the issue was last touched: 13; Open beans nobody has triaged: 38.**
+Checked 2026-11-24: 33 programme issue(s) carrying 35 bean link(s), against 2299 beans from 12 stores. **Bean completed, issue still open: 1; Bean changed since the issue was last touched: 13; Open beans nobody has triaged: 37.**
 
 Each finding is for a person to act on: change the issue, or record a triage decision in `docs/beans-triage.json`. Nothing here is changed automatically. Run it again by commenting `/check-drift` on any issue.
 
@@ -28,7 +28,7 @@ Each finding is for a person to act on: change the issue, or record a triage dec
 | [#24](https://github.com/litlfred/aai-programme/issues/24) | [folio-assistant-63q4](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/archive/folio-assistant-63q4--bibliography-reference-nodes-viewer-and-exports.md) | the bean changed (2026-10-30) after the issue was last touched (2026-10-26) |
 | [#22](https://github.com/litlfred/aai-programme/issues/22) | [folio-assistant-0lde](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/archive/folio-assistant-0lde--l1-evidence-ingest-the-external-evidence-an-l1-gui.md) | the bean changed (2026-10-26) after the issue was last touched (2026-10-26) |
 
-## Open beans nobody has triaged (38)
+## Open beans nobody has triaged (37)
 
 | Bean | Repository and title |
 |---|---|
@@ -55,7 +55,6 @@ Each finding is for a person to act on: change the issue, or record a triage dec
 | [folio-assistant-no51](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-no51--owner-to-do-list-things-only-litlfred-can-do.md) | litlfred/folio-assistant: Owner to-do list (things only litlfred can do) |
 | [folio-assistant-nvhg](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-nvhg--terminology-adjudication-leg-2-two-judges-disagree.md) | litlfred/folio-assistant: TERMINOLOGY / adjudication leg 2: two judges disagree about a mapping (from 2i5f) |
 | [folio-assistant-oiah](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-oiah--biblio-nav-standing-6-hourly-re-pin-per-ig-q-bibna.md) | litlfred/folio-assistant: Biblio nav: standing 6-hourly re-pin per IG (Q-BIBNAV-2 = B) |
-| [folio-assistant-pb15](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-pb15--harness-pr-backlog-plan-2026-11-15.md) | litlfred/folio-assistant: Harness PR backlog plan 2026-11-15 |
 | [folio-assistant-pga6](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-pga6--separation-phase-iii-and-architecture-doc.md) | litlfred/folio-assistant: Separation Phase III: L4/L5 Content, Tool and Test repos on the harness, plus current and future architecture write-up |
 | [folio-assistant-php1](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-php1--owner-standing-rules-moved-from-project-memory-202.md) | litlfred/folio-assistant: Owner standing rules (moved from project memory 2026-11-12) |
 | [folio-assistant-qc15](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-qc15--qou-coordinator-handover-2026-11-15.md) | litlfred/folio-assistant: qou coordinator handover 2026-11-15 (tracker qou#7735) |

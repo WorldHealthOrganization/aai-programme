@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-23",
+  "checked": "2026-11-24",
   "summary": {
     "bean-done": 1,
     "bean-scrapped": 0,
@@ -7,7 +7,7 @@
     "broken-link": 0,
     "orphaned": 0,
     "bean-changed": 13,
-    "untriaged": 38
+    "untriaged": 37
   },
   "findings": [
     {
@@ -208,11 +208,6 @@
       "kind": "untriaged",
       "bean": "folio-assistant-oiah",
       "detail": "litlfred/folio-assistant: Biblio nav: standing 6-hourly re-pin per IG (Q-BIBNAV-2 = B)"
-    },
-    {
-      "kind": "untriaged",
-      "bean": "folio-assistant-pb15",
-      "detail": "litlfred/folio-assistant: Harness PR backlog plan 2026-11-15"
     },
     {
       "kind": "untriaged",

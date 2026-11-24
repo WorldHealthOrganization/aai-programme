@@ -14,7 +14,7 @@
       "state": "ok",
       "branch": "cat/cat-harness/beans",
       "path": "beans/defs",
-      "commit": "35e461d6a12a065cdcbc4fae43ea986c3a950dcf",
+      "commit": "baf7ddc9d0dc8f5373be4196d65bf02eec4bb7a8",
       "count": 1730
     },
     {
@@ -47,7 +47,7 @@
       "state": "ok",
       "branch": "main",
       "path": "beans/defs",
-      "commit": "4026199a2a73b0dd7c83114cdd706684c558b902",
+      "commit": "d755daa6629c77d1b54be249d19d1f0d1c29dd66",
       "count": 332
     },
     {
@@ -55,7 +55,7 @@
       "state": "ok",
       "branch": "main",
       "path": "beans/defs",
-      "commit": "efb863839b809b9f6c52a7b85d8c5fc337257a57",
+      "commit": "173c8eba124e9d71b39caafccb497945f517272a",
       "count": 206
     },
     {
@@ -25306,7 +25306,7 @@
         "upstream"
       ],
       "archived": false,
-      "updated_at": "2026-11-13T12:07:20Z",
+      "updated_at": "2026-11-23T20:25:53Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-6gnn--worldhealthorganization-smart-base-port-the-github.md"
     },
     {
@@ -26647,7 +26647,7 @@
       "repo": "litlfred/folio-assistant",
       "id": "folio-assistant-pb15",
       "title": "Harness PR backlog plan 2026-11-15",
-      "status": "in-progress",
+      "status": "completed",
       "type": "task",
       "priority": "high",
       "parent": "folio-assistant-v8bg",
@@ -26659,7 +26659,7 @@
         "handover-2026-11-15"
       ],
       "archived": false,
-      "updated_at": "2026-11-15T18:02:00Z",
+      "updated_at": "2026-11-23T20:26:07Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-pb15--harness-pr-backlog-plan-2026-11-15.md"
     },
     {
