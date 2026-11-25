@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-24",
+  "checked": "2026-11-25",
   "summary": {
     "bean-done": 1,
     "bean-scrapped": 0,
@@ -7,7 +7,7 @@
     "broken-link": 0,
     "orphaned": 0,
     "bean-changed": 13,
-    "untriaged": 37
+    "untriaged": 39
   },
   "findings": [
     {
@@ -231,8 +231,13 @@
     },
     {
       "kind": "untriaged",
-      "bean": "folio-assistant-sp4k",
-      "detail": "litlfred/folio-assistant: Content sites: shared site build presets and a link check that refuses the publish"
+      "bean": "folio-assistant-st16",
+      "detail": "litlfred/folio-assistant: Handover 2026-11-16 09:30Z: WHO smart-trust and smart-trust-demo sites"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-t15r",
+      "detail": "litlfred/folio-assistant: WHO move T15: smart-ra open issues and PRs copied to WorldHealthOrganization/smart-ra"
     },
     {
       "kind": "untriaged",
@@ -248,6 +253,11 @@
       "kind": "untriaged",
       "bean": "folio-assistant-wl48",
       "detail": "litlfred/folio-assistant: Facts and references (moved from project memory 2026-11-12)"
+    },
+    {
+      "kind": "untriaged",
+      "bean": "folio-assistant-wm26",
+      "detail": "litlfred/folio-assistant: WHO migration: smart-*, dth-*, who-iris to WorldHealthOrganization"
     },
     {
       "kind": "untriaged",

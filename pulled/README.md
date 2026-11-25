@@ -9,12 +9,12 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 | Repository | Store | In progress | To do | Draft | Completed | Scrapped | Open without issue |
 |---|---|--:|--:|--:|--:|--:|--:|
 | [aai-programme](https://github.com/WorldHealthOrganization/aai-programme) | `cat/aai-platform/beans` @ `befe225` | 3 | 22 | 0 | 0 | 0 | 0 |
-| [folio-assistant](https://github.com/litlfred/folio-assistant) | `cat/cat-harness/beans` @ `baf7ddc` | 23 | 16 | 0 | 1660 | 31 | 38 |
+| [folio-assistant](https://github.com/litlfred/folio-assistant) | `cat/cat-harness/beans` @ `1b413b4` | 25 | 16 | 0 | 1662 | 31 | 40 |
 | [bootstrap](https://github.com/litlfred/bootstrap) | no beans yet | – | – | – | – | – | – |
 | [bootstrap-tools](https://github.com/litlfred/bootstrap-tools) | no beans yet | – | – | – | – | – | – |
 | [cat-harness](https://github.com/litlfred/cat-harness) | `cat/cat-harness/beans` @ `df413d1` (67 bean(s) also kept, more recently, in another store) | 0 | 1 | 0 | 0 | 0 | 1 |
-| [cat-harness-tools](https://github.com/litlfred/cat-harness-tools) | `main` @ `d755daa` | 2 | 2 | 1 | 322 | 5 | 4 |
-| [folio-assistant-core](https://github.com/litlfred/folio-assistant-core) | `main` @ `173c8eb` | 0 | 2 | 0 | 197 | 7 | 2 |
+| [cat-harness-tools](https://github.com/litlfred/cat-harness-tools) | `main` @ `1555827` | 2 | 2 | 1 | 322 | 5 | 4 |
+| [folio-assistant-core](https://github.com/litlfred/folio-assistant-core) | `main` @ `f07b2e0` | 0 | 2 | 0 | 197 | 7 | 2 |
 | [folio-assistant-sci](https://github.com/litlfred/folio-assistant-sci) | no beans yet | – | – | – | – | – | – |
 | [fhir-harness](https://github.com/litlfred/fhir-harness) | no beans yet | – | – | – | – | – | – |
 | [who-iris](https://github.com/litlfred/who-iris) | no beans yet | – | – | – | – | – | – |
@@ -67,7 +67,7 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 | [aai-platform-wfvg](https://github.com/WorldHealthOrganization/aai-programme/blob/cat/aai-platform/beans/beans/defs/aai-platform-wfvg--review-the-project-110-items-with-ritika-after-the.md) | todo | normal | task | Review the project 110 items with Ritika after the pilot | [folio-assistant#2605](https://github.com/litlfred/folio-assistant/issues/2605) |
 | [aai-platform-wyr6](https://github.com/WorldHealthOrganization/aai-programme/blob/cat/aai-platform/beans/beans/defs/aai-platform-wyr6--step-1-pre-flight-check-of-the-who-organisation.md) | todo | normal | task | Step 1: pre-flight check of the WHO organisation | [folio-assistant#2605](https://github.com/litlfred/folio-assistant/issues/2605) |
 
-### folio-assistant (39 open)
+### folio-assistant (41 open)
 
 | Bean | Status | Priority | Type | Title | Issue |
 |---|---|---|---|---|---|
@@ -82,9 +82,11 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 | [folio-assistant-mm15](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-mm15--merge-manager-handover-2026-11-15.md) | in-progress | high | task | Merge manager handover 2026-11-15 06:35Z |  |
 | [folio-assistant-qc15](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-qc15--qou-coordinator-handover-2026-11-15.md) | in-progress | high | task | qou coordinator handover 2026-11-15 (tracker qou#7735) |  |
 | [folio-assistant-rwmf](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-rwmf--goal-4-platform-the-harnesss-own-reliability-gates.md) | in-progress | high | milestone | GOAL 4 / PLATFORM: the harness's own reliability — gates, process, QA, merge pipeline, deployment — which every GOAL stands on |  |
-| [folio-assistant-sp4k](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-sp4k--content-sites-shared-site-build-presets-and-refusing.md) | in-progress | high | task | Content sites: shared site build presets and a link check that refuses the publish |  |
+| [folio-assistant-st16](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-st16--handover-who-smart-trust-sites-2026-11-16.md) | in-progress | high | task | Handover 2026-11-16 09:30Z: WHO smart-trust and smart-trust-demo sites |  |
+| [folio-assistant-t15r](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-t15r--who-move-t15-smart-ra-issues-and-prs-to-who.md) | in-progress | high | task | WHO move T15: smart-ra open issues and PRs copied to WorldHealthOrganization/smart-ra |  |
 | [folio-assistant-v8bg](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-v8bg--handover-2026-11-12-09-32z-open-workstreams.md) | in-progress | high | epic | Handover 2026-11-12 09:32Z: open workstreams |  |
 | [folio-assistant-wl48](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-wl48--facts-and-references-moved-from-project-memory-202.md) | in-progress | high | task | Facts and references (moved from project memory 2026-11-12) |  |
+| [folio-assistant-wm26](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-wm26--who-migration-smart-dth-who-iris-to-worldhealthorg.md) | in-progress | high | epic | WHO migration: smart-*, dth-*, who-iris to WorldHealthOrganization |  |
 | [folio-assistant-wt3x](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-wt3x--who-move-t3-same-owner-pins-derived-owner-publishin.md) | in-progress | high | task | WHO move T3: same-owner pins, derived owner, publishing profile (code PRs) |  |
 | [folio-assistant-bsd1](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-bsd1--bean-store-behind-any-tool-and-agent-dispatch.md) | in-progress | normal | feature | BEAN STORE BEHIND ANY TOOL + STATE MACHINE STARTS ANY MODEL'S AGENT: proposal (WHO Assured AI / Gemini benchmarking context) | [cat-harness#991](https://github.com/litlfred/cat-harness/issues/991) |
 | [folio-assistant-cysv](https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-cysv--one-dth-scaffold-and-seed-tool-in-the-platform-dth.md) | in-progress | normal | task | One DTH scaffold and seed tool in the platform (dth init), replacing per-repo copies |  |

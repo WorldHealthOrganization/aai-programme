@@ -14,8 +14,8 @@
       "state": "ok",
       "branch": "cat/cat-harness/beans",
       "path": "beans/defs",
-      "commit": "baf7ddc9d0dc8f5373be4196d65bf02eec4bb7a8",
-      "count": 1730
+      "commit": "1b413b4057ee15d16884ca1bc2a7eb4c96390636",
+      "count": 1734
     },
     {
       "repo": "litlfred/bootstrap",
@@ -29,7 +29,7 @@
       "repo": "litlfred/bootstrap-tools",
       "state": "no-store",
       "branch": "main",
-      "commit": "60e5ffc23b88137c0d9eaef00601da89237df094",
+      "commit": "979b33c8ec50d1d1150b22a3ad44a9c343fb9761",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -47,7 +47,7 @@
       "state": "ok",
       "branch": "main",
       "path": "beans/defs",
-      "commit": "d755daa6629c77d1b54be249d19d1f0d1c29dd66",
+      "commit": "155582737636071941b2fbfac144c2abdfc94d52",
       "count": 332
     },
     {
@@ -55,14 +55,14 @@
       "state": "ok",
       "branch": "main",
       "path": "beans/defs",
-      "commit": "173c8eba124e9d71b39caafccb497945f517272a",
+      "commit": "f07b2e088c3e73217c21d410fae951ef1a60625c",
       "count": 206
     },
     {
       "repo": "litlfred/folio-assistant-sci",
       "state": "no-store",
       "branch": "main",
-      "commit": "0d4b33197438f13a282e61117839828012271009",
+      "commit": "82162563b590a14c81e932a027a05c21d4a4b127",
       "note": "no bean files (looked in beans/defs, beans)",
       "count": 0
     },
@@ -25906,7 +25906,7 @@
         "project-memory"
       ],
       "archived": false,
-      "updated_at": "2026-11-15T19:40:00Z",
+      "updated_at": "2026-11-24T08:30:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-f7ph--project-thread-directory-thread-ids.md"
     },
     {
@@ -26529,7 +26529,7 @@
         "project-memory"
       ],
       "archived": false,
-      "updated_at": "2026-11-12T09:45:00Z",
+      "updated_at": "2026-11-24T08:30:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-no51--owner-to-do-list-things-only-litlfred-can-do.md"
     },
     {
@@ -26915,7 +26915,7 @@
       "repo": "litlfred/folio-assistant",
       "id": "folio-assistant-sp4k",
       "title": "Content sites: shared site build presets and a link check that refuses the publish",
-      "status": "in-progress",
+      "status": "completed",
       "type": "task",
       "priority": "high",
       "parent": "folio-assistant-v8bg",
@@ -26926,8 +26926,43 @@
         "handover"
       ],
       "archived": false,
-      "updated_at": "2026-11-21T16:49:35Z",
+      "updated_at": "2026-11-22T15:45:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-sp4k--content-sites-shared-site-build-presets-and-refusing.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-st16",
+      "title": "Handover 2026-11-16 09:30Z: WHO smart-trust and smart-trust-demo sites",
+      "status": "in-progress",
+      "type": "task",
+      "priority": "high",
+      "parent": "folio-assistant-v8bg",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "handover",
+        "who-migration"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-24T08:30:00Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-st16--handover-who-smart-trust-sites-2026-11-16.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-t15r",
+      "title": "WHO move T15: smart-ra open issues and PRs copied to WorldHealthOrganization/smart-ra",
+      "status": "in-progress",
+      "type": "task",
+      "priority": "high",
+      "parent": "folio-assistant-wm26",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "who-migration"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-24T09:00:00Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-t15r--who-move-t15-smart-ra-issues-and-prs-to-who.md"
     },
     {
       "repo": "litlfred/folio-assistant",
@@ -27032,6 +27067,24 @@
       "archived": false,
       "updated_at": "2026-11-15T17:30:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-um0y--merge-manager-re-pin-cascade-core-761-smart-base-w.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-un6l",
+      "title": "smart-trust-demo in the six UN languages: journeys viewer, docs pages, ArchiMate",
+      "status": "completed",
+      "type": "task",
+      "priority": "normal",
+      "parent": "folio-assistant-v8bg",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "translation",
+        "smart-trust-demo"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-24T08:45:00Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-un6l--smart-trust-demo-in-the-six-un-languages.md"
     },
     {
       "repo": "litlfred/folio-assistant",
@@ -27171,6 +27224,23 @@
       "archived": false,
       "updated_at": "2026-11-12T09:45:00Z",
       "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-wl48--facts-and-references-moved-from-project-memory-202.md"
+    },
+    {
+      "repo": "litlfred/folio-assistant",
+      "id": "folio-assistant-wm26",
+      "title": "WHO migration: smart-*, dth-*, who-iris to WorldHealthOrganization",
+      "status": "in-progress",
+      "type": "epic",
+      "priority": "high",
+      "blocking": [],
+      "blocked_by": [],
+      "tags": [
+        "who-migration",
+        "handover"
+      ],
+      "archived": false,
+      "updated_at": "2026-11-24T08:30:00Z",
+      "url": "https://github.com/litlfred/folio-assistant/blob/cat/cat-harness/beans/beans/defs/folio-assistant-wm26--who-migration-smart-dth-who-iris-to-worldhealthorg.md"
     },
     {
       "repo": "litlfred/folio-assistant",
