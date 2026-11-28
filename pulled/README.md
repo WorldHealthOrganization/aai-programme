@@ -13,8 +13,8 @@ GitHub issues hold programme status. A bean links to its issue with `issue:`; op
 | [bootstrap](https://github.com/litlfred/bootstrap) | no beans yet | – | – | – | – | – | – |
 | [bootstrap-tools](https://github.com/litlfred/bootstrap-tools) | no beans yet | – | – | – | – | – | – |
 | [cat-harness](https://github.com/litlfred/cat-harness) | `cat/cat-harness/beans` @ `df413d1` (67 bean(s) also kept, more recently, in another store) | 0 | 1 | 0 | 0 | 0 | 1 |
-| [cat-harness-tools](https://github.com/litlfred/cat-harness-tools) | `main` @ `5593bb6` | 2 | 2 | 1 | 322 | 5 | 4 |
-| [folio-assistant-core](https://github.com/litlfred/folio-assistant-core) | `main` @ `f07b2e0` | 0 | 2 | 0 | 197 | 7 | 2 |
+| [cat-harness-tools](https://github.com/litlfred/cat-harness-tools) | `main` @ `25cdacf` | 2 | 2 | 1 | 322 | 5 | 4 |
+| [folio-assistant-core](https://github.com/litlfred/folio-assistant-core) | `main` @ `b3bc5bf` | 0 | 2 | 0 | 197 | 7 | 2 |
 | [folio-assistant-sci](https://github.com/litlfred/folio-assistant-sci) | no beans yet | – | – | – | – | – | – |
 | [fhir-harness](https://github.com/litlfred/fhir-harness) | no beans yet | – | – | – | – | – | – |
 | [who-iris](https://github.com/litlfred/who-iris) | no beans yet | – | – | – | – | – | – |
